@@ -1,2 +1,3 @@
 # phy485-optics
-phy485-optics notes compilation
+
+Class notes and problems from 'Advanced Classical Optics', taught by Prof. Joseph Thywissen.
