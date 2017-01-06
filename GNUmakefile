@@ -1,5 +1,6 @@
 THISDIR := phy485-optics
 THISBOOK := phy485
+BASEVER := 0970435
 
 include ../latex/make.bookvars
 
