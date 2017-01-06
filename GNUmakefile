@@ -4,7 +4,7 @@ BASEVER := 0970435
 
 include ../latex/make.bookvars
 
-FIGURES := ../../figures/$(THISBOOK)
+FIGURES := ../figures/phy485-optics
 
 #ONCEFLAGS := -justonce
 
