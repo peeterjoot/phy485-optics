@@ -58,7 +58,7 @@ Yes, the Fourier transform of an even function in time is even in frequency.
 
 \makeproblem{Express the Fourier transform of an even function in terms of cosines}{pr:cosineTransforms:2}{ } % makeproblem
 \makeanswer{pr:cosineTransforms:2}{
-
+%
 \begin{dmath}\label{eqn:cosineTransforms:50}
 \int_{-\infty}^\infty e^{-i\omega \tau} f(\tau) d\tau
 =
@@ -96,7 +96,7 @@ f(\tau) d\tau,
 }
 
 with
-
+%
 \begin{dmath}\label{eqn:cosineTransforms:90}
 \tilde{f}(\omega) =
 \int_{-\infty}^{\infty}
@@ -114,7 +114,7 @@ for the normal Fourier transform, so that
 
 \makeproblem{Inverse transform (of an even function)}{pr:cosineTransforms:3}{ } % makeproblem
 \makeanswer{pr:cosineTransforms:3}{
-
+%
 \begin{dmath}\label{eqn:cosineTransforms:130}
 f(\tau)
 =
@@ -153,14 +153,14 @@ f(\tau)
 \makeanswer{pr:cosineTransforms:4}{
 
 with
-
+%
 \begin{dmath}\label{eqn:cosineTransforms:170}
 (f \conj g)(\tau)
 = \int_{-\infty}^\infty f(\tau') g(\tau' - \tau),
 \end{dmath}
 
 is this an even function?  Let's compute at a negative time
-
+%
 \begin{dmath}\label{eqn:cosineTransforms:190}
 (f \conj g)(-\tau)
 =
@@ -180,7 +180,7 @@ Okay, yes, the convolution of an even function is even.
 \makeanswer{pr:cosineTransforms:5}{
 
 It's not obvious that we can even do this.  If we start naively
-
+%
 \begin{dmath}\label{eqn:cosineTransforms:210}
 \int_0^\infty d\tau \cos(\omega \tau) \int_{-\infty}^\infty f(\tau') g(\tau' - \tau) d\tau'
 =
@@ -207,7 +207,7 @@ g(u).
 \end{dmath}
 
 We see this \([0, \infty]\) interval causes us some trouble.  If we had a symmetric interval, the sine term would be killed off, but we don't have that.  Some thought, and explicit demonstration (above) that the convolution of even functions is also even, we can still evaluate this, but have to step back and double the interval.
-
+%
 \begin{dmath}\label{eqn:cosineTransforms:230}
 \int_0^\infty d\tau \cos(\omega \tau) \int_{-\infty}^\infty f(\tau') g(\tau' - \tau) d\tau'
 =

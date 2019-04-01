@@ -9,7 +9,7 @@
 Give the intensity pattern at the back plane of a lens of focal length \(f\) for the following aperture distributions. Assume a point source that is infinitely far away, on-axis, and quasimonochromatic with wavelength \(\lambda\).
 
 This geometry is illustrated in \cref{fig:modernOpticsProblemSet2Problem1:modernOpticsProblemSet2Problem1Fig1}.
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem1Fig1}{Geometry for the masked diffraction problems}{fig:modernOpticsProblemSet2Problem1:modernOpticsProblemSet2Problem1Fig1}{0.3}
 
 \makesubproblem{A rectangular aperture of size \(L\) by \(W\)}{modernOptics:problemSet2:1a}
@@ -24,7 +24,7 @@ A mask whose transmission function is \(\exp{(-x^2/\sigma_x^2 - y^2/\sigma_y^2)}
 \makeanswer{modernOptics:problemSet2:1}{
 
 Let's first consider the geometrical optics of the lens and transmission to the focal plane.  With an ABCD matrix of \(M_1\) for the lens and \(M_2\) for the transmission we have for the composite operation
-
+%
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P1:10}
 M
 = M_2 M_1
@@ -45,7 +45,7 @@ M
 \end{dmath}
 
 So an initial position and angle pair is transformed as
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:30}
 \begin{bmatrix}
 y \\
@@ -70,11 +70,11 @@ f \alpha \\
 The new position \(y' = f \alpha\) is strictly a function of the output angle at the mask, or the input to the lens.
 
 Now consider the geometry of the aperture and the position of the ray on the focal plane as illustrated in \cref{fig:modernOpticsProblemSet2Problem1:modernOpticsProblemSet2Problem1Fig2}.
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem1Fig2}{Diffraction geometry with lens}{fig:modernOpticsProblemSet2Problem1:modernOpticsProblemSet2Problem1Fig2}{0.3}
 
 The position \(\Br'\) of the area element in the diffraction integral is
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:50}
 \Br' =
 \begin{bmatrix}
@@ -85,7 +85,7 @@ y' \\
 \end{equation}
 
 and the position \(P\) of the ray on the focal plane is
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:70}
 \Br = f
 \begin{bmatrix}
@@ -96,19 +96,19 @@ and the position \(P\) of the ray on the focal plane is
 \end{equation}
 
 Our diffraction integral is of the form
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:90}
 \Psi(\Br) = \frac{A}{i \lambda} \frac{e^{i k R_s}}{R_s} \iint_A \frac{e^{i k R}}{R} da'
 \end{equation}
 
 Writing for the incident wavefunction
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:110}
 \Psi_s = A \frac{e^{i k R_s}}{R_s},
 \end{equation}
 
 which we will consider to be approximately plane wave anyhow, we calculate our approximation for the distance from the area element to the point on the focal plane
-
+%
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P1:130}
 k R
 = k \sqrt{ (\Br - \Br')^2 }
@@ -119,13 +119,13 @@ k R
 \end{dmath}
 
 With an assumption that \(r \approx f \gg {r'}^2/\lambda\), and noting that \(R \approx f\) in the denominator of the integrand where any variation will not matter as much we have
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:150}
 \Psi(\Br) = \frac{\Psi_s}{i \lambda} \frac{e^{i k f}}{f} \iint_A e^{-i k \Br' \cdot \rcap } da'
 \end{equation}
 
 Noting from \eqnref{eqn:modernOptics:ProblemSet2:P1:70} that \(\Br^2 \approx f^2\) if \(\alpha\) and \(\beta\) are small, then we have
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:170}
 \rcap \sim
 \begin{bmatrix}
@@ -136,7 +136,7 @@ Noting from \eqnref{eqn:modernOptics:ProblemSet2:P1:70} that \(\Br^2 \approx f^2
 \end{equation}
 
 so that our diffraction integral becomes
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:190}
 \Psi(\Br) = \frac{\Psi_s}{i \lambda} \frac{e^{i k f}}{f} \iint_A e^{-i k ( \alpha x' + \beta y' ) } da'.
 \end{equation}
@@ -149,11 +149,11 @@ We are now ready to consider the specific geometries of this problem.
 \paragraph{Part \ref{modernOptics:problemSet2:1a}.  Single rectangular slit.}
 
 Let's setup our coordinates as in \cref{fig:modernOpticsProblemSet2Problem1:modernOpticsProblemSet2Problem1Fig3}.
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem1Fig3}{Single rectangular slit}{fig:modernOpticsProblemSet2Problem1:modernOpticsProblemSet2Problem1Fig3}{0.3}
 
 Let's write \(\mu = -i k \alpha\) and \(\nu = -i k \beta\) so that we want to compute
-
+%
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P1:210}
 \iint e^{-i k ( x' \alpha + y' \beta ) } dx' dy'
 =
@@ -173,7 +173,7 @@ L W
 \end{dmath}
 
 So our wave function is
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:230}
 \Psi(\Br) = \frac{L W \Psi_s}{i \lambda} \frac{e^{i k f}}{f}
 \sinc\left( \mu W/2 \right)
@@ -181,7 +181,7 @@ So our wave function is
 \end{equation}
 
 With the time averaged intensity at the aperture of
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:250}
 I_s = \expectation{ \Psi_s } = \frac{A^2}{2 R_s^2},
 \end{equation}
@@ -201,11 +201,11 @@ I(\Br) =
 \paragraph{Part \ref{modernOptics:problemSet2:1b}.  Three slits}
 
 We now consider the geometry of a three slit setup \cref{fig:modernOpticsProblemSet2Problem1:modernOpticsProblemSet2Problem1Fig4}.
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem1Fig4}{Three slit diffraction aperture}{fig:modernOpticsProblemSet2Problem1:modernOpticsProblemSet2Problem1Fig4}{0.3}
 
 We form the integral
-
+%
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P1:290}
 \iint_A e^{-i k (\alpha x' + \beta y') } dx' dy'
 =
@@ -248,13 +248,13 @@ e^{-i k \alpha n b}.
 \end{dmath}
 
 With \(a = e^{i k \alpha b}\), and noting that
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:310}
 \inv{a} + 1 + a = \frac{a^3 - 1}{a - 1},
 \end{equation}
 
 we have
-
+%
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P1:330}
 \sum_{n=-1}^{n=1}
 e^{-i k \alpha n b}
@@ -269,7 +269,7 @@ e^{i k \alpha b}
 \end{dmath}
 
 We can now write our wavefunction
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:350}
 \Psi(\Br) = \frac{L a \Psi_s}{i \lambda} \frac{e^{i k f}}{f}
 \sinc\left( \frac{\beta k L}{2} \right)
@@ -281,7 +281,7 @@ e^{i k \alpha b}
 We see our single slit terms become an envelope for the resulting waveform, with faster frequency terms due to the ratio of sinusoidal terms.
 
 Our time averaged intensity, again in terms of the time averaged intensity of the plane waves at the aperture \(I_s\), is
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:370}
 I = I_s \left( \frac{L a}{\lambda f} \right)^2
 \sinc^2\left( \frac{\beta k L}{2} \right)
@@ -301,14 +301,14 @@ I = I_s \left( \frac{L a}{\lambda f} \right)^2
 \paragraph{Part \ref{modernOptics:problemSet2:1c}.  Transmission function}
 
 We've been implicitly evaluating diffraction integrals of the form
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:410}
 \iint_A e^{-i k( x'\alpha + y' \beta) } dx' dy'
 = \iint_{-\infty}^\infty g(x', y') e^{-i k( x'\alpha + y' \beta) } dx' dy'
 \end{equation}
 
 where
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:430}
 g(x', y') =
 \left\{
@@ -320,17 +320,17 @@ g(x', y') =
 \end{equation}
 
 We are now asked to consider a more general aperture function
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:450}
 g(x', y') = e^{-{x'}^2/\sigma_x^2 - {y'}^2/\sigma_y^2}
 \end{equation}
 
 which fully allows transmission at the origin where \(g(0, 0) = 1\), and then gradually lets less and less light through the aperture as illustrated in \cref{fig:modernOpticsProblemSet2Problem1:modernOpticsProblemSet2Problem1Fig5}.
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem1Fig5}{Gaussian transmission function aperture}{fig:modernOpticsProblemSet2Problem1:modernOpticsProblemSet2Problem1Fig5}{0.3}
 
 Our task is to evaluate the integral
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:470}
 \iint_{-\infty}^\infty g(x', y') e^{-i k( x'\alpha + y' \beta) } dx' dy'
 =
@@ -339,7 +339,7 @@ Our task is to evaluate the integral
 \end{equation}
 
 Since these have the same form, it is sufficient to just look at one of them.
-
+%
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P1:490}
 \int dx' e^{-{x'}^2/\sigma_x^2 -i k x' \alpha}
 =
@@ -375,7 +375,7 @@ e^{
 \end{equation}
 
 and our wave function evaluated at point \(\Br = f(\alpha, \beta, 1)\), given plane wave function \(\Psi_s\) at the aperture is
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P1:350b}
 \Psi(\Br) =
 \frac{\pi \sigma_x \sigma_y \Psi_s}{i \lambda} \frac{e^{i k f}}{f}

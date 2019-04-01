@@ -41,19 +41,19 @@ and to prevent losses, we have a \underlineAndIndex{gain medium} (to be defined)
 Townes and Schawlow were mazer researchers (still important, used in GPS satellites for example as clocks), who realized that the ideas could be carried over into the optical regime.
 
 The history of this actually goes back to Einstein, who in 1917 did a thought experiment with atoms in a box, stimulating radiation, which is bouncing around, exciting the atoms, so that they in turn emit again.  We'll consider \(N\) atoms in thermal equilibrium with the light in the box as in \cref{fig:modernOpticsLecture16:modernOpticsLecture16Fig2}.  For background on this material see a book on thermal or statistical mechanics, such as \citep{kittel1980thermal} \S 7.
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsLecture16Fig2}{Atoms in a box}{fig:modernOpticsLecture16:modernOpticsLecture16Fig2}{0.2}
 
 We expect more in the ground state \cref{fig:modernOpticsLecture16:modernOpticsLecture16Fig3}.
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsLecture16Fig3}{Ground and excited state separation}{fig:modernOpticsLecture16:modernOpticsLecture16Fig3}{0.2}
-
+%
 \begin{equation}\label{eqn:modernOpticsLecture16:10}
 \frac{N_e}{N_g} = \frac{P_e}{P_g} = e^{-(E_e - E_g)/k T}
 \end{equation}
 
 Thermal distribution of radiation: \S 7 \citep{fowles1989introduction}.  In summary, that energy density as a function of frequency is
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOpticsLecture16:30}
 u_\omega = \Hbar \omega \expectation{ n_\omega } \calD(\omega)
@@ -67,7 +67,7 @@ u_\omega = \Hbar \omega \expectation{ n_\omega } \calD(\omega)
 \end{subequations}
 
 How do the number of excited states change, given absorption probability \(B_{\mathrm{abs}} u(\omega)\) and stimulated emission probability \(B_{\mathrm{se}} u(\omega)\), and spontaneous emission probability \(A\) (see figure in the slides)
-
+%
 \begin{subequations}
 \begin{equation}\label{eqn:modernOpticsLecture16:90}
 \frac{d}{dt} N_e = -A N_e + B_{\mathrm{abs}} u N_g - B_{\mathrm{\mathrm{se}}} u N_e = 0
@@ -78,7 +78,7 @@ How do the number of excited states change, given absorption probability \(B_{\m
 \end{subequations}
 
 Solving for \(u\), with \(\dot{N}_e = \dot{N}_g = 0\)
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture16:130}
 u_\omega
 =
@@ -101,7 +101,7 @@ B_{\mathrm{abs}}/B_{\mathrm{se}} e^{\Hbar \omega/k T} - 1
 \end{dmath}
 
 We conclude that we must have
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOpticsLecture16:150}
 \frac{A}{B_{\mathrm{se}}} =\frac{\Hbar \omega^3}{\pi^2 c^3}
@@ -112,7 +112,7 @@ B_{\mathrm{abs}}/B_{\mathrm{se}} = 1
 \end{subequations}
 
 With \(B_{\mathrm{abs}} = B_{\mathrm{se}}\) we don't see stimulated radiation around you because
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture16:190}
 \frac{N_e}{N_g} = e^{- \Hbar \omega / k T}
 \end{dmath}
@@ -122,17 +122,17 @@ Our typical chemical energies are
 1 eV = \(\kB\) ( 12000 K )
 
 so that
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture16:210}
 e^{- \Hbar \omega / k T} \sim e^{-40}
 \end{dmath}
 
 This is very small, and in order to get there we need a population inversion with more atoms in the excited state than in the ground state as in \cref{fig:modernOpticsLecture16:modernOpticsLecture16Fig4}.
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsLecture16Fig4}{Population inversion}{fig:modernOpticsLecture16:modernOpticsLecture16Fig4}{0.2}
 
 With
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture16:230}
 \frac{A}{B}
 = \frac{\Hbar \omega^3}{\pi^2 c^3}
@@ -141,7 +141,7 @@ With
 \end{dmath}
 
 so
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture16:250}
 \frac{ B u}{A}  = \expectation{ n_\omega } = \text{mode occupation}
 \end{dmath}

@@ -25,13 +25,13 @@ Following the analogy to the 2D harmonic oscillator constructed in class, see if
 \makeSubAnswer{Beam parameter}{modernOptics:problemSet4:3a}
 
 For the right, positive curvature mirror, we have
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem3:20}
 \inv{R(z)} = \frac{z}{z^2 + z_0^2}.
 \end{dmath}
 
 With \(\Abs{R_1} = \Abs{R_2} = R\), we have a symmetrical setup, so that the \(z_2\) of Van Driel's Eq.~(10.3.2) is just \(L/2\).  That gives us at the boundary
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem3:40}
 \inv{R} = \frac{L/2}{(L/2)^2 + z_0^2},
 \end{dmath}
@@ -51,7 +51,7 @@ z_0
 }
 
 Definitions and nice illustrations of the different cavity types can be found in \citep{ wiki:opticalCavity}.  For the \underlineAndIndex{confocal cavity} defined by \(L = R\), we have
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem3:100}
 z_0
 = \sqrt{\frac{L}{2} \left( L - \frac{L}{2}\right)}
@@ -63,13 +63,13 @@ as we are to show.
 \makeSubAnswer{Beam waist}{modernOptics:problemSet4:3b}
 
 We defined the Raleigh range in terms of the waist as
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem3:120}
 z_0 = \frac{\pi w_0^2}{\lambda},
 \end{dmath}
 
 which we can invert as
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem3:140}
 w_0^2 = \frac{\lambda z_0}{\pi}
 =
@@ -78,7 +78,7 @@ w_0^2 = \frac{\lambda z_0}{\pi}
 \end{dmath}
 
 For the concentric cavity where \(R = L/2\) we have
-
+%
 \begin{equation}\label{eqn:problemSet4Problem3:160}
 z_0 = \sqrt{\frac{L}{2} \left( \frac{L}{2} - \frac{L}{2}\right)} = 0,
 \end{equation}
@@ -86,7 +86,7 @@ z_0 = \sqrt{\frac{L}{2} \left( \frac{L}{2} - \frac{L}{2}\right)} = 0,
 so the waist is also zero there.  When we derived the \(u_{00}\) solution to the Paraxial wave equation we'd required \(z_0 \ne 0\) since we offset \(q = z - i z_0\) to remove the singularity.  This suggests that a different approach is required for the concentric boundary value constraints.  Intuitively it's perhaps not unreasonable to expect that we'll have severe pinch off in the center for this configuration (as we would have for rays).
 
 For the confocal configuration of \partref{modernOptics:problemSet4:3a} we have
-
+%
 \begin{equation}\label{eqn:problemSet4Problem3:180}
 w_0^2 = \frac{\lambda L}{2 \pi} = \frac{L}{k_0},
 \end{equation}
@@ -96,25 +96,25 @@ as we were to show.
 \makeSubAnswer{Harmonic frequency in cavity}{modernOptics:problemSet4:3c}
 
 From \citep{bohm1989qt} we find for the ground state of the 2D harmonic oscillator
-
+%
 \begin{equation}\label{eqn:problemSet4Problem3:200}
 E = \Hbar \omega \left( 0 + 0 + \frac{2}{2} \right) = \Hbar \omega
 \end{equation}
 
 and after normalization and adding in the time dependence we find for the ground state wave function
-
+%
 \begin{equation}\label{eqn:problemSet4Problem3:220}
 \Psi_{00}(r, t) = \sqrt{\frac{m \omega}{\pi \Hbar}} e^{ -\frac{m \omega r^2}{2 \Hbar} - i \omega t}
 \end{equation}
 
 For the lowest order Gaussian mode at its waist we have for the envelope of \(u_{00}\)
-
+%
 \begin{equation}\label{eqn:problemSet4Problem3:240}
 \Abs{u_{00}} = e^{-r^2/w_0^2}.
 \end{equation}
 
 For the confocal cavity, recalling \eqnref{eqn:problemSet4Problem3:180}, we make the identification
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem3:260}
 \inv{w_0^2}
 =

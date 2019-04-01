@@ -12,17 +12,17 @@ We never did the complete derivation of the \underlineAndIndex{Van Cittert-Zerni
 %\makeanswer{modernOpticsMidtermReflection:pr:5}{
 
 The geometry that we wish to consider is illustrated in \cref{fig:modernOpticsMidtermReflection:modernOpticsMidtermReflectionFig5}.
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsMidtermReflectionFig5}{Geometry for spatial coherence}{fig:modernOpticsMidtermReflection:modernOpticsMidtermReflectionFig5}{0.3}
 
 Our diffraction integral is
-
+%
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1040}
 \Psi(\Br) = \int \Psi_s(\Br_s) \frac{e^{i k R}}{i\lambda R} d^2 r_s,
 \end{dmath}
 
 with a correlation function of
-
+%
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1060}
 \Gamma_{12}
 = \expectation{\Psi(\Br_2, t) \Psi^\conj(\Br_1, t) }
@@ -36,7 +36,7 @@ with a correlation function of
 \end{dmath}
 
 where as in the figure we have
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1080}
 \BR_2(\Br_s') + \Br_s' = \Br_2
@@ -47,7 +47,7 @@ where as in the figure we have
 \end{subequations}
 
 We can express an assumption that the wave sources at two different points are uncorrelated by writing
-
+%
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1120}
 \expectation
 {
@@ -60,7 +60,7 @@ We can express an assumption that the wave sources at two different points are u
 This makes some intuitive sense, but still seems sort of like it's been pulled from a magic hat.  I guess the idea is that if the source points are the same then the average of the autocorrelation is an integral of the intensity over all time (thus diverging), while for different points expressing no correlation over time.
 
 Substitution of this delta function and integration over the \(d^2 r_s'\) source coordinates, leaves us
-
+%
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1140}
 \Gamma_{12}
 =
@@ -72,7 +72,7 @@ I(\Br_s).
 \end{dmath}
 
 We loose the dependence of \(R_1\) and \(R_2\) on the pair of source points and reformulate the \(R_2 - R_1\) difference in terms of the average distance between \(\Br_2\) and \(\Br_1\), plus the incremental distance between these.  That is
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1160}
 \Br_2 = \Br_{\mathrm{av}} + \inv{2} \Delta \Br
@@ -83,7 +83,7 @@ We loose the dependence of \(R_1\) and \(R_2\) on the pair of source points and 
 \end{subequations}
 
 so that
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1200}
 \BR_2
@@ -96,7 +96,7 @@ so that
 \end{subequations}
 
 These have magnitudes
-
+%
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1240}
 R_{2,1}
 = r_{\mathrm{av}}
@@ -129,7 +129,7 @@ r_{\mathrm{av}}
 \end{dmath}
 
 To first order, with the important parts highlighted, this is
-
+%
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1260}
 R_{2,1} =
 r_{\mathrm{av}} +
@@ -159,7 +159,7 @@ R_{2} - R_{1} =
 \end{dmath}
 
 Our autocorrelation is now
-
+%
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1300}
 \Gamma_{12}
 =
@@ -173,7 +173,7 @@ e^{-i k \Delta \Br \cdot \Br_s/r_{\mathrm{av}}}
 \end{dmath}
 
 It's been implied that the integration limits described the aperture.  Let's make that explicit with an aperture function \(g(\Br_s)\) so that we can allow the integration range to go to infinity in both directions without bound.  Let's also assume that the distances \(R_1\) and \(R_2\) don't vary much from their averages
-
+%
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1320}
 \overbar{R_{2,1}} =
 \frac{\int d^2 r_s g(\Br_s) R_{2,1}(\Br_s)}
@@ -181,7 +181,7 @@ It's been implied that the integration limits described the aperture.  Let's mak
 \end{dmath}
 
 so that the autocorrelation now takes the form
-
+%
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1340}
 \Gamma_{12}
 \sim

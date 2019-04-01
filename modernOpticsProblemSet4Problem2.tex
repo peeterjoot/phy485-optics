@@ -27,7 +27,7 @@ Allowing for unequal mirror radii, derive Fowles Eq.~(10.33).
 Given the M\"obius transform relationship the Gaussian beams, we can first consider the stability conditions for powers of the transfer matrix itself to not diverge.  This follows \citep{fowles1989introduction}, filling in some additional details.
 
 The matrix for a single pass of free propagation through distance \(d\), and then reflection off of a curved mirror with focus \(f\) is the composition
-
+%
 \begin{equation}\label{eqn:problemSet4Problem2:1080}
 M =
 \begin{bmatrix}
@@ -46,13 +46,13 @@ M =
 \end{equation}
 
 Each pass of propagation and reflection adds another power of \(M\) to the matrix for which we will base the final M\"obius transformation on.  We'll want to perform a diagonalization to simplify that matrix exponentiation (computation of \(M^n\), so that if
-
+%
 \begin{equation}\label{eqn:problemSet4Problem2:40}
 M E = E D,
 \end{equation}
 
 or
-
+%
 \begin{equation}\label{eqn:problemSet4Problem2:60}
 M = E D E^{-1}.
 \end{equation}
@@ -60,13 +60,13 @@ M = E D E^{-1}.
 Here \(D\) is a diagonal matrix (with the eigenvalues on the diagonal), and \(E\) is the change of basis matrix to make that similarity transformation.
 
 We can express the final matrix transformation after \(n\) reflections directly
-
+%
 \begin{equation}\label{eqn:problemSet4Problem2:80}
 M^n = E D^n E^{-1}.
 \end{equation}
 
 We'll need the eigenvalues first.  Our characteristic equation is
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:100}
 0
 = \Abs{ M - \lambda I }
@@ -82,13 +82,13 @@ We'll need the eigenvalues first.  Our characteristic equation is
 \end{dmath}
 
 Following Fowles, we write
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:120}
 \alpha = 1 - \frac{d}{2 f},
 \end{dmath}
 
 So that the characteristic equation is
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:140}
 0
 =
@@ -98,7 +98,7 @@ So that the characteristic equation is
 \end{dmath}
 
 Note that this corrects a sign error in the text.  Solving for \(\lambda\) we have
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:160}
 \lambda_{\pm} = \alpha \pm \sqrt{\alpha^2 - 1}.
 \end{dmath}
@@ -111,7 +111,7 @@ Observe that these satisfy our expectation that \(\lambda_{+} \lambda_{-} = 1\),
 \end{align}
 
 for some value \(\lambda\).  Our ABCD matrix for \(n\) sets of propagate-and-reflect is
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:260}
 M^n = E
 \begin{bmatrix}
@@ -122,7 +122,7 @@ E^{-1}.
 \end{dmath}
 
 If \(E = [ e_{i j} ]\) and \(E^{-1} = [ f_{i j} ]\), then the product takes the value
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:280}
 E D^n E^{-1}
 = [ e_{i k} \lambda_k^n \delta_{k m } f_{m j} ]
@@ -144,7 +144,7 @@ M^n
 So, if \(\lambda\) is real and greater than 1, the ABCD matrix will start to grow without bound.
 
 To consider the bounding behavior of \(\lambda^n\), lets follow Fowles, and separate the eigenvalues into real and complex as follows
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:180}
 \lambda = \alpha \pm
 \left\{
@@ -156,13 +156,13 @@ i \sqrt{1 - \alpha^2} & \quad \mbox{if \(\Abs{\alpha} < 1\)}
 \end{dmath}
 
 When \(\Abs{\alpha} = 1\), we have a double eigenvalue with value \(\alpha\) and may not be able to find a spanning set of eigenvectors.  For the \(\Abs{\alpha} < 1\) case, we can introduce \(\phi\) such that \(\cos\phi = \alpha\), allowing us to write
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:1100}
 \lambda_{\pm} = e^{\pm i \phi}
 \end{dmath}
 
 What can we say about the real valued eigenvalue case?  We know that from \(\Det M = 1\) both real valued eigenvalues must have matching signs.  We can also see from
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:240}
 \lambda_{\pm} = \Abs{\alpha} \left( \sgn(\alpha) \pm \sqrt{1 - \inv{\alpha^2}} \right),
 \end{dmath}
@@ -170,19 +170,19 @@ What can we say about the real valued eigenvalue case?  We know that from \(\Det
 that if these are positive, then one of the eigenvalues is greater than 1, and if negative, at least one is less than \(-1\).  If we pick \(\lambda\) as the eigenvalue for which \(\Abs{\lambda} > 1\), then \(\lambda^n\) will clearly diverge as \(n\) grows, and we the ABCD matrix of \eqnref{eqn:problemSet4Problem2:320} becomes unstable.
 
 This can also be expressed in terms of rays.  Given a ray with an eigenvector decomposition
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:340}
 \Bx = a \Be_1 + b \Be_2,
 \end{dmath}
 
 where
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:360}
 E = [ \Be_1 \Be_2 ],
 \end{dmath}
 
 then it follows from \eqnref{eqn:problemSet4Problem2:320} that
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:380}
 M^n \Bx = a \lambda^n \Be_1 + b \inv{\lambda^n} \Be_2.
 \end{dmath}
@@ -197,7 +197,7 @@ I'd avoided the ``suppose that the ray is an eigenvector'' argument from Fowles 
 Our last task is to express the stability condition \(\Abs{\alpha} < 1\) in terms of \(d\), \(f\) and \(r\) (the last for the optical resonator with equal curvature mirrors).
 
 This stability criterion is
-
+%
 \begin{equation}\label{eqn:problemSet4Problem2:400}
 \Abs{\alpha} = \Abs{1 - \frac{d}{2f}} < 1.
 \end{equation}
@@ -205,13 +205,13 @@ This stability criterion is
 Let's consider this in two separate cases.
 \begin{enumerate}
 \item The condition \(\alpha > 0\) can be written
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:420}
 1 - \frac{d}{2f} > 0 ,
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:560}
 1 > \frac{d}{2f},
 \end{dmath}
@@ -222,7 +222,7 @@ d < 2 f.
 \end{dmath}
 
 For these positive values of \(\alpha\) we have
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:440}
 1 - \frac{d}{2f} < 1
 \end{dmath}
@@ -235,13 +235,13 @@ or
 which just means that \(d\) is positive.  This shows that \(d \in (0, 2f)\) results in a stable system.
 
 \item The condition \(\alpha < 0\) can be written
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:460}
 1 - \frac{d}{2f} < 0
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:480}
 1 < \frac{d}{2f}
 \end{dmath}
@@ -252,13 +252,13 @@ or
 \end{dmath}
 
 The stability criteria for such values of \(d\) and \(f\) is
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:520}
 \Abs{\alpha} = -1 + \frac{d}{2f} < 1,
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:540}
 d < 4 f.
 \end{dmath}
@@ -267,7 +267,7 @@ This shows that \(d \in (2 f, 4 f)\) also results in a stable system.
 \end{enumerate}
 
 With both sets of ranges for \(d\) mutually exclusive, and the point \(d = 2f\) also stable (doubled eigenvalue with value \(1\)), we can form the union of the two, and have a stable system provided
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:1120}
 d \in (0, 4 f).
 \end{dmath}
@@ -283,7 +283,7 @@ the desired result.
 \makeSubAnswer{Stability criterion}{modernOptics:problemSet4:2b}
 
 A system with plane mirrors is characterized by \(f = \infty\) or \(1/f = 0\).  Our ABCD matrix is then just
-
+%
 \begin{equation}\label{eqn:problemSet4Problem2:1160}
 M =
 \begin{bmatrix}
@@ -302,7 +302,7 @@ M =
 \end{equation}
 
 This is a system that has only a single eigenvalue of \(1\) and is already in Jordan canonical form, so it cannot be diagonalized any further.  Our eigenvector can be found by inspection
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:640}
 \Be =
 \begin{bmatrix}
@@ -312,7 +312,7 @@ This is a system that has only a single eigenvalue of \(1\) and is already in Jo
 \end{dmath}
 
 since this clearly satisfies \(M \Be = \Be\).  Any vector that is a multiple of this is also an eigenvector for this system
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:660}
 \Bx =
 \begin{bmatrix}
@@ -328,7 +328,7 @@ These are the only stable rays, which makes intuitive sense.  Only rays that are
 \makeSubAnswer{Unequal mirror radii}{modernOptics:problemSet4:2c}
 
 We now wish to look at the characteristic equation for a round trip through the two sets of geometric elements.  That is
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:680}
 M = M_2 M_1 =
 \begin{bmatrix}
@@ -377,7 +377,7 @@ M = M_2 M_1 =
 \end{dmath}
 
 Direct naive computation of \(0 = \Det( M - \lambda I )\) is not pleasant, and gives a big ass messy expression that's hard to make heads or tails of.  If we consider the 2 dimensional eigenvalue problem more generally, some simplifications for this problem can be made first.  With
-
+%
 \begin{equation}\label{eqn:problemSet4Problem2:920}
 M =
 \begin{bmatrix}
@@ -387,7 +387,7 @@ C & D
 \end{equation}
 
 our characteristic equation, again the \(\Det M = 1\) constraint for this problem where all the propagation is free
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:940}
 0
 = (A - \lambda)(D - \lambda) - B C
@@ -397,14 +397,14 @@ our characteristic equation, again the \(\Det M = 1\) constraint for this proble
 \end{dmath}
 
 This gives us
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:960}
 \lambda =
 \frac{\tr M}{2} \pm \sqrt{ \left(\frac{\tr M}{2}\right)^2 - 1 }.
 \end{dmath}
 
 Our stability criteria is
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:980}
 \Abs{ \frac{\tr M}{2} } < 1,
 \end{dmath}
@@ -415,14 +415,14 @@ or
 \end{equation}
 
 This inequality can be first shifted by 1 to put it in the \([0,2]\) range, then divided through by 2 to put it in the \([0, 1]\) range desired, so that we have stable beam trajectories when
-
+%
 \begin{equation}\label{eqn:problemSet4Problem2:1020}
 %0 < \frac{\tr M}{2} + 1 < 2
 0 < \frac{\tr M + 2 }{4} < 1.
 \end{equation}
 
 Now lets apply this to our ABCD matrix
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:1040}
 \frac{\tr M + 2 }{4}
 =
@@ -463,7 +463,7 @@ This gives us the desired stability constraint
 \index{Gaussian beam stability}
 
 This question was posed in terms of Gaussian beams, which transform according to the M\"obius transformation, whereas we've considered only ray transformations.  We can relate the two considering the transformation of the waist at the \(z = 0\) point in the center of the cavity.  Recall that we have
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:1180}
 \Imag\left( \inv{q} \right)
 = \Imag \left( \inv{z - i z_0} \right)
@@ -471,13 +471,13 @@ This question was posed in terms of Gaussian beams, which transform according to
 \end{dmath}
 
 In particular at \(z = 0\), this is
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:1200}
 \inv{z_0} = \frac{\lambda}{\pi w^2(0)}
 \end{dmath}
 
 Now let's look at the M\"obius transformation at the pinch of the waist (\(z = 0\))
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:1220}
 \inv{q'(0)}
 = \frac{C q(0) + D}{A q(0) + B}
@@ -492,7 +492,7 @@ A^2 z_0^2 + B^2
 \end{dmath}
 
 From this we have
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:1240}
 \Imag\left(
 \inv{q'(0)}
@@ -510,7 +510,7 @@ A^2 z_0^2 + B^2
 \end{dmath}
 
 Comparing this to \eqnref{eqn:problemSet4Problem2:1200} we see that our waist at \(z = 0\) transforms as
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem2:1260}
 \frac
 {\pi (w'(0))^2}

@@ -22,7 +22,7 @@ In what situations is the spectral width a more severe problem for visibility th
 \paragraph{Part \ref{modernOptics:problemSet2:3a}.  }
 
 From the class notes (page 7, 11, 12) we have for the mutual coherence
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:10}
 \Gamma_{12}
 =
@@ -32,7 +32,7 @@ e^{ i \Bk_{\mathrm{av}} \cdot \Delta \Br }
 \end{equation}
 
 where
-
+%
 \begin{subequations}
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:30}
 \Bk_s = k \frac{\Br_s}{r_{\mathrm{av}}}
@@ -47,7 +47,7 @@ where
 
 Let's write for the disk radius \(R\), distance from the disk \(D\), separation of the observation points \(d\).  We'll place the observation points in the plane of the disk, symmetrically separated around the normal to the disk from the center
 setup our coordinates as in \cref{fig:modernOpticsProblemSet2Problem3:modernOpticsProblemSet2Problem3Fig1}
-
+%
 \begin{subequations}
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:90}
 \Br_{\mathrm{av}} = D \zcap
@@ -62,11 +62,11 @@ setup our coordinates as in \cref{fig:modernOpticsProblemSet2Problem3:modernOpti
 \Delta \Br = (d) \xcap
 \end{equation}
 \end{subequations}
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem3Fig1}{Geometry for solar disk interference problem}{fig:modernOpticsProblemSet2Problem3:modernOpticsProblemSet2Problem3Fig1}{0.3}
 
 We have
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:170}
 \rcap_{\mathrm{av}} \cdot \Delta \Br
 = \zcap \cdot (d) \xcap
@@ -74,7 +74,7 @@ We have
 \end{equation}
 
 so our mutual coherence is reduced to
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:190}
 \Gamma_{12}
 =
@@ -84,13 +84,13 @@ so our mutual coherence is reduced to
 \end{equation}
 
 Using an approximation of constant intensity \(I(\Bk_s) = I_0\) over the disk, and employing radial coordinates
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:210}
 \Br_s = \rho (\cos\theta, \sin\theta)
 \end{equation}
 
 we have
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:230}
 \Gamma_{12}
 =
@@ -101,7 +101,7 @@ e^{-i k \frac{d}{D} \rho \cos\theta }.
 \end{equation}
 
 With a substitution \(a = -k d/D\), and some supplication to Mathematica (\nbref{modernOpticsProblemSet2work.cdf}), we find for the integral
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:250}
 \int_0^{2 \pi} d\theta
 \int_0^R \rho d\rho
@@ -111,7 +111,7 @@ e^{i a \rho \cos\theta }
 \end{equation}
 
 so that the mutual coherence is
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:270}
 \Gamma_{12}
 =
@@ -123,7 +123,7 @@ so that the mutual coherence is
 \end{equation}
 
 We note that from the point(s) of observation, the observed angle of the disk is
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:290}
 \theta_s \sim \frac{2 R}{D},
 \end{equation}
@@ -134,7 +134,7 @@ k = \frac{2 \pi}{\lambda},
 \end{equation}
 
 so our Bessel argument can be rewritten as
-
+%
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:330}
 \frac{k d R}{D} = \frac{2 \pi}{\lambda} d \frac{\theta_s}{2} = \frac{\pi d \theta_s}{\lambda}
 \end{equation}
@@ -157,7 +157,7 @@ I_1 = I_2 = \evalbar{\Gamma_{12}}{d = 0} = I_0 \frac{\pi \theta_s^2}{ 2 \lambda^
 \end{equation}
 
 we have
-
+%
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:410}
 \gamma_{12}
 = \frac{\Gamma_{12}}{\sqrt{I_1^2}}
@@ -167,7 +167,7 @@ we have
 \end{dmath}
 
 To calculate the total intensity we have
-
+%
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:430}
 I
 = 2 I_1 + 2 \Real \Gamma_{12}
@@ -185,7 +185,7 @@ I_{\mathrm{min}} = 2 I_1 ( 1 - \Abs{\gamma_{12}} )
 \end{subequations}
 
 So that for the visibility
-
+%
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:490}
 \calV = \frac
 {
@@ -204,11 +204,11 @@ I_{\mathrm{max}}
 \end{dmath}
 
 The Bessel function ratio that we have in the absolute values here is plotted in \cref{fig:modernOpticsProblemSet2Problem3:modernOpticsProblemSet2Problem3Fig3}.
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem3Fig3}{Sinc like first order Bessel function}{fig:modernOpticsProblemSet2Problem3:modernOpticsProblemSet2Problem3Fig3}{0.3}
 
 We find numerically that \(J_1(x)/x = 0.25\) occurs for \(x = 2.22\), so 50 \% visibility for the 500 nm average wavelength at 0.5 degrees occurs when
-
+%
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:510}
 d
 = \frac{2.22 \lambda}{\pi \theta_s}
@@ -229,7 +229,7 @@ d
 \fxwarning{rework adding numerical evaluation of finite coherence time}{Unsuprisingly, I lost marks on this part of my solution.  A numeric result was desired, but I think I should have approached this much differently.}
 
 Suppose that we have two sources of identical amplitude, each separated from the average frequency by half the spectral width
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:530}
 \Psi_1 = \sqrt{I_0} e^{i (\overbar{\omega} - \Delta \omega) t}
@@ -240,7 +240,7 @@ Suppose that we have two sources of identical amplitude, each separated from the
 \end{subequations}
 
 To compute the correlation of these we compute
-
+%
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:570}
 \Psi_1(t) \Psi_2^\conj(t + \tau)
 =
@@ -253,7 +253,7 @@ I_0 e^{ -2 i \Delta \omega t - i \overbar{\omega} \tau},
 \end{dmath}
 
 so that
-
+%
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:590}
 \gamma
 = \expectation{ e^{ -2 i \Delta \omega t - i \overbar{\omega} \tau} }
@@ -271,7 +271,7 @@ e^{- i \overbar{\omega} \tau } \sinc( 2 \Delta \omega \tau_a )
 \end{dmath}
 
 Our intensity is
-
+%
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:610}
 I
 = 2 I_0 + 2 I_0 \Real \gamma
@@ -279,7 +279,7 @@ I
 \end{dmath}
 
 As the spectral width increases for a fixed period of observation \(\tau_a\) our intensity dies off from its maximum to the average \(2 I_0\).  This is sketched roughly in \cref{fig:modernOpticsProblemSet2Problem3:modernOpticsProblemSet2Problem3Fig4}
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem3Fig4}{Possible fringes from two sources at the boundaries of the spectral width}{fig:modernOpticsProblemSet2Problem3:modernOpticsProblemSet2Problem3Fig4}{0.2}
 
 %FIXME: why a dependence on the observation time \(\tau_a\)?  Sinc will flatten with \(\tau_a \rightarrow \infty\).
@@ -289,7 +289,7 @@ As the spectral width increases for a fixed period of observation \(\tau_a\) our
 \fxwarning{rework, also need numeric result for this part of the problem}{Also lost marks for this response.  Numeric result was desired (which I knew, but was rushing by this point)}
 
 With a coherence time inversely proportional to the frequency
-
+%
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:630}
 t_c \sim \inv{\Delta \omega} = \frac{\Hbar}{\kB T},
 \end{dmath}

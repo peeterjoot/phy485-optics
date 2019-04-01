@@ -17,7 +17,7 @@ In \citep{hecht1998hecht} we have a derivation of the Fresnel equations for the 
 \section{Setup}
 
 The task at hand is to find evaluate the boundary value constraints.  Following the interface plane conventions of \citep{griffiths1999introduction}, and his notation that is
-
+%
 \begin{subequations}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:10}
 \epsilon_1 ( \BE_i + \BE_r )_z = \epsilon_2 ( \BE_t )_z
@@ -36,7 +36,7 @@ The task at hand is to find evaluate the boundary value constraints.  Following 
 I'll work here with a phasor representation directly and not bother with taking real parts, or using tilde notation to mark the vectors as complex.
 
 Our complex magnetic field phasors are related to the electric fields with
-
+%
 \begin{equation}\label{eqn:fresnelAlternatePolarization:90}
 \BB = \inv{v} \kcap \cross \BE.
 \end{equation}
@@ -44,13 +44,13 @@ Our complex magnetic field phasors are related to the electric fields with
 Referring to \cref{fig:fresnelAlternatePolarization:reflectionAtInterfaceLabelledFig2} shows the geometrical task to tackle, since we've got to express all the various unit vectors algebraically.  I'll use Geometric Algebra here to do that for its compact expression of rotations.  With
 
 \pdfTexFigure{../figures/phy485-optics/reflectionAtInterfaceLabelledFig2.pdf_tex}{Reflection and transmission of light at an interface}{fig:fresnelAlternatePolarization:reflectionAtInterfaceLabelledFig2}{0.8}
-
+%
 \begin{equation}\label{eqn:fresnelAlternatePolarization:110}
 j = \Be_3 \Be_1,
 \end{equation}
 
 we can express each of the \(k\) vector directions by inspection.  Those are
-
+%
 \begin{subequations}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:130}
 \kcap_i = \Be_3 e^{j \theta_i} = \Be_3 \cos\theta_i + \Be_1 \sin\theta_i
@@ -88,7 +88,7 @@ Similarly, the perpendiculars \(\mcap_p = \Be_2 \cross \kcap_p\) are
 \end{subequations}
 
 In \citep{griffiths1999introduction} problem 9.14 we had to show that the polarization angles for normal incident (\(\BE \parallel \Be_1\)) must be the same due to the boundary constraints.  Can we also tackle that problem for both this more general angle of incidence and a general polarization?  Let's try so, allowing temporarily for different polarizations of the reflected and transmitted components of the light, calling those polarization angles \(\phi_i\), \(\phi_r\), and \(\phi_t\) respectively.  Let's set the \(\phi_i = 0\) polarization aligned such that \(\BE_i\), \(\BB_i\) are aligned with the \(\Be_2\) and \(-\mcap_i\) directions respectively, so that the generally polarized phasors are
-
+%
 \begin{equation}\label{eqn:fresnelAlternatePolarization:250}
 \begin{bmatrix}
 \BE_p \\
@@ -125,7 +125,7 @@ We are now set to at least express our boundary value constraints
 Let's try this in a couple of steps.  First with polarization angles set so that one of the fields lies in the plane of the interface (with both variations), and then attempt the general case, first posing the problem in the traditional way to see what equations fall out, and then using superposition.
 
 Before doing so, let's introduce a bit of notation to be used throughout.  When we wish to refer to all the fields or angles, for example, \(\BE_i, \BE_r, \BE_t\) then we'll write \(\BE_p\) where \(p \in \{i, r, t\}\).  Similarly, to refer to just the incident and transmitted components (or angles) we'll use \(\BE_q\) where \(q \in \{i, t\}\).  Following \citep{griffiths1999introduction} we'll also write
-
+%
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:750a}
 \boxedEquation{eqn:fresnelAlternatePolarization:750}{
@@ -140,7 +140,7 @@ Before doing so, let's introduce a bit of notation to be used throughout.  When 
 
 \makeanswer{fresnelAlternatePolarization:pr1}{
 For the \(\BE_p \parallel \Be_2\) polarization (\(\phi_i = \phi_r = \phi_t\)) our phasors are
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:390}
 \BE_p = \Be_2 E_p
@@ -202,7 +202,7 @@ E_i + E_r = E_t
 \end{subequations}
 
 With \(\theta_i = \theta_r\) and \(\sin\theta_t/\sin\theta_i = n_1/n_2\) \eqnref{eqn:fresnelAlternatePolarization:330c} becomes
-
+%
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:430}
 E_i + E_r
 = \frac{n_1 v_1}{n_2 v_2} E_t
@@ -222,7 +222,7 @@ E_i - E_r = \frac{\mu_1 v_1}{\mu_2 v_2} \frac{\cos{ \theta_t}}{\cos\theta_i} E_t
 \end{subequations}
 
 Adding and subtracting we have
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:490}
 2 E_i = \left( 1 + \frac{\mu_1 v_1}{\mu_2 v_2} \frac{\cos{ \theta_t}}{\cos\theta_i} \right) E_t
@@ -233,7 +233,7 @@ Adding and subtracting we have
 \end{subequations}
 
 with a final rearrangement to yield
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:530}
 \frac{E_t}{E_i}
@@ -260,7 +260,7 @@ with a final rearrangement to yield
 \end{subequations}
 
 The ratio of field strengths for \(\BE\) parallel to the interface, using notation \eqnref{eqn:fresnelAlternatePolarization:750a}, is
-
+%
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:530b}
 \boxedEquation{eqn:fresnelAlternatePolarization:530a}{
@@ -293,7 +293,7 @@ The ratio of field strengths for \(\BE\) parallel to the interface, using notati
 \makeanswer{fresnelAlternatePolarization:pr2}{
 
 As a second sanity check let's rotate our field polarizations by applying a rotation \(e^{\Be_2 \mcap_p \pi/2} = \Be_2 \mcap_p\) (\(\phi_i = \phi_r = \phi_t = -\pi/2\)) so that
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:570}
 -\mcap_p \rightarrow -\mcap_p \Be_2 \mcap_p = \Be_2
@@ -304,7 +304,7 @@ As a second sanity check let's rotate our field polarizations by applying a rota
 \end{subequations}
 
 This time we have \(\BE_p \parallel \mcap_p\) and \(\BB_p \parallel \Be_2\).  Our boundary value equations become
-
+%
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:610}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:630}
@@ -322,7 +322,7 @@ This time we have \(\BE_p \parallel \mcap_p\) and \(\BB_p \parallel \Be_2\).  Ou
 \end{subequations}
 
 This second \eqnref{eqn:fresnelAlternatePolarization:650} is a \(0 = 0\) identity, and the remaining after \(\mcap_p\) substitution are
-
+%
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:610a}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:630a}
@@ -337,7 +337,7 @@ This second \eqnref{eqn:fresnelAlternatePolarization:650} is a \(0 = 0\) identit
 \end{subequations}
 
 Simplifying we have
-
+%
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:610b}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:630b}
@@ -352,7 +352,7 @@ E_i  + E_r = \frac{\mu_1 v_1} {\mu_2 v_2} E_t
 \end{subequations}
 
 Noting that \(\epsilon_p v_p = 1/(v_p \mu_p)\) we find
-
+%
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:730}
 \frac{\epsilon_2 \sin\theta_t}{\epsilon_1 \sin\theta_i}
 =
@@ -364,7 +364,7 @@ Noting that \(\epsilon_p v_p = 1/(v_p \mu_p)\) we find
 \end{dmath}
 
 showing that \eqnref{eqn:fresnelAlternatePolarization:630b} and \eqnref{eqn:fresnelAlternatePolarization:690b} are dependent.  We are left with the system
-
+%
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:610d}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:670d}
@@ -394,7 +394,7 @@ with solution
 \makeanswer{fresnelAlternatePolarization:pr3}{
 
 Substituting our \(\mcap_p\) vector expressions into the boundary value constraints we have
-
+%
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:830}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:850}
@@ -412,7 +412,7 @@ Substituting our \(\mcap_p\) vector expressions into the boundary value constrai
 \end{subequations}
 
 We want to expand some intermediate multivector products
-
+%
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:930}
 \Be_{32} e^{\mcap_q \Be_2 \phi_q}
 =
@@ -428,7 +428,7 @@ We want to expand some intermediate multivector products
 \Be_{32} \cos \phi_q - \Be_{31} \cos\theta_q \sin\phi_q
 + \sin\theta_q \sin{\phi_q}
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:930b}
 \Be_{32} e^{\mcap_r \Be_2 \phi_r}
 =
@@ -444,7 +444,7 @@ We want to expand some intermediate multivector products
 \Be_{32} \cos \phi_r + \Be_{31} \cos\theta_r \sin{\phi_r}
 + \sin \theta_r \sin{\phi_r}
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:950}
 j e^{j \theta_q} e^{\mcap_q \Be_2 \phi_q}
 =
@@ -470,7 +470,7 @@ j e^{j \theta_q} \cos \phi_q
 + \Be_{32} \sin{\phi_q}
 - \sin{ \theta_q} \cos \phi_q
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:970}
 -j e^{-j \theta_r} e^{\mcap_r \Be_2 \phi_r}
 =
@@ -495,7 +495,7 @@ j e^{j \theta_q} \cos \phi_q
 \end{dmath}
 
 Our boundary value conditions are then
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:990}
 \epsilon_1 \left(
@@ -567,7 +567,7 @@ E_r
 E_t
 \cos \phi_t
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1030b}
 -E_i
 \cos\theta_i \sin\phi_i
@@ -592,7 +592,7 @@ E_r
 E_t
  \cos { \theta_t} \cos \phi_t
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1050b}
 \inv{\mu_1 v_1}
 \left(
@@ -624,7 +624,7 @@ E_r
 E_t
 \cos \phi_t
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1090}
 -E_i
 \sin\phi_i
@@ -646,7 +646,7 @@ E_r
 E_t
 \cos \phi_t
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1130}
 E_i
 \sin{\phi_i}
@@ -681,7 +681,7 @@ For a polarization of \(\phi = 0\) and \(\phi = \pi/2\) respectively, we found i
 %and
 %\ref{fresnelAlternatePolarization:pr2-Answer}
 %, or from \eqnref{eqn:fresnelAlternatePolarization:1070a} we have
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1150}
 \frac{E_{r \parallel}}{E_{i \parallel}} = \frac{1 - \alpha \beta}{1 + \alpha \beta}
@@ -704,7 +704,7 @@ We can use these results to consider a polarization of \(\phi < \pi/2\) as illus
 \pdfTexFigure{../figures/phy485-optics/fresnelAlternatePolarizationFig2.pdf_tex}{Polarization of incident field to be considered}{fig:fresnelAlternatePolarization:fresnelAlternatePolarizationFig2}{0.8}
 
 Our incident, reflected, and transmitted fields are
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1230}
 \BE_i = E_{i} \Be_2 e^{\Be_2 \mcap_i \phi}
@@ -729,7 +729,7 @@ E_{i \parallel}
 
 
 However, \(E_{i \parallel} = E_i \cos \phi\) and \(E_{i \perp} = E_i \sin\phi\) leaving us with
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1290}
 \BE_i = E_{i} \left( \Be_2 \cos\phi + \Be_1 e^{j \theta_i} \sin\phi \right)
@@ -772,7 +772,7 @@ We find that the reflected and transmitted polarization angles are respectively
 \end{subequations}
 
 where the associated magnitudes are
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1310c}
 \frac{E_r}{E_i}

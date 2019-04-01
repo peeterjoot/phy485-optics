@@ -40,7 +40,7 @@ The geometry of the waist is determined from the imaginary portion of the expone
 %\end{dmath}
 
 We need to find break down \(q''\) into real (the transformed radius of curvature) and imaginary parts, as in
-
+%
 \begin{equation}\label{eqn:problemSet4Problem1:340}
 \inv{q''} = \inv{R''} + \frac{i \lambda}{\pi \left(w''(z) \right)^2 }
 =
@@ -48,19 +48,19 @@ We need to find break down \(q''\) into real (the transformed radius of curvatur
 \end{equation}
 
 We saw in \partref{modernOptics:problemSet4:1b} (done in opposite order) that we had
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:360}
 q' = \frac{q f}{f - q}
 \end{dmath}
 
 Picking a fixed value of \(z\) (say \(z = 0\)), that is
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:380}
 q' = \frac{- i z_0 f}{ f - (-i z_0)} = \frac{-i z_0 f}{f + i z_0},
 \end{dmath}
 
 so that our (inverse) post propagation transformation of \(q\) is
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:400}
 \inv{q''} =
 \frac{1}{
@@ -96,13 +96,13 @@ z_0^2 ( l - f )^2 + l^2 f^2
 \end{dmath}
 
 If we consider this far enough away that the beam is planar, with an infinite radius of curvature, then we require the numerator of the \(1/R''\) expression above to be zero.  That is
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:420}
 l ( f^2 + z_0^2 ) = z_0^2 f,
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:440}
 l
 = \frac{f}{1 + \frac{f^2}{z_0^2} }.
@@ -122,7 +122,7 @@ We have \(l \approx f\) when
 }
 
 Observe that when this condition is met, our radius of curvature is no longer infinite, and we can't consider the beam to be plane wave like.  That radius of curvature is instead, exactly the focal length
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:500}
 \inv{R''} = \frac{l f^2}{ l^2 f^2} = \inv{f}.
 \end{dmath}
@@ -132,7 +132,7 @@ Observe that when this condition is met, our radius of curvature is no longer in
 \makeSubAnswer{The waist}{modernOptics:problemSet4:1b}
 
 Observe that the we can write the waist function as a function of \(q\)
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:20}
 w^2(z)
 = w_0^2 \left( 1 + \frac{z^2}{z_0^2} \right)
@@ -145,7 +145,7 @@ Also observe that \(w(0) = w(0)\), so if we are looking for the beam waist after
 \paragraph{After just the lens}
 
 After transmission through the lens, with ABCD matrix
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:40}
 M =
 \begin{bmatrix}
@@ -153,14 +153,14 @@ M =
 -1/f & 1
 \end{bmatrix}
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:60}
 q' =
 \frac{q + 0}{-q/f + 1},
 \end{dmath}
 
 or
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:80}
 \inv{q'}
 =
@@ -172,7 +172,7 @@ or
 \end{dmath}
 
 At \(z = 0\) we have
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:100}
 \Abs{\inv{q'}}^2
 = \Abs{ \inv{-i z_0} - \inv{f} }
@@ -180,7 +180,7 @@ At \(z = 0\) we have
 \end{dmath}
 
 So that
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:120}
 w^2(0)
 \rightarrow
@@ -196,7 +196,7 @@ f^2 + z_0^2
 \end{dmath}
 
 We see that the beam waist after transmission through the lens is reduced by a factor of
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:140}
 \frac
 {w_{02}}
@@ -208,7 +208,7 @@ We see that the beam waist after transmission through the lens is reduced by a f
 \paragraph{After the lens and the free propagation}
 
 With both transmission through the air and the lens, where our free propagation matrix is
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:160}
 M_2 =
 \begin{bmatrix}
@@ -216,7 +216,7 @@ M_2 =
 0 & 1
 \end{bmatrix}
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:180}
 q
 \rightarrow \frac{q' + l}{0 q' + 1}
@@ -225,7 +225,7 @@ q
 \end{dmath}
 
 so that the waist function is transformed as
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:200}
 w^2(z) \rightarrow \frac{w_{01}^2}{z_0^2} \Abs{
 \frac{q}{-q/f + 1} + l
@@ -260,7 +260,7 @@ This gives us
 \paragraph{Grading note: -2} ``I'm confused how can transmission through air change the waist?''  See in the posted solution that the waist is calculated as the point where \(\Real(1/q) = 0\).  That choice isn't obvious to me.  I think some more thought about the geometry of these solutions is required to really get this.
 
 When \(l = f\) the square root simplifies nicely, leaving
-
+%
 \begin{dmath}\label{eqn:problemSet4Problem1:260}
 \frac{w_{03}^2}{w_{01}^2}
 = \frac{

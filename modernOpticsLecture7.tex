@@ -21,13 +21,13 @@
 
 Given a number of sources as illustrated in \cref{fig:modernOpticsLecture7:modernOpticsLecture7Fig1}, we can have interference (fringes, ... due to motion or polarization.  In general we can consider these multiple sources as a sum over all the electric fields
 \imageFigure{../figures/phy485-optics/modernOpticsLecture7Fig1}{Multiple sources potentially interfering}{fig:modernOpticsLecture7:modernOpticsLecture7Fig1}{0.2}
-
+%
 \begin{equation}\label{eqn:modernOpticsLecture7:10}
 \BE = \BE_1 + \BE_2 + \BE_3 + \cdots
 \end{equation}
 
 While there are some experiments that are sensitive to the actual fields, we will typically not care about those specifically, but instead will care about Intensity which has the form
-
+%
 \begin{equation}\label{eqn:modernOpticsLecture7:30}
 I = (\text{const}) \expectation{ \Abs{\BE}^2 }
 \end{equation}
@@ -44,13 +44,13 @@ Consider two sources
 Here \(\Bepsilon_i\) is a polarization constant, which we allow to be complex.  The values \(E_i\) are the amplitudes which we constrain to have real values here, and \(\phi_i\) is the (real) phase angle.
 
 We observe
-
+%
 \begin{equation}\label{eqn:modernOpticsLecture7:70}
 I = \expectation{ \Abs{\BE}^2 }
 \end{equation}
 
 where
-
+%
 \begin{equation}\label{eqn:modernOpticsLecture7:90}
 \expectation{ f(t) } = \lim_{T \rightarrow \infty } \inv{T} \int_0^T dt' f(t').
 \end{equation}
@@ -59,7 +59,7 @@ where
 This time averaging method makes sense for optics where we may have response times \( T \gtrsim 10^{-9} \mbox{s}\), so that \(w T \gg 1\) (\textunderline{slow!})
 
 Forming the magnitude of the field square we have
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture7:110}
 \expectation{ \Abs{\BE}^2 }
 =
@@ -84,7 +84,7 @@ I_1 + I_2 + 2 \Real\left(  \expectation{ \BE_1 \cdot \BE_2^\conj} \right).
 \end{dmath}
 
 Consider the cross term.  We have
-
+%
 \begin{equation}\label{eqn:modernOpticsLecture7:130}
 \BE_1 \cdot \BE_2^\conj
 = \Bepsilon_1 \cdot \Bepsilon_2^\conj E_1 E_2 e^{i \phi_1 - i \phi_2 }
@@ -142,7 +142,7 @@ Here \(\sqrt{I_2(\Br)}\) are the amplitudes (real).
 
 \paragraph{Interference (scalar or identical polarizations)}
 \index{interference!identical polarizations}
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture7:230}
 I
 = \Abs{\Psi_1 + \Psi_2}^2
@@ -160,7 +160,7 @@ Here we've made use of the fact that \(\Real(.)\) and \(\expectation{.}\) are bo
 
 \paragraph{Example: Diffraction}
 \index{diffraction}
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture7:250}
 \Psi = \sum_{\text{paths}} \Psi_i \rightarrow \int \sqrt{I_i} e^{i \phi_i} = (\text{prefactor}) \iint_{\text{aperture}} e^{i k f} da'
 \end{dmath}
@@ -176,19 +176,19 @@ We had
 \end{align}
 
 This was monochromatic light (\(\omega\) was the same).  In this diffraction case we had
-
+%
 \begin{equation}\label{eqn:modernOpticsLecture7:290}
 \phi_1 -\phi_2 = (\Bk_1 - \Bk_2) \cdot \Br + \Delta \theta.
 \end{equation}
 
 We can figure out from the geometry, and using the far-field limit (\(x \gg b\)) that we have a time independent phase difference
-
+%
 \begin{equation}\label{eqn:modernOpticsLecture7:310}
 (\Bk_1 - \Bk_2) \cdot \Br = -2 \pi \frac{b y}{r \lambda}
 \end{equation}
 
 What is our intensity?
-
+%
 \begin{equation}\label{eqn:modernOpticsLecture7:330}
 I = I_1 + I_2 + 2 \sqrt{I_1 I_2} \cos\left( -2 \pi \frac{b}{r \lambda} y + \Delta \theta \right).
 \end{equation}
@@ -213,28 +213,28 @@ I_{\mathrm{max}}
 This is a quantity that is easy to measure in the lab.
 
 In this (diffraction) case we have
-
+%
 \begin{equation}\label{eqn:modernOpticsLecture7:370}
 \calV = 2 \frac{\sqrt{I_1 I_2}}{I_1 + I_2}
 \end{equation}
 
 We illustrate this in \cref{fig:modernOpticsLecture7:modernOpticsLecture7Fig4}, where after zoom we see the same image.  This is called Heterodyne amplification.
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsLecture7Fig4}{Heterodyne detection}{fig:modernOpticsLecture7:modernOpticsLecture7Fig4}{0.3}
 
 \index{heterodyne detection}
 \makedefinition{Heterodyne Detection}{dfn:modernOpticsLecture7:1}{
 Measure a phase of a weak beam: Interfere with a strong beam ``local oscillator'' (\(I_{\mathrm{L0}}\))!  Interference : \(2 \sqrt{I_1 I_2}\).  Even if \(I_1\) is small this interference term can be big.
 }
-
+%
 \begin{equation}\label{eqn:modernOpticsLecture7:390}
 2 \sqrt{I_p I_{\mathrm{LO}}} \gg I_p
 \end{equation}
-
+%
 \begin{equation}\label{eqn:modernOpticsLecture7:410}
 4 I_p I_{\mathrm{LO}} \gg I_p^2
 \end{equation}
-
+%
 \begin{equation}\label{eqn:modernOpticsLecture7:430}
 I_{\mathrm{LO}} \gg I_p/4
 \end{equation}

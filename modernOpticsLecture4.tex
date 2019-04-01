@@ -18,7 +18,7 @@
 \section{Context}
 
 We start the class with a green laser setup, where the light is displayed on the screen, then also after going through a single and double slit, as illustrated in \cref{fig:modernOpticsLecture4:modernOpticsLecture4Fig1}.
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsLecture4Fig1}{Laser on screen}{fig:modernOpticsLecture4:modernOpticsLecture4Fig1}{0.3}
 
 We see also that a blue laser diffracts less.  The bigger the wavelength, the harder it is to ignore.  We can consider this a breakdown of geometric optics.
@@ -27,7 +27,7 @@ We see also that a blue laser diffracts less.  The bigger the wavelength, the ha
 \index{diffraction}
 
 We'll want to consider systems of this sort (light source, object in between, goes some distance, then observed) mathematically.  We consider the geometry of \cref{fig:modernOpticsLecture4:modernOpticsLecture4Fig2} where \(\BR = \Br - \Br'\), and \(\BR_s = \Br_s - \Br'\), and \(R = \Abs{\BR}\), \(R_s = \Abs{\BR_s}\).
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsLecture4Fig2}{Diffracting object (i.e. aperture)}{fig:modernOpticsLecture4:modernOpticsLecture4Fig2}{0.3}
 
 We have two approximations to the full problem
@@ -38,7 +38,7 @@ We have two approximations to the full problem
 \end{enumerate}
 
 Why a scalar theory?  If we have a plane wave polarization
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture4:10}
 \BE(\Br, t) = \left( E_1 \xcap + E_2 \ycap \right) e^{ i \Bk \cdot \Br - i \omega t}
 \end{dmath}
@@ -56,13 +56,13 @@ We will assume no mixing, so that we can treat just one component.
 Reading: \S 8.3.1 \citep{born1980principles}, \S 9.8 \citep{jackson1975cew}.  The first goes and proves that the scalar theory is sufficient under this conditions.
 
 We'd like to solve the wave equation with these approximations.
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture4:30}
 \spacegrad^2 E = \inv{c^2} \PDSq{t}{E}
 \end{dmath}
 
 We will use a monochromatic wave so that we can write the electric field magnitude as a vector function times a time phase term
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture4:50}
 E = \Psi(\Br) e^{-i \omega t}
 \end{dmath}
@@ -83,20 +83,20 @@ It turns out that the solution to this equation is generally written out as the 
 \end{dmath}
 
 Here \(\ncap\) is the unit normal perpendicular to the surface, and the Green function of the Helmholtz equation is
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture4:110}
 G(\Br, \Br') = -\frac{e^{i k R}}{4 \pi R} = -\frac{e^{i k \Abs{\Br - \Br'}}}{4 \pi \Abs{\Br - \Br'}},
 \end{dmath}
 
 %where \(R = \Abs{\Br - \Br'}\).
 It is somewhat messy, but relatively straightforward to demonstrate \citep{phy456:helmoltzGreens} that this Green's function works to solve the forced Helmoltz equation
-
+%
 \begin{equation}\label{eqn:modernOpticsLecture4:helmholtzGreens:10}
 \left( \spacegrad^2 + \Bk^2\right) \Psi_\Bk(\Br) = s(\Br),
 \end{equation}
 
 with solution
-
+%
 \begin{equation}\label{eqn:modernOpticsLecture4:helmholtzGreens:50}
 \Psi_\Bk(\Br) = \int G(\Abs{\Br - \Br'}) s(\Br') d^3 \Br'.
 \end{equation}
@@ -104,17 +104,17 @@ with solution
 However, it is far from obvious how to apply this to the homogeneous Helmoltz equation.  The tricks involved (application of Green's theorem to a spherical volume with the center deleted) can be found in \S A.2, \S 10.4 of \citep{hecht1998hecht}, and also in \S 5.2 of \citep{fowles1989introduction}.  The end result of that trickery is called the Kirchhoff Integral Theorem.
 
 Is this Green's function reasonable seeming?  As illustrated in \cref{fig:modernOpticsLecture4:modernOpticsLecture4Fig3}) this isn't an entirely unsurprising seeming Green's function for this problem.  We have the \(e^{i k R}\) type of phase factor that we expected (and guessed in the geometric optics treatment, and also have the \(1/R\) factor that we need to retain power at a distance \(R\).
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsLecture4Fig3}{Wave function at the aperture}{fig:modernOpticsLecture4:modernOpticsLecture4Fig3}{0.2}
 
 Also note that the primed gradient is taken with respect to the coordinates of \(\Br'\)
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture4:130}
 \spacegrad' = \Be_m \PD{{x'}_m}{}
 \end{dmath}
 
 If we take the gradient of the Green's function we find
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture4:150}
 \spacegrad \left(
 \frac{ e^{i k r} }{r}
@@ -133,7 +133,7 @@ da'.
 }
 
 Here \(\BR = \Br - \Br'\) and \(da' = dx' dy'\) or \(\rho' d\rho' d\theta'\).  We are going to neglect the surface at \(\infty\) as illustrated in \cref{fig:modernOpticsLecture4:modernOpticsLecture4Fig4}.
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsLecture4Fig4}{Neglecting the surface at infinity}{fig:modernOpticsLecture4:modernOpticsLecture4Fig4}{0.3}
 
 This neglect is justified for example in Jackson, cited above.
@@ -142,17 +142,17 @@ This neglect is justified for example in Jackson, cited above.
 \index{pinhole}
 
 With placement of our origin at the pinhole, so that \(\Br' = 0\), \(\BR = \Br\), \(\BR_s = \Br_s\), we want to consider the geometry of \cref{fig:modernOpticsLecture4:modernOpticsLecture4Fig5}.
-
+%
 \imageFigure{../figures/phy485-optics/modernOpticsLecture4Fig5}{Source, aperture and observation point}{fig:modernOpticsLecture4:modernOpticsLecture4Fig5}{0.3}
 
 Our spherical wave function at the aperture is
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture4:190}
 \Psi(\Br') = A \frac{e^{i k R_s}}{R_s}
 \end{dmath}
 
 so that
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture4:210}
 \spacegrad' \Psi
 = - A \frac{\Br_s - \Br'}{\Abs{\Br_s - \Br'}}
@@ -163,7 +163,7 @@ so that
 \end{dmath}
 
 Our resulting wave function is then
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture4:230}
 \Psi(\Br) = - \frac{A}{4 \pi} \iint da' \frac{e^{i k ( R + r_s)}}{R r_s}
 \left(
@@ -178,25 +178,25 @@ Our resulting wave function is then
 Now, in all these \(ik - 1/r_s\) we have \(k\) of order \(1/\lambda\) and \(1/r_s\) is of order \(1/r\) or \(1/r_s\).
 
 Recall from geometric optics that we used
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture4:250}
 \spacegrad \left( \BE_0 e^{i\phi(\Br)} \right) \approx i (\BE_0 \cdot \spacegrad \phi ) e^{i \phi(\Br)},
 \end{dmath}
 
 With an assumption
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture4:270}
 \lambda \ll r, r_s,
 \end{dmath}
 
 and
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture4:290}
 \lambda \ll d \ll r, r_s,
 \end{dmath}
 
 where \(d\) is the ``typical object size'', so that we have
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture4:310}
 \Psi(\Br) = - \frac{A}{4 \pi} \iint da' \frac{e^{i k ( R + r_s)}}{R r_s} \left(
 \ncap \cdot \ncap \left( i k - \cancel{\inv{r_s}} \right) + \ncap \cdot \rcap
@@ -212,7 +212,7 @@ or with \(\theta\) as illustrated,
 }
 
 where
-
+%
 \begin{dmath}\label{eqn:modernOpticsLecture4:350}
 k(\theta) = \inv{2} \left( 1 + \cos \theta \right),
 \end{dmath}
