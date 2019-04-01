@@ -17,6 +17,10 @@ FIGURES := ../figures/phy485-optics
 SOURCE_DIRS += appendix
 SOURCE_DIRS += $(FIGURES)
 
+#EPS_FILES := $(wildcard $(FIGURES)/*.eps)
+#PDFS_FROM_EPS := $(subst eps,pdf,$(EPS_FILES))
+#THISBOOK_DEPS += $(PDFS_FROM_EPS)
+
 GENERATED_SOURCES += mathematica.tex
 
 include ../latex/make.rules
