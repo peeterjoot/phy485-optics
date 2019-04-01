@@ -27,10 +27,10 @@ We are going to look at the (Fraunhofer) far field of a diffraction grating with
 Our geometry is
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:640}
-\BR + \Br' = \Br
+\BR + \Br' = \Br.
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture15:740}
-\BR_s + \Br' = \Br_s
+\BR_s + \Br' = \Br_s.
 \end{dmath}
 %
 for which our path length from \(\Br'\) to the observation point is
@@ -55,7 +55,7 @@ Similarly
 k\Abs{\BR_s}
 \sim k r_s - k \rcap \cdot \Br'
 = k r_s - \Bk \cdot \Br'
-= k r_s - k \sin\theta_s y'
+= k r_s - k \sin\theta_s y'.
 \end{dmath}
 %
 With
@@ -72,12 +72,12 @@ k_{y,s} \equiv \frac{2 \pi}{\lambda} \sin\theta_s,
 our diffraction integral, in one dimension takes the form
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:700}
-\Psi(\Br) \sim \int e^{i (k_{y,s} - k_{y}) y' } dy'
+\Psi(\Br) \sim \int e^{i (k_{y,s} - k_{y}) y' } dy'.
 \end{dmath}
 %
 or
 \begin{dmath}\label{eqn:modernOpticsLecture15:820}
-\Psi(\Br) \sim \int e^{i \frac{2 \pi}{\lambda} (\sin\theta_s - \sin\theta) y' } dy'
+\Psi(\Br) \sim \int e^{i \frac{2 \pi}{\lambda} (\sin\theta_s - \sin\theta) y' } dy'.
 \end{dmath}
 %
 We'll work with \(\theta_s = 0\), normally incident plane waves, for which the diffraction integral reduces to just
@@ -93,13 +93,13 @@ We will use the convolution theorem \ref{pr:convolution:1}, constructing the com
 \imageFigure{../figures/phy485-optics/modernOpticsLecture15Fig2}{Convolution of box with comb.}{fig:modernOpticsLecture15:modernOpticsLecture15Fig2}{0.2}
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:20}
-f(y) = \int dy' g(y') h(y - y') = g(y) \conj h(y)
+f(y) = \int dy' g(y') h(y - y') = g(y) \conj h(y).
 \end{dmath}
 %
 Consider the convolution with the delta function comb
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:40}
-h(y) = \sum_{n=0}^{N-1} \delta (y - n a)
+h(y) = \sum_{n=0}^{N-1} \delta (y - n a).
 \end{dmath}
 %
 So that the convolution is
@@ -113,7 +113,7 @@ f(y)
 \delta(y - y' - n a)
 =
 \sum_{n = 0}^{N-1}
-g(y - n a)
+g(y - n a).
 \end{dmath}
 %
 Convolution theorem
@@ -145,7 +145,7 @@ e^{i k_y b/2}
 2 (i k_y) /2
 }
 =
-\frac{\sin(b k_y/2)}{b k_y/2}
+\frac{\sin(b k_y/2)}{b k_y/2}.
 \end{dmath}
 %
 as illustrated in \cref{fig:lecture15figuresSincCrossings:lecture15figuresSincCrossingsFig7}.
@@ -174,24 +174,24 @@ e^{i k_y y}
 e^{i k_y n a}
 =
 \sum_{n = 0}^{N-1}
-\left( e^{i k_y a}  \right)^n
+\left( e^{i k_y a}  \right)^n.
 \end{dmath}
 %
 Recall that we can sum a finite geometric series, by taking the difference of
 %
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOpticsLecture15:160}
-a S_N = a + a^2 + \cdots a^{N}
+a S_N = a + a^2 + \cdots a^{N}.
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture15:180}
-S_N = 1 + a + \cdots a^{N-1}
+S_N = 1 + a + \cdots a^{N-1}.
 \end{dmath}
 \end{subequations}
 %
 so that
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:200}
-(a - 1)S_N = a^N - 1
+(a - 1)S_N = a^N - 1.
 \end{dmath}
 %
 or
@@ -210,7 +210,7 @@ H(k_y)
 \frac{e^{-i k_y a N/2} - e^{i k_y a N/2 }}{e^{-i k_y a/2} - e^{i k_y a/2}}
 =
 e^{i \gamma (N-1)}
-\frac{\sin (N\gamma)}{ \sin \gamma}
+\frac{\sin (N\gamma)}{ \sin \gamma}.
 \end{dmath}
 %
 where
@@ -230,14 +230,14 @@ I
 \frac
 {\sin N\gamma}
 {N \sin \gamma}
-\right)^2
+\right)^2.
 \end{dmath}
 %
 where
 %
 \begin{subequations}
 \begin{equation}\label{eqn:modernOpticsLecture15:300}
-\beta = \inv{2} b k_y = \inv{2} b k \sin\theta
+\beta = \inv{2} b k_y = \inv{2} b k \sin\theta.
 \end{equation}
 \begin{equation}\label{eqn:modernOpticsLecture15:320}
 \gamma = \inv{2} k_y a = \inv{2} k a \sin\theta.
@@ -248,7 +248,7 @@ where
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:340}
 \left( \frac{\sin 2 \gamma}{2 \sin\gamma} \right)^2 =
-\left( \frac{2 \sin \gamma \cos\gamma}{2 \sin\gamma} \right)^2 = \cos^2\gamma
+\left( \frac{2 \sin \gamma \cos\gamma}{2 \sin\gamma} \right)^2 = \cos^2\gamma.
 \end{dmath}
 %
 (Good).
@@ -271,7 +271,7 @@ We will write out \(\gamma\) in terms of angular frequency
 \begin{dmath}\label{eqn:modernOpticsLecture15:360}
 \gamma
 = \inv{2} a \frac{\omega}{c} \sin\theta
-= \pi \frac{\omega}{\omega_0} \sin\theta
+= \pi \frac{\omega}{\omega_0} \sin\theta.
 \end{dmath}
 %
 where
@@ -296,14 +296,14 @@ m = \frac{\omega}{\omega_0} \sin\theta,
 Zeros are at \(N \gamma = l \pi\) (provided \(l \ne N m\)).  Closest zero is
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:440}
-l = N m + 1
+l = N m + 1.
 \end{dmath}
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:460}
 \Delta \gamma
 = \gamma_{\mathrm{zero}} - \gamma_{\mathrm{peak}}
 = \frac{l}{N} \pi - m \pi
-= \frac{N m + 1}{N} \pi - m \pi
+= \frac{N m + 1}{N} \pi - m \pi.
 \end{dmath}
 %
 or
@@ -311,7 +311,7 @@ or
 \begin{dmath}\label{eqn:modernOpticsLecture15:480}
 \Delta \gamma
 = \frac{\pi}{N}
-= \frac{\pi \sin\theta}{\omega_0} \Delta \omega
+= \frac{\pi \sin\theta}{\omega_0} \Delta \omega.
 \end{dmath}
 %
 \paragraph{Rework after question:}
@@ -319,10 +319,10 @@ or
 Peaks for \(\omega_{1,2}\) are
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:500}
-\gamma_{\mathrm{peak}, 1} = \pi \frac{\omega_1}{\omega_0} \sin\theta = m \pi
+\gamma_{\mathrm{peak}, 1} = \pi \frac{\omega_1}{\omega_0} \sin\theta = m \pi.
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture15:520}
-\gamma_{\mathrm{peak}, 2} = \pi \frac{\omega_2}{\omega_0} \sin\theta = m \pi
+\gamma_{\mathrm{peak}, 2} = \pi \frac{\omega_2}{\omega_0} \sin\theta = m \pi.
 \end{dmath}
 %
 so that

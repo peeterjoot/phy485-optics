@@ -94,7 +94,7 @@ So that the characteristic equation is
 =
 \lambda^2 - 2 \lambda \alpha + 1
 =
-\left( \lambda - \alpha \right)^2 + 1 - \alpha^2
+\left( \lambda - \alpha \right)^2 + 1 - \alpha^2.
 \end{dmath}
 %
 Note that this corrects a sign error in the text.  Solving for \(\lambda\) we have
@@ -158,7 +158,7 @@ i \sqrt{1 - \alpha^2} & \quad \mbox{if \(\Abs{\alpha} < 1\)}
 When \(\Abs{\alpha} = 1\), we have a double eigenvalue with value \(\alpha\) and may not be able to find a spanning set of eigenvectors.  For the \(\Abs{\alpha} < 1\) case, we can introduce \(\phi\) such that \(\cos\phi = \alpha\), allowing us to write
 %
 \begin{dmath}\label{eqn:problemSet4Problem2:1100}
-\lambda_{\pm} = e^{\pm i \phi}
+\lambda_{\pm} = e^{\pm i \phi}.
 \end{dmath}
 %
 What can we say about the real valued eigenvalue case?  We know that from \(\Det M = 1\) both real valued eigenvalues must have matching signs.  We can also see from
@@ -224,7 +224,7 @@ d < 2 f.
 For these positive values of \(\alpha\) we have
 %
 \begin{dmath}\label{eqn:problemSet4Problem2:440}
-1 - \frac{d}{2f} < 1
+1 - \frac{d}{2f} < 1.
 \end{dmath}
 %
 or
@@ -237,13 +237,13 @@ which just means that \(d\) is positive.  This shows that \(d \in (0, 2f)\) resu
 \item The condition \(\alpha < 0\) can be written
 %
 \begin{dmath}\label{eqn:problemSet4Problem2:460}
-1 - \frac{d}{2f} < 0
+1 - \frac{d}{2f} < 0.
 \end{dmath}
 %
 or
 %
 \begin{dmath}\label{eqn:problemSet4Problem2:480}
-1 < \frac{d}{2f}
+1 < \frac{d}{2f}.
 \end{dmath}
 %
 or
@@ -358,8 +358,10 @@ M = M_2 M_1 =
 - \frac{d}{f_2}
 + \left( 1 - \frac{d}{f_2} \right)
 \left( 1 - \frac{d}{f_1} \right)
-\end{bmatrix}
-=
+\end{bmatrix},
+\end{dmath}
+or
+\begin{dmath*}\label{eqn:modernOpticsProblemSet4Problem2:n}
 \begin{bmatrix}
 2 \alpha_1 - 1 & d \alpha_1 \\
 \frac{2}{d} \left(
@@ -374,7 +376,7 @@ M = M_2 M_1 =
 2 \alpha_2 - 1
 \right)
 \end{bmatrix}
-\end{dmath}
+\end{dmath*}
 %
 Direct naive computation of \(0 = \Det( M - \lambda I )\) is not pleasant, and gives a big ass messy expression that's hard to make heads or tails of.  If we consider the 2 dimensional eigenvalue problem more generally, some simplifications for this problem can be made first.  With
 %
@@ -393,7 +395,7 @@ our characteristic equation, again the \(\Det M = 1\) constraint for this proble
 = (A - \lambda)(D - \lambda) - B C
 = \lambda^2 - \lambda( A + D ) + A D - BC
 = \lambda^2 - \lambda \tr M + 1
-= \left(\lambda - \frac{\tr M}{2}\right)^2 + 1 - \left(\frac{\tr M}{2}\right)^2
+= \left(\lambda - \frac{\tr M}{2}\right)^2 + 1 - \left(\frac{\tr M}{2}\right)^2.
 \end{dmath}
 %
 This gives us
@@ -467,13 +469,13 @@ This question was posed in terms of Gaussian beams, which transform according to
 \begin{dmath}\label{eqn:problemSet4Problem2:1180}
 \Imag\left( \inv{q} \right)
 = \Imag \left( \inv{z - i z_0} \right)
-= \frac{z_0}{z^2 + z_0^2}
+= \frac{z_0}{z^2 + z_0^2}.
 \end{dmath}
 %
 In particular at \(z = 0\), this is
 %
 \begin{dmath}\label{eqn:problemSet4Problem2:1200}
-\inv{z_0} = \frac{\lambda}{\pi w^2(0)}
+\inv{z_0} = \frac{\lambda}{\pi w^2(0)}.
 \end{dmath}
 %
 Now let's look at the M\"obius transformation at the pinch of the waist (\(z = 0\))
@@ -488,7 +490,7 @@ A^2 z_0^2 + B^2
 =
 \frac{(-i C z_0 + D)( i A z_0 + B)}{
 A^2 z_0^2 + B^2
-}
+}.
 \end{dmath}
 %
 From this we have

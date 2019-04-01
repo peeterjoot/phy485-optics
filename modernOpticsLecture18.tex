@@ -35,13 +35,13 @@ We'll start thinking about transverse modes in a cavity.  Our starting point is 
 \begin{subequations}
 \label{eqn:modernOpticsLecture18:10}
 \begin{dmath}\label{eqn:modernOpticsLecture18:20}
-\spacegrad \cross \BH = \epsilon \PD{t}{\BE}
+\spacegrad \cross \BH = \epsilon \PD{t}{\BE}.
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture18:40}
-\spacegrad \cross \BE = -\mu \PD{t}{\BH}
+\spacegrad \cross \BE = -\mu \PD{t}{\BH}.
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture18:80}
-\spacegrad \cdot (\epsilon \BE) = 0
+\spacegrad \cdot (\epsilon \BE) = 0.
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture18:60}
 \spacegrad \cdot \BB = 0.
@@ -54,13 +54,13 @@ Reminder
 %
 \begin{subequations}
 \begin{equation}\label{eqn:modernOpticsLecture18:100}
-n^2 = \frac{\epsilon}{\epsilon_0}
+n^2 = \frac{\epsilon}{\epsilon_0}.
 \end{equation}
 \begin{equation}\label{eqn:modernOpticsLecture18:120}
-v = \frac{c}{n} = \inv{\sqrt{\epsilon\mu}}
+v = \frac{c}{n} = \inv{\sqrt{\epsilon\mu}}.
 \end{equation}
 \begin{equation}\label{eqn:modernOpticsLecture18:140}
-k = \omega \sqrt{\epsilon \mu} = \frac{\omega n}{c}
+k = \omega \sqrt{\epsilon \mu} = \frac{\omega n}{c}.
 \end{equation}
 \end{subequations}
 %
@@ -70,7 +70,7 @@ This last comes from equating
 k x - \omega t
 = k ( x - v t )
 = k \left(x - \frac{v}{c} c t \right)
-= k \left(x - \frac{c}{n} t \right)
+= k \left(x - \frac{c}{n} t \right).
 \end{dmath}
 %
 so that we have \(\omega = k c/n\).
@@ -78,7 +78,7 @@ so that we have \(\omega = k c/n\).
 Recall the identity for curl of curl \eqnref{eqn:crossCrossA:30}
 %
 \begin{equation}\label{eqn:modernOpticsLecture18:160}
-\spacegrad \cross (\spacegrad \cross \BA) = \spacegrad (\spacegrad \cdot \BA) - \spacegrad^2 \BA
+\spacegrad \cross (\spacegrad \cross \BA) = \spacegrad (\spacegrad \cdot \BA) - \spacegrad^2 \BA.
 \end{equation}
 %
 and take curls of both sides of the \(\BE\) curl \eqnref{eqn:modernOpticsLecture18:40}
@@ -120,13 +120,13 @@ So if we assume that \(\mu \sim 1\) (or doesn't vary much from that), we have
 \spacegrad^2 \BE - \mu \epsilon(\Br) \PDSq{t}{\BE} =
 \mathLabelBox{
 -\spacegrad \left( \inv{\epsilon} \BE \cdot \spacegrad \epsilon \right)
-}{Neglect this if \(\epsilon\) varies slowly compared to \(\lambda\)}
+}{Neglect this if \(\epsilon\) varies slowly compared to \(\lambda\)}.
 \end{equation}
 %
 We suppose that the time dependence of the electric field is monochromatic, so that
 %
 \begin{equation}\label{eqn:modernOpticsLecture18:200}
-\BE(\Br, t) = \BE(\Br) e^{-i \omega t}
+\BE(\Br, t) = \BE(\Br) e^{-i \omega t}.
 \end{equation}
 %
 our second time partial is
@@ -139,7 +139,7 @@ our second time partial is
 e^{-i \omega t}
 = -\BE(\Br)
 k^2
-e^{-i \omega t}
+e^{-i \omega t}.
 \end{dmath}
 %
 Provided we have
@@ -200,7 +200,7 @@ Recall that our Laplacian in cylindrical coordinates is
 \PDSq{r}{} + \inv{r} \PD{r}{}
 }{\(\spacegrad_{\txtT}^2\)}
 + \inv{r^2} \PDSq{\theta}{}
-+ \PDSq{z}{}
++ \PDSq{z}{}.
 \end{equation}
 %
 We'll look for cylindrical symmetric solutions so that we can ignore the \(\theta\) dependence in the Laplacian.
@@ -266,7 +266,7 @@ Also note that we didn't need to use cylindrical coordinates here, and could hav
 \begin{dmath}\label{eqn:modernOpticsLecture18:460}
 \spacegrad_{\txtT}^2 =
 \PDSq{x}{}
-+\PDSq{y}{}
++\PDSq{y}{}.
 \end{dmath}
 %
 Let's rewrite this in a slightly different order
@@ -310,17 +310,17 @@ or
 \spacegrad_{\txtT}^2 \Psi
 -\frac{m^2 \omega^2}{\Hbar^2} r^2 \Psi
 =
-- \frac{2 m i}{\Hbar} \PD{t}{\Psi}
+- \frac{2 m i}{\Hbar} \PD{t}{\Psi}.
 \end{equation}
 %
 We can think of the equivalence in the following form
 %
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOpticsLecture18:740}
-\frac{m^2 \omega^2}{\Hbar^2} \leftrightarrow k_0 k_2
+\frac{m^2 \omega^2}{\Hbar^2} \leftrightarrow k_0 k_2.
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture18:760}
-\frac{m}{\Hbar} \PD{t}{} \leftrightarrow k_0 \PD{z}{}
+\frac{m}{\Hbar} \PD{t}{} \leftrightarrow k_0 \PD{z}{}.
 \end{dmath}
 \end{subequations}
 %
@@ -333,12 +333,12 @@ Recall that the first few 1D Quantum SHO are
 \begin{subequations}
 \begin{equation}\label{eqn:modernOpticsLecture18:780}
 \psi_0(x) =
-\left(\frac{m\omega}{\pi \Hbar}\right)^{1/4}  e^{ - \frac{m\omega x^2}{2 \Hbar}}
+\left(\frac{m\omega}{\pi \Hbar}\right)^{1/4}  e^{ - \frac{m\omega x^2}{2 \Hbar}}.
 \end{equation}
 \begin{equation}\label{eqn:modernOpticsLecture18:800}
 \psi_1(x) =
 \frac{1}{2}
-\left(\frac{m\omega}{\pi \Hbar}\right)^{1/4}  e^{ - \frac{m\omega x^2}{2 \Hbar}}  2 \sqrt{\frac{m\omega}{\Hbar}} x
+\left(\frac{m\omega}{\pi \Hbar}\right)^{1/4}  e^{ - \frac{m\omega x^2}{2 \Hbar}}  2 \sqrt{\frac{m\omega}{\Hbar}} x.
 \end{equation}
 \begin{equation}\label{eqn:modernOpticsLecture18:820}
 \psi_2(x) =
@@ -346,7 +346,7 @@ Recall that the first few 1D Quantum SHO are
 \left(\frac{m\omega}{\pi \Hbar}\right)^{1/4}  e^{ - \frac{m\omega x^2}{2 \Hbar}}
 \left(
 4 \left(\sqrt{\frac{m\omega}{\Hbar}} x \right)^2 - 2
-\right)
+\right).
 \end{equation}
 \end{subequations}
 %
@@ -393,17 +393,17 @@ In \S 4.4 \citep{desai2009quantum} it is shown that the time evolution of the pa
 - \frac
        {x^2}
        {2 \left( (\Delta x)^2 + \Hbar^2 (\Delta k)^2 \frac{t^2}{m^2} \right) }
-\right)
+\right).
 \end{dmath}
 %
 The particle spreads with speed \(\Hbar \Delta k/m\).
 %
 \begin{dmath}\label{eqn:modernOpticsLecture18:580}
-m_{\mathrm{eff}} = \frac{\Hbar \omega}{c^2}
+m_{\mathrm{eff}} = \frac{\Hbar \omega}{c^2}.
 \end{dmath}
 %
 \begin{dmath}\label{eqn:modernOpticsLecture18:600}
-m_{\mathrm{eff}} c^2 = \Hbar \omega
+m_{\mathrm{eff}} c^2 = \Hbar \omega.
 \end{dmath}
 %
 This is a dispersion relation \cref{fig:modernOpticsLecture18:modernOpticsLecture18Fig5}.
@@ -439,10 +439,10 @@ where the Hamiltonian equations are found from the canonical transformation \(H 
 %
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOpticsLecture18:900}
-\PD{p}{H} = \xdot = \frac{p}{m}
+\PD{p}{H} = \xdot = \frac{p}{m}.
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture18:920}
-\PD{x}{H} = -\pdot = m \omega^2 x
+\PD{x}{H} = -\pdot = m \omega^2 x.
 \end{dmath}
 \end{subequations}
 %
@@ -494,10 +494,10 @@ If we write our respective non-dimensionalized time and energy and radial distan
 %
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOpticsLecture18:1280}
-\tau = \frac{\omega}{c} (c t)
+\tau = \frac{\omega}{c} (c t).
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture18:1080}
-\epsilon = \frac{E}{\Hbar \omega}
+\epsilon = \frac{E}{\Hbar \omega}.
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture18:1300}
 \xi = r \sqrt{\frac{m \omega}{\Hbar}}.
@@ -528,7 +528,7 @@ Now let's non-dimensionalize the paraxial equation.  Observing that
 %
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOpticsLecture18:1160}
-\dimensions{\sqrt{k_0 k_2}} = \inv{\txtL^2}
+\dimensions{\sqrt{k_0 k_2}} = \inv{\txtL^2}.
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture18:1180}
 \dimensions{k_0} = \inv{\txtL},
@@ -547,7 +547,7 @@ we can put the paraxial equation \eqnref{eqn:modernOpticsLecture18:480} in non-d
 and introduce
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOpticsLecture18:1320}
-\tau = \sqrt{\frac{k_2}{k_0}} z
+\tau = \sqrt{\frac{k_2}{k_0}} z.
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture18:1340}
 \xi = r \left( k_0 k_2 \right)^{1/4}.
@@ -571,14 +571,14 @@ From this we see that we can make the identifications
 %
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOpticsLecture18:1220}
-\frac{\omega_{\mathrm{eff}}}{c} \equiv \sqrt{\frac{k_2}{k_0}}
+\frac{\omega_{\mathrm{eff}}}{c} \equiv \sqrt{\frac{k_2}{k_0}}.
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture18:1240a}
 m_{\mathrm{eff}} \equiv \frac{\Hbar k_0}{c},
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture18:1240b}
 %t_{\mathrm{eff}} \equiv \frac{m_{\mathrm{eff}}}{\Hbar k_0} z
-t_{\mathrm{eff}} \equiv \frac{z}{c}
+t_{\mathrm{eff}} \equiv \frac{z}{c}.
 \end{dmath}
 \end{subequations}
 %

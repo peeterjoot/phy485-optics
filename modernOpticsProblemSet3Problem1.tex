@@ -54,7 +54,7 @@ I(\tau)
 + 2 \Real
 \expectation{
 \Psi(r_a + c \tau) \Psi^\conj(r_a, t)
-}
+}.
 \end{dmath}
 %
 We can write this as
@@ -88,7 +88,7 @@ Somewhat loosely, we can evaluate this average
 \sim
 \lim_{T \rightarrow \infty} \inv{4 \pi T r_a^2} \int_{-T}^T dt
 \int \tilde{\Psi}(\omega) e^{-i \omega( t - r_a/c - \tau)} d\omega
-\int \tilde{\Psi}^\conj(\omega') e^{i \omega'( t - r_a/c )} d\omega'
+\int \tilde{\Psi}^\conj(\omega') e^{i \omega'( t - r_a/c )} d\omega'.
 \end{dmath}
 %
 Here we've assumed that \(c \tau \ll r_a\), so that we can pull out the spatial variation of the amplitude.  Now lets also assume that the time domain wave forms are bounded for some \(T = T_c\), so that
@@ -158,7 +158,7 @@ We are now set to tackle this specific problem.  Our first task is the Fourier i
 \frac{\sigma^2}
 {
 \sigma^2 + (\omega + \omega_0)^2
-}
+}.
 \end{dmath}
 %
 A comparison of these for small \(\omega_0\) is shown in \cref{fig:frequencySinglets:frequencySingletsFig2}.
@@ -176,7 +176,7 @@ f(\omega) =
 \frac{\sigma^2}
 {
 \sigma^2 + (\omega - \omega_0)^2
-}
+}.
 \end{dmath}
 %
 We first note that
@@ -184,7 +184,7 @@ We first note that
 \begin{dmath}\label{eqn:modernOptics:problemSet3:1:280}
 \int e^{i \omega \tau} f(\omega - \omega_0) d\omega
 =
-\int e^{i (\omega' + \omega_0) \tau} f(\omega') d\omega'
+\int e^{i (\omega' + \omega_0) \tau} f(\omega') d\omega'.
 \end{dmath}
 %
 so
@@ -259,7 +259,7 @@ We can now immediately write the Fourier transform pair, finding the mutual cohe
 \sigma e^{-\sigma \Abs{\tau}} \left(
 \cos(\omega_1 \tau)
 +\cos(\omega_2 \tau)
-\right)
+\right).
 \end{dmath}
 %
 With \(\omega_{1,2} = \overbar{\omega} \mp \Delta/2\), we rewrite
@@ -278,7 +278,7 @@ With \(\omega_{1,2} = \overbar{\omega} \mp \Delta/2\), we rewrite
 \overbar{\omega} - \Delta/2
 \right) \tau
 \right)
-= 2 \cos( \overbar{\omega} \tau ) \cos ( \Delta \tau/2 )
+= 2 \cos( \overbar{\omega} \tau ) \cos ( \Delta \tau/2 ).
 \end{dmath}
 %
 so that
@@ -337,13 +337,13 @@ I(\omega)
 \leftrightarrow
 \frac{I_0}{N} \sum_{n = 0}^{N-1}
 \sigma e^{-\sigma \Abs{\tau} } \cos(\omega_n \tau).
-\sim \Gamma(\tau)
+\sim \Gamma(\tau).
 \end{dmath}
 %
 Since
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:1:520}
-\sum_{n = 0}^{N-1} (1) = N
+\sum_{n = 0}^{N-1} (1) = N.
 \end{dmath}
 %
 we can switch immediately to the normalized form
@@ -419,7 +419,7 @@ or
 }
 {
 \sin( \delta \tau /2 )
-}
+}.
 \end{dmath}
 %
 We observe that the average of the \(\omega_n\) frequencies is
@@ -458,13 +458,13 @@ and recover the desired result \eqnref{eqn:modernOptics:problemSet3:1:60}.  We a
 %
 \begin{subequations}
 \begin{equation}\label{eqn:modernOptics:problemSet3:1:640}
-\sigma = \frac{\delta}{20} = \frac{\pi}{10 \tau_{\mathrm{rep}}}
+\sigma = \frac{\delta}{20} = \frac{\pi}{10 \tau_{\mathrm{rep}}}.
 \end{equation}
 \begin{equation}\label{eqn:modernOptics:problemSet3:1:660}
-\overbar{\omega} = 50 \delta = \frac{100 \pi}{\tau_{\mathrm{rep}}}
+\overbar{\omega} = 50 \delta = \frac{100 \pi}{\tau_{\mathrm{rep}}}.
 \end{equation}
 \begin{equation}\label{eqn:modernOptics:problemSet3:1:680}
-\tau \in [0, 4 \pi/\delta] = [0, 2 \tau_{\mathrm{rep}}]
+\tau \in [0, 4 \pi/\delta] = [0, 2 \tau_{\mathrm{rep}}].
 \end{equation}
 \end{subequations}
 %

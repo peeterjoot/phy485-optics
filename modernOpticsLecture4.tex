@@ -40,7 +40,7 @@ We have two approximations to the full problem
 Why a scalar theory?  If we have a plane wave polarization
 %
 \begin{dmath}\label{eqn:modernOpticsLecture4:10}
-\BE(\Br, t) = \left( E_1 \xcap + E_2 \ycap \right) e^{ i \Bk \cdot \Br - i \omega t}
+\BE(\Br, t) = \left( E_1 \xcap + E_2 \ycap \right) e^{ i \Bk \cdot \Br - i \omega t}.
 \end{dmath}
 %
 With the principle of superposition
@@ -58,13 +58,13 @@ Reading: \S 8.3.1 \citep{born1980principles}, \S 9.8 \citep{jackson1975cew}.  Th
 We'd like to solve the wave equation with these approximations.
 %
 \begin{dmath}\label{eqn:modernOpticsLecture4:30}
-\spacegrad^2 E = \inv{c^2} \PDSq{t}{E}
+\spacegrad^2 E = \inv{c^2} \PDSq{t}{E}.
 \end{dmath}
 %
 We will use a monochromatic wave so that we can write the electric field magnitude as a vector function times a time phase term
 %
 \begin{dmath}\label{eqn:modernOpticsLecture4:50}
-E = \Psi(\Br) e^{-i \omega t}
+E = \Psi(\Br) e^{-i \omega t}.
 \end{dmath}
 %
 We find
@@ -79,7 +79,7 @@ It turns out that the solution to this equation is generally written out as the 
 
 % latex: \oiint gives not found.  What package was that from?
 \begin{dmath}\label{eqn:modernOpticsLecture4:90}
-\Psi(\Br) = \iint da' \left( \Psi(\Br') \spacegrad' G - G \spacegrad' \Psi(\Br') \right) \cdot \ncap
+\Psi(\Br) = \iint da' \left( \Psi(\Br') \spacegrad' G - G \spacegrad' \Psi(\Br') \right) \cdot \ncap.
 \end{dmath}
 %
 Here \(\ncap\) is the unit normal perpendicular to the surface, and the Green function of the Helmholtz equation is
@@ -110,7 +110,7 @@ Is this Green's function reasonable seeming?  As illustrated in \cref{fig:modern
 Also note that the primed gradient is taken with respect to the coordinates of \(\Br'\)
 %
 \begin{dmath}\label{eqn:modernOpticsLecture4:130}
-\spacegrad' = \Be_m \PD{{x'}_m}{}
+\spacegrad' = \Be_m \PD{{x'}_m}{}.
 \end{dmath}
 %
 If we take the gradient of the Green's function we find
@@ -119,7 +119,7 @@ If we take the gradient of the Green's function we find
 \spacegrad \left(
 \frac{ e^{i k r} }{r}
 \right) = \rcap \left( i k - \inv{r} \right)
-\frac{e^{i k r}}{r}
+\frac{e^{i k r}}{r}.
 \end{dmath}
 %
 Applying this to our problem we find
@@ -148,7 +148,7 @@ With placement of our origin at the pinhole, so that \(\Br' = 0\), \(\BR = \Br\)
 Our spherical wave function at the aperture is
 %
 \begin{dmath}\label{eqn:modernOpticsLecture4:190}
-\Psi(\Br') = A \frac{e^{i k R_s}}{R_s}
+\Psi(\Br') = A \frac{e^{i k R_s}}{R_s}.
 \end{dmath}
 %
 so that
@@ -172,7 +172,7 @@ Our resulting wave function is then
 \right) + \ncap \cdot \rcap
 \left( i k - \inv{r}
 \right)
-\right)
+\right).
 \end{dmath}
 %
 Now, in all these \(ik - 1/r_s\) we have \(k\) of order \(1/\lambda\) and \(1/r_s\) is of order \(1/r\) or \(1/r_s\).
@@ -202,7 +202,7 @@ where \(d\) is the ``typical object size'', so that we have
 \ncap \cdot \ncap \left( i k - \cancel{\inv{r_s}} \right) + \ncap \cdot \rcap
 \left( i k - \cancel{\inv{r}}
 \right)
-\right)
+\right).
 \end{dmath}
 %
 or with \(\theta\) as illustrated,

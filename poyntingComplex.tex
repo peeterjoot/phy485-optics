@@ -23,7 +23,7 @@
 {
 Given a complex field phasor representation of the form
 \begin{dmath}\label{eqn:poyntingComplex:10}
-\tilde{\BE} = \BE_0 e^{i (\Bk \cdot \Bx - \omega t)}
+\tilde{\BE} = \BE_0 e^{i (\Bk \cdot \Bx - \omega t)}.
 \end{dmath}
 \begin{dmath}\label{eqn:poyntingComplex:30}
 \tilde{\BH} = \BH_0 e^{i (\Bk \cdot \Bx - \omega t)}.
@@ -32,7 +32,7 @@ Given a complex field phasor representation of the form
 Here we allow the components of \(\BE_0\) and \(\BH_0\) to be complex.  As usual our fields are defined as the real parts of the phasors
 %
 \begin{dmath}\label{eqn:poyntingComplex:50}
-\BE = \Real( \tilde{\BE} )
+\BE = \Real( \tilde{\BE} ).
 \end{dmath}
 \begin{dmath}\label{eqn:poyntingComplex:70}
 \BH = \Real( \tilde{\BH} ).
@@ -51,7 +51,7 @@ This is a problem from \citep{fowles1989introduction}, something that I'd tried 
 While the text works with two dimensional quantities in the \(x,y\) plane, I found this problem easier when tackled in three dimensions.  Suppose we write the complex phasor components as
 %
 \begin{dmath}\label{eqn:poyntingComplex:110}
-\BE_0 = \sum_k (\BE_{kr} + i \BE_{ki}) \Be_k = \sum_k \Abs{\BE_k} e^{i \phi_k} \Be_k
+\BE_0 = \sum_k (\BE_{kr} + i \BE_{ki}) \Be_k = \sum_k \Abs{\BE_k} e^{i \phi_k} \Be_k.
 \end{dmath}
 \begin{dmath}\label{eqn:poyntingComplex:130}
 \BH_0 = \sum_k (\BH_{kr} + i \BH_{ki}) \Be_k = \sum_k \Abs{\BH_k} e^{i \psi_k} \Be_k,
@@ -60,7 +60,7 @@ While the text works with two dimensional quantities in the \(x,y\) plane, I fou
 and also write \(\phi_k' = \phi_k + \Bk \cdot \Bx\), and \(\psi_k' = \psi_k + \Bk \cdot \Bx\), then our (real) fields are
 %
 \begin{dmath}\label{eqn:poyntingComplex:150}
-\BE = \sum_k \Abs{\BE_k} \cos(\phi_k' - \omega t) \Be_k
+\BE = \sum_k \Abs{\BE_k} \cos(\phi_k' - \omega t) \Be_k.
 \end{dmath}
 \begin{dmath}\label{eqn:poyntingComplex:170}
 \BH = \sum_k \Abs{\BH_k} \cos(\psi_k' - \omega t) \Be_k,
@@ -131,7 +131,7 @@ This proves the desired result.
 Show that the real electric wave
 %
 \begin{dmath}\label{eqn:poyntingComplex:270}
-\BE = E_0 \left( \icap \cos( k z - \omega t ) + \jCap b \cos( k z - \omega t + \phi) \right)
+\BE = E_0 \left( \icap \cos( k z - \omega t ) + \jCap b \cos( k z - \omega t + \phi) \right).
 \end{dmath}
 %
 is equivalent to the complex expression
@@ -170,7 +170,7 @@ The electric fields, with \(\psi = k z - \omega t\), are
 E_0 ( \icap + \jCap ) e^{i \psi}
 \right)
 =
-E_0 (\icap + \jCap) \cos\psi
+E_0 (\icap + \jCap) \cos\psi.
 \end{dmath}
 \item
 \begin{dmath}\label{eqn:poyntingComplex:310}
@@ -178,7 +178,7 @@ E_0 (\icap + \jCap) \cos\psi
 E_0 ( \icap + 2 \jCap ) e^{i \psi}
 \right)
 =
-E_0 (\icap + 2 \jCap) \cos\psi
+E_0 (\icap + 2 \jCap) \cos\psi.
 \end{dmath}
 \item
 \begin{dmath}\label{eqn:poyntingComplex:330}
@@ -190,7 +190,7 @@ E_0
 \left(
 \icap \cos\psi
 +\jCap \sin\psi
-\right)
+\right).
 \end{dmath}
 \item
 \begin{dmath}\label{eqn:poyntingComplex:350}
@@ -206,7 +206,7 @@ E_0
 \cos\psi
 -\sin\psi
 \right)
-\right)
+\right).
 \end{dmath}
 \end{enumerate}
 
@@ -347,7 +347,7 @@ a \sin \theta \cos u + b \cos \theta \sin u
 Observing that
 %
 \begin{dmath}\label{eqn:poyntingComplex:530}
-\cos u + \alpha \sin u = \Real\left( (1 + i \alpha) e^{-i u} \right)
+\cos u + \alpha \sin u = \Real\left( (1 + i \alpha) e^{-i u} \right).
 \end{dmath}
 %
 we have, with \(\atan2 = \atan2(x, y)\) a Jones vector representation of our rotated ellipse
@@ -391,10 +391,10 @@ y
 This has the required form once we make the identifications
 %
 \begin{dmath}\label{eqn:poyntingComplex:590}
-A = \sqrt{ a^2 \cos^2 \theta + b^2 \sin^2 \theta }
+A = \sqrt{ a^2 \cos^2 \theta + b^2 \sin^2 \theta }.
 \end{dmath}
 \begin{dmath}\label{eqn:poyntingComplex:610}
-B = \sqrt{ a^2 \sin^2 \theta + b^2 \cos^2 \theta }
+B = \sqrt{ a^2 \sin^2 \theta + b^2 \cos^2 \theta }.
 \end{dmath}
 \begin{dmath}\label{eqn:poyntingComplex:630}
 \Delta =
@@ -417,7 +417,7 @@ e^{-i u}
 A \cos u \\
 B \cos ( \Delta - u )
 \end{bmatrix}
-e^{-i u}
+e^{-i u}.
 \end{dmath}
 %
 We need our cosine angle addition formula
@@ -434,7 +434,7 @@ We need our cosine angle addition formula
 Using this and writing \(\BE = (x, y)\) we have
 %
 \begin{dmath}\label{eqn:poyntingComplex:690}
-x = A \cos u
+x = A \cos u.
 \end{dmath}
 \begin{dmath}\label{eqn:poyntingComplex:710}
 y = B ( \cos \Delta \cos u + \sin \Delta \sin u ).
@@ -516,7 +516,7 @@ This yields \eqnref{eqn:poyntingComplex:390} as desired.  We also end up with ex
 %
 \begin{dmath}\label{eqn:poyntingComplex:850}
 \sin\Delta/
-\sqrt{ b^2 + (a^2 - b^2) \cos^2 \theta - a b \sin (2 \theta) \cos \Delta }
+\sqrt{ b^2 + (a^2 - b^2) \cos^2 \theta - a b \sin (2 \theta) \cos \Delta }.
 \end{dmath}
 \begin{dmath}\label{eqn:poyntingComplex:870}
 \sin\Delta/

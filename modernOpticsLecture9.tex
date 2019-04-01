@@ -22,19 +22,19 @@
 Observing intensity in a two-path interferometer
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:10}
-I = I_1 + I_2 + 2 \Real \Gamma_{12}
+I = I_1 + I_2 + 2 \Real \Gamma_{12}.
 \end{dmath}
 %
 where
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOpticsLecture9:30}
-I_1 = \expectation{ \Psi_1 \Psi_1^\conj }
+I_1 = \expectation{ \Psi_1 \Psi_1^\conj }.
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture9:50}
-I_2 = \expectation{ \Psi_2 \Psi_2^\conj }
+I_2 = \expectation{ \Psi_2 \Psi_2^\conj }.
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture9:70}
-\Gamma_{12}  = \expectation{ \Psi_1 \Psi_2^\conj }
+\Gamma_{12}  = \expectation{ \Psi_1 \Psi_2^\conj }.
 \end{dmath}
 \end{subequations}
 %
@@ -52,17 +52,17 @@ With
 %
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOpticsLecture9:90}
-\Psi(\Br_k, t) = \sqrt{I(\Br_k)} \exp\left( i \phi(\Br_k, t) \right)
+\Psi(\Br_k, t) = \sqrt{I(\Br_k)} \exp\left( i \phi(\Br_k, t) \right).
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture9:110}
-\Psi_{1,2} = \Psi(\Br_{1,2}, t)
+\Psi_{1,2} = \Psi(\Br_{1,2}, t).
 \end{dmath}
 \end{subequations}
 %
 We work with \(\Abs{\Br} \gg \lambda\), so that we neglect any small intensity change, and make the approximation
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:130}
-I(\Br_1) \sim I(\Br_2)
+I(\Br_1) \sim I(\Br_2).
 \end{dmath}
 %
 and define
@@ -74,7 +74,7 @@ and define
 We write
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:170}
-\gamma_{12} = \frac{\Gamma_{12}}{\sqrt{I_1} \sqrt{I_2}}
+\gamma_{12} = \frac{\Gamma_{12}}{\sqrt{I_1} \sqrt{I_2}}.
 \end{dmath}
 %
 So that our total intensity is just
@@ -86,7 +86,7 @@ I = 2 I_1 ( 1 + \Real \gamma_{12} ).
 Our task is to calculate
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:210}
-\gamma_{12} = \expectation{ e^{i\phi_1 - i\phi_2} }
+\gamma_{12} = \expectation{ e^{i\phi_1 - i\phi_2} }.
 \end{dmath}
 %
 With
@@ -104,7 +104,7 @@ This isn't necessarily a realistic system, but it one that we can calculate.
 \begin{dmath}\label{eqn:modernOpticsLecture9:250}
 \gamma_{12}
 = \expectation{ e^{i \phi(t) } e^{ -i\phi(t + \tau) } }
-= e^{i \omega \tau} \lim_{T \rightarrow \infty} \int_0^T e^{i \Delta(t) - i\Delta(t + \tau)} dt
+= e^{i \omega \tau} \lim_{T \rightarrow \infty} \int_0^T e^{i \Delta(t) - i\Delta(t + \tau)} dt.
 \end{dmath}
 %
 With the illustrated example phase transitions above we have \cref{fig:modernOpticsLecture9:modernOpticsLecture9Fig5}.
@@ -116,7 +116,7 @@ Integrating across one time interval and then summing we have
 \inv{N \tau_0} \sum_{n = 1}^{N} \int_{n \tau_0}^{(n+1) \tau_0} e^{i (\Delta(t) - \Delta(t+\tau)} dt
 =
 \frac{\sum{n=1}^{N}}{N \tau_0} (\tau_0 - \tau)
-+\cancel{\frac{\sum_{n=1}^{N}}{N \tau_0} \tau e^{-i\Delta_i}}
++\cancel{\frac{\sum_{n=1}^{N}}{N \tau_0} \tau e^{-i\Delta_i}}.
 \end{dmath}
 %
 To account for the cancellation, note that we are summing over a number of complex numbers, like
@@ -124,7 +124,7 @@ To account for the cancellation, note that we are summing over a number of compl
 \begin{dmath}\label{eqn:modernOpticsLecture9:410}
 e^{i\Delta_1}
 +e^{i\Delta_2}
-+e^{i\Delta_3}
++e^{i\Delta_3}.
 \end{dmath}
 %
 where the \(\Delta\)'s are random.  This is illustrated in \cref{fig:modernOpticsLecture9:modernOpticsLecture9Fig7}.
@@ -184,13 +184,13 @@ or
 With
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:370}
-2 \pi \frac{c }{\omega} = \frac{\omega \lambda}{\omega} = \lambda
+2 \pi \frac{c }{\omega} = \frac{\omega \lambda}{\omega} = \lambda.
 \end{dmath}
 %
 we have
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:390}
-s_2 - s_1 = \lambda
+s_2 - s_1 = \lambda.
 \end{dmath}
 %
 typically require \(500\) nm for visible light.  We need micron scale control.
@@ -202,13 +202,13 @@ What do we know about \(\expectation{ \Psi_1 \Psi_2^\conj }\) ?
 \begin{dmath}\label{eqn:modernOpticsLecture9:450}
 \expectation{ \Psi_1(t) \Psi_2^\conj(t + \tau) }
 =
-\lim_{T \rightarrow \infty} \int_0^T dt \Psi_1(t) \Psi_2(t + \tau)
+\lim_{T \rightarrow \infty} \int_0^T dt \Psi_1(t) \Psi_2(t + \tau).
 \end{dmath}
 %
 This (integral) is just a convolution, so we can compute this by performing Fourier transforms and inverse Fourier transforms.  If
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:470}
-f(x) = g * h = \int_{-\infty}^\infty dx' g(x') h(x - x')
+f(x) = g * h = \int_{-\infty}^\infty dx' g(x') h(x - x').
 \end{dmath}
 %
 Then
@@ -219,7 +219,7 @@ F(k) = G(k) H(k),
 so that
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:510}
-f(x) = \calF^{-1} G(k) H(k)
+f(x) = \calF^{-1} G(k) H(k).
 \end{dmath}
 %
 We see that
@@ -228,13 +228,13 @@ We see that
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:530}
 \Abs{\Gamma_{12}} = e^{i \alpha_{12}(\tau)} = 4
-\int_0^\infty G_{12}(\omega) e^{-i(\omega - \overbar{\omega}) \tau } d\omega
+\int_0^\infty G_{12}(\omega) e^{-i(\omega - \overbar{\omega}) \tau } d\omega.
 \end{dmath}
 %
 where
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:550}
-\Gamma_{12} = \Abs{\Gamma_{12}} e^{i \alpha_{12}(\tau) - i \omega \tau }
+\Gamma_{12} = \Abs{\Gamma_{12}} e^{i \alpha_{12}(\tau) - i \omega \tau }.
 \end{dmath}
 %
 and
@@ -244,13 +244,13 @@ and
 G_{12}(\omega) = \lim_{T \rightarrow \infty} \inv{2 T}
 V_T(\Br_1, \omega)
 V_T^\conj(\Br_2, \omega)
-\sim V_1(\omega) V_2^\conj(\omega)
+\sim V_1(\omega) V_2^\conj(\omega).
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture9:590}
-V(\omega) = \calF(\Psi)
+V(\omega) = \calF(\Psi).
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture9:610}
-V_T = \int_{-\infty}^\infty \Psi_T^{(r)} (\Br, t) e^{i \omega t}
+V_T = \int_{-\infty}^\infty \Psi_T^{(r)} (\Br, t) e^{i \omega t}.
 \end{dmath}
 \begin{dmath}\label{eqn:modernOpticsLecture9:630}
 \Psi_T^{(r)} =

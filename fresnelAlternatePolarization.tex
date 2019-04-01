@@ -20,16 +20,16 @@ The task at hand is to find evaluate the boundary value constraints.  Following 
 %
 \begin{subequations}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:10}
-\epsilon_1 ( \BE_i + \BE_r )_z = \epsilon_2 ( \BE_t )_z
+\epsilon_1 ( \BE_i + \BE_r )_z = \epsilon_2 ( \BE_t )_z.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:30}
-( \BB_i + \BB_r )_z = ( \BB_t )_z
+( \BB_i + \BB_r )_z = ( \BB_t )_z.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:50}
-( \BE_i + \BE_r )_{x,y} = ( \BE_t )_{x,y}
+( \BE_i + \BE_r )_{x,y} = ( \BE_t )_{x,y}.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:70}
-\inv{\mu_1} ( \BB_i + \BB_r )_{x,y} = \inv{\mu_2} ( \BB_t )_{x,y}
+\inv{\mu_1} ( \BB_i + \BB_r )_{x,y} = \inv{\mu_2} ( \BB_t )_{x,y}.
 \end{equation}
 \end{subequations}
 %
@@ -53,10 +53,10 @@ we can express each of the \(k\) vector directions by inspection.  Those are
 %
 \begin{subequations}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:130}
-\kcap_i = \Be_3 e^{j \theta_i} = \Be_3 \cos\theta_i + \Be_1 \sin\theta_i
+\kcap_i = \Be_3 e^{j \theta_i} = \Be_3 \cos\theta_i + \Be_1 \sin\theta_i.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:150}
-\kcap_r = -\Be_3 e^{-j \theta_r} = -\Be_3 \cos\theta_r +\Be_1 \sin\theta_r
+\kcap_r = -\Be_3 e^{-j \theta_r} = -\Be_3 \cos\theta_r +\Be_1 \sin\theta_r.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:170}
 \kcap_t = \Be_3 e^{j \theta_t} = \Be_3 \cos\theta_t + \Be_1 \sin\theta_t.
@@ -70,20 +70,20 @@ Similarly, the perpendiculars \(\mcap_p = \Be_2 \cross \kcap_p\) are
 %= -\Be_{1 2 3 2 3} e^{j \theta_i}
 = \Be_{1} e^{j \theta_i}
 = \Be_1 \cos\theta_i - \Be_3 \sin\theta_i
-= \Be_3 j e^{j \theta_i}
+= \Be_3 j e^{j \theta_i}.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:210}
 \mcap_r
 %= -\Be_{1 2 3 2 3} -e^{-j \theta_r}
 = -\Be_{1} e^{-j \theta_r}
 = -\Be_1 \cos\theta_r - \Be_3 \sin\theta_r
-= -\Be_3 j e^{-j \theta_r}
+= -\Be_3 j e^{-j \theta_r}.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:230}
 \mcap_t
 %= -\Be_{1 2 3 2 3} e^{j \theta_t}
 = \Be_{1 } e^{j \theta_t} = \Be_1 \cos\theta_t - \Be_3 \sin\theta_t
-= \Be_3 j e^{j \theta_t}
+= \Be_3 j e^{j \theta_t}.
 \end{equation}
 \end{subequations}
 %
@@ -99,23 +99,23 @@ In \citep{griffiths1999introduction} problem 9.14 we had to show that the polari
 \Be_2 \\
 -\mcap_p \\
 \end{bmatrix}
-e^{ \mcap_p \Be_2 \phi_p }
+e^{ \mcap_p \Be_2 \phi_p }.
 \end{equation}
 %
 We are now set to at least express our boundary value constraints
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:300}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:310}
-\epsilon_1 \left( \Be_2 E_i e^{ \mcap_i \Be_2 \phi_i } + \Be_2 E_r e^{ \mcap_r \Be_2 \phi_r } \right) \cdot \Be_3 = \epsilon_2 \left( \Be_2 E_t e^{ \mcap_t \Be_2 \phi_t } \right) \cdot \Be_3
+\epsilon_1 \left( \Be_2 E_i e^{ \mcap_i \Be_2 \phi_i } + \Be_2 E_r e^{ \mcap_r \Be_2 \phi_r } \right) \cdot \Be_3 = \epsilon_2 \left( \Be_2 E_t e^{ \mcap_t \Be_2 \phi_t } \right) \cdot \Be_3.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:330}
-\inv{v_1} \left( -\mcap_i E_i e^{ \mcap_i \Be_2 \phi_i } - \mcap_r E_r e^{ \mcap_r \Be_2 \phi_r } \right) \cdot \Be_3 = \inv{v_2} \left( -\mcap_t E_t e^{ \mcap_t \Be_2 \phi_t } \right) \cdot \Be_3
+\inv{v_1} \left( -\mcap_i E_i e^{ \mcap_i \Be_2 \phi_i } - \mcap_r E_r e^{ \mcap_r \Be_2 \phi_r } \right) \cdot \Be_3 = \inv{v_2} \left( -\mcap_t E_t e^{ \mcap_t \Be_2 \phi_t } \right) \cdot \Be_3.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:350}
-\left( \Be_2 E_i e^{ \mcap_i \Be_2 \phi_i } + \Be_2 E_r e^{ \mcap_r \Be_2 \phi_r } \right) \wedge \Be_3 = \left( \Be_2 E_t e^{ \mcap_t \Be_2 \phi_t } \right) \wedge \Be_3
+\left( \Be_2 E_i e^{ \mcap_i \Be_2 \phi_i } + \Be_2 E_r e^{ \mcap_r \Be_2 \phi_r } \right) \wedge \Be_3 = \left( \Be_2 E_t e^{ \mcap_t \Be_2 \phi_t } \right) \wedge \Be_3.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:370}
-\inv{\mu_1 v_1} \left( -\mcap_i E_i e^{ \mcap_i \Be_2 \phi_i } - \mcap_r E_r e^{ \mcap_r \Be_2 \phi_r } \right) \wedge \Be_3 = \inv{\mu_2 v_2} \left( -\mcap_t E_t e^{ \mcap_t \Be_2 \phi_t } \right) \wedge \Be_3
+\inv{\mu_1 v_1} \left( -\mcap_i E_i e^{ \mcap_i \Be_2 \phi_i } - \mcap_r E_r e^{ \mcap_r \Be_2 \phi_r } \right) \wedge \Be_3 = \inv{\mu_2 v_2} \left( -\mcap_t E_t e^{ \mcap_t \Be_2 \phi_t } \right) \wedge \Be_3.
 \end{equation}
 \end{subequations}
 %
@@ -133,7 +133,7 @@ Before doing so, let's introduce a bit of notation to be used throughout.  When 
 }
 \boxedEquation{eqn:fresnelAlternatePolarization:770}{
 \alpha = \frac{\cos\theta_t}{\cos\theta_i},
-}
+}.
 \end{subequations}
 %
 \makeproblem{Sanity check.  Verify for \(\BE\) parallel to the interface.}{fresnelAlternatePolarization:pr1}{ }
@@ -143,10 +143,10 @@ For the \(\BE_p \parallel \Be_2\) polarization (\(\phi_i = \phi_r = \phi_t\)) ou
 %
 \begin{subequations}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:390}
-\BE_p = \Be_2 E_p
+\BE_p = \Be_2 E_p.
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:410}
-\BB_p = -\inv{v_p} \mcap_p E_p
+\BB_p = -\inv{v_p} \mcap_p E_p.
 \end{dmath}
 \end{subequations}
 %
@@ -154,13 +154,13 @@ Our boundary value constraints then become
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:300a}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:310a}
-\epsilon_1 \left( \Be_2 E_i  + \Be_2 E_r  \right) \cdot \Be_3 = \epsilon_2 \left( \Be_2 E_t  \right) \cdot \Be_3
+\epsilon_1 \left( \Be_2 E_i  + \Be_2 E_r  \right) \cdot \Be_3 = \epsilon_2 \left( \Be_2 E_t  \right) \cdot \Be_3.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:330a}
-\inv{v_1} \left( \mcap_i E_i + \mcap_r E_r  \right) \cdot \Be_3 = \inv{v_2} \left( \mcap_t E_t  \right) \cdot \Be_3
+\inv{v_1} \left( \mcap_i E_i + \mcap_r E_r  \right) \cdot \Be_3 = \inv{v_2} \left( \mcap_t E_t  \right) \cdot \Be_3.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:350a}
-\left( \Be_2 E_i  + \Be_2 E_r  \right) \wedge \Be_3 = \left( \Be_2 E_t  \right) \wedge \Be_3
+\left( \Be_2 E_i  + \Be_2 E_r  \right) \wedge \Be_3 = \left( \Be_2 E_t  \right) \wedge \Be_3.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:370a}
 \inv{\mu_1 v_1} \left( \mcap_i E_i  + \mcap_r E_r  \right) \wedge \Be_3 = \inv{\mu_2 v_2} \left( \mcap_t E_t  \right) \wedge \Be_3.
@@ -171,13 +171,13 @@ With \(\mcap_p\) substitution this is
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:300b}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:310b}
-\epsilon_1 \gpgradezero{ \Be_3 \left( \Be_2 E_i  + \Be_2 E_r  \right) } = \epsilon_2 \gpgradezero{ \Be_3 \left( \Be_2 E_t  \right) }
+\epsilon_1 \gpgradezero{ \Be_3 \left( \Be_2 E_i  + \Be_2 E_r  \right) } = \epsilon_2 \gpgradezero{ \Be_3 \left( \Be_2 E_t  \right) }.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:330b}
-\inv{v_1} \gpgradezero{ \Be_3 \left( \Be_1 e^{j \theta_i} E_i  - \Be_1 e^{-j \theta_r} E_r  \right) } = \inv{v_2} \gpgradezero{ \Be_3 \left( \Be_1 e^{j \theta_t} E_t  \right) }
+\inv{v_1} \gpgradezero{ \Be_3 \left( \Be_1 e^{j \theta_i} E_i  - \Be_1 e^{-j \theta_r} E_r  \right) } = \inv{v_2} \gpgradezero{ \Be_3 \left( \Be_1 e^{j \theta_t} E_t  \right) }.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:350b}
-\gpgradetwo{ \Be_3 \left( \Be_2 E_i  + \Be_2 E_r  \right) } = \gpgradetwo{ \Be_3 \left( \Be_2 E_t  \right) }
+\gpgradetwo{ \Be_3 \left( \Be_2 E_i  + \Be_2 E_r  \right) } = \gpgradetwo{ \Be_3 \left( \Be_2 E_t  \right) }.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:370b}
 \inv{\mu_1 v_1} \gpgradetwo{ \Be_3 \left( \Be_1 e^{j \theta_i} E_i  -\Be_1 e^{-j \theta_r} E_r  \right) } = \inv{\mu_2 v_2} \gpgradetwo{ \Be_3 \left( \Be_1 e^{j \theta_t} E_t  \right) }.
@@ -188,13 +188,13 @@ Evaluating the grade selections we have a separation into an analogue of real an
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:300c}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:310c}
-0 = 0
+0 = 0.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:330c}
-\inv{v_1} \left( -\sin\theta_i E_i  - \sin\theta_r E_r  \right) = \inv{v_2} \left( -\sin\theta_t E_t  \right)
+\inv{v_1} \left( -\sin\theta_i E_i  - \sin\theta_r E_r  \right) = \inv{v_2} \left( -\sin\theta_t E_t  \right).
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:350c}
-E_i + E_r = E_t
+E_i + E_r = E_t.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:370c}
 \inv{\mu_1 v_1} \left( \cos{\theta_i} E_i  - \cos{\theta_r} E_r  \right) = \inv{\mu_2 v_2} \left( \cos{ \theta_t} E_t  \right).
@@ -214,7 +214,7 @@ so that we find \eqnref{eqn:fresnelAlternatePolarization:330c} and \eqnref{eqn:f
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:450x}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:450}
-E_i + E_r = E_t
+E_i + E_r = E_t.
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:470}
 E_i - E_r = \frac{\mu_1 v_1}{\mu_2 v_2} \frac{\cos{ \theta_t}}{\cos\theta_i} E_t,
@@ -225,7 +225,7 @@ Adding and subtracting we have
 %
 \begin{subequations}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:490}
-2 E_i = \left( 1 + \frac{\mu_1 v_1}{\mu_2 v_2} \frac{\cos{ \theta_t}}{\cos\theta_i} \right) E_t
+2 E_i = \left( 1 + \frac{\mu_1 v_1}{\mu_2 v_2} \frac{\cos{ \theta_t}}{\cos\theta_i} \right) E_t.
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:510}
 2 E_r = \left( 1 - \frac{\mu_1 v_1}{\mu_2 v_2} \frac{\cos{ \theta_t}}{\cos\theta_i} \right) E_t,
@@ -242,7 +242,7 @@ with a final rearrangement to yield
 {
 \mu_2 v_2 \cos\theta_i
 +\mu_1 v_1 \cos\theta_t
-}
+}.
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:550}
 \frac{E_r}{E_i}
@@ -255,7 +255,7 @@ with a final rearrangement to yield
 {
 \mu_2 v_2 \cos\theta_i
 +\mu_1 v_1 \cos\theta_t
-}
+}.
 \end{dmath}
 \end{subequations}
 %
@@ -284,7 +284,7 @@ The ratio of field strengths for \(\BE\) parallel to the interface, using notati
 {
 1 + \alpha \beta
 }
-}
+}.
 \end{subequations}
 } % makeanswer
 %\shipoutAnswer
@@ -296,10 +296,10 @@ As a second sanity check let's rotate our field polarizations by applying a rota
 %
 \begin{subequations}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:570}
--\mcap_p \rightarrow -\mcap_p \Be_2 \mcap_p = \Be_2
+-\mcap_p \rightarrow -\mcap_p \Be_2 \mcap_p = \Be_2.
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:590}
-\Be_2 \rightarrow \Be_2 \Be_2 \mcap_p = \mcap_p
+\Be_2 \rightarrow \Be_2 \Be_2 \mcap_p = \mcap_p.
 \end{dmath}
 \end{subequations}
 %
@@ -308,13 +308,13 @@ This time we have \(\BE_p \parallel \mcap_p\) and \(\BB_p \parallel \Be_2\).  Ou
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:610}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:630}
-\epsilon_1 \gpgradezero{ \Be_3 \left( \mcap_i E_i  + \mcap_r E_r  \right) } = \epsilon_2 \gpgradezero{ \Be_3 \left( \mcap_t E_t  \right) }
+\epsilon_1 \gpgradezero{ \Be_3 \left( \mcap_i E_i  + \mcap_r E_r  \right) } = \epsilon_2 \gpgradezero{ \Be_3 \left( \mcap_t E_t  \right) }.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:650}
-\inv{v_1} \gpgradezero{ \Be_3 \left( \Be_2 E_i + \Be_2 E_r  \right) } = \inv{v_2} \gpgradezero{ \Be_3 \left( \Be_2 E_t  \right) }
+\inv{v_1} \gpgradezero{ \Be_3 \left( \Be_2 E_i + \Be_2 E_r  \right) } = \inv{v_2} \gpgradezero{ \Be_3 \left( \Be_2 E_t  \right) }.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:670}
-\gpgradetwo{ \Be_3 \left( \mcap_i E_i  + \mcap_r E_r  \right) } = \gpgradetwo{ \Be_3 \left( \mcap_t E_t  \right) }
+\gpgradetwo{ \Be_3 \left( \mcap_i E_i  + \mcap_r E_r  \right) } = \gpgradetwo{ \Be_3 \left( \mcap_t E_t  \right) }.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:690}
 \inv{\mu_1 v_1} \gpgradetwo{ \Be_3 \left( \Be_2 E_i  + \Be_2 E_r  \right) } = \inv{\mu_2 v_2} \gpgradetwo{ \Be_3 \left( \Be_2 E_t  \right) }.
@@ -326,10 +326,10 @@ This second \eqnref{eqn:fresnelAlternatePolarization:650} is a \(0 = 0\) identit
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:610a}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:630a}
-\epsilon_1 \gpgradezero{ \Be_3 \left( \Be_3 j e^{j \theta_i} E_i  + (-\Be_3) j e^{-j \theta_r} E_r  \right) } = \epsilon_2 \gpgradezero{ \Be_3 \left( \Be_3 j e^{j \theta_t} E_t  \right) }
+\epsilon_1 \gpgradezero{ \Be_3 \left( \Be_3 j e^{j \theta_i} E_i  + (-\Be_3) j e^{-j \theta_r} E_r  \right) } = \epsilon_2 \gpgradezero{ \Be_3 \left( \Be_3 j e^{j \theta_t} E_t  \right) }.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:670a}
-\gpgradetwo{ \Be_3 \left( \Be_3 j e^{j \theta_i} E_i  + (-\Be_3) j e^{-j \theta_r} E_r  \right) } = \gpgradetwo{ \Be_3 \left( \Be_3 j e^{j \theta_t} E_t  \right) }
+\gpgradetwo{ \Be_3 \left( \Be_3 j e^{j \theta_i} E_i  + (-\Be_3) j e^{-j \theta_r} E_r  \right) } = \gpgradetwo{ \Be_3 \left( \Be_3 j e^{j \theta_t} E_t  \right) }.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:690a}
 \inv{\mu_1 v_1} \gpgradetwo{ \Be_3 \left( \Be_2 E_i  + \Be_2 E_r  \right) } = \inv{\mu_2 v_2} \gpgradetwo{ \Be_3 \left( \Be_2 E_t  \right) }.
@@ -341,13 +341,13 @@ Simplifying we have
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:610b}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:630b}
-\epsilon_1 \left(  -\sin \theta_i E_i  - \sin{\theta_r} E_r  \right) = - \epsilon_2 \sin{\theta_t} E_t
+\epsilon_1 \left(  -\sin \theta_i E_i  - \sin{\theta_r} E_r  \right) = - \epsilon_2 \sin{\theta_t} E_t.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:670b}
-\cos{ \theta_i} E_i  - \cos{ \theta_r} E_r = \cos{ \theta_t} E_t
+\cos{ \theta_i} E_i  - \cos{ \theta_r} E_r = \cos{ \theta_t} E_t.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:690b}
-E_i  + E_r = \frac{\mu_1 v_1} {\mu_2 v_2} E_t
+E_i  + E_r = \frac{\mu_1 v_1} {\mu_2 v_2} E_t.
 \end{equation}
 \end{subequations}
 %
@@ -360,7 +360,7 @@ Noting that \(\epsilon_p v_p = 1/(v_p \mu_p)\) we find
 =
 \frac{\epsilon_2 v_2}{\epsilon_1 v_1}
 =
-\frac{\mu_1 v_1}{\mu_2 v_2}
+\frac{\mu_1 v_1}{\mu_2 v_2}.
 \end{dmath}
 %
 showing that \eqnref{eqn:fresnelAlternatePolarization:630b} and \eqnref{eqn:fresnelAlternatePolarization:690b} are dependent.  We are left with the system
@@ -368,7 +368,7 @@ showing that \eqnref{eqn:fresnelAlternatePolarization:630b} and \eqnref{eqn:fres
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:610d}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:670d}
-E_i - E_r = \alpha E_t
+E_i - E_r = \alpha E_t.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:690d}
 E_i + E_r = \beta E_t.
@@ -385,7 +385,7 @@ with solution
 }
 \boxedEquation{eqn:fresnelAlternatePolarization:810}{
 \frac{E_r}{E_i} = \frac{\beta - \alpha}{\beta + \alpha}
-}
+}.
 \end{subequations}
 } % makeanswer
 
@@ -398,16 +398,16 @@ Substituting our \(\mcap_p\) vector expressions into the boundary value constrai
 \begin{subequations}
 \label{eqn:fresnelAlternatePolarization:830}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:850}
-\epsilon_1 \gpgradezero{ \Be_3 \Be_2 \left( E_i e^{ \mcap_i \Be_2 \phi_i } + E_r e^{ \mcap_r \Be_2 \phi_r } \right) } = \epsilon_2 \gpgradezero{ \Be_3 \Be_2 E_t e^{ \mcap_t \Be_2 \phi_t } }
+\epsilon_1 \gpgradezero{ \Be_3 \Be_2 \left( E_i e^{ \mcap_i \Be_2 \phi_i } + E_r e^{ \mcap_r \Be_2 \phi_r } \right) } = \epsilon_2 \gpgradezero{ \Be_3 \Be_2 E_t e^{ \mcap_t \Be_2 \phi_t } }.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:870}
-\inv{v_1} \gpgradezero{ j e^{j \theta_i} E_i e^{ \mcap_i \Be_2 \phi_i } - j e^{-j \theta_r} E_r e^{ \mcap_r \Be_2 \phi_r } } = \inv{v_2} \gpgradezero{ j e^{j \theta_t} E_t e^{ \mcap_t \Be_2 \phi_t } }
+\inv{v_1} \gpgradezero{ j e^{j \theta_i} E_i e^{ \mcap_i \Be_2 \phi_i } - j e^{-j \theta_r} E_r e^{ \mcap_r \Be_2 \phi_r } } = \inv{v_2} \gpgradezero{ j e^{j \theta_t} E_t e^{ \mcap_t \Be_2 \phi_t } }.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:890}
-\gpgradetwo{ \Be_3 \Be_2 \left( E_i e^{ \mcap_i \Be_2 \phi_i } + E_r e^{ \mcap_r \Be_2 \phi_r } \right) } = \gpgradetwo{ \Be_3 \Be_2 E_t e^{ \mcap_t \Be_2 \phi_t } }
+\gpgradetwo{ \Be_3 \Be_2 \left( E_i e^{ \mcap_i \Be_2 \phi_i } + E_r e^{ \mcap_r \Be_2 \phi_r } \right) } = \gpgradetwo{ \Be_3 \Be_2 E_t e^{ \mcap_t \Be_2 \phi_t } }.
 \end{equation}
 \begin{equation}\label{eqn:fresnelAlternatePolarization:910}
-\inv{\mu_1 v_1} \gpgradetwo{ j e^{j \theta_i} E_i e^{ \mcap_i \Be_2 \phi_i } - j e^{-j \theta_r} E_r e^{ \mcap_r \Be_2 \phi_r } } = \inv{\mu_2 v_2} \gpgradetwo{ j e^{j \theta_t} E_t e^{ \mcap_t \Be_2 \phi_t } }
+\inv{\mu_1 v_1} \gpgradetwo{ j e^{j \theta_i} E_i e^{ \mcap_i \Be_2 \phi_i } - j e^{-j \theta_r} E_r e^{ \mcap_r \Be_2 \phi_r } } = \inv{\mu_2 v_2} \gpgradetwo{ j e^{j \theta_t} E_t e^{ \mcap_t \Be_2 \phi_t } }.
 \end{equation}
 \end{subequations}
 %
@@ -426,7 +426,7 @@ We want to expand some intermediate multivector products
 -j e^{j \theta_q} \sin{\phi_q}
 =
 \Be_{32} \cos \phi_q - \Be_{31} \cos\theta_q \sin\phi_q
-+ \sin\theta_q \sin{\phi_q}
++ \sin\theta_q \sin{\phi_q}.
 \end{dmath}
 %
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:930b}
@@ -442,7 +442,7 @@ We want to expand some intermediate multivector products
 + j e^{-j \theta_r} \sin{\phi_r}
 =
 \Be_{32} \cos \phi_r + \Be_{31} \cos\theta_r \sin{\phi_r}
-+ \sin \theta_r \sin{\phi_r}
++ \sin \theta_r \sin{\phi_r}.
 \end{dmath}
 %
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:950}
@@ -468,7 +468,7 @@ j e^{j \theta_q} \cos \phi_q
 =
 \Be_{31} \cos {j \theta_q} \cos \phi_q
 + \Be_{32} \sin{\phi_q}
-- \sin{ \theta_q} \cos \phi_q
+- \sin{ \theta_q} \cos \phi_q.
 \end{dmath}
 %
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:970}
@@ -491,7 +491,7 @@ j e^{j \theta_q} \cos \phi_q
 =
 -\Be_{31} \cos{\theta_r} \cos\phi_r
 + \Be_{32} \sin\phi_r
-- \sin{ \theta_r} \cos\phi_r
+- \sin{ \theta_r} \cos\phi_r.
 \end{dmath}
 %
 Our boundary value conditions are then
@@ -505,7 +505,7 @@ E_i
 \sin \theta_r \sin{\phi_r}
 \right)
 = \epsilon_2 E_t
-\sin\theta_t \sin{\phi_t}
+\sin\theta_t \sin{\phi_t}.
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1010}
 \inv{v_1}
@@ -519,7 +519,7 @@ E_r
 =
 \inv{v_2}
 E_t
-\sin{ \theta_t} \cos \phi_t
+\sin{ \theta_t} \cos \phi_t.
 \end{dmath}
 %\begin{dmath}\label{eqn:fresnelAlternatePolarization:1030}
 %E_i
@@ -565,7 +565,7 @@ E_r
 \cos \phi_r
 =
 E_t
-\cos \phi_t
+\cos \phi_t.
 \end{dmath}
 %
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1030b}
@@ -576,7 +576,7 @@ E_r
 \cos\theta_r \sin{\phi_r}
 =
 -E_t
-\cos\theta_t \sin\phi_t
+\cos\theta_t \sin\phi_t.
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1050a}
 \inv{\mu_1 v_1}
@@ -590,7 +590,7 @@ E_r
 =
 \inv{\mu_2 v_2}
 E_t
- \cos { \theta_t} \cos \phi_t
+ \cos { \theta_t} \cos \phi_t.
 \end{dmath}
 %
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1050b}
@@ -605,7 +605,7 @@ E_r
 =
 \inv{\mu_2 v_2}
 E_t
-\sin{\phi_t}
+\sin{\phi_t}.
 \end{dmath}
 \end{subequations}
 %
@@ -622,7 +622,7 @@ E_r
 \cos \phi_r
 =
 E_t
-\cos \phi_t
+\cos \phi_t.
 \end{dmath}
 %
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1090}
@@ -633,7 +633,7 @@ E_r
 \sin{\phi_r}
 =
 -E_t \alpha
-\sin\phi_t
+\sin\phi_t.
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1110}
 E_i
@@ -644,7 +644,7 @@ E_r
 =
 \alpha \beta
 E_t
-\cos \phi_t
+\cos \phi_t.
 \end{dmath}
 %
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1130}
@@ -656,7 +656,7 @@ E_r
 =
 \beta
 E_t
-\sin{\phi_t}
+\sin{\phi_t}.
 \end{dmath}
 \end{subequations}
 %
@@ -684,16 +684,16 @@ For a polarization of \(\phi = 0\) and \(\phi = \pi/2\) respectively, we found i
 %
 \begin{subequations}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1150}
-\frac{E_{r \parallel}}{E_{i \parallel}} = \frac{1 - \alpha \beta}{1 + \alpha \beta}
+\frac{E_{r \parallel}}{E_{i \parallel}} = \frac{1 - \alpha \beta}{1 + \alpha \beta}.
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1170}
-\frac{E_{t \parallel}}{E_{i \parallel}} = \frac{2 }{1 + \alpha \beta}
+\frac{E_{t \parallel}}{E_{i \parallel}} = \frac{2 }{1 + \alpha \beta}.
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1190}
-\frac{E_{r \perp}}{E_{i \perp}} = \frac{ \beta - \alpha }{\beta + \alpha}
+\frac{E_{r \perp}}{E_{i \perp}} = \frac{ \beta - \alpha }{\beta + \alpha}.
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1210}
-\frac{E_{t \perp}}{E_{i \perp}} = \frac{ 2 }{\beta + \alpha}
+\frac{E_{t \perp}}{E_{i \perp}} = \frac{ 2 }{\beta + \alpha}.
 \end{dmath}
 \end{subequations}
 %
@@ -707,14 +707,14 @@ Our incident, reflected, and transmitted fields are
 %
 \begin{subequations}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1230}
-\BE_i = E_{i} \Be_2 e^{\Be_2 \mcap_i \phi}
+\BE_i = E_{i} \Be_2 e^{\Be_2 \mcap_i \phi}.
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1250}
 \BE_r =
 E_{i \parallel}
 \frac{1 - \alpha\beta}{1 + \alpha\beta} \Be_2
 + E_{i \perp}
-\frac{\beta - \alpha}{\beta + \alpha} \mcap_r
+\frac{\beta - \alpha}{\beta + \alpha} \mcap_r.
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1270}
 \BE_t =
@@ -723,7 +723,7 @@ E_{i \parallel}
 \Be_2
 + E_{i \perp}
 \frac{2}{\beta + \alpha}
-\mcap_i
+\mcap_i.
 \end{dmath}
 \end{subequations}
 %
@@ -732,7 +732,7 @@ However, \(E_{i \parallel} = E_i \cos \phi\) and \(E_{i \perp} = E_i \sin\phi\) 
 %
 \begin{subequations}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1290}
-\BE_i = E_{i} \left( \Be_2 \cos\phi + \Be_1 e^{j \theta_i} \sin\phi \right)
+\BE_i = E_{i} \left( \Be_2 \cos\phi + \Be_1 e^{j \theta_i} \sin\phi \right).
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1310}
 \BE_r =
@@ -742,7 +742,7 @@ E_i
 \frac{1 - \alpha\beta}{1 + \alpha\beta} \Be_2
 - \sin\phi
 \frac{\beta - \alpha}{\beta + \alpha} \Be_1 e^{-j \theta_r}
-\right)
+\right).
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1330}
 \BE_t =
@@ -754,7 +754,7 @@ E_i
 + \sin\phi
 \frac{2}{\beta + \alpha}
 \Be_1 e^{j \theta_t}
-\right)
+\right).
 \end{dmath}
 \end{subequations}
 %
@@ -764,10 +764,10 @@ We find that the reflected and transmitted polarization angles are respectively
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1350}
 \tan \phi_r = \tan \phi
 \frac{\beta - \alpha}{\beta + \alpha}
-\frac{1 + \alpha \beta}{1 - \alpha \beta}
+\frac{1 + \alpha \beta}{1 - \alpha \beta}.
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1370}
-\tan \phi_t = \tan \phi \frac{ 1 + \alpha \beta}{ \beta + \alpha}
+\tan \phi_t = \tan \phi \frac{ 1 + \alpha \beta}{ \beta + \alpha}.
 \end{dmath}
 \end{subequations}
 %
@@ -783,7 +783,7 @@ where the associated magnitudes are
 + \left( \sin\phi
 \frac{\beta - \alpha}{\beta + \alpha}
 \right)^2
-}
+}.
 \end{dmath}
 \begin{dmath}\label{eqn:fresnelAlternatePolarization:1330c}
 \frac{E_t}{E_i}
@@ -797,7 +797,7 @@ where the associated magnitudes are
 \sin\phi
 \frac{2}{\beta + \alpha}
 \right)^2
-}
+}.
 \end{dmath}
 \end{subequations}
 %
