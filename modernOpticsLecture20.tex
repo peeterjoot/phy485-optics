@@ -52,19 +52,19 @@ z_0 = \frac{\pi w_0^2}{\lambda}
 \frac{z}{z_0}
 \right)
 \end{dmath}
-
+%
 Our complete wave was
 %
 \begin{dmath}\label{eqn:modernOpticsLecture20:110}
 \Psi(x, y, z) = \Psi_0 u(x, y, z) e^{i k_0 z - i \omega t}.
 \end{dmath}
-
+%
 In particular, along the z-axis, where \(\phi(0) = 0\) and \(r^2 = 0\), we have
 %
 \begin{dmath}\label{eqn:modernOpticsLecture20:130}
 \Psi(0, 0, z) = \Psi_0 \frac{w_0}{w(z)} e^{i k_0 z - i \omega t}.
 \end{dmath}
-
+%
 \paragraph{Guoy phase shift}
 \index{Guoy!phase shift}
 
@@ -80,7 +80,7 @@ We want to consider the constant curves
 \begin{dmath}\label{eqn:modernOpticsLecture20:150}
 -i \phi(z) + i k_0 z - i \omega t = i \text{constant}.
 \end{dmath}
-
+%
 ( For a quick and nicely written reminder of why we are looking at constant phase fronts see: \href{http://goo.gl/uNJMg}{http://goo.gl/uNJMg} )
 
 Taking time derivatives of \(\phi\), using chain rule and \eqnref{eqn:modernOpticsLecture20AtanDerivativeProblem:790}, we have
@@ -90,7 +90,7 @@ Taking time derivatives of \(\phi\), using chain rule and \eqnref{eqn:modernOpti
 = \ddt{z} \ddz{\phi}
 = \ddt{z} \frac{z_0}{z^2 + z_0^2}
 \end{dmath}
-
+%
 The time derivative of \eqnref{eqn:modernOpticsLecture20:150} is then
 %
 \begin{dmath}\label{eqn:modernOpticsLecture20:230}
@@ -98,7 +98,7 @@ The time derivative of \eqnref{eqn:modernOpticsLecture20:150} is then
 \ddt{z} \frac{z_0}{z^2 + z_0^2}
 + i k_0 \ddt{z} - i \omega = 0
 \end{dmath}
-
+%
 Solve for the phase velocity \(V_{\mathrm{ph}} = dz/dt\), we find
 
 \boxedEquation{eqn:modernOpticsLecture20:250}{
@@ -115,7 +115,7 @@ We can write this as
 \frac{k_{\mathrm{eff}}}{k_0}
 = 1 - \frac{2}{k_0^2 \omega_0^2} \inv{ 1 + (z/z_0)^2},
 \end{dmath}
-
+%
 We have \(k_{\mathrm{eff}} > 0\) provided \((z/z_0)^2 > 2/(k_0 \omega_0)^2 -1\).  We have \(k_{\mathrm{eff}}\) take its maximum of \(k_0\) as \(z \rightarrow \infty\), and takes its minimum value at \(z = 0\) of
 %
 \begin{dmath}\label{eqn:modernOpticsLecture20:290}
@@ -123,7 +123,7 @@ k_{\mathrm{eff}}
 %= k_0 - \frac{1}{z_0}
 = k_0 - \frac{2}{k_0 \omega_0^2}.
 \end{dmath}
-
+%
 We plot \(k_{\mathrm{eff}}/k_0\) as a function of \(z/z_0\) with \(2/(k_0 \omega_0^2) = 1/10\) in \cref{fig:modernOpticsLecture20:modernOpticsLecture20Fig5}.
 %
 \imageFigure{../figures/phy485-optics/modernOpticsLecture20Fig5}{Effective Phase velocity}{fig:modernOpticsLecture20:modernOpticsLecture20Fig5}{0.3}
@@ -133,7 +133,7 @@ Since \(k_{\mathrm{eff}} < k_0\) for all \(z\) we have \(V_{\mathrm{ph}} > \omeg
 \begin{equation}\label{eqn:modernOpticsLecture20:270}
 V_{\mathrm{ph}} > c.
 \end{equation}
-
+%
 Our phase velocity always exceeds the speed of light.
 
 %FIXME: what was the significance of this \(z = 0\) value of \(k_{\mathrm{eff}}\)?
@@ -174,13 +174,13 @@ H_1(x) &= 2 x \\
 H_2(x) &= 4 x^2 - 1
 \end{aligned}
 \end{equation}
-
+%
 Now get
 %
 \begin{equation}\label{eqn:modernOpticsLecture20:350}
 k_{\mathrm{eff}} = k_0 - ( m + l + 1) \frac{z_0}{z^2 + z_0^2}
 \end{equation}
-
+%
 \paragraph{Beam parameter}
 \index{beam parameter}
 
@@ -195,7 +195,7 @@ It turns out that we can consider an equivalent system of mirrors in series as i
 \begin{equation}\label{eqn:modernOpticsLecture20:370}
 \inv{q(z)} = \inv{R(z)} + i \frac{\lambda}{\pi w^2(z)}
 \end{equation}
-
+%
 where \(\Real \inv{q(z)}\) gives curvature, and \(\Imag \inv{q(z)}\) gives beam radius.
 
 Now
@@ -208,26 +208,26 @@ u_{lm}
 u_{00}
 = \frac{w_0}{w(z)} e^{\frac{i k_0 r^2}{2 q}} e^{-i \phi}
 \end{dmath}
-
+%
 Found in uniform medium
 %
 \begin{equation}\label{eqn:modernOpticsLecture20:430}
 q(z) = z - i z_0
 \end{equation}
-
+%
 Know that if \(q_1\) at some position \(z_1\) then at \(z_2\)
 %
 \begin{equation}\label{eqn:modernOpticsLecture20:450}
 q_2 = q_1 + (z_2 - z_1)
 \end{equation}
-
+%
 \paragraph{M\"obius Transform}
 \index{M\"obius transform}
 %
 \begin{equation}\label{eqn:modernOpticsLecture20:470}
 q' = \frac{ A q + B }{C q + D}
 \end{equation}
-
+%
 where coefficients same as we used in geometric optics
 
 i.e. \(A\), \(B\), \(C\), \(D\) transformation, such as that of a lens:
@@ -239,7 +239,7 @@ M =
 -\inv{f} & 1
 \end{bmatrix}
 \end{equation}
-
+%
 (\(A = 1\), \(B = 0\), \(C = -1/f\), \(D = 1\)).
 
 This happens to be (not to be proven) that this is exactly how a Gaussian lens behaves when it encounters a lens/mirror/...
@@ -249,7 +249,7 @@ For a lens interaction we have
 \begin{equation}\label{eqn:modernOpticsLecture20:530}
 q' = \frac{(1) q + (0)}{(-1/f) q + (1)} = \inv{-\inv{f} + \inv{q}}
 \end{equation}
-
+%
 \makeexample{Check for free propagation}{example:WHAT:1}{
 %
 \begin{equation}\label{eqn:modernOpticsLecture20:550}
@@ -263,7 +263,7 @@ M =
 \begin{equation}\label{eqn:modernOpticsLecture20:510}
 q' = \frac{(1) q + (L)}{(0)q + (1)} = q + L
 \end{equation}
-
+%
 which is what we know from \eqnref{eqn:modernOpticsLecture20:450}.
 }
 
@@ -273,7 +273,7 @@ For the lens transformation of \eqnref{eqn:modernOpticsLecture20:530} we have
 \begin{equation}\label{eqn:modernOpticsLecture20:570}
 \inv{q'} = \inv{q} - \inv{f}
 \end{equation}
-
+%
 so that
 %
 \begin{equation}\label{eqn:modernOpticsLecture20:590}
@@ -300,7 +300,7 @@ y \\
 \alpha
 \end{bmatrix}
 \end{dmath}
-
+%
 We can relate \(y'/\alpha'\) and \(y/\alpha\) as follows
 %
 \begin{subequations}
@@ -311,13 +311,13 @@ y' = A y + B \alpha
 \alpha' = C y + D \alpha
 \end{dmath}
 \end{subequations}
-
+%
 So that
 %
 \begin{dmath}\label{eqn:modernOpticsLecture20:730}
 \frac{y'}{\alpha'} = \frac{A y + B \alpha}{ C y + D \alpha}.
 \end{dmath}
-
+%
 This takes some of the mystery about the equivalence out of the picture since we see the structure of the M\"obius transformation in this ratio, even for plain old rays.  It would still be nice to see a proof of exactly how that applies to the Gaussian beams.
 
 \paragraph{Cavity stability}
@@ -330,10 +330,10 @@ The criteria is
 \begin{equation}\label{eqn:modernOpticsLecture20:610}
 0 < g_1 g_2 < 1
 \end{equation}
-
+%
 where we introduce dimensionless quantities
 %
 \begin{equation}\label{eqn:modernOpticsLecture20:630}
 g_{1,2} = 1 - \frac{L}{R_{1,2}}
 \end{equation}
-
+%

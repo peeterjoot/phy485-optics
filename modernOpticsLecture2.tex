@@ -33,7 +33,7 @@ We want to find the rays in Maxwell's equations.
 \spacegrad \cross \BB &= \inv{c} \PD{t}{\BD}.
 \end{aligned}
 \end{equation}
-
+%
 Assume
 \begin{enumerate}
 \item
@@ -43,12 +43,12 @@ Note the choice of units here, with no \(c\) in the definition of \(n\).  In SI 
 \begin{equation}\label{eqn:modernOpticsLecture2:670}
 n = \frac{c}{v} = \frac{c}{1/\sqrt{\epsilon\mu}} \approx c \sqrt{\epsilon}.
 \end{equation}
-
+%
 however, with these units (and \(\mu = 1\)) the wave equation operator takes the form
 \begin{equation}\label{eqn:modernOpticsLecture2:770}
 \spacegrad^2 - \frac{\epsilon}{c^2} \partial_{tt}.
 \end{equation}
-
+%
 From this we deduce the wave velocity is \(c/\sqrt{\epsilon}\), and then find \(n = c/v\) matches \eqnref{eqn:modernOpticsLecture2:5} above.
 }
 \begin{equation}\label{eqn:modernOpticsLecture2:5}
@@ -72,7 +72,7 @@ If \(n = \text{constant}\), we know that plane waves are solutions.  Try
 \end{bmatrix}
 e^{i \phi(\Br) - i \omega t}
 \end{equation}
-
+%
 We know that for plane waves we'll have
 \begin{equation}\label{eqn:modernOpticsLecture2:50}
 \begin{aligned}
@@ -81,7 +81,7 @@ We know that for plane waves we'll have
 \phi(\Br) &\rightarrow \Bk \cdot \Br.
 \end{aligned}
 \end{equation}
-
+%
 The time derivatives are
 \begin{equation}\label{eqn:modernOpticsLecture2:70}
 \inv{c} \PD{t}{}
@@ -102,7 +102,7 @@ The time derivatives are
 \BB
 \end{bmatrix}.
 \end{equation}
-
+%
 For the spatial derivatives we have
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:90}
@@ -117,7 +117,7 @@ e^{i \phi(\Br)}
 \BE_0(\Br) \cdot \left( \spacegrad e^{i \phi(\Br)} \right)
 },
 \end{equation}
-
+%
 and
 \begin{equation}\label{eqn:modernOpticsLecture2:91}
 \spacegrad \cross \BE =
@@ -131,7 +131,7 @@ e^{i \phi(\Br)}
 \BE_0(\Br) \cross \left( \spacegrad e^{i \phi(\Br)} \right)
 }.
 \end{equation}
-
+%
 We can computing the phase gradient directly
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:790}
@@ -145,19 +145,19 @@ i \Be_m \partial_m \phi e^{i \phi} \\
 i (\spacegrad \phi) e^{i \phi},
 \end{aligned}
 \end{equation}
-
+%
 and use this to justify the neglect of the gradients products of \(\BE_0\) above.  Since
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:110}
 \inv{E_0^n} \frac{d E_0^n}{dx_p} \ll \inv{\lambda}
 \end{equation}
-
+%
 for all \(x_p \in \{x, y, z\}\).  Since
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:130}
 \spacegrad \phi \approx k_0 \sim \frac{2 \pi}{\lambda}
 \end{equation}
-
+%
 we see that the non-neglected terms above are of order \(\Abs{\BE_0}/\lambda\), which justifies the action.
 
 This leaves us with
@@ -170,7 +170,7 @@ i e^{i \phi -i \omega t} \BE_0(\Br) \cdot \spacegrad \phi
 -i e^{i \phi -i \omega t}
 \BE_0(\Br) \cross \spacegrad \phi.
 \end{equation}
-
+%
 Maxwell's equations now take the form
 %
 \begin{subequations}
@@ -188,7 +188,7 @@ Maxwell's equations now take the form
 \spacegrad \phi \cross \BB_0 = - \epsilon k_0 \BE_0
 \end{equation}
 \end{subequations}
-
+%
 Crossing \(\spacegrad \phi\) with \eqnref{eqn:modernOpticsLecture2:190} we have
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:810}
@@ -197,13 +197,13 @@ Crossing \(\spacegrad \phi\) with \eqnref{eqn:modernOpticsLecture2:190} we have
 \spacegrad \phi \left( \cancel{\spacegrad \phi \cdot \BE_0} \right) - \BE_0 (\spacegrad \phi)^2 &= - \epsilon k_0^2 \BE_0
 \end{aligned}
 \end{equation}
-
+%
 This is called the Eikonal equation and can be written as
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:230}
 \Abs{\spacegrad \phi}^2 = k_0^2 \epsilon(\Br)
 \end{equation}
-
+%
 or
 \boxedEquation{eqn:modernOpticsLecture2:250}{
 \Abs{\spacegrad \phi} = k_0 n(\Br)
@@ -214,7 +214,7 @@ If \(n = \text{constant}\)
 \begin{equation}\label{eqn:modernOpticsLecture2:270}
 \Abs{\spacegrad \phi} = k_0 n
 \end{equation}
-
+%
 This can be illustrated as in \cref{fig:modernOpticsLecture2:modernOpticsLecture2Fig1}.
 %
 \imageFigure{../figures/phy485-optics/modernOpticsLecture2Fig1}{Plane waves for constant index of refraction}{fig:modernOpticsLecture2:modernOpticsLecture2Fig1}{0.2}
@@ -231,13 +231,13 @@ How about the Poynting vector?  This is the direction of the ``ray'', the direct
 \begin{equation}\label{eqn:modernOpticsLecture2:290}
 \BS = \frac{c}{4 \pi} \Real{\BE} \cross \Real{\BB},
 \end{equation}
-
+%
 and after some math, taking the average we have
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:310}
 \expectation{\BS}_{\mathrm{time}} = \frac{c}{8 \pi k_0} \Abs{\BE_0}^2 \spacegrad \phi
 \end{equation}
-
+%
 We see that the rays point along \(\spacegrad \phi\).
 
 \section{Ray equation}
@@ -252,7 +252,7 @@ s = \text{distance along ray}
 \begin{equation}\label{eqn:modernOpticsLecture2:350}
 \Bt = \text{tangent} = \frac{d\Br(s)}{ds}
 \end{equation}
-
+%
 The unit vector, parallel to \(\spacegrad \phi\) is
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:830}
@@ -262,13 +262,13 @@ The unit vector, parallel to \(\spacegrad \phi\) is
 &= \frac{\spacegrad \phi}{ n(\Br) k_0},
 \end{aligned}
 \end{equation}
-
+%
 So we have
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:370}
 n(\Br) \frac{d\Br}{ds} = \inv{k_0} \spacegrad \phi.
 \end{equation}
-
+%
 We'd like to get rid of the pesky dependence on the phase.  Let's take another derivative to attempt to get rid of \(\spacegrad \phi\).  Will this work?
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:850}
@@ -283,19 +283,19 @@ We'd like to get rid of the pesky dependence on the phase.  Let's take another d
 \spacegrad \phi
 \end{aligned}
 \end{equation}
-
+%
 Here we've used the convective derivative
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:690}
 \frac{d}{ds} = \PD{s}{} + \PD{s}{\Br} \cdot \spacegrad = \frac{d \Br}{ds} \cdot \spacegrad.
 \end{equation}
-
+%
 In \cref{modernOpticsLecture2:pr2} we show that
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:390}
 (\spacegrad \phi \cdot \spacegrad ) \spacegrad \phi = k_0^2 n \spacegrad n,
 \end{equation}
-
+%
 which gives us the \underlineAndIndex{Ray equation}
 
 \boxedEquation{eqn:modernOpticsLecture2:410}{
@@ -315,26 +315,26 @@ With a constant index we have
 \begin{equation}\label{eqn:modernOpticsLecture2:430}
 \frac{d}{ds} \left( n \frac{d\Br}{ds} \right) = \spacegrad n = 0
 \end{equation}
-
+%
 So
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:450}
 \frac{d^2}{ds^2} \Br(s) = 0
 \end{equation}
-
+%
 Integrating twice we see this is the straight ray that we expect
 
 %\dr/ds = const
 \begin{equation}\label{eqn:modernOpticsLecture2:470}
 \Br = s \Ba + \Br_0.
 \end{equation}
-
+%
 We can compute the unit tangent
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:490}
 \frac{d\Br}{ds} = \Ba = \inv{n k_0} \spacegrad \phi,
 \end{equation}
-
+%
 finding that our constant vector \(\Ba\), in this case, is a unit vector in the direction of the gradient.
 This shows that the gradient of the phase lies along the ray path of wave front.
 
@@ -342,19 +342,19 @@ The ray \(\Br(t)\) for a fixed phase front (not a general expression) can be imp
 \begin{equation}\label{eqn:modernOpticsLecture2:710}
 \phi(\Br, t) = \omega t,
 \end{equation}
-
+%
 Or more generally
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:510}
 \Br \cdot \spacegrad \phi(\Br) = \omega t.
 \end{equation}
-
+%
 We find
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:530}
 \Ba \cdot \Br = \frac{\omega t}{n \omega/c} = \frac{c}{n} t = vt,
 \end{equation}
-
+%
 so the phase front of the wave moves with speed \(c/n\) along the ray direction.
 
 \section{Trap a ray}
@@ -374,7 +374,7 @@ If we have a circular trajectory
 0
 \end{bmatrix}.
 \end{equation}
-
+%
 We can imagine any sort of variation of \(n\) with \(\Br\), such as \cref{fig:modernOpticsLecture2:modernOpticsLecture2Fig5}, but
 we want to figure out exactly what \(n(\Br)\) has to be.  We can do so by plugging into \eqnref{eqn:modernOpticsLecture2:410}.
 %
@@ -385,7 +385,7 @@ We'll assume that \(n(\Br)\) is radially symmetric, so that given the constant r
 \begin{equation}\label{eqn:modernOpticsLecture2:570}
 \frac{d^2}{ds^2} \Br(s) = \frac{\spacegrad n(\Br)}{n(\Br)},
 \end{equation}
-
+%
 Taking derivatives, we have
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:590}
@@ -397,7 +397,7 @@ Taking derivatives, we have
 \end{bmatrix}
 \frac{d\theta}{ds}
 \end{equation}
-
+%
 Since \(s = R \theta\), we have \(d\theta/ds = 1/R\), and
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:590a}
@@ -408,7 +408,7 @@ Since \(s = R \theta\), we have \(d\theta/ds = 1/R\), and
 0
 \end{bmatrix}.
 \end{equation}
-
+%
 Taking the next derivative we have
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:590b}
@@ -421,19 +421,19 @@ Taking the next derivative we have
 \inv{R}
 = -\inv{R^2} \Br
 \end{equation}
-
+%
 We find
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:630}
 \frac{d^2 \Br}{ds^2} = \frac{\spacegrad n}{n}
 \end{equation}
-
+%
 or
 %
 \begin{equation}\label{eqn:modernOpticsLecture2:650}
 \spacegrad n = -n \frac{\Br}{R^2}.
 \end{equation}
-
+%
 Trap your own ray today!
 
 

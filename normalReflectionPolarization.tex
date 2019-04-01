@@ -36,7 +36,7 @@ Working with coordinates as illustrated in \cref{fig:normalReflectionPolarizatio
 \tilde{\BB}_{\txtI} = \inv{v} \zcap \cross \tilde{\BE}_{\txtI} = \inv{v} E_{\txtI} e^{i (k z - \omega t)} \ycap.
 \end{equation}
 \end{subequations}
-
+%
 Assuming a polarization \(\ncap = \cos\theta \xcap + \sin\theta \ycap\) for the reflected wave, we have
 %
 \begin{subequations}
@@ -47,7 +47,7 @@ Assuming a polarization \(\ncap = \cos\theta \xcap + \sin\theta \ycap\) for the 
 \tilde{\BB}_{\txtR} = \inv{v} (-\zcap) \cross \tilde{\BE}_{\txtR} = \inv{v} E_{\txtR} e^{i (-k z - \omega t)} (\xcap \sin\theta - \ycap \cos\theta).
 \end{equation}
 \end{subequations}
-
+%
 And finally assuming a polarization \(\ncap = \cos\phi \xcap + \sin\phi \ycap\) for the transmitted wave, we have
 %
 \begin{subequations}
@@ -58,7 +58,7 @@ And finally assuming a polarization \(\ncap = \cos\phi \xcap + \sin\phi \ycap\) 
 \tilde{\BB}_{\txtT} = \inv{v} \zcap \cross \tilde{\BE}_{\txtT} = \inv{v'} E_{\txtT} e^{i (k' z - \omega t)} (-\xcap \sin\phi + \ycap \cos\phi).
 \end{equation}
 \end{subequations}
-
+%
 With no components of any of the \(\tilde{\BE}\) or \(\tilde{\BB}\) waves in the \(\zcap\) directions the boundary value conditions at \(z = 0\) require the equality of the \(\xcap\) and \(\ycap\) components of
 %
 \begin{subequations}
@@ -74,7 +74,7 @@ _{x,y} =
 _{x,y}.
 \end{equation}
 \end{subequations}
-
+%
 With \(\beta = \mu v/\mu' v'\), those components are
 %
 \begin{subequations}
@@ -92,13 +92,13 @@ E_{\txtR} \sin\theta = - \beta E_{\txtT} \sin\phi
 E_{\txtI} - E_{\txtR} \cos\theta = \beta E_{\txtT} \cos\phi
 \end{equation}
 \end{subequations}
-
+%
 Equality of \eqnref{eqn:normalReflectionPolarization:200}, and \eqnref{eqn:normalReflectionPolarization:220} require
 %
 \begin{equation}\label{eqn:normalReflectionPolarization:280}
 - \beta E_{\txtT} \sin\phi = E_{\txtT} \sin\phi,
 \end{equation}
-
+%
 or \((\theta, \phi) \in \{(0, 0), (0, \pi), (\pi, 0), (\pi, \pi)\}\).  It turns out that all of these solutions correspond to the same physical waves.  Let's look at each in turn
 
 \begin{enumerate}
@@ -110,7 +110,7 @@ E_{\txtI} + E_{\txtR} &= E_{\txtT} \\
 E_{\txtI} - E_{\txtR} &= \beta E_{\txtT},
 \end{aligned}
 \end{equation}
-
+%
 with solution
 %
 \begin{equation}\label{eqn:normalReflectionPolarization:320}
@@ -119,7 +119,7 @@ with solution
 \frac{E_{\txtR}}{E_{\txtI}} &= \frac{1 - \beta}{1 + \beta}.
 \end{aligned}
 \end{equation}
-
+%
 \item \((\theta, \phi) = (\pi, \pi)\).  The system \eqnref{eqn:normalReflectionPolarization:260} is reduced to
 %
 \begin{equation}\label{eqn:normalReflectionPolarization:340}
@@ -128,7 +128,7 @@ E_{\txtI} - E_{\txtR} &= -E_{\txtT} \\
 E_{\txtI} + E_{\txtR} &= -\beta E_{\txtT},
 \end{aligned}
 \end{equation}
-
+%
 with solution
 %
 \begin{equation}\label{eqn:normalReflectionPolarization:360}
@@ -137,7 +137,7 @@ with solution
 \frac{E_{\txtR}}{E_{\txtI}} &= -\frac{1 - \beta}{1 + \beta}.
 \end{aligned}
 \end{equation}
-
+%
 Effectively the sign for the magnitude of the transmitted and reflected phasors is toggled, but the polarization vectors are also negated, with \(\ncap = -\xcap\), and \(\ncap' = -\xcap\).  The resulting \(\tilde{\BE}_{\txtR}\) and \(\tilde{\BE}_{\txtT}\) are unchanged relative to those of the \((0,0)\) solution above.
 
 \item \((\theta, \phi) = (0, \pi)\).  The system \eqnref{eqn:normalReflectionPolarization:260} is reduced to
@@ -148,7 +148,7 @@ E_{\txtI} + E_{\txtR} &= -E_{\txtT} \\
 E_{\txtI} - E_{\txtR} &= -\beta E_{\txtT},
 \end{aligned}
 \end{equation}
-
+%
 with solution
 %
 \begin{equation}\label{eqn:normalReflectionPolarization:400}
@@ -157,7 +157,7 @@ with solution
 \frac{E_{\txtR}}{E_{\txtI}} &= \frac{1 - \beta}{1 + \beta}.
 \end{aligned}
 \end{equation}
-
+%
 Effectively the sign for the magnitude of the transmitted phasor is toggled.  The polarization vectors in this case are \(\ncap = \xcap\), and \(\ncap' = -\xcap\), so the transmitted phasor magnitude change of sign does not change \(\tilde{\BE}_{\txtT}\) relative to that of the \((0,0)\) solution above.
 
 \item \((\theta, \phi) = (\pi, 0)\).  The system \eqnref{eqn:normalReflectionPolarization:260} is reduced to
@@ -168,7 +168,7 @@ E_{\txtI} - E_{\txtR} &= E_{\txtT} \\
 E_{\txtI} + E_{\txtR} &= \beta E_{\txtT},
 \end{aligned}
 \end{equation}
-
+%
 with solution
 %
 \begin{equation}\label{eqn:normalReflectionPolarization:440}
@@ -177,7 +177,7 @@ with solution
 \frac{E_{\txtR}}{E_{\txtI}} &= -\frac{1 - \beta}{1 + \beta}.
 \end{aligned}
 \end{equation}
-
+%
 This time, the sign for the magnitude of the reflected phasor is toggled.  The polarization vectors in this case are \(\ncap = -\xcap\), and \(\ncap' = \xcap\).  In this final variation the reflected phasor magnitude change of sign does not change \(\tilde{\BE}_{\txtR}\) relative to that of the \((0,0)\) solution.
 \end{enumerate}
 

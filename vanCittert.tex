@@ -20,7 +20,7 @@ Our diffraction integral is
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1040}
 \Psi(\Br) = \int \Psi_s(\Br_s) \frac{e^{i k R}}{i\lambda R} d^2 r_s,
 \end{dmath}
-
+%
 with a correlation function of
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1060}
@@ -34,7 +34,7 @@ with a correlation function of
 \Psi_s^\conj(\Br_s, t)
 }
 \end{dmath}
-
+%
 where as in the figure we have
 %
 \begin{subequations}
@@ -45,7 +45,7 @@ where as in the figure we have
 \BR_1(\Br_s') + \Br_s = \Br_1.
 \end{dmath}
 \end{subequations}
-
+%
 We can express an assumption that the wave sources at two different points are uncorrelated by writing
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1120}
@@ -56,7 +56,7 @@ We can express an assumption that the wave sources at two different points are u
 }
 = I(\Br_s) \delta(\Br_s - \Br_s').
 \end{dmath}
-
+%
 This makes some intuitive sense, but still seems sort of like it's been pulled from a magic hat.  I guess the idea is that if the source points are the same then the average of the autocorrelation is an integral of the intensity over all time (thus diverging), while for different points expressing no correlation over time.
 
 Substitution of this delta function and integration over the \(d^2 r_s'\) source coordinates, leaves us
@@ -70,7 +70,7 @@ Substitution of this delta function and integration over the \(d^2 r_s'\) source
 \frac{e^{-i k R_1(\Br_s)}}{R_1(\Br_s)}
 I(\Br_s).
 \end{dmath}
-
+%
 We loose the dependence of \(R_1\) and \(R_2\) on the pair of source points and reformulate the \(R_2 - R_1\) difference in terms of the average distance between \(\Br_2\) and \(\Br_1\), plus the incremental distance between these.  That is
 %
 \begin{subequations}
@@ -81,7 +81,7 @@ We loose the dependence of \(R_1\) and \(R_2\) on the pair of source points and 
 \Br_1 = \Br_{\mathrm{av}} - \inv{2} \Delta \Br.
 \end{dmath}
 \end{subequations}
-
+%
 so that
 %
 \begin{subequations}
@@ -94,7 +94,7 @@ so that
 = \Br_{\mathrm{av}} - \inv{2} \Delta \Br - \Br_s
 \end{dmath}
 \end{subequations}
-
+%
 These have magnitudes
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1240}
@@ -127,7 +127,7 @@ r_{\mathrm{av}}
 - \frac{2}{r_{\mathrm{av}}} \rcap_{\mathrm{av}} \cdot \Br_s
 }
 \end{dmath}
-
+%
 To first order, with the important parts highlighted, this is
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1260}
@@ -143,7 +143,7 @@ r_{\mathrm{av}} +
 -
 \rcap_{\mathrm{av}} \cdot \Br_s
 \end{dmath}
-
+%
 The difference is
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1280}
 R_{2} - R_{1} =
@@ -157,7 +157,7 @@ R_{2} - R_{1} =
 \rcap_{\mathrm{av}} - \inv{r_{\mathrm{av}}} \Br_s
 \right)
 \end{dmath}
-
+%
 Our autocorrelation is now
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1300}
@@ -171,7 +171,7 @@ I(\Br_s)
 }{R_1(\Br_s) R_2(\Br_s)}
 e^{-i k \Delta \Br \cdot \Br_s/r_{\mathrm{av}}}
 \end{dmath}
-
+%
 It's been implied that the integration limits described the aperture.  Let's make that explicit with an aperture function \(g(\Br_s)\) so that we can allow the integration range to go to infinity in both directions without bound.  Let's also assume that the distances \(R_1\) and \(R_2\) don't vary much from their averages
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1320}
@@ -179,7 +179,7 @@ It's been implied that the integration limits described the aperture.  Let's mak
 \frac{\int d^2 r_s g(\Br_s) R_{2,1}(\Br_s)}
 {\int d^2 r_s g(\Br_s) }
 \end{dmath}
-
+%
 so that the autocorrelation now takes the form
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1340}
@@ -194,7 +194,7 @@ e^{i k \Delta \Br \cdot \rcap_{\mathrm{av}}}
 g(\Br_s) I(\Br_s)
 e^{-i k \Delta \Br \cdot \Br_s/r_{\mathrm{av}}}
 \end{dmath}
-
+%
 If both of the vectors \(\Br_s\) and the vector \(\Delta \Br\) lie in the same plane, then the autocorrelation is found to be the Fourier transform of \(g(\Br_s) I(\Br_s)\) evaluated at \(k \Delta \Br/r_{\mathrm{av}}\).
 
 %} % makeanswer pr:5

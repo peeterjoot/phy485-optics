@@ -25,13 +25,13 @@ Given a number of sources as illustrated in \cref{fig:modernOpticsLecture7:moder
 \begin{equation}\label{eqn:modernOpticsLecture7:10}
 \BE = \BE_1 + \BE_2 + \BE_3 + \cdots
 \end{equation}
-
+%
 While there are some experiments that are sensitive to the actual fields, we will typically not care about those specifically, but instead will care about Intensity which has the form
 %
 \begin{equation}\label{eqn:modernOpticsLecture7:30}
 I = (\text{const}) \expectation{ \Abs{\BE}^2 }
 \end{equation}
-
+%
 here the constant is unit dependent, such as \(c \epsilon_0\), but since we will typically be looking at ratios, we can ignore those.  We will move to an intensity based description, but first start with a field description.
 
 Consider two sources
@@ -48,13 +48,13 @@ We observe
 \begin{equation}\label{eqn:modernOpticsLecture7:70}
 I = \expectation{ \Abs{\BE}^2 }
 \end{equation}
-
+%
 where
 %
 \begin{equation}\label{eqn:modernOpticsLecture7:90}
 \expectation{ f(t) } = \lim_{T \rightarrow \infty } \inv{T} \int_0^T dt' f(t').
 \end{equation}
-
+%
 % \gtrsym amssymb
 This time averaging method makes sense for optics where we may have response times \( T \gtrsim 10^{-9} \mbox{s}\), so that \(w T \gg 1\) (\textunderline{slow!})
 
@@ -82,14 +82,14 @@ Forming the magnitude of the field square we have
 =
 I_1 + I_2 + 2 \Real\left(  \expectation{ \BE_1 \cdot \BE_2^\conj} \right).
 \end{dmath}
-
+%
 Consider the cross term.  We have
 %
 \begin{equation}\label{eqn:modernOpticsLecture7:130}
 \BE_1 \cdot \BE_2^\conj
 = \Bepsilon_1 \cdot \Bepsilon_2^\conj E_1 E_2 e^{i \phi_1 - i \phi_2 }
 \end{equation}
-
+%
 We see immediately that if the polarization vectors \(\Bepsilon_1\) and \(\Bepsilon_2\) are orthogonal, we have no interference.  Let's consider some examples of some polarization vectors
 
 \begin{itemize}
@@ -154,7 +154,7 @@ I
 = I_1 + I_2
 + 2 \sqrt{I_1 I_2} \expectation{ \cos(\phi_1 - \phi_2) }
 \end{dmath}
-
+%
 Here we've made use of the fact that \(\Real(.)\) and \(\expectation{.}\) are both linear operators so we can reverse their order of operation.
 \paragraph{Question: Isn't the average of cosine just zero?}  Answer: we are considering phases that can vary with time.  We don't necessarily have a constant phase difference here that would be wiped out in an average over one period.
 
@@ -164,7 +164,7 @@ Here we've made use of the fact that \(\Real(.)\) and \(\expectation{.}\) are bo
 \begin{dmath}\label{eqn:modernOpticsLecture7:250}
 \Psi = \sum_{\text{paths}} \Psi_i \rightarrow \int \sqrt{I_i} e^{i \phi_i} = (\text{prefactor}) \iint_{\text{aperture}} e^{i k f} da'
 \end{dmath}
-
+%
 Did we have interference in the diffraction example as illustrated in \cref{fig:modernOpticsLecture7:modernOpticsLecture7Fig2}.
 \imageFigure{../figures/phy485-optics/modernOpticsLecture7Fig2}{A diffraction geometry to consider}{fig:modernOpticsLecture7:modernOpticsLecture7Fig2}{0.3}
 
@@ -180,19 +180,19 @@ This was monochromatic light (\(\omega\) was the same).  In this diffraction cas
 \begin{equation}\label{eqn:modernOpticsLecture7:290}
 \phi_1 -\phi_2 = (\Bk_1 - \Bk_2) \cdot \Br + \Delta \theta.
 \end{equation}
-
+%
 We can figure out from the geometry, and using the far-field limit (\(x \gg b\)) that we have a time independent phase difference
 %
 \begin{equation}\label{eqn:modernOpticsLecture7:310}
 (\Bk_1 - \Bk_2) \cdot \Br = -2 \pi \frac{b y}{r \lambda}
 \end{equation}
-
+%
 What is our intensity?
 %
 \begin{equation}\label{eqn:modernOpticsLecture7:330}
 I = I_1 + I_2 + 2 \sqrt{I_1 I_2} \cos\left( -2 \pi \frac{b}{r \lambda} y + \Delta \theta \right).
 \end{equation}
-
+%
 Here \(y\) is the position of observation, as illustrated in \cref{fig:modernOpticsLecture7:modernOpticsLecture7Fig3}.
 \imageFigure{../figures/phy485-optics/modernOpticsLecture7Fig3}{Some intensity variation with visibility}{fig:modernOpticsLecture7:modernOpticsLecture7Fig3}{0.3}
 
@@ -217,7 +217,7 @@ In this (diffraction) case we have
 \begin{equation}\label{eqn:modernOpticsLecture7:370}
 \calV = 2 \frac{\sqrt{I_1 I_2}}{I_1 + I_2}
 \end{equation}
-
+%
 We illustrate this in \cref{fig:modernOpticsLecture7:modernOpticsLecture7Fig4}, where after zoom we see the same image.  This is called Heterodyne amplification.
 %
 \imageFigure{../figures/phy485-optics/modernOpticsLecture7Fig4}{Heterodyne detection}{fig:modernOpticsLecture7:modernOpticsLecture7Fig4}{0.3}
@@ -238,6 +238,6 @@ Measure a phase of a weak beam: Interfere with a strong beam ``local oscillator'
 \begin{equation}\label{eqn:modernOpticsLecture7:430}
 I_{\mathrm{LO}} \gg I_p/4
 \end{equation}
-
+%
 %\vcsinfo
 %\EndArticle

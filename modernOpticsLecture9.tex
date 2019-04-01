@@ -24,7 +24,7 @@ Observing intensity in a two-path interferometer
 \begin{dmath}\label{eqn:modernOpticsLecture9:10}
 I = I_1 + I_2 + 2 \Real \Gamma_{12}
 \end{dmath}
-
+%
 where
 \begin{subequations}
 \begin{dmath}\label{eqn:modernOpticsLecture9:30}
@@ -37,7 +37,7 @@ I_2 = \expectation{ \Psi_2 \Psi_2^\conj }
 \Gamma_{12}  = \expectation{ \Psi_1 \Psi_2^\conj }
 \end{dmath}
 \end{subequations}
-
+%
 Here \(\Gamma_{12}\) is the mutual coherence and \(\expectation{...}\) indicates the time average.
 
 We'll consider a Michaelson interferometer setup as illustrated in \cref{fig:modernOpticsLecture9:modernOpticsLecture9Fig1}.
@@ -58,13 +58,13 @@ With
 \Psi_{1,2} = \Psi(\Br_{1,2}, t)
 \end{dmath}
 \end{subequations}
-
+%
 We work with \(\Abs{\Br} \gg \lambda\), so that we neglect any small intensity change, and make the approximation
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:130}
 I(\Br_1) \sim I(\Br_2)
 \end{dmath}
-
+%
 and define
 
 \boxedEquation{eqn:modernOpticsLecture9:150}{
@@ -76,25 +76,25 @@ We write
 \begin{dmath}\label{eqn:modernOpticsLecture9:170}
 \gamma_{12} = \frac{\Gamma_{12}}{\sqrt{I_1} \sqrt{I_2}}
 \end{dmath}
-
+%
 So that our total intensity is just
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:190}
 I = 2 I_1 ( 1 + \Real \gamma_{12} ).
 \end{dmath}
-
+%
 Our task is to calculate
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:210}
 \gamma_{12} = \expectation{ e^{i\phi_1 - i\phi_2} }
 \end{dmath}
-
+%
 With
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:230}
 \phi(t) = \omega t + \Delta(t),
 \end{dmath}
-
+%
 we suppose that we have some sort of system, perhaps due to atomic interactions, we have random discrete phase jumps at regular intervals, as in \cref{fig:modernOpticsLecture9:modernOpticsLecture9Fig3} and \cref{fig:modernOpticsLecture9:modernOpticsLecture9Fig4}.
 \imageFigure{../figures/phy485-optics/modernOpticsLecture9Fig3}{Random step phase changes}{fig:modernOpticsLecture9:modernOpticsLecture9Fig3}{0.3}
 \imageFigure{../figures/phy485-optics/modernOpticsLecture9Fig4}{Effect of random phase changes}{fig:modernOpticsLecture9:modernOpticsLecture9Fig4}{0.3}
@@ -106,7 +106,7 @@ This isn't necessarily a realistic system, but it one that we can calculate.
 = \expectation{ e^{i \phi(t) } e^{ -i\phi(t + \tau) } }
 = e^{i \omega \tau} \lim_{T \rightarrow \infty} \int_0^T e^{i \Delta(t) - i\Delta(t + \tau)} dt
 \end{dmath}
-
+%
 With the illustrated example phase transitions above we have \cref{fig:modernOpticsLecture9:modernOpticsLecture9Fig5}.
 \imageFigure{../figures/phy485-optics/modernOpticsLecture9Fig5}{Differences of random phases after time delay}{fig:modernOpticsLecture9:modernOpticsLecture9Fig5}{0.3}
 
@@ -118,7 +118,7 @@ Integrating across one time interval and then summing we have
 \frac{\sum{n=1}^{N}}{N \tau_0} (\tau_0 - \tau)
 +\cancel{\frac{\sum_{n=1}^{N}}{N \tau_0} \tau e^{-i\Delta_i}}
 \end{dmath}
-
+%
 To account for the cancellation, note that we are summing over a number of complex numbers, like
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:410}
@@ -126,7 +126,7 @@ e^{i\Delta_1}
 +e^{i\Delta_2}
 +e^{i\Delta_3}
 \end{dmath}
-
+%
 where the \(\Delta\)'s are random.  This is illustrated in \cref{fig:modernOpticsLecture9:modernOpticsLecture9Fig7}.
 \imageFigure{../figures/phy485-optics/modernOpticsLecture9Fig7}{Random walk evolution}{fig:modernOpticsLecture9:modernOpticsLecture9Fig7}{0.3}
 
@@ -166,7 +166,7 @@ I
 \end{array}
 \right.
 \end{dmath}
-
+%
 as in \cref{fig:modernOpticsLecture9:modernOpticsLecture9Fig6}.
 \imageFigure{../figures/phy485-optics/modernOpticsLecture9Fig6}{Resulting interference intensity}{fig:modernOpticsLecture9:modernOpticsLecture9Fig6}{0.3}
 
@@ -175,24 +175,24 @@ One fringe is at
 \begin{dmath}\label{eqn:modernOpticsLecture9:330}
 \omega \tau = 2 \pi,
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:modernOpticsLecture9:350}
 \omega \frac{s_2 - s_1}{c} = 2 \pi.
 \end{dmath}
-
+%
 With
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:370}
 2 \pi \frac{c }{\omega} = \frac{\omega \lambda}{\omega} = \lambda
 \end{dmath}
-
+%
 we have
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:390}
 s_2 - s_1 = \lambda
 \end{dmath}
-
+%
 typically require \(500\) nm for visible light.  We need micron scale control.
 
 \section{More general mutual coherence}
@@ -204,24 +204,24 @@ What do we know about \(\expectation{ \Psi_1 \Psi_2^\conj }\) ?
 =
 \lim_{T \rightarrow \infty} \int_0^T dt \Psi_1(t) \Psi_2(t + \tau)
 \end{dmath}
-
+%
 This (integral) is just a convolution, so we can compute this by performing Fourier transforms and inverse Fourier transforms.  If
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:470}
 f(x) = g * h = \int_{-\infty}^\infty dx' g(x') h(x - x')
 \end{dmath}
-
+%
 Then
 \begin{dmath}\label{eqn:modernOpticsLecture9:490}
 F(k) = G(k) H(k),
 \end{dmath}
-
+%
 so that
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:510}
 f(x) = \calF^{-1} G(k) H(k)
 \end{dmath}
-
+%
 We see that
 \(\gamma_{12}(\tau)\)
 \textunderline{is a Fourier transform of power spectrum of the source}.  Explicitly, that is
@@ -230,13 +230,13 @@ We see that
 \Abs{\Gamma_{12}} = e^{i \alpha_{12}(\tau)} = 4
 \int_0^\infty G_{12}(\omega) e^{-i(\omega - \overbar{\omega}) \tau } d\omega
 \end{dmath}
-
+%
 where
 %
 \begin{dmath}\label{eqn:modernOpticsLecture9:550}
 \Gamma_{12} = \Abs{\Gamma_{12}} e^{i \alpha_{12}(\tau) - i \omega \tau }
 \end{dmath}
-
+%
 and
 %
 \begin{subequations}
@@ -262,7 +262,7 @@ V_T = \int_{-\infty}^\infty \Psi_T^{(r)} (\Br, t) e^{i \omega t}
 \right.
 \end{dmath}
 \end{subequations}
-
+%
 Reading: These results weren't derived here.  For that see \S 10.3.2 \citep{born1980principles}.
 
 \paragraph{Example. Gaussian}

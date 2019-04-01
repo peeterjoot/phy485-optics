@@ -30,7 +30,7 @@ e^{ i \Bk_{\mathrm{av}} \cdot \Delta \Br }
 \inv{ \lambda^2 \overbar{R_1} \overbar{R_2} }
 \iint d^2 r_s e^{-i \Bk_s \cdot \Delta \Br } I( \Bk_s )
 \end{equation}
-
+%
 where
 %
 \begin{subequations}
@@ -44,7 +44,7 @@ where
 \Delta \Br = \Br_1 - \Br_2
 \end{equation}
 \end{subequations}
-
+%
 Let's write for the disk radius \(R\), distance from the disk \(D\), separation of the observation points \(d\).  We'll place the observation points in the plane of the disk, symmetrically separated around the normal to the disk from the center
 setup our coordinates as in \cref{fig:modernOpticsProblemSet2Problem3:modernOpticsProblemSet2Problem3Fig1}
 %
@@ -72,7 +72,7 @@ We have
 = \zcap \cdot (d) \xcap
 = 0,
 \end{equation}
-
+%
 so our mutual coherence is reduced to
 %
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:190}
@@ -82,13 +82,13 @@ so our mutual coherence is reduced to
 \inv{ \lambda^2 D^2 }
 \iint d^2 r_s e^{-i k \frac{\Br_s}{r_{\mathrm{av}}} \cdot \xcap d } I( \Bk_s ).
 \end{equation}
-
+%
 Using an approximation of constant intensity \(I(\Bk_s) = I_0\) over the disk, and employing radial coordinates
 %
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:210}
 \Br_s = \rho (\cos\theta, \sin\theta)
 \end{equation}
-
+%
 we have
 %
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:230}
@@ -99,7 +99,7 @@ we have
 \int_0^R \rho d\rho
 e^{-i k \frac{d}{D} \rho \cos\theta }.
 \end{equation}
-
+%
 With a substitution \(a = -k d/D\), and some supplication to Mathematica (\nbref{modernOpticsProblemSet2work.cdf}), we find for the integral
 %
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:250}
@@ -109,7 +109,7 @@ e^{i a \rho \cos\theta }
 =
 \frac{2 \pi R J_1(a R)}{a},
 \end{equation}
-
+%
 so that the mutual coherence is
 %
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:270}
@@ -121,24 +121,24 @@ so that the mutual coherence is
 \frac{I_0 2 \pi R^2 }{ \lambda^2 D^2 }
 \frac{J_1(k d R/D)}{ k d R /D }.
 \end{equation}
-
+%
 We note that from the point(s) of observation, the observed angle of the disk is
 %
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:290}
 \theta_s \sim \frac{2 R}{D},
 \end{equation}
-
+%
 and we also note that
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:310}
 k = \frac{2 \pi}{\lambda},
 \end{equation}
-
+%
 so our Bessel argument can be rewritten as
 %
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:330}
 \frac{k d R}{D} = \frac{2 \pi}{\lambda} d \frac{\theta_s}{2} = \frac{\pi d \theta_s}{\lambda}
 \end{equation}
-
+%
 so that our mutual coherence in terms of desired variables is
 
 \boxedEquation{eqn:modernOptics:ProblemSet2:P3:370}{
@@ -155,7 +155,7 @@ with
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:390}
 I_1 = I_2 = \evalbar{\Gamma_{12}}{d = 0} = I_0 \frac{\pi \theta_s^2}{ 2 \lambda^2} \inv{2}
 \end{equation}
-
+%
 we have
 %
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:410}
@@ -165,7 +165,7 @@ we have
 =
 2 \frac{J_1(\pi \theta_s d/\lambda)}{\pi \theta_s d/\lambda}.
 \end{dmath}
-
+%
 To calculate the total intensity we have
 %
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:430}
@@ -173,7 +173,7 @@ I
 = 2 I_1 + 2 \Real \Gamma_{12}
 = 2 I_1 ( 1 + \Real \gamma_{12} )
 \end{dmath}
-
+%
 so that
 \begin{subequations}
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P3:450}
@@ -183,7 +183,7 @@ I_{\mathrm{max}} = 2 I_1 ( 1 + \Abs{\gamma_{12}} )
 I_{\mathrm{min}} = 2 I_1 ( 1 - \Abs{\gamma_{12}} )
 \end{equation}
 \end{subequations}
-
+%
 So that for the visibility
 %
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:490}
@@ -202,7 +202,7 @@ I_{\mathrm{max}}
 =
 2 \Abs{\frac{J_1(\pi \theta_s d/\lambda)}{\pi \theta_s d/\lambda}}.
 \end{dmath}
-
+%
 The Bessel function ratio that we have in the absolute values here is plotted in \cref{fig:modernOpticsProblemSet2Problem3:modernOpticsProblemSet2Problem3Fig3}.
 %
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem3Fig3}{Sinc like first order Bessel function}{fig:modernOpticsProblemSet2Problem3:modernOpticsProblemSet2Problem3Fig3}{0.3}
@@ -215,7 +215,7 @@ d
 = \frac{2.22 \times 500 \times 10^{-9} \text{m}}{\pi \frac{\pi}{180} \inv{2}}
 = 0.04 \text{mm}
 \end{dmath}
-
+%
 % J_1 plot, unused:
 %For The behaviour of this Bessel function as plotted in \cref{fig:modernOpticsProblemSet2Problem3:modernOpticsProblemSet2Problem3Fig2} will drive the visibility
 %\imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem3Fig2}{Bessel \(J_1\)}{fig:modernOpticsProblemSet2Problem3:modernOpticsProblemSet2Problem3Fig2}{0.3}
@@ -237,7 +237,7 @@ Suppose that we have two sources of identical amplitude, each separated from the
 \Psi_2 = \sqrt{I_0} e^{i (\overbar{\omega} + \Delta \omega) t}.
 \end{dmath}
 \end{subequations}
-
+%
 To compute the correlation of these we compute
 %
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:570}
@@ -250,7 +250,7 @@ i (\overbar{\omega} - \Delta \omega) t
 =
 I_0 e^{ -2 i \Delta \omega t - i \overbar{\omega} \tau},
 \end{dmath}
-
+%
 so that
 %
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:590}
@@ -268,7 +268,7 @@ e^{- i \overbar{\omega} \tau }
 =
 e^{- i \overbar{\omega} \tau } \sinc( 2 \Delta \omega \tau_a )
 \end{dmath}
-
+%
 Our intensity is
 %
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:610}
@@ -276,7 +276,7 @@ I
 = 2 I_0 + 2 I_0 \Real \gamma
 = 2 I_0 \left( 1 + \cos( \overbar{\omega} \tau ) \right) \sinc( 2 \Delta \omega \tau_a )
 \end{dmath}
-
+%
 As the spectral width increases for a fixed period of observation \(\tau_a\) our intensity dies off from its maximum to the average \(2 I_0\).  This is sketched roughly in \cref{fig:modernOpticsProblemSet2Problem3:modernOpticsProblemSet2Problem3Fig4}
 %
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem3Fig4}{Possible fringes from two sources at the boundaries of the spectral width}{fig:modernOpticsProblemSet2Problem3:modernOpticsProblemSet2Problem3Fig4}{0.2}
@@ -290,7 +290,7 @@ With a coherence time inversely proportional to the frequency
 \begin{dmath}\label{eqn:modernOptics:ProblemSet2:P3:630}
 t_c \sim \inv{\Delta \omega} = \frac{\Hbar}{\kB T},
 \end{dmath}
-
+%
 a larger spectral width (larger T) will result in a smaller coherence time, and a requirement for faster detection circuitry.  This is clearly more of an issue than the spatial coherence when the distance to the object is very far.  One such example is the stellar interferometer discussed in \citep{hecht1998hecht} \S 12.4.2 where this coherence time was used to indirectly determine the diameter of a stellar source.
 
 % didn't work for P1.  don't use here either.

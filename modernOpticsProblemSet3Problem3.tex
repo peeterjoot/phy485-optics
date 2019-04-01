@@ -42,7 +42,7 @@ Let's derive the \(N\) slit diffraction wave function and intensity given an off
 \BR_s + \Br' = \Br_s
 \end{dmath}
 \end{subequations}
-
+%
 for which our path length from \(\Br'\) to the observation point is
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:60}
@@ -50,7 +50,7 @@ for which our path length from \(\Br'\) to the observation point is
 = r \left( 1 + \frac{{r'}^2}{r^2} - 2 \frac{\Br \cdot \Br'}{r^2} \right)^{1/2}
 \sim r + \frac{{r'}^2}{2 r^2} - \rcap \cdot \Br',
 \end{dmath}
-
+%
 and to first order
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:80}
@@ -58,7 +58,7 @@ k\Abs{\BR}
 \sim k r - k \rcap \cdot \Br'
 = k r - k y' \sin\theta.
 \end{dmath}
-
+%
 Similarly
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:100}
 k\Abs{\BR_s}
@@ -66,7 +66,7 @@ k\Abs{\BR_s}
 = k r_s + \Bk \cdot \Br'
 = k r_s + k \sin\theta_s y'
 \end{dmath}
-
+%
 With
 %
 \begin{subequations}
@@ -77,13 +77,13 @@ k_y \equiv \frac{2 \pi}{\lambda} \sin\theta,
 k_{y,s} \equiv \frac{2 \pi}{\lambda} \sin\theta_s.
 \end{dmath}
 \end{subequations}
-
+%
 Our diffraction integral
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:160}
 \Psi \sim \int \frac{e^{i k (R + R_s)}}{ R R_s},
 \end{dmath}
-
+%
 after pulling out and dropping the \(r\) and \(r_s\) dependent terms, takes the one dimensional form
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:180}
@@ -91,13 +91,13 @@ after pulling out and dropping the \(r\) and \(r_s\) dependent terms, takes the 
 =
 \int e^{i \frac{2 \pi}{\lambda} (\sin\theta_s - \sin\theta) y' } dy'.
 \end{dmath}
-
+%
 Let's write
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:200}
 \Delta k = k_{y} - k_{y,s},
 \end{dmath}
-
+%
 and evaluate this over intervals \([h + m a, h + m a + b]\), for \(m \in [0, N-1]\) as in \cref{fig:modernOpticsProblemSet3Problem3:modernOpticsProblemSet3Problem3Fig2}.
 %
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet3Problem3Fig2}{N slit geometry}{fig:modernOpticsProblemSet3Problem3:modernOpticsProblemSet3Problem3Fig2}{0.3}
@@ -121,7 +121,7 @@ e^{i \Delta k b/2 } 2 \sin( \Delta k b/2 )
 b e^{-i \Delta k (h + m a ) }
 e^{i \Delta k b/2 } \frac{\sin( \Delta k b/2 )}{ \Delta k b/2}
 \end{dmath}
-
+%
 Adding all the slit contributions we have
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:240}
@@ -164,7 +164,7 @@ e^{i \Delta k a /2 } - e^{-i \Delta k a /2 }
 {\sin( \Delta k a N/2 )}
 {N \sin( \Delta k a /2 )},
 \end{dmath}
-
+%
 with intensity
 %
 \begin{subequations}
@@ -181,7 +181,7 @@ I(\theta_s, \theta)
 \Delta k = \frac{2 \pi}{\lambda} ( \sin\theta - \sin\theta_s )
 \end{dmath}
 \end{subequations}
-
+%
 \makeSubAnswer{Peak width and wavelength resolution for normal incidence}{modernOptics:problemSet3:3a}
 
 Here we work with a normal incident \(\theta_s = 0\) plane wave source, and write
@@ -192,14 +192,14 @@ Here we work with a normal incident \(\theta_s = 0\) plane wave source, and writ
 = \frac{k a}{2} \sin\theta
 = \frac{\pi a}{\lambda} \sin\theta
 \end{dmath}
-
+%
 and seek to understand the characteristics of the Intensity envelope
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:340}
 \frac{\sin^2( N \gamma / 2 )}
 {N^2 \sin^2( \gamma/2) }.
 \end{dmath}
-
+%
 To get a feel for what this may look like this is plotted for two wave lengths \(\lambda = 3 \pi a\), \(\lambda' = 4 \pi a\), \(a = 1\) in \cref{fig:modernOpticsProblemSet3Problem3:modernOpticsProblemSet3Problem3Fig3}.
 %
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet3Problem3Fig3}{Intensity envelope sample plot}{fig:modernOpticsProblemSet3Problem3:modernOpticsProblemSet3Problem3Fig3}{0.3}
@@ -215,18 +215,18 @@ Observe that this ratio of sines has a unit value for any \(\gamma/2 = m \pi\), 
 {\cos( \gamma/2) }}{\gamma = m \pi}
 = (-1)^{(N -1) m}
 \end{dmath}
-
+%
 So for any \(N \gamma/2 = l \pi\), provided \(\gamma/2 \ne m \pi\) we have a zero.  We find those at
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:380}
 N \frac{\pi a}{\lambda} \sin\theta = l \pi,
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:400}
 \sin\theta_l = \frac{l \lambda}{N a},
 \end{dmath}
-
+%
 For the distance between zeros past the center \(\theta = 0\) lobe for a fixed wavelength, we have
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:420}
@@ -237,7 +237,7 @@ For the distance between zeros past the center \(\theta = 0\) lobe for a fixed w
 =
 \frac{\lambda}{N a}.
 \end{dmath}
-
+%
 If \(\Delta \theta_l\), or just \(\Delta \theta\) (assuming that the peak or zero separation is about the same, although this is artificial in general as we see from the plot), we can compute this by examining the difference
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:440}
@@ -248,7 +248,7 @@ If \(\Delta \theta_l\), or just \(\Delta \theta\) (assuming that the peak or zer
 = 2 \cos \theta_l \sin (\Delta \theta/2)
 \sim \Delta \theta \cos\theta_l.
 \end{dmath}
-
+%
 This gives us the desired relationship (for the \(l\)th zero)
 
 \boxedEquation{eqn:modernOptics:problemSet3:3:460}{
@@ -273,7 +273,7 @@ That separation of wavelength \(\lambda' = \lambda + \Delta \lambda\) is
 \inv{\cos\sin^{-1} (m \lambda/a)}
 \frac{ m \Delta \lambda}{a},
 \end{dmath}
-
+%
 but we also have
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:500}
 \Delta \theta
@@ -282,7 +282,7 @@ but we also have
 =
 \frac{\lambda}{N a \cos\sin^{-1}(m \lambda/a)}.
 \end{dmath}
-
+%
 Comparing the two
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:520}
@@ -291,7 +291,7 @@ Comparing the two
 =
 \frac{\lambda}{N \cancel{a} \cancel{\cos\sin^{-1}(m \lambda/a)}},
 \end{dmath}
-
+%
 or
 
 \boxedEquation{eqn:modernOptics:problemSet3:3:540}{
@@ -312,7 +312,7 @@ I \sim
 {\sin^2( \pi a N (\sin\theta - \sin\theta_s)/\lambda )}
 {N^2 \sin^2( \pi a k (\sin\theta - \sin\theta_s)/\lambda )}
 \end{dmath}
-
+%
 However, with an angular source spread, presumably from a point source at some distance \(L\), we have a configuration like \cref{fig:modernOpticsProblemSet3Problem3:modernOpticsProblemSet3Problem3Fig5}.
 %
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet3Problem3Fig5}{Spread source}{fig:modernOpticsProblemSet3Problem3:modernOpticsProblemSet3Problem3Fig5}{0.3}
@@ -336,7 +336,7 @@ h_m = \pm \left( m - \inv{2} \right) a
 \Bk_m \cdot {\Br'}_m \sim k (\pm h_m)^2/L
 \end{dmath}
 \end{subequations}
-
+%
 Summing over both positive and negative \(m\) our Fraunhofer sum becomes
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:680}
@@ -344,7 +344,7 @@ Summing over both positive and negative \(m\) our Fraunhofer sum becomes
 = 2 \sum_{m = 1} e^{i k h_m^2/L} \cos( k h_m \sin\theta )
 = 2 \sum_{m = 1} e^{i \frac{k a^2}{L} \left(m - \inv{2}\right)^2} \cos\left( k a \left(m - \inv{2}\right) \sin\theta \right)
 \end{dmath}
-
+%
 We have two cases to consider.  The first is that our the spread completely covers all the slits, in which case the upper bound of the sum above is \(m = N/2\).  Otherwise, if the slits extend beyond the range of the source spread, we have to sum over an interval where \(m_{\mathrm{max}}\) is the largest integer such that
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:700}
@@ -352,7 +352,7 @@ We have two cases to consider.  The first is that our the spread completely cove
 \le
 \tan \left( \frac{\Delta\theta_s}{2} \right)
 \end{dmath}
-
+%
 or
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:720}
@@ -361,7 +361,7 @@ m_{\mathrm{max}} \le \inv{2} + \frac{L}{a}
 \sim
 \frac{L \Delta \theta_s}{2 a}
 \end{dmath}
-
+%
 Let's write \(M\) for this sum where \(M = N/2\) for a source spread that encompasses than the grating, and \(M = m_{\mathrm{max}}\) from \eqnref{eqn:modernOptics:problemSet3:3:720} otherwise.
 
 With \(\gamma = k a \sin\theta/2\), our intensity is
@@ -403,7 +403,7 @@ i \frac{k a^2}{L}
 \right)
 (\cos (2 \gamma (m - n)) + \cos (2 \gamma (m + n - 1)))
 \end{dmath}
-
+%
 Do we have any hope whatsoever to evaluate this sum in some sort of closed form?  If we are to try it seems clear that we need two sets of change of variables.  Should we try \(s = m - n\) as in \cref{fig:modernOpticsProblemSet3Problem3:modernOpticsProblemSet3Problem3Fig6}, we find
 %
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet3Problem3Fig6}{Points of constant \(m - n\)}{fig:modernOpticsProblemSet3Problem3:modernOpticsProblemSet3Problem3Fig6}{0.3}
@@ -413,7 +413,7 @@ Do we have any hope whatsoever to evaluate this sum in some sort of closed form?
 =
 \sum_{s = -N + 1}^{N - 1} \sum_{t = 1}^{N - \Abs{s}} f( s, \Abs{s} + 2 t - 1 )
 \end{dmath}
-
+%
 With the opposite diagonal orientation, as in \cref{fig:modernOpticsProblemSet3Problem3:modernOpticsProblemSet3Problem3Fig7}, we find
 %
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet3Problem3Fig7}{Points of constant \(m + n\)}{fig:modernOpticsProblemSet3Problem3:modernOpticsProblemSet3Problem3Fig7}{0.3}
@@ -426,7 +426,7 @@ With the opposite diagonal orientation, as in \cref{fig:modernOpticsProblemSet3P
 \sum_{u = 1}^{N - 1} \sum_{t = 1}^{u} f( 2 t - u -1, u)
 +\sum_{u = N}^{2 N - 1} \sum_{t = 1}^{2 N - u} f( 2 t - (2 N - u) -1, u)
 \end{dmath}
-
+%
 The intensity can now be written
 %
 \begin{equation}\label{eqn:modernOptics:problemSet3:3:800}
@@ -462,13 +462,13 @@ I
 \cos (2 \gamma s)
 \end{aligned}
 \end{equation}
-
+%
 Let's now impose the condition
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:820}
 k a^2 M/L \sim \frac{\pi a \Delta \theta_s }{\lambda} \ll 1,
 \end{dmath}
-
+%
 leaving just
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:840}
@@ -478,13 +478,13 @@ I \sim
 \sum_{s = 1}^{2 M - 1} \right)
 \cos ( 2 \gamma s)
 \end{dmath}
-
+%
 Using
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:860}
 \sum_a^b e^{i \alpha m} = e^{i \alpha (b + a)/2} \frac{\sin(\alpha (b - a + 1)/2)}{\sin( \alpha/2)},
 \end{dmath}
-
+%
 the intensity sums to
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:880}
@@ -495,20 +495,20 @@ I \sim
 (1 + \cos( 2 \gamma M ) )
 \frac{\sin(2 \gamma M) }{\sin( \gamma )}
 \end{dmath}
-
+%
 Employing half angle formulas and normalizing once more, we get
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:900}
 I \sim \left( \frac{\cos( \gamma M )}{\gamma M} \right)^2 \frac{\sin(\gamma M) }{ M \sin( \gamma)},
 \end{dmath}
-
+%
 Since this can be negative, I must have made an error above.  My first attempt on paper had this sine ratio squared and \(2 \gamma M\) instead of \(\gamma M\).  I did find an error in that first attempt, and corrected that here, but in order to make progress, let's ``average the errors'', and assume that the intensity should be
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:920}
 I \sim \left( \frac{\cos( 2 \gamma M )}{2 \gamma M} \right)^2
 \left( \frac{\sin(2 \gamma M) }{ 2 M \sin( \gamma)} \right)^2.
 \end{dmath}
-
+%
 Specifying that we have more slits than the beam spread so that we use \eqnref{eqn:modernOptics:problemSet3:3:720}, and writing \(\Delta H = L \Delta \theta_s\) for the total illuminated height of the diffraction device we have
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:940}
@@ -519,7 +519,7 @@ Specifying that we have more slits than the beam spread so that we use \eqnref{e
 =
 \frac{\pi \sin\theta \Delta H}{\lambda},
 \end{dmath}
-
+%
 Let's introduce \(\Delta \theta_a\) for the angular spread of the diffraction regions separating the slits.  Then noting that for the plane wave case where we obtained the wavelength resolution \eqnref{eqn:modernOptics:problemSet3:3:540} from \eqnref{eqn:modernOptics:problemSet3:3:460}, we can make the substitution \(\Delta H \leftrightarrow N a\), to obtain the wavelength resolution for this spread incident beam case (for the \(m = 1\) order peaks)
 
 \boxedEquation{eqn:modernOptics:problemSet3:3:960}{
@@ -538,7 +538,7 @@ The ratio of the angular spread to the separation spread, takes the place of \(N
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:980}
 \frac{\Delta \theta_s }{\Delta \theta_a} \leftrightarrow N
 \end{dmath}
-
+%
 \makeSubAnswer{Using coherence length}{modernOptics:problemSet3:3d}
 
 %Consider two sketches, one with a plane wave source \cref{fig:problemSet3Problem3d:problemSet3Problem3dFig1}, and another with a point source that has some spread \(\Delta \theta_s\) \cref{fig:problemSet3Problem3d:problemSet3Problem3dFig2}.
@@ -559,13 +559,13 @@ To match \(N_{\mathrm{eff}}\) to this we write
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:1000}
 a N_{\mathrm{eff}} = l_{\mathrm{tc}} \Delta \theta_s.
 \end{dmath}
-
+%
 The angular spread of a single slit is
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:3:1020}
 \Delta \theta_a = \frac{a}{l_{\mathrm{tc}}},
 \end{dmath}
-
+%
 \paragraph{Grading note: (\(-1\))}
 \eqnref{eqn:modernOptics:problemSet3:3:1020} was circled with comment ``why?''.
 
@@ -582,7 +582,7 @@ l_{\mathrm{tc}} \Delta \theta_s
 \Delta \theta_s
 }
 \end{dmath}
-
+%
 Rather remarkably, considering the fudging that was done in \partref{modernOptics:problemSet3:3c}, this matches the wavelength resolution result from \eqnref{eqn:modernOptics:problemSet3:3:960}.
 
 } % makeanswer

@@ -35,19 +35,19 @@ The index of refraction \(n(x)\) has no y-component, so we have
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P3:710}
 \ycap \cdot \spacegrad n = 0.
 \end{dmath}
-
+%
 The y-component of the Ray equation
 %
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P3:910}
 \dds{} \left( n(x) \frac{dy}{ds} \right) = 0,
 \end{dmath}
-
+%
 can therefore be integrated directly
 %
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P3:930}
 n(x) \frac{dy}{ds} = \text{constant}
 \end{dmath}
-
+%
 With the chosen ray parameterization we have for \(x < 0\) the y-component of the ray ``velocity''
 %
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P3:670}
@@ -56,19 +56,19 @@ With the chosen ray parameterization we have for \(x < 0\) the y-component of th
 = \ycap \cdot (\cos\theta_1, \sin\theta_1)
 = \sin\theta_1
 \end{dmath}
-
+%
 Similarly for the y-component in the \(x > 0\) region we have
 %
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P3:690}
 \ycap \cdot \dds{\Br_2} = \sin\theta_2.
 \end{dmath}
-
+%
 We want to use this in the integrated Ray equation \eqnref{eqn:modernOpticsProblemSet1P3:930} which takes the form
 %
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P3:950}
 n_1 \frac{dy_1}{ds} = \text{constant} = n_2 \frac{dy_2}{ds},
 \end{dmath}
-
+%
 but since we have found that \(dy_1/ds = \sin\theta_1\) and \(dy_2/ds = \sin\theta_2\), we have Snell's law
 
 \boxedEquation{eqn:modernOpticsProblemSet1P3:770}{
@@ -81,13 +81,13 @@ We can produce a contradictory result if we avoid the origin when treating the x
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P3:790}
 n \dds{x} = \text{constant}
 \end{dmath}
-
+%
 With \(dx_1/ds = \cos\theta_1\) and \(dx_2/ds = \cos\theta_2\) we would have
 %
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P3:810}
 n_2 \cos\theta_2 = n_1 \cos\theta_1,
 \end{dmath}
-
+%
 which contradicts Snell's law.
 
 This conclusion isn't valid because we have avoided the origin, where the index of refraction is not continuous.  What is missing is proper treatment of this step discontinuity.  To frame this properly, let's express the index of refraction a bit more precisely.  That is
@@ -95,13 +95,13 @@ This conclusion isn't valid because we have avoided the origin, where the index 
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P3:830}
 n(x) = n_1 + \Delta n \theta(x)
 \end{dmath}
-
+%
 where \(\Delta n = n_2 - n_1\).  We now have a non-zero gradient
 %
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P3:850}
 \spacegrad n = \xcap \Delta n \delta(x).
 \end{dmath}
-
+%
 The Ray equation, split by coordinates, now takes the form
 
 \boxedEquation{eqn:modernOpticsProblemSet1P3:870}{
@@ -124,12 +124,12 @@ Note that any solution of the above must also take into account the dependence b
 \begin{equation}\label{eqn:modernOpticsProblemSet1P3:1930}
 ds^2 = dx^2 + dy^2,
 \end{equation}
-
+%
 or
 \begin{equation}\label{eqn:modernOpticsProblemSet1P3:1950}
 1 = (dx/ds)^2 + (dy/ds)^2.
 \end{equation}
-
+%
 %Should we need to make the angle position dependent, our originally chosen parameterization \(\Br(s) = s (\cos\theta(s), \sin(\theta(s))\) is no longer
 While we can still directly integrate the y-component equation once (as done above), our original assumed parameterization of \(\Br(s) = s(\cos\theta, \sin\theta)\) looses it's convenient form since we now have \(\theta = \theta(s)\) in the neighborhood of the origin.  Once we choose to not neglect the step discontinuity, we have a coupled, much more difficult, system to deal with.
 
@@ -140,13 +140,13 @@ Can this system, or one for which a limiting form of the unit step and delta fun
 \begin{equation}\label{eqn:modernOpticsProblemSet1P3:1970}
 n \frac{d\Br}{ds} = \grad \phi.
 \end{equation}
-
+%
 Because \(\spacegrad \cross \spacegrad \phi = 0\) we have
 %
 \begin{equation}\label{eqn:modernOpticsProblemSet1P3:1990}
 \spacegrad \cross \left(n \frac{d\Br}{ds} \right) = 0,
 \end{equation}
-
+%
 and can now apply a differential loop boundary condition to find that only the tangential component contributes, which leads to Snell's law.
 
 \end{enumerate}

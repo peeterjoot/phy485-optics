@@ -32,7 +32,7 @@ Our geometry is
 \begin{dmath}\label{eqn:modernOpticsLecture15:740}
 \BR_s + \Br' = \Br_s
 \end{dmath}
-
+%
 for which our path length from \(\Br'\) to the observation point is
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:660}
@@ -40,7 +40,7 @@ for which our path length from \(\Br'\) to the observation point is
 = r \left( 1 + \frac{{r'}^2}{r^2} - 2 \frac{\Br \cdot \Br'}{r^2} \right)^{1/2}
 \sim r + \frac{{r'}^2}{2 r^2} - \rcap \cdot \Br',
 \end{dmath}
-
+%
 and to first order
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:680}
@@ -49,7 +49,7 @@ k\Abs{\BR}
 = k r + \Bk \cdot \Br'
 = k r + k y' \sin\theta.
 \end{dmath}
-
+%
 Similarly
 \begin{dmath}\label{eqn:modernOpticsLecture15:760}
 k\Abs{\BR_s}
@@ -57,35 +57,35 @@ k\Abs{\BR_s}
 = k r_s - \Bk \cdot \Br'
 = k r_s - k \sin\theta_s y'
 \end{dmath}
-
+%
 With
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:780}
 k_y \equiv \frac{2 \pi}{\lambda} \sin\theta,
 \end{dmath}
-
+%
 and
 \begin{dmath}\label{eqn:modernOpticsLecture15:800}
 k_{y,s} \equiv \frac{2 \pi}{\lambda} \sin\theta_s,
 \end{dmath}
-
+%
 our diffraction integral, in one dimension takes the form
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:700}
 \Psi(\Br) \sim \int e^{i (k_{y,s} - k_{y}) y' } dy'
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:modernOpticsLecture15:820}
 \Psi(\Br) \sim \int e^{i \frac{2 \pi}{\lambda} (\sin\theta_s - \sin\theta) y' } dy'
 \end{dmath}
-
+%
 We'll work with \(\theta_s = 0\), normally incident plane waves, for which the diffraction integral reduces to just
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:720}
 \Psi(\Br) \sim \int e^{-i k_y y' } dy'.
 \end{dmath}
-
+%
 This is the Fourier transform of the aperture, say \(g(y)\) evaluated at \(k_y = (2 \pi/\lambda) \sin\theta\).  Note that \(k_y \ne \Bk \cdot \rcap'\), it is not the projection in the \(\ycap\) direction, which is \(k \sin\theta_s\).  The angle \(\theta\) here is the angle to the \textunderline{observation} point.
 
 We will use the convolution theorem \ref{pr:convolution:1}, constructing the complete aperture as a convolution, with transmission \cref{fig:modernOpticsLecture15:modernOpticsLecture15Fig2}.
@@ -95,13 +95,13 @@ We will use the convolution theorem \ref{pr:convolution:1}, constructing the com
 \begin{dmath}\label{eqn:modernOpticsLecture15:20}
 f(y) = \int dy' g(y') h(y - y') = g(y) \conj h(y)
 \end{dmath}
-
+%
 Consider the convolution with the delta function comb
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:40}
 h(y) = \sum_{n=0}^{N-1} \delta (y - n a)
 \end{dmath}
-
+%
 So that the convolution is
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:60}
@@ -115,19 +115,19 @@ f(y)
 \sum_{n = 0}^{N-1}
 g(y - n a)
 \end{dmath}
-
+%
 Convolution theorem
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:80}
 F( k_y ) = H( k_y ) G( k_y ).
 \end{dmath}
-
+%
 As mentioned, here we write
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:100}
 k_y = \frac{2 \pi}{\lambda} \sin\theta.
 \end{dmath}
-
+%
 (to distinguish from our normal writing of \(k = 2 \pi /\lambda\))
 
 For a single slit, in the Fraunhofer limit, we compute
@@ -147,7 +147,7 @@ e^{i k_y b/2}
 =
 \frac{\sin(b k_y/2)}{b k_y/2}
 \end{dmath}
-
+%
 as illustrated in \cref{fig:lecture15figuresSincCrossings:lecture15figuresSincCrossingsFig7}.
 % hand drawn:
 %\cref{fig:modernOpticsLecture15:modernOpticsLecture15Fig3}.
@@ -176,7 +176,7 @@ e^{i k_y n a}
 \sum_{n = 0}^{N-1}
 \left( e^{i k_y a}  \right)^n
 \end{dmath}
-
+%
 Recall that we can sum a finite geometric series, by taking the difference of
 %
 \begin{subequations}
@@ -187,18 +187,18 @@ a S_N = a + a^2 + \cdots a^{N}
 S_N = 1 + a + \cdots a^{N-1}
 \end{dmath}
 \end{subequations}
-
+%
 so that
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:200}
 (a - 1)S_N = a^N - 1
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:modernOpticsLecture15:220}
 S_N = \frac{a^N - 1}{a-1},
 \end{dmath}
-
+%
 and we have for our Fourier transform we have
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:240}
@@ -212,12 +212,12 @@ H(k_y)
 e^{i \gamma (N-1)}
 \frac{\sin (N\gamma)}{ \sin \gamma}
 \end{dmath}
-
+%
 where
 \begin{equation}\label{eqn:modernOpticsLecture15:260}
 \gamma = \inv{2} k_y a = \inv{2} k a \sin\theta.
 \end{equation}
-
+%
 We want
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:280}
@@ -232,7 +232,7 @@ I
 {N \sin \gamma}
 \right)^2
 \end{dmath}
-
+%
 where
 %
 \begin{subequations}
@@ -243,14 +243,14 @@ where
 \gamma = \inv{2} k_y a = \inv{2} k a \sin\theta.
 \end{equation}
 \end{subequations}
-
+%
 \paragraph{Check: \(N = 2\)}
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:340}
 \left( \frac{\sin 2 \gamma}{2 \sin\gamma} \right)^2 =
 \left( \frac{2 \sin \gamma \cos\gamma}{2 \sin\gamma} \right)^2 = \cos^2\gamma
 \end{dmath}
-
+%
 (Good).
 
 To get a bit of a feeling for what this looks like we can check out a plot, as in \cref{fig:lecture15figures5aperaturesIntensityPlot:lecture15figures5aperaturesIntensityPlotFig8}, plotting \(n = 5, a = 0.869, b = 0.172, \lambda = 1\) (generated from \nbref{lecture15figures.nb}.)
@@ -273,13 +273,13 @@ We will write out \(\gamma\) in terms of angular frequency
 = \inv{2} a \frac{\omega}{c} \sin\theta
 = \pi \frac{\omega}{\omega_0} \sin\theta
 \end{dmath}
-
+%
 where
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:380}
 \omega_0 = \frac{2 \pi c}{a},
 \end{dmath}
-
+%
 where \(a\) is the period of the diffraction grating.  The peak is at \(\gamma = m \pi\), or
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:400}
@@ -287,12 +287,12 @@ where \(a\) is the period of the diffraction grating.  The peak is at \(\gamma =
 = m \pi
 = \pi \frac{\omega}{\omega_0} \sin\theta,
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:modernOpticsLecture15:420}
 m = \frac{\omega}{\omega_0} \sin\theta,
 \end{dmath}
-
+%
 Zeros are at \(N \gamma = l \pi\) (provided \(l \ne N m\)).  Closest zero is
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:440}
@@ -305,7 +305,7 @@ l = N m + 1
 = \frac{l}{N} \pi - m \pi
 = \frac{N m + 1}{N} \pi - m \pi
 \end{dmath}
-
+%
 or
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:480}
@@ -313,7 +313,7 @@ or
 = \frac{\pi}{N}
 = \frac{\pi \sin\theta}{\omega_0} \Delta \omega
 \end{dmath}
-
+%
 \paragraph{Rework after question:}
 
 Peaks for \(\omega_{1,2}\) are
@@ -324,7 +324,7 @@ Peaks for \(\omega_{1,2}\) are
 \begin{dmath}\label{eqn:modernOpticsLecture15:520}
 \gamma_{\mathrm{peak}, 2} = \pi \frac{\omega_2}{\omega_0} \sin\theta = m \pi
 \end{dmath}
-
+%
 so that
 \begin{dmath}\label{eqn:modernOpticsLecture15:540}
 \Delta \gamma
@@ -332,13 +332,13 @@ so that
 \Delta \omega
 \frac{\pi}{\omega_0} \sin\theta.
 \end{dmath}
-
+%
 The peak is resolved when
 %
 \begin{dmath}\label{eqn:modernOpticsLecture15:560}
 \Delta \gamma = \frac{m \pi}{\omega_1} \Delta \omega = \frac{\pi}{N},
 \end{dmath}
-
+%
 as shown in \cref{fig:modernOpticsLecture15:modernOpticsLecture15Fig5}.
 %
 \imageFigure{../figures/phy485-optics/modernOpticsLecture15Fig5}{Resolution}{fig:modernOpticsLecture15:modernOpticsLecture15Fig5}{0.2}
@@ -354,7 +354,7 @@ Observe that this looks like
 \begin{dmath}\label{eqn:modernOpticsLecture15:600}
 \frac{\Delta \omega}{\overbar{\omega}} = \inv{m \calF},
 \end{dmath}
-
+%
 because \(\calF \sim \text{number of bounces in the Etalon}\).
 
 But \(m \approx 1,2,3\), not \(m \gg 1\).

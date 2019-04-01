@@ -34,7 +34,7 @@ Here's a silly exercise.  I'm so used to seeing imaginaries in \(e^{\cdots \omeg
 \sum_{n = 0}^\infty e^{-\Hbar \omega n/ k T}
 },
 \end{dmath}
-
+%
 I imagined (sic) an imaginary in the exponential and thought ``how can that converge?''.  I thought things must somehow magically work out if the limits are taken carefully, so I derived the finite summation expressions using the old tricks.
 
 \section{Guts}
@@ -44,13 +44,13 @@ If we want to sum a discrete power series, say
 \begin{equation}\label{eqn:planckBlackbody:30}
 S_N(x) = 1 + x + x^2 + \cdots x^{N-1} = \sum_{n = 0}^{N-1} x^n,
 \end{equation}
-
+%
 we have only to take the difference
 %
 \begin{equation}\label{eqn:planckBlackbody:50}
 x S_N - S_N = x^N - 1,
 \end{equation}
-
+%
 so we have, regardless of the magnitude of \(x\)
 
 \boxedEquation{eqn:planckBlackbody:70}{
@@ -62,7 +62,7 @@ Observe that the derivative of \(S_N\) is
 \begin{dmath}\label{eqn:planckBlackbody:90}
 \frac{dS_N}{dx} = \sum_{n=1}^{N-1} n x^{n-1} = \inv{x} \sum_{n=1}^{N-1} n x^n,
 \end{dmath}
-
+%
 but we also have
 %
 \begin{dmath}\label{eqn:planckBlackbody:110}
@@ -86,7 +86,7 @@ S_N(x)
 +(N -1) x^{N}
 \right)
 \end{dmath}
-
+%
 We expect this and \eqnref{eqn:planckBlackbody:90} to differ only by a constant.  For \eqnref{eqn:planckBlackbody:90}, or \(dS_N/dx = 1 + 2 x + 3 x^2 + \cdots\), we have \(1\) at the origin, the same as \eqnref{eqn:planckBlackbody:110}.  Our conclusion is
 
 \boxedEquation{eqn:planckBlackbody:130}{
@@ -118,7 +118,7 @@ a result that applies, no matter the magnitude of \(x\).  Now we can form the Pl
 \frac{1}
 {1 - x^N}
 \end{dmath}
-
+%
 I got this far and noticed there's still an issue with \(N \rightarrow \infty\).  Taking a second look, I see that we have a plain old real exponential, something perhaps like \cref{fig:negativeExponentialPlot:negativeExponentialPlotFig1}.
 %
 \imageFigure{../figures/phy485-optics/negativeExponentialPlotFig1}{Plot of \(e^{-x/5}\)}{fig:negativeExponentialPlot:negativeExponentialPlotFig1}{0.3}
@@ -138,7 +138,7 @@ It doesn't really matter what the value of \(\Hbar /k T\) is (if considering the
 =
 \frac{1}{e^{\Hbar \omega/k T} - 1},
 \end{dmath}
-
+%
 which is the Planck result.
 
 % this is to produce the sites.google url and version info and so forth (for blog posts)

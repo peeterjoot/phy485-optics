@@ -45,7 +45,7 @@ d = \sqrt{ L^2 + x^2 }
 b = \sqrt{L^2 + (2 h + x)^2}
 \end{equation}
 \end{subequations}
-
+%
 The pathlength difference, for \(x, h \ll L\) is then
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:60}
 b - d
@@ -59,13 +59,13 @@ L
 \sim
 L \inv{2 L^2}( 4 h^2 + 4 h x ),
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:60b}
 b - d
 = \frac{2 h}{L}( h + x )
 \end{dmath}
-
+%
 So, supposing that we have a spherical wave emitted from the point source, allowing for a different (random) in each direction, the waves that arrive at the observation point, having traveled along paths \(d\) and \(b\) respectively are
 %
 \begin{subequations}
@@ -76,7 +76,7 @@ So, supposing that we have a spherical wave emitted from the point source, allow
 \Psi_b = \frac{\Psi_0}{b} e^{i k b - i \omega t + \phi_b(t)}
 \end{dmath}
 \end{subequations}
-
+%
 Our average intensity, should there be a time delay of \(\tau\) in the \(b\) path, is
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:120}
@@ -117,7 +117,7 @@ e^{ i k (d - b) }
 \right)
 \Theta(\tau_0 - \tau)
 \end{dmath}
-
+%
 The interference term, scaling by requiring a unit value at \(\tau = 0\), and writing \(y = x + h\) (effectively re positioning our origin) is therefore
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:140}
@@ -129,19 +129,19 @@ The interference term, scaling by requiring a unit value at \(\tau = 0\), and wr
 \left( 1 - \frac{\tau}{\tau_0} \right)
 \Theta(\tau_0 - \tau)
 \end{dmath}
-
+%
 This has a maximum at \((y, \tau) = (0, 0)\).  We've also got a set of level curves, marking the amplitudes of equal magnitude
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:160}
 \tau = \frac{2 k h y}{L \omega} = \frac{2 h y d}{L} = \text{constant}.
 \end{dmath}
-
+%
 This wasn't exactly what I recalled calculating on the midterm, but I'd forgotten the exact midterm question.  Now that the midterm is posted, I see that I didn't recall the problem that well.  We were asked to calculate the periodicity given a monochromatic point source.  From \eqnref{eqn:modernOpticsMidtermReflection:140} we see that we can consider either spatial or temporal periodicity.  The spatial periodicity is what probably makes the most sense to consider since we aren't explicitly introducing any delays in this mirror scenario.  Maximums repeat every \(\Delta x\) where
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:560}
 \frac{2 k h \Delta x}{L} = 2 \pi
 \end{dmath}
-
+%
 That is
 
 % k \lambda = 2 \pi
@@ -149,7 +149,7 @@ That is
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:540}
 \Delta x = \frac{\pi L}{k h}
 \end{dmath}
-
+%
 Or with \(1/k = \lambda/2\pi\) that is
 
 \boxedEquation{eqn:modernOpticsMidtermReflection:580}{
@@ -170,7 +170,7 @@ Let's play around with evolving things and suppose that we slightly generalize t
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:180}
 \Psi_i = \frac{1}{\sqrt{2 \pi} r_i} \int d\omega \tilde{\Psi}_0(\omega) e^{i \omega \left( r_i/c - t \right) + \phi_i(t)}.
 \end{dmath}
-
+%
 Now, if we delay one such wave function in time at the source by time \(\tau\), our resultant field is
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:200}
@@ -207,13 +207,13 @@ so that the interference term is
 \Psi_0^\conj(t + \tau - r_2/c )
 e^{i \phi_1(t) - i \phi_2(t + \tau)}.
 \end{dmath}
-
+%
 Clearly this will be more tractable if we fold the random phase functions \(\phi_i(t)\) into the Fourier integrals \footnote{This is a reasonable construction, and we can easily verify that application of the wave equation \(\spacegrad^2 -(1/c^2) \partial_{tt} = (1/r^2) \partial_r r^2 \partial_r - (1/c^2)\partial_{tt}\) to an integral of the form \(\int dk A(k) e^{ik(r - ct)}/r\) gives zero away from the origin as desired.}, as in
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:280}
 \Psi_i = \frac{1}{\sqrt{2 \pi} r_i} \int d\omega \tilde{\Psi}_0(\omega) e^{i \omega \left( r_i/c - t \right)}.
 \end{dmath}
-
+%
 so that our interference term is reduced to
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:300}
 \Gamma(\tau)
@@ -227,13 +227,13 @@ so that our interference term is reduced to
 \Psi_0(u)
 \Psi_0^\conj(u + \tau + (r_1 - r_2)/c)
 \end{dmath}
-
+%
 Now let's impose an additional constraint requiring for some finite \(T\) that we have for \(\Abs{u} > T\)
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:320}
 \Psi_0(u) = 0
 \end{dmath}
-
+%
 Ignoring the details about the range restriction we require for \(\tau\) for now, our interference term will then be proportional to the plain old convolution integral, and we can re express this beastie in terms of assumed transform pairs
 %
 \begin{subequations}
@@ -268,7 +268,7 @@ d\omega \tilde{\Psi}_0(\omega)
 d\omega \Abs{\tilde{\Psi}_0(\omega) }^2
 e^{-i \omega (\tau + (r_1 - r_2)/c)}
 \end{dmath}
-
+%
 Again, dropping multiplicative constants, our interference term has the following proportionality
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:440}
@@ -276,7 +276,7 @@ Again, dropping multiplicative constants, our interference term has the followin
 \sim
 \evalbar{ \calF \left( \Abs{\tilde{\Psi}_0(\omega) }^2 \right) }{ t = \tau + (r_1 - r_2)/c}.
 \end{dmath}
-
+%
 For this problem, we are told that our wave packet has a Gaussian frequency distribution
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:400}
@@ -286,7 +286,7 @@ For this problem, we are told that our wave packet has a Gaussian frequency dist
 {2 (\Delta \omega)^2}
 \right)
 \end{dmath}
-
+%
 We expect this to also be Gaussian in the time domain.  Let's perform that Fourier inversion to see what that looks like.  Because \(k = \omega/c\) isn't constant, we can't just toss in the spatial dependency after the fact, so we hack it in here as a retarded time, adding in the \(1/r\) factor required for a spherical wave
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:420}
@@ -303,7 +303,7 @@ We expect this to also be Gaussian in the time domain.  Let's perform that Fouri
 -\frac{1}{2} (t - r/c)^2 (\Delta \omega)^2 - i \omega _0 (t - r/c)
 \right)
 \end{dmath}
-
+%
 Plotted implicitly against the retarded time \(t - r/c\) for some non-zero \(r\), we've got a Gaussian envelope, and oscillations within that as in \cref{fig:gaussianWavePacket:gaussianWavePacketFig2}.
 %
 \imageFigure{../figures/phy485-optics/gaussianWavePacketFig2}{Gaussian wave packet}{fig:gaussianWavePacket:gaussianWavePacketFig2}{0.2}
@@ -325,7 +325,7 @@ We now want our auto-correlation \eqnref{eqn:modernOpticsMidtermReflection:440} 
 \right)
 }{4 \pi ^{3/2} (\Delta \omega)^2}.
 \end{dmath}
-
+%
 Again we have a Gaussian envelope, with oscillations at the average frequency.
 %We want to evaluate this at
 %t \sim \tau
@@ -334,7 +334,7 @@ We recall that for the Lloyd's configuration our path length difference \eqnref{
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:480}
 \frac{r_1 - r_2}{c} = \frac{2 h}{L c}( h + x ),
 \end{dmath}
-
+%
 so our mutual correlation is
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:500}
@@ -383,7 +383,7 @@ so our mutual correlation is
 \right)
 \right)
 \end{dmath}
-
+%
 We've got a Gaussian envelope with oscillations at the average frequency as in \cref{fig:ftOfgaussianSquaredAtRetardedTime:ftOfgaussianSquaredAtRetardedTimeFig3}.
 %
 \imageFigure{../figures/phy485-optics/ftOfgaussianSquaredAtRetardedTimeFig3}{Mutual coherence of Gaussian source}{fig:ftOfgaussianSquaredAtRetardedTime:ftOfgaussianSquaredAtRetardedTimeFig3}{0.2}
@@ -415,7 +415,7 @@ b =
 \sqrt{ L^2 + (2 h + 2 x' + x - x')^2 }
 \end{equation}
 \end{subequations}
-
+%
 or with \(y = x + h\)
 %
 \begin{subequations}
@@ -426,7 +426,7 @@ d = L \sqrt{ 1 + (y - h - x')^2/L^2 }
 b = L \sqrt{ 1 + (y + h + x')^2/L^2 },
 \end{equation}
 \end{subequations}
-
+%
 The wave function at the observation point for a monochromatic source is therefore
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:680}
@@ -453,7 +453,7 @@ e^{i k (y - h - x')^2/(2 L) }
 + e^{i k (y + h + x')^2/(2 L) }
 \right)
 \end{dmath}
-
+%
 These now have the structure of Fresnel integrals.  We make the following change of variables for the respective exponentials
 %
 \begin{subequations}
@@ -472,7 +472,7 @@ These now have the structure of Fresnel integrals.  We make the following change
 \frac{ \pi (x' + h + y)^2}{L \lambda}
 \end{equation}
 \end{subequations}
-
+%
 We find that our interference wave function is
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:760}
@@ -489,7 +489,7 @@ We find that our interference wave function is
 {\sqrt{\frac{2}{L \lambda}}( h + y + \Delta x/2)}
 \right)
 \end{dmath}
-
+%
 As a sanity check observe that things look appropriate in the \(\Delta x \rightarrow 0\) limit, where we have
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:780}
@@ -515,7 +515,7 @@ e^{i k L \sqrt{ 1 + \frac{1}{L^2 } ( h - y )^2 } }
 e^{i k \sqrt{ L^2 + ( h - y )^2 } }
 +e^{i k \sqrt{ L^2 + ( h + y )^2 } }
 \end{dmath}
-
+%
 In both the small \(\Delta x\) limit and in terms of the Fresnel sines and cosines we clearly have total constructive interference at the \(y = 0\) point where both path length contributions are equal.  Can we do a first order expansion of the Fresnel sines and cosines to look at how a finite \(\Delta x\) changes things?
 
 Let's not try that for now.  Instead, a more reasonable approach is probably to attempt using the Fraunhofer approximation instead.
@@ -536,13 +536,13 @@ We write
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1000}
 \BR + \Br' = \Br
 \end{dmath}
-
+%
 or
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1020}
 \BR = \Br - \Br'
 \end{dmath}
-
+%
 with scalar magnitude
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:800}
@@ -556,7 +556,7 @@ r - \frac{1}{f} (0, f \theta, f) \cdot (0, y', 0)
 =
 r - \theta y'.
 \end{dmath}
-
+%
 We can now write the diffraction integral
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:820}
@@ -566,7 +566,7 @@ We can now write the diffraction integral
 =
 \Psi_s \frac{e^{i k f}}{f} \int_A e^{-i k_y y'} dy'
 \end{dmath}
-
+%
 Here we write \(\Bk = k (\cos\theta, \sin\theta, 1) = (k_x, k_y, k_z)\), after making the small angle approximation \(\sin\theta \sim \theta\).  We integrate over the ranges \(A_{+} = [h-\Delta y/2, h+\Delta y/2]\), and \(A_{-} = [-h-\Delta y/2, -h+\Delta y/2]\).
 
 For \(A_{+}\) we have
@@ -583,13 +583,13 @@ For \(A_{+}\) we have
 =
 \frac{2}{k_y} e^{-k k_y h} \sin( k_y \Delta y/2 ),
 \end{dmath}
-
+%
 For \(A_{-}\) we just flip the sign on \(h\).  Adding the two we have
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:860}
 \Psi = 2 \Psi_s \frac{e^{i k f}}{f} \cos ( k_y h ) \frac{\sin( k_y \Delta y/2 )}{k_y /2}.
 \end{dmath}
-
+%
 Compare this to our point source treatment, which is
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:880}
@@ -604,7 +604,7 @@ e^{-i k \theta h }
 2
 \Psi_s \frac{e^{i k f}}{f} \cos( k_y h ).
 \end{dmath}
-
+%
 In particular we note that the intensities of the point and distributed sources in this Lloyd's mirror configuration are respectively
 %
 \begin{subequations}
@@ -617,25 +617,25 @@ I_{\text{source distributed over width \(\Delta y\)}} \sim
 \frac{\sin^2( k_y \Delta y/2 )}{(k_y /2)^2}.
 \end{dmath}
 \end{subequations}
-
+%
 We see that increasing \(\Delta y\) will continually decrease the amplitude of the intensity until \(k_y \Delta y/2 = \pi/2\).  For a 50 \% decrease in intensity we want
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:940}
 \sin^2 \left( k_y \Delta y / 2 \right) = \inv{2}
 \end{dmath}
-
+%
 or
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:960}
 k_y \frac{\Delta y}{2} = \frac{\pi}{4}.
 \end{dmath}
-
+%
 or
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:980}
 \Delta y = \frac{\pi \lambda}{2 (2 \pi) \sin\theta } = \frac{\lambda}{4 \sin\theta}
 \end{dmath}
-
+%
 For \(\theta = \pi/2\), we see that a source spread as small as \(\lambda/4\) will decrease the intensity by 50\%.
 
 } % makeanswer pr:4
@@ -667,7 +667,7 @@ I'd been thinking above of only virtual sources, not virtual observation points.
 %\begin{dmath}\label{eqn:modernOpticsMidtermReflection:1380}
 %\expectation{I} = 2 I_\infty \left( 1 + \inv{I_\infty} \Real \Gamma_{12} \right)
 %\end{dmath}
-
+%
 Let's setup coordinates as in \cref{fig:modernOpticsMidtermReflection:modernOpticsMidtermReflectionFig7}.
 %
 \imageFigure{../figures/phy485-optics/modernOpticsMidtermReflectionFig7}{Coordinates for Lloyd's mirror spatially distributed interferometry problem}{fig:modernOpticsMidtermReflection:modernOpticsMidtermReflectionFig7}{0.3}
@@ -697,7 +697,7 @@ R_2^2 = L^2 + (2 h + 2 y - x)^2
 \Br_s = x \vcap
 \end{equation}
 \end{subequations}
-
+%
 This gives us
 %
 \begin{subequations}
@@ -708,7 +708,7 @@ This gives us
 \frac{\Delta \Br \cdot \Br_s}{r_{\mathrm{av}}} = - \frac{2 x (h + y)}{\sqrt{ h^2 + L^2} }
 \end{equation}
 \end{subequations}
-
+%
 For \(L \gg h\) as in \cref{fig:modernOpticsMidtermReflection:modernOpticsMidtermReflectionFig9}, we can write
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1440}
@@ -731,19 +731,19 @@ I_0 \frac{\sin(k \theta \Delta w)}{k \theta}
 \frac{ I_0 \Delta w e^{2 i h k \theta} }{ \lambda^2 L^2 }
 \sinc(k \theta \Delta w)
 \end{dmath}
-
+%
 Observing that \(\sinc \rightarrow 1\), as \(\Delta w \rightarrow 0\) we can normalize this as
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1480}
 \gamma_{12} = \sinc(k \theta \Delta w).
 \end{dmath}
-
+%
 We are interested in the visibility
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1500}
 \calV = \Abs{\gamma_{12}},
 \end{dmath}
-
+%
 as plotted in \cref{fig:modernOpticsMidtermReflection:modernOpticsMidtermReflectionFig8} for \(x = k \theta \Delta w\).
 %
 \imageFigure{../figures/phy485-optics/modernOpticsMidtermReflectionFig8}{Visibility curve for Lloyd's mirror and spatially distributed source}{fig:modernOpticsMidtermReflection:modernOpticsMidtermReflectionFig8}{0.3}
@@ -754,7 +754,7 @@ At what point on that first lobe does the visibility drop to \(1/2\)?  With smal
 \Abs{\sinc(x)} \approx
 \frac{x - \frac{x^3}{3!}}{x} = 1 - \frac{x^2}{6},
 \end{dmath}
-
+%
 so we are looking for the value of \(\Delta w\) that satisfies
 %
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:1540}
@@ -763,7 +763,7 @@ k \theta \Delta w
 \right)
 = \inv{2},
 \end{dmath}
-
+%
 or
 
 \boxedEquation{eqn:modernOpticsMidtermReflection:1560}{

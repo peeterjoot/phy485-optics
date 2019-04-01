@@ -26,7 +26,7 @@ What is the shape of a ray moving into a linear index gradient \cref{fig:modernO
 = \spacegrad \left( n_0 - \beta y \right)
 = -\beta \ycap.
 \end{dmath}
-
+%
 In components this is
 %
 \begin{equation}\label{eqn:modernOpticsProblemSet1P2:30}
@@ -36,7 +36,7 @@ In components this is
 \dds{} \left( \left( n_0 - \beta y \right) \dds{z} \right) &= 0
 \end{aligned}
 \end{equation}
-
+%
 Integrating once, with the introduction of \(n_0\) factors in our integration constant (which will clearly make life easier), we have
 \begin{equation}\label{eqn:modernOpticsProblemSet1P2:50}
 \begin{aligned}
@@ -45,7 +45,7 @@ Integrating once, with the introduction of \(n_0\) factors in our integration co
 \left( n_0 - \beta y \right) \dds{z} &= C n_0
 \end{aligned}
 \end{equation}
-
+%
 In particular, at \(s = 0\), where \(x(0) = y(0) = z(0) = 0\), \(x'(0) = 1\) and \(y'(0) = z'(0) = 0\), we have
 %
 \begin{equation}\label{eqn:modernOpticsProblemSet1P2:70}
@@ -55,7 +55,7 @@ n_0 (0) &= B n_0 \\
 n_0 (0) &= C n_0
 \end{aligned}
 \end{equation}
-
+%
 Our equations of motion become
 \boxedEquation{eqn:modernOpticsProblemSet1P2:90}{
 \begin{aligned}
@@ -74,37 +74,37 @@ First observe that unless \(n_0 = \beta y(s)\) for all \(s\), then \(z(s)\) must
 \begin{equation}\label{eqn:modernOpticsProblemSet1P2:110}
 z(s) = \text{constant} = z(0) = 0.
 \end{equation}
-
+%
 Solving for \(y(s)\) next we have after rearranging
 %
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P2:130}
 \int \left( n_0 - \beta y \right) dy = -\beta \int s ds
 \end{dmath}
-
+%
 This yields
 %
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P2:150}
 n_0 y - \frac{\beta}{2} y^2 = -\frac{\beta}{2} s^2 + C.
 \end{dmath}
-
+%
 Noting that \(y(0) = 0\) we have \(C = 0\)
 %
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P2:170}
 y^2 - s^2 - 2 \frac{n_0}{\beta} y = 0.
 \end{dmath}
-
+%
 Completing the square
 %
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P2:230}
 \left( y - \frac{n_0}{\beta} \right)^2 = s^2 + \left( \frac{n_0}{\beta} \right)^2
 \end{dmath}
-
+%
 or
 %
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P2:190}
 y = \frac{n_0}{\beta} \pm \sqrt{ s^2 + \left( \frac{n_0}{\beta} \right)^2 }.
 \end{dmath}
-
+%
 Given the \(y(0) = 0\) boundary constraint, we can only pick the negative root.  Borrowing the \(L = n_0/\beta\) notation from later in the problem, we have
 
 \boxedEquation{eqn:modernOpticsProblemSet1P2:210}{
@@ -119,7 +119,7 @@ y(s)
 %= L \left( 1 - \sqrt{ 1 + \left(\frac{s}{L}\right)^2 } \right)
 \sim L \left( 1 - \left( 1 + \inv{2} \left(\frac{s}{L}\right)^2 \right) \right),
 \end{dmath}
-
+%
 \boxedEquation{eqn:modernOpticsProblemSet1P2:1890}{
 y(s) \sim -\frac{s^2}{2 L} \quad \mbox{when \( s \ll L\)}.
 }
@@ -141,12 +141,12 @@ We are now set to solve our x component ray equation
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P2:290}
 (L - y) \dds{x} = L,
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P2:310}
 \sqrt{s^2 + L^2} \dds{x} = L.
 \end{dmath}
-
+%
 Integrating we have
 %
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P2:330}
@@ -156,7 +156,7 @@ x
 = L \int_0^{s/L} \frac{dt}{\sqrt{t^2 + 1}}
 = L \evalrange{ \ln\left( t + \sqrt{ t^2 + 1} \right) }{0}{s/L}
 \end{dmath}
-
+%
 This is
 
 \boxedEquation{eqn:modernOpticsProblemSet1P2:350}{
@@ -190,7 +190,7 @@ x(s) \sim L \ln\left( \frac{s}{L} + 1 \right)
 - \cdots
 \right),
 \end{dmath}
-
+%
 or
 \boxedEquation{eqn:modernOpticsProblemSet1P2:1910}{
 x(s) \sim s \quad \mbox{when \(s \ll L\)}.
@@ -211,7 +211,7 @@ u = \ln\left( t + \sqrt{t^2 + 1} \right)
 v = 1 - \sqrt{t^2 + 1}
 \end{dmath}
 \end{subequations}
-
+%
 Rearranging for \(t\) and \(\sqrt{1 + t^2}\), we have
 %
 \begin{subequations}
@@ -222,13 +222,13 @@ Rearranging for \(t\) and \(\sqrt{1 + t^2}\), we have
 t = \sqrt{(1 - v)^2 - 1},
 \end{dmath}
 \end{subequations}
-
+%
 so
 %
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P2:490}
 u(v) = \ln\left( \sqrt{v^2 - 2 v} + 1 - v \right)
 \end{dmath}
-
+%
 or
 \boxedEquation{eqn:modernOpticsProblemSet1P2:510}{
 x(y) = L \ln\left( \sqrt{\left(\frac{y}{L}\right)^2 - 2 \frac{y}{L}} + 1 - \frac{y}{L} \right).
@@ -239,13 +239,13 @@ Now, for the approximations.  Noting that the range of \(y\) is \((-\infty, 0]\)
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P2:490b}
 u(w) = \ln\left( \sqrt{w^2 + 2 w} + 1 + w \right).
 \end{dmath}
-
+%
 For \(w >> 1\) we have
 %
 \begin{equation}\label{eqn:modernOpticsProblemSet1P2:610}
 \sqrt{w^2 + w} \sim \sqrt{w^2} = w = -y/L
 \end{equation}
-
+%
 so that
 \boxedEquation{eqn:modernOpticsProblemSet1P2:490c}{
 x(y) \sim L \ln\left( -\frac{2 y}{L} \right) \quad \mbox{when \(-y/L \gg 1\)}.
@@ -258,7 +258,7 @@ u(w)
 \sim \sqrt{w} - \inv{2} (\sqrt{w})^2 + \inv{3}(\sqrt{w})^3 - \cdots
 \sim \sqrt{w},
 \end{dmath}
-
+%
 or
 
 \boxedEquation{eqn:modernOpticsProblemSet1P2:650}{
@@ -283,13 +283,13 @@ x(s) \sim s
 y(s) \sim -\frac{s^2}{2 L},
 \end{dmath}
 \end{subequations}
-
+%
 so we have
 %
 \begin{dmath}\label{eqn:modernOpticsProblemSet1P2:570}
 y \sim -\frac{x^2}{2 L},
 \end{dmath}
-
+%
 a parabolic trajectory.  Comparing to \(y'' = g\), where \(y = g t^2/2 + y_0' t + y_0\), the quantity that's analogous to the gravitational acceleration in \eqnref{eqn:modernOpticsProblemSet1P2:570} is
 
 \boxedEquation{eqn:modernOpticsProblemSet1P2:590}{

@@ -20,7 +20,7 @@ What does the energy density \(u(x) \equiv \langle | \Psi(x,t) |^2 \rangle\) loo
 \begin{dmath}\label{eqn:modernOptics:problemSet3:2:20}
 u = u_0 A \, \left(1 + R + 2 \sqrt{R} \cos [\phi(x)] \right),
 \end{dmath}
-
+%
 and {\bf give} \(A\) and
 \(\phi(x)\) in terms of
 \(R\),
@@ -75,7 +75,7 @@ Our electric field at point
 & \cdots &
 \end{array}
 \end{equation}
-
+%
 Factoring out the geometric series we have
 \begin{dmath}\label{eqn:modernOptics:problemSet3:2:60}
 \Psi(x)
@@ -98,13 +98,13 @@ e^{i k x} + r e^{i k (2 L - x)}
 e^{i k x} + \sqrt{R} e^{i k (2 L - x) + \delta_r}
 \right).
 \end{dmath}
-
+%
 Introducing a round trip phase
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:2:80}
 \Delta \equiv 2 k L + 2 \delta_r,
 \end{dmath}
-
+%
 we have
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:2:100}
@@ -115,7 +115,7 @@ we have
 e^{i k x} + \sqrt{R} e^{-i k x + i \Delta - i \delta_r}
 \right).
 \end{dmath}
-
+%
 This has squared magnitude
 \boxedEquation{eqn:modernOptics:problemSet3:2:120}{
 \Abs{\Psi(x)}^2
@@ -140,7 +140,7 @@ A = \frac{T}{1 + R^2 - 2 \cos(\Delta) }
 \phi(x) = 2 k x - \Delta + \delta_r
 \end{dmath}
 \end{subequations}
-
+%
 \makeSubAnswer{Peak energy density}{modernOptics:problemSet3:2b}
 
 From \eqnref{eqn:modernOptics:problemSet3:2:120} we see that maximums and minimums occur respectively whenever
@@ -153,7 +153,7 @@ From \eqnref{eqn:modernOptics:problemSet3:2:120} we see that maximums and minimu
 2 k x - \Delta + \Delta_r = \pi (2 m  + 1)
 \end{dmath}
 \end{subequations}
-
+%
 At these points \(1 + R + 2 \sqrt{R} \cos\left( 2 k x - \Delta + \delta_r \right)\) takes the values
 %
 \begin{subequations}
@@ -164,7 +164,7 @@ At these points \(1 + R + 2 \sqrt{R} \cos\left( 2 k x - \Delta + \delta_r \right
 1 + R - 2 \sqrt{R} = (1 - \sqrt{R})^2
 \end{dmath}
 \end{subequations}
-
+%
 The maximum and minimum energy densities are therefore
 %
 \begin{subequations}
@@ -186,7 +186,7 @@ u_{\mathrm{min}}
 \right)^2
 \end{dmath}
 \end{subequations}
-
+%
 This maximum is plotted in \cref{fig:modernOpticsProblemSet3Problem2:modernOpticsProblemSet3Problem2Fig2}.
 %
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet3Problem2Fig2}{peak energy density}{fig:modernOpticsProblemSet3Problem2:modernOpticsProblemSet3Problem2Fig2}{0.3}
@@ -201,7 +201,7 @@ We see the resonance peaks when
 \Delta_{\mathrm{res}} = \pm \cos^{-1} \left( \frac{1 + R^2}{2} \right).
 = 4 \pi \frac{L}{\lambda_{\mathrm{res}}} + 2 \delta_r
 \end{dmath}
-
+%
 For a given interface phase shift
 \(\delta_r\), and reflectivity
 \(R\), and cavity width
@@ -213,7 +213,7 @@ For a given interface phase shift
 \pm \cos^{-1} \left( \frac{1 + R^2}{2} \right) - 2 \delta_r
 }
 \end{dmath}
-
+%
 If large amounts of energy are supplied to the field due to this resonance, I think it would have to come from interactions with the interfaces, thermally cooling the atoms in the mirrors.  These thermal effects likely change
 \(r\) as a side effect,
 \textunderline{producing a feedback effect that would prevent the potential infinite spikes that we see in plot and associated expression of}
@@ -230,13 +230,13 @@ From \eqnref{eqn:modernOptics:problemSet3:2:120} we see that our energy density 
 u(x)
 = \alpha + \beta \cos\left( \frac{4 \pi}{\lambda} (x - L) + \delta_r \right).
 \end{dmath}
-
+%
 We'll have \textunderline{standing waves (possibly phase shifted) only for those input wavelengths that satisfy}
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:2:460}
 \frac{4 \pi L}{\lambda} = m \pi,
 \end{dmath}
-
+%
 for integer \(m > 0\).
 
 \paragraph{Grading note: $-2$}
@@ -255,7 +255,7 @@ From \eqnref{eqn:modernOptics:problemSet3:2:250} we see that our visibility is
 =
 \frac{2 \sqrt{R}}{1 + R}
 \end{dmath}
-
+%
 \makeSubAnswer{Compare to previously calculated transmitted intensity}{modernOptics:problemSet3:2d}
 
 If we split our wave function into forward \(\Psi_{+}(x)\) and reverse
@@ -275,7 +275,7 @@ e^{i k x}
 \sqrt{R} e^{-i k x + i \Delta - i \delta_r}
 \end{dmath}
 \end{subequations}
-
+%
 The externally transmitted portion of this wave is
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:2:400}
@@ -286,7 +286,7 @@ t \Psi_{+}(L)
 \frac{\Psi_0 T e^{2 i \delta_t} }{1 - R e^{ i \Delta} }
 e^{i k L},
 \end{dmath}
-
+%
 which has squared magnitude
 %
 \begin{dmath}\label{eqn:modernOptics:problemSet3:2:420}
@@ -294,6 +294,6 @@ I_T
 = \Abs{\Psi_T}^2
 = \frac{u_0 T^2}{\Abs{1 - R e^{i \Delta}}^2}.
 \end{dmath}
-
+%
 Except for the notation change \(u_0 \leftrightarrow I_0\), this, as expected, reproduces the result from class.
 } % makeanswer

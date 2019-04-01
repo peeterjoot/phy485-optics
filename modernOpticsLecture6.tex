@@ -30,25 +30,25 @@ We found
 \begin{equation}\label{eqn:modernOpticsLecture6:10}
 \Psi(\Br) = \frac{A}{i\lambda} \frac{e^{ik (r_s + r)}}{r_s r} \int_{\text{aperture}} e^{i k f(\Br')} da'
 \end{equation}
-
+%
 In the Fraunhofer limit (the far field) we found \eqnref{eqn:modernOpticsLecture5:270} that
 %
 \begin{equation}\label{eqn:modernOpticsLecture6:30}
 k f \rightarrow ( \Bk_s - \Bk ) \cdot \Br',
 \end{equation}
-
+%
 where \(r \gg d^2/\lambda\), and \(d\) is a typical aperture size.  Recalling that the exact expression for \(f\) was
 %
 \begin{equation}\label{eqn:modernOpticsLecture6:50}
 f(\Br') = - \left(\rcap + \rcap_s \right) \cdot \Br' + \inv{2r} \left( {\Br'}^2 - (\rcap \cdot \Br')^2 \right) + \inv{2 r_s} \left( (\Br')^2 - (\rcap_s \cdot \Br')^2 \right)
 \end{equation}
-
+%
 We'll now consider the \underlineAndIndex{Fresnel} limit where \(\Bk_s = \Bk\), and
 %
 \begin{equation}\label{eqn:modernOpticsLecture6:70}
 k f = \frac{k}{2} \left( \inv{r} + \inv{r_s} \right) {r'}^2
 \end{equation}
-
+%
 These Fresnel terms are generally important when \(r \sim d^2/\lambda\) even if \(r \gg d\) (because \(\lambda \ll d\)).  We'd like to massage this \(k f\) expression
 %
 \begin{equation}\label{eqn:modernOpticsLecture6:90}
@@ -56,7 +56,7 @@ k f = \frac{k}{2} \left(
 r_s^{-1}
 +r^{-1} \right) \left({x'}^2 + {y'}^2 \right) = \frac{\pi}{2} \left( u^2 + v^2 \right),
 \end{equation}
-
+%
 where we have made a change of variables
 %
 \begin{dmath}\label{eqn:modernOpticsLecture6:110}
@@ -77,14 +77,14 @@ u \\
 v
 \end{bmatrix}
 \end{dmath}
-
+%
 Our area element is then
 %
 \begin{equation}\label{eqn:modernOpticsLecture6:130}
 dx' dy'  =
 \frac{\lambda/2}{r_s^{-1} + r^{-1}} du dv
 \end{equation}
-
+%
 Our integral is now
 %
 \begin{dmath}\label{eqn:modernOpticsLecture6:150}
@@ -98,7 +98,7 @@ Our integral is now
 \frac{\lambda/2}{r_s + r}
 \int_{\text{aperture}} e^{i \frac{\pi}{2} (u^2 + v^2)} du dv
 \end{dmath}
-
+%
 Referring to \cref{fig:modernOpticsLecture6:modernOpticsLecture6Fig3}, let's do this integral.  Putting in our limits we have
 %
 \imageFigure{../figures/phy485-optics/modernOpticsLecture6Fig3}{Region of integration}{fig:modernOpticsLecture6:modernOpticsLecture6Fig3}{0.3}
@@ -113,13 +113,13 @@ e^{ik (r_s + r)}
 \int_{-\infty}^\infty du \int_{-\infty}^w dv
 e^{i \frac{\pi}{2} \left(u^2 + v^2 \right) } du dv
 \end{equation}
-
+%
 where
 %
 \begin{equation}\label{eqn:modernOpticsLecture6:190}
 w = \sqrt{ \frac{2}{\lambda} \left( \inv{r_s} + \inv{r} \right) }
 \end{equation}
-
+%
 Evaluating \(\int -z^2 dz\) over a pizza contour it can be demonstrated \citep{planetmath:fresnel} that
 
 % Prof T. also mentioned use of Gaussian's ... was probably referring to this pizza contour.
@@ -136,7 +136,7 @@ dv e^{i \frac{\pi}{2} v^2 }
 =
 \frac{1 + i}{2} + C(w) + S(w),
 \end{equation}
-
+%
 where
 %
 \begin{subequations}
@@ -147,7 +147,7 @@ S(w) = \int_0^w \sin \left( \frac{\pi}{2} u^2 \right) du
 C(w) = \int_0^w \cos \left( \frac{\pi}{2} u^2 \right) du
 \end{equation}
 \end{subequations}
-
+%
 Parametrically plotting these we get the \underlineAndIndex{Cornu Spiral} as plotted in \cref{fig:modernOpticsLecture6:modernOpticsLecture6Fig4}.
 %
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem2CornuSpiralPlainPlotFig4a}{Cornu Spiral}{fig:modernOpticsLecture6:modernOpticsLecture6Fig4}{0.3}
@@ -173,7 +173,7 @@ dl^2
 \right) dw^2
 = dw^2
 \end{dmath}
-
+%
 so that
 
 \boxedEquation{eqn:modernOpticsLecture6:310}{
@@ -191,7 +191,7 @@ one can find that
 \begin{dmath}\label{eqn:modernOpticsLecture6:350}
 \theta = \frac{\pi}{2} w^2
 \end{dmath}
-
+%
 \end{enumerate}
 
 Going back to our diffraction integral we find
@@ -205,7 +205,7 @@ e^{ik (r_s + r)}
 }{r_s + r}
 \left( 1 + i \right) \left( \frac{1 + i}{2} + C(w) + S(w) \right)
 \end{equation}
-
+%
 \paragraph{Check: No obstruction?}
 
 We've got \(w \rightarrow \infty\), so that \(C(w) = 1/2\) and \(S(w) = 1/2\).  This gives us
@@ -219,7 +219,7 @@ e^{ik (r_s + r)}
 }{r_s + r}
 \equiv \Psi_\infty(\Br).
 \end{equation}
-
+%
 Now let's consider our obstruction right along the line of sight (\(w = 0\)).  Now we have, since \(C(0) = S(0) = 0\)
 %
 \begin{equation}\label{eqn:modernOpticsLecture6:410}
@@ -230,7 +230,7 @@ Now let's consider our obstruction right along the line of sight (\(w = 0\)).  N
 =
 \inv{2} \Psi_\infty(\Br).
 \end{equation}
-
+%
 We do see that we end up with half the amplitude, so that as claimed our intensity (which squares the amplitude) results in a factor of \(1/4\)
 
 In general, for a barrier offset by \(d\), and a value of \(w\) that corresponds to that, our \underlineAndIndex{Intensity} is
@@ -248,13 +248,13 @@ I
 \right)^2
 \right)
 \end{dmath}
-
+%
 \paragraph{Check, again with \(w = 0\)}, we have
 %
 \begin{dmath}\label{eqn:modernOpticsLecture6:450}
 I_\infty \inv{2} \left( \inv{4} + \inv{4} \right) = \frac{I_\infty}{4}.
 \end{dmath}
-
+%
 Other examples.
 
 Diffraction from an edge \(w = d\): \cref{fig:modernOpticsLecture6:modernOpticsLecture6Fig5}.

@@ -50,7 +50,7 @@ y \\
 \alpha
 \end{bmatrix}
 \end{dmath}
-
+%
 so that the transition of the ray through the interface is described as
 \begin{dmath}\label{eqn:modernOpticsLecture1:30}
 \begin{bmatrix}
@@ -67,7 +67,7 @@ y_i \\
 \alpha_i
 \end{bmatrix}
 \end{dmath}
-
+%
 \subsection{Free propagation}
 \index{free propagation}
 Referring to \cref{fig:modernOpticsLecture1:modernOpticsLecture1Fig2} we see that
@@ -77,13 +77,13 @@ Referring to \cref{fig:modernOpticsLecture1:modernOpticsLecture1Fig2} we see tha
 \begin{dmath}\label{eqn:modernOpticsLecture1:35}
 \tan \alpha = \frac{\Delta y}{L} \approx \alpha,
 \end{dmath}
-
+%
 so that
 %
 \begin{dmath}\label{eqn:modernOpticsLecture1:45}
 y' = y + \Delta y \approx y + L \alpha,
 \end{dmath}
-
+%
 so that our matrix describing free propagation is
 %
 \begin{dmath}\label{eqn:modernOpticsLecture1:50}
@@ -101,7 +101,7 @@ y_i \\
 \alpha_i
 \end{bmatrix}
 \end{dmath}
-
+%
 \subsection{Refraction off of a flat lens}
 \index{refraction}
 \index{flat lens}
@@ -115,19 +115,19 @@ where
 \begin{dmath}\label{eqn:modernOpticsLecture1:70}
 n \sin\alpha = n' \sin\alpha'.
 \end{dmath}
-
+%
 We employ the paraxial approximation
 %
 \begin{dmath}\label{eqn:modernOpticsLecture1:90}
 n \alpha \sim n' \alpha',
 \end{dmath}
-
+%
 or
 %
 \begin{dmath}\label{eqn:modernOpticsLecture1:110}
 \alpha' = \frac{n'}{n} \alpha,
 \end{dmath}
-
+%
 allowing for the description of refraction off of a flat lens by
 %
 \begin{dmath}\label{eqn:modernOpticsLecture1:130}
@@ -145,7 +145,7 @@ y_i \\
 \alpha_i
 \end{bmatrix}
 \end{dmath}
-
+%
 \subsection{Refraction of a curved surface}
 \index{refraction!curved surface}
 
@@ -161,13 +161,13 @@ we see that
 \begin{dmath}\label{eqn:modernOpticsLecture1:150}
 \phi \approx \frac{y}{R},
 \end{dmath}
-
+%
 and can also employ Snell's law in the approximation
 %
 \begin{dmath}\label{eqn:modernOpticsLecture1:370}
 n \theta = n' \theta'.
 \end{dmath}
-
+%
 From the figure we see that
 %
 \begin{subequations}
@@ -178,23 +178,23 @@ From the figure we see that
 \theta' = \alpha + \phi'
 \end{equation}
 \end{subequations}
-
+%
 or
 \begin{dmath}\label{eqn:modernOpticsLecture1:390}
 n(\alpha + \phi) = n' (\alpha' + \phi).
 \end{dmath}
-
+%
 Using \eqnref{eqn:modernOpticsLecture1:150} this is
 \begin{dmath}\label{eqn:modernOpticsLecture1:390b}
 n\left( \alpha + \frac{y}{R} \right) = n' \left( \alpha' + \frac{y}{R} \right),
 \end{dmath}
-
+%
 which we can rearrange to find
 %
 \begin{equation}\label{eqn:modernOpticsLecture1:450}
 \alpha' = \frac{y}{R}\left( \frac{n}{n'} - 1 \right) + \frac{n}{n'} \alpha.
 \end{equation}
-
+%
 This can now be put into matrix form, yielding
 %
 \begin{dmath}\label{eqn:modernOpticsLecture1:170}
@@ -212,7 +212,7 @@ y_i \\
 \alpha_i
 \end{bmatrix}
 \end{dmath}
-
+%
 Observe that for \(R \rightarrow \infty\) we have the same result as a flat surface.
 
 \subsubsection{Concave refraction}
@@ -239,7 +239,7 @@ y_i \\
 \alpha_i
 \end{bmatrix}
 \end{dmath}
-
+%
 Alternatively, and this is what we do, is that we allow for \(R\) to be signed, in which case this formula is true for both \(R > 0\) (convex) and \(R < 0\) (concave).  We employ the following sign convention \cref{fig:modernOpticsLecture1:modernOpticsLecture1Fig5}
 %
 \imageFigure{../figures/phy485-optics/modernOpticsLecture1Fig5}{Concave curvature}{fig:modernOpticsLecture1:modernOpticsLecture1Fig5}{0.3}
@@ -288,7 +288,7 @@ y_i \\
 \end{bmatrix}
 .
 \end{dmath}
-
+%
 We've described \(M_1, M_2, M_3\) individually above, and they are
 %
 \begin{subequations}
@@ -314,7 +314,7 @@ M_3 =
 \end{bmatrix}
 \end{equation}
 \end{subequations}
-
+%
 The matrix \(M\) is the mess
 %
 \begin{dmath}\label{eqn:modernOpticsLecture1:530}
@@ -333,13 +333,13 @@ M
 \inv{R_1}\left( \frac{n}{n'} -1 \right) & \frac{n}{n'}
 \end{bmatrix}
 \end{dmath}
-
+%
 With only the ratio \(n'/n\) showing up, let's make the substitution
 %
 \begin{dmath}\label{eqn:modernOpticsLecture1:550}
 \frac{n'}{n} \rightarrow n,
 \end{dmath}
-
+%
 effectively working with \(n = 1\) outside of the lens.  This gives us
 %
 \begin{dmath}\label{eqn:modernOpticsLecture1:570}
@@ -389,7 +389,7 @@ M
 1 - \frac{t}{R_2}\left( \inv{n} - 1 \right)
 \end{bmatrix}
 \end{dmath}
-
+%
 Writing the \(C\) term as \(-1/f\) we have what's called the \underlineAndIndex{Lens makers formula} (for a thick lens in this case), and putting back in \(n\) and \(n'\) we have
 %
 \begin{dmath}\label{eqn:modernOpticsLecture1:590}
@@ -401,7 +401,7 @@ Writing the \(C\) term as \(-1/f\) we have what's called the \underlineAndIndex{
 \frac{n t}{n' R_1 R_2}\left( \frac{n'}{n} - 1 \right)
 \right)
 \end{dmath}
-
+%
 Observe that for a thin lens where \(t \rightarrow 0\) we have the approximation
 %
 \begin{dmath}\label{eqn:modernOpticsLecture1:210}
@@ -411,13 +411,13 @@ M =
 - 1/f & 1
 \end{bmatrix}.
 \end{dmath}
-
+%
 For our focus in \eqnref{eqn:modernOpticsLecture1:590} we get
 %
 \begin{dmath}\label{eqn:modernOpticsLecture1:230}
 \inv{f} = \frac{n' - n}{n} \left( \inv{R_1} - \inv{R_2} \right).
 \end{dmath}
-
+%
 This is called the (thin lens) Lens makers formula.  This, and \(n \approx 1.5\) is enough to construct many lens designs.  Our sign conventions for \(f\) are illustrated by \cref{fig:modernOpticsLecture1:modernOpticsLecture1Fig10}.
 \imageFigure{../figures/phy485-optics/modernOpticsLecture1Fig10}{Lens}{fig:modernOpticsLecture1:modernOpticsLecture1Fig10}{0.3}
 
@@ -456,7 +456,7 @@ In particular, if imaging something in air, where we have \(n_0 = n_f\) we have 
 \begin{dmath}\label{eqn:modernOpticsLecture1:290}
 \alpha_f = C y_i + \cancel{ D \alpha_i}
 \end{dmath}
-
+%
 output \(\rightarrow\) input is focus, as illustrated in \cref{fig:modernOpticsLecture1:modernOpticsLecture1Fig11}.
 \imageFigure{../figures/phy485-optics/modernOpticsLecture1Fig11}{\(D = 0\)}{fig:modernOpticsLecture1:modernOpticsLecture1Fig11}{0.3}
 %

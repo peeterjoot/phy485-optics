@@ -42,7 +42,7 @@ Why a scalar theory?  If we have a plane wave polarization
 \begin{dmath}\label{eqn:modernOpticsLecture4:10}
 \BE(\Br, t) = \left( E_1 \xcap + E_2 \ycap \right) e^{ i \Bk \cdot \Br - i \omega t}
 \end{dmath}
-
+%
 With the principle of superposition
 
 \begin{enumerate}
@@ -60,13 +60,13 @@ We'd like to solve the wave equation with these approximations.
 \begin{dmath}\label{eqn:modernOpticsLecture4:30}
 \spacegrad^2 E = \inv{c^2} \PDSq{t}{E}
 \end{dmath}
-
+%
 We will use a monochromatic wave so that we can write the electric field magnitude as a vector function times a time phase term
 %
 \begin{dmath}\label{eqn:modernOpticsLecture4:50}
 E = \Psi(\Br) e^{-i \omega t}
 \end{dmath}
-
+%
 We find
 
 \boxedEquation{eqn:modernOpticsLecture4:70}{
@@ -81,26 +81,26 @@ It turns out that the solution to this equation is generally written out as the 
 \begin{dmath}\label{eqn:modernOpticsLecture4:90}
 \Psi(\Br) = \iint da' \left( \Psi(\Br') \spacegrad' G - G \spacegrad' \Psi(\Br') \right) \cdot \ncap
 \end{dmath}
-
+%
 Here \(\ncap\) is the unit normal perpendicular to the surface, and the Green function of the Helmholtz equation is
 %
 \begin{dmath}\label{eqn:modernOpticsLecture4:110}
 G(\Br, \Br') = -\frac{e^{i k R}}{4 \pi R} = -\frac{e^{i k \Abs{\Br - \Br'}}}{4 \pi \Abs{\Br - \Br'}},
 \end{dmath}
-
+%
 %where \(R = \Abs{\Br - \Br'}\).
 It is somewhat messy, but relatively straightforward to demonstrate \citep{phy456:helmoltzGreens} that this Green's function works to solve the forced Helmoltz equation
 %
 \begin{equation}\label{eqn:modernOpticsLecture4:helmholtzGreens:10}
 \left( \spacegrad^2 + \Bk^2\right) \Psi_\Bk(\Br) = s(\Br),
 \end{equation}
-
+%
 with solution
 %
 \begin{equation}\label{eqn:modernOpticsLecture4:helmholtzGreens:50}
 \Psi_\Bk(\Br) = \int G(\Abs{\Br - \Br'}) s(\Br') d^3 \Br'.
 \end{equation}
-
+%
 However, it is far from obvious how to apply this to the homogeneous Helmoltz equation.  The tricks involved (application of Green's theorem to a spherical volume with the center deleted) can be found in \S A.2, \S 10.4 of \citep{hecht1998hecht}, and also in \S 5.2 of \citep{fowles1989introduction}.  The end result of that trickery is called the Kirchhoff Integral Theorem.
 
 Is this Green's function reasonable seeming?  As illustrated in \cref{fig:modernOpticsLecture4:modernOpticsLecture4Fig3}) this isn't an entirely unsurprising seeming Green's function for this problem.  We have the \(e^{i k R}\) type of phase factor that we expected (and guessed in the geometric optics treatment, and also have the \(1/R\) factor that we need to retain power at a distance \(R\).
@@ -112,7 +112,7 @@ Also note that the primed gradient is taken with respect to the coordinates of \
 \begin{dmath}\label{eqn:modernOpticsLecture4:130}
 \spacegrad' = \Be_m \PD{{x'}_m}{}
 \end{dmath}
-
+%
 If we take the gradient of the Green's function we find
 %
 \begin{dmath}\label{eqn:modernOpticsLecture4:150}
@@ -121,7 +121,7 @@ If we take the gradient of the Green's function we find
 \right) = \rcap \left( i k - \inv{r} \right)
 \frac{e^{i k r}}{r}
 \end{dmath}
-
+%
 Applying this to our problem we find
 
 \boxedEquation{eqn:modernOpticsLecture4:170}{
@@ -150,7 +150,7 @@ Our spherical wave function at the aperture is
 \begin{dmath}\label{eqn:modernOpticsLecture4:190}
 \Psi(\Br') = A \frac{e^{i k R_s}}{R_s}
 \end{dmath}
-
+%
 so that
 %
 \begin{dmath}\label{eqn:modernOpticsLecture4:210}
@@ -161,7 +161,7 @@ so that
 \left( i k - \inv{R_s} \right) \frac{e^{i k R_s}}{R_s}
 = A \ncap \left( i k - \inv{R_s} \right) \frac{e^{i k R_s}}{R_s}.
 \end{dmath}
-
+%
 Our resulting wave function is then
 %
 \begin{dmath}\label{eqn:modernOpticsLecture4:230}
@@ -174,7 +174,7 @@ Our resulting wave function is then
 \right)
 \right)
 \end{dmath}
-
+%
 Now, in all these \(ik - 1/r_s\) we have \(k\) of order \(1/\lambda\) and \(1/r_s\) is of order \(1/r\) or \(1/r_s\).
 
 Recall from geometric optics that we used
@@ -182,19 +182,19 @@ Recall from geometric optics that we used
 \begin{dmath}\label{eqn:modernOpticsLecture4:250}
 \spacegrad \left( \BE_0 e^{i\phi(\Br)} \right) \approx i (\BE_0 \cdot \spacegrad \phi ) e^{i \phi(\Br)},
 \end{dmath}
-
+%
 With an assumption
 %
 \begin{dmath}\label{eqn:modernOpticsLecture4:270}
 \lambda \ll r, r_s,
 \end{dmath}
-
+%
 and
 %
 \begin{dmath}\label{eqn:modernOpticsLecture4:290}
 \lambda \ll d \ll r, r_s,
 \end{dmath}
-
+%
 where \(d\) is the ``typical object size'', so that we have
 %
 \begin{dmath}\label{eqn:modernOpticsLecture4:310}
@@ -204,7 +204,7 @@ where \(d\) is the ``typical object size'', so that we have
 \right)
 \right)
 \end{dmath}
-
+%
 or with \(\theta\) as illustrated,
 
 \boxedEquation{eqn:modernOpticsLecture4:330}{
@@ -216,7 +216,7 @@ where
 \begin{dmath}\label{eqn:modernOpticsLecture4:350}
 k(\theta) = \inv{2} \left( 1 + \cos \theta \right),
 \end{dmath}
-
+%
 is the ``obliquity factor''.
 
 This is called the \underlineAndIndex{Huygens-Fresnel} principle.
