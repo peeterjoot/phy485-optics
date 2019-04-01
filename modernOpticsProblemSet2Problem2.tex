@@ -145,25 +145,32 @@ This gives us
 so that the difference between the tangential angle at \(u_m\) and \(u_{m-1}\) is \(\pi\).  In the upper right quadrant of the spiral we see that blocking the intervals \([u_{2k}, u_{2k+1}]\) will provide, approximately, the desired phase matching of \eqnref{eqn:modernOptics:ProblemSet2:P2:120}.  This masking is illustrated in \cref{fig:modernOpticsProblemSet2Problem2CornuSpiralMasked:modernOpticsProblemSet2Problem2CornuSpiralMaskedFig4}.
 
 % original logic:
-%\imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem2CornuSpiralMaskedFig4}{Cornu Spiral with regions blocked for equal phase differences}{fig:modernOpticsProblemSet2Problem2CornuSpiralMasked:modernOpticsProblemSet2Problem2CornuSpiralMaskedFig4}{0.4}
+%\imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem2CornuSpiralMaskedFig4}{Cornu Spiral with regions blocked for equal phase differences}{fig:modernOpticsProblemSet2Problem2CornuSpiralMasked:modernOpticsProblemSet2Problem2CornuSpiralMaskedFig4}{0.3}
 % fudging the logic:
-\imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem2CornuSpiralMaskedFig4a}{Cornu Spiral with regions blocked for equal phase differences}{fig:modernOpticsProblemSet2Problem2CornuSpiralMasked:modernOpticsProblemSet2Problem2CornuSpiralMaskedFig4}{0.4}
+\imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem2CornuSpiralMaskedFig4a}{Cornu Spiral with regions blocked for equal phase differences}{fig:modernOpticsProblemSet2Problem2CornuSpiralMasked:modernOpticsProblemSet2Problem2CornuSpiralMaskedFig4}{0.3}
 
 \paragraph{Part \ref{modernOptics:problemSet2:2e}.  }
 
 The respective wave functions for each of the non-blocked intervals chosen are
-
-\begin{equation}\label{eqn:modernOptics:ProblemSet2:P2:180}
-\begin{aligned}
-[-u_0, u_0] &\quad \Psi_{f0} = \Psi_\infty (1 - i) \left( C\left(\sqrt{3/2}\right) + i S\left(\sqrt{3/2}\right) \right) \\
-[-u_2, -u_1] \cup [u_1, u_2] &\quad \Psi_{f2} = \Psi_\infty (1 - i) \left( C\left(\sqrt{11/2}\right) - C\left(\sqrt{7/2}\right) + i S\left(\sqrt{11/2}\right) - iS\left(\sqrt{7/2}\right) \right) \\
-[-u_4, -u_3] \cup [u_3, u_4] &\quad \Psi_{f4} = \Psi_\infty (1 - i) \left( C\left(\sqrt{19/2}\right) - C\left(\sqrt{15/2}\right) + i S\left(\sqrt{19/2}\right) - iS\left(\sqrt{15/2}\right) \right) \\
+\begin{itemize}
+\item \( [-u_0, u_0]\):
+\begin{dmath}\label{eqn:modernOpticsProblemSet2Problem2:380}
+\Psi_{f0} = \Psi_\infty (1 - i) \left( C\left(\sqrt{3/2}\right) + i S\left(\sqrt{3/2}\right) \right) 
+\end{dmath}
+\item \( [-u_2, -u_1] \cup [u_1, u_2] \):
+\begin{dmath}\label{eqn:modernOpticsProblemSet2Problem2:400}
+\Psi_{f2} = \Psi_\infty (1 - i) \left( C\left(\sqrt{11/2}\right) - C\left(\sqrt{7/2}\right) + i S\left(\sqrt{11/2}\right) - iS\left(\sqrt{7/2}\right) \right) 
+\end{dmath}
+\item \( [-u_4, -u_3] \cup [u_3, u_4] \):
+\begin{dmath}\label{eqn:modernOpticsProblemSet2Problem2:420}
+\Psi_{f4} = \Psi_\infty (1 - i) \left( C\left(\sqrt{19/2}\right) - C\left(\sqrt{15/2}\right) + i S\left(\sqrt{19/2}\right) - iS\left(\sqrt{15/2}\right) \right) 
+\end{dmath}
+\end{itemize}
+%\begin{equation}\label{eqn:modernOptics:ProblemSet2:P2:180}
 %[-u_6, -u_5] \cup [u_5, u_6] &\quad \Psi_{f4} = \Psi_\infty (1 - i) \left( C\left(\sqrt{27/2}\right) - C\left(\sqrt{23/2}\right) + i S\left(\sqrt{27/2}\right) - iS\left(\sqrt{23/2}\right) \right)
 %\vdots \\
 %[-u_8, -u_7] \cup [u_7, u_8] &\quad \Psi_{f6} = \Psi_\infty (1 - i) \left( C\left(\sqrt{35/2}\right) - C\left(\sqrt{31/2}\right) + i S\left(\sqrt{35/2}\right) - iS\left(\sqrt{31/2}\right) \right) \\
-\end{aligned}
-\end{equation}
-
+%\end{equation}
 We find numerically, as expected that the \(\arg(\Delta C + i \Delta S)\) above are not perfect matches, as we expected by looking at the graph of the Cornu spiral.  They are however good approximations \(0.742832, 0.713766, 0.747819\), and the destructive interference with summation should be minimal.
 
 We want to compare the intensities of the sums of these (one, three, and five open zones respectively)

@@ -22,9 +22,9 @@
 %\section{Motivation}
 %\section{Guts}
 
-\makeoproblem{Fraunhofer diffraction through four circular apertures.}
+\makeoproblem{Fraunhofer diff., 4 circular apertures.}
 {pr:optics2010ExamFraunhofer:1}
-{2010 final exam, question 3}
+{2010 final, q3}
 {
 Calculate the diffraction pattern for the geometry of \cref{fig:optics2010ExamFraunhofer:optics2010ExamFraunhoferFig2}.
 \imageFigure{../figures/phy485-optics/optics2010ExamFraunhoferFig2}{Four circular apertures}{fig:optics2010ExamFraunhofer:optics2010ExamFraunhoferFig2}{0.3}
@@ -77,35 +77,36 @@ g(x, y) =
 \end{dmath}
 
 This allows us to write our diffraction integral as
-
 \begin{dmath}\label{eqn:optics2010ExamFraunhofer:140}
+\begin{aligned}
 \Psi(\Br')
-=
+&=
 \frac{\Psi_0}{e^{i k r'}}{i \lambda r'}
 \int du dv
-\left(
+\Biglr{
 e^{-i k ((u + b/2) \alpha + (v + b/2) \beta) }
 +
-e^{-i k ((u - b/2) \alpha + (v - b/2) \beta) }
-+
+e^{-i k ((u - b/2) \alpha + (v - b/2) \beta) } \\
+&\qquad +
 e^{-i k ((u + b/2) \alpha + (v - b/2) \beta) }
 +
 e^{-i k ((u - b/2) \alpha + (v + b/2) \beta) }
-\right)
-=
+}
+\\
+&=
 \frac{\Psi_0}{e^{i k r'}}{i \lambda r'}
-\left(
-e^{-i k (\alpha b/ 2 + \beta b/2) }
-+
-e^{-i k (-\alpha b/ 2 - \beta b/2) }
-+
-e^{-i k (\alpha b/ 2 - \beta b/2) }
-+
-e^{-i k (-\alpha b/ 2 + \beta b/2) }
-\right)
-\int du dv
-e^{-i k (u \alpha + v \beta) }
-=
+\Biglr{
+   e^{-i k (\alpha b/ 2 + \beta b/2) }
+   +
+   e^{-i k (-\alpha b/ 2 - \beta b/2) } \\
+&\qquad   +
+   e^{-i k (\alpha b/ 2 - \beta b/2) }
+   +
+   e^{-i k (-\alpha b/ 2 + \beta b/2) }
+} \times \\
+&\qquad \int du dv
+e^{-i k (u \alpha + v \beta) } \\
+&=
 2 \frac{\Psi_0}{e^{i k r'}}{i \lambda r'}
 \left(
 e^{-i k \alpha b/ 2 } \cos( k \beta b/2 )
@@ -113,17 +114,17 @@ e^{-i k \alpha b/ 2 } \cos( k \beta b/2 )
 e^{i k \alpha b/ 2 } \cos( k \beta b/2 )
 \right)
 \int du dv
-e^{-i k (u \alpha + v \beta) }
-=
+e^{-i k (u \alpha + v \beta) } \\
+&=
 4 \frac{\Psi_0}{e^{i k r'}}{i \lambda r'}
 \cos( k \alpha b/ 2 ) \cos( k \beta b/2 )
 \int_{\rho=0}^R \int_{\theta = 0}^{2 \pi}
 \rho d\rho d\theta
-e^{-i k \rho (\cos\theta \alpha + \sin \theta \beta) }
+e^{-i k \rho (\cos\theta \alpha + \sin \theta \beta) }.
+\end{aligned}
 \end{dmath}
 
 This last integral isn't something that we can evaluate in just Bessel functions unless one of \(\alpha\) or \(\beta\) is zero.  For example, if \(\beta = 0\), so that the observation axis lies in the one of the perpendicular planes, then we have
-
 \begin{dmath}\label{eqn:optics2010ExamFraunhofer:160}
 \Psi \sim
 \frac{e^{i k r'}}{r'}

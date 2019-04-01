@@ -178,27 +178,29 @@ Now, if we delay one such wave function in time at the source by time \(\tau\), 
 \frac{1}{\sqrt{2 \pi} r_1} \int d\omega \tilde{\Psi}_0(\omega) e^{i \omega \left( r_1/c - t \right) + i \phi_1(t)}
 +\frac{1}{\sqrt{2 \pi} r_2} \int d\omega \tilde{\Psi}_0(\omega) e^{i \omega \left( r_2/c - t - \tau \right) + i\phi_2(t + \tau)},
 \end{dmath}
-
 with average intensity proportional to
-
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:220}
-I = I_1 + I_2 +
-\frac{\Abs{\Psi_0}^2}{\pi r_1 r_2}
+\begin{aligned}
+I 
+&= I_1 + I_2 \\
+&\quad
++ \frac{\Abs{\Psi_0}^2}{\pi r_1 r_2}
 \Real
-\expectation{
-\int d\omega \tilde{\Psi}_0(\omega) e^{i \omega \left( r_1/c - t \right) + i \phi_1(t)}
-\int d\omega' {\tilde{\Psi}}^\conj_0(\omega') e^{-i \omega' \left( r_2/c - t - \tau \right) - i\phi_2(t + \tau)}
-}
+\langle
+%\expectation{
+\int d\omega \tilde{\Psi}_0(\omega) e^{i \omega \left( r_1/c - t \right) + i \phi_1(t)} \times \\
+&\qquad \int d\omega' {\tilde{\Psi}}^\conj_0(\omega') e^{-i \omega' \left( r_2/c - t - \tau \right) - i\phi_2(t + \tau)}
+%}
+\rangle
+.
+\end{aligned}
 \end{dmath}
-
-Letting
+Let
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:240}
 \Psi_0(t) =
 \frac{1}{\sqrt{2 \pi}} \int d\omega \tilde{\Psi}_0(\omega) e^{-i \omega  t},
 \end{dmath}
-
-we have for the interference term
-
+so that the interference term is
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:260}
 \Gamma(\tau) = \frac{2}{r_1 r_2 T} \int_{-T/2}^{T/2} dt
 \Psi_0(t - r_1/c)
