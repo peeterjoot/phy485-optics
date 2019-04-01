@@ -25,19 +25,18 @@
 %\section{Motivation}
 %
 %
-\makeproblem{Lloyd's mirror.  Periodicity of interference for monochromatic point source.}{modernOpticsMidtermReflection:pr:1}{
-
-I got confused about the geometry in a Lloyd's mirror configuration on the midterm.  After a more careful figure, it becomes more clear how to (correctly) tackle the problem.  In this, and the next few problems, we'll do a more leisurely exploration of the associated ideas than midterm time constraints allowed.
-
+\makeproblem
+{Lloyd's mirror.}
+%{Lloyd's mirror.  Periodicity of interference for monochromatic point source.}
+{modernOpticsMidtermReflection:pr:1}{
+This is a problem that examines the periodicity of interference for monochromatic point source.
+%I got confused about the geometry in a Lloyd's mirror configuration on the midterm.  After a more careful figure, it becomes more clear how to (correctly) tackle the problem.  In this, and the next few problems, we'll do a more leisurely exploration of the associated ideas than midterm time constraints allowed.
 Consider the interference for the Lloyd's mirror configuration of \cref{fig:modernOpticsMidtermReflection:modernOpticsMidtermReflectionFig1}.
-
 \imageFigure{../figures/phy485-optics/modernOpticsMidtermReflectionFig1}{Lloyd's mirror}{fig:modernOpticsMidtermReflection:modernOpticsMidtermReflectionFig1}{0.3}
 } % makeproblem
 
 \makeanswer{modernOpticsMidtermReflection:pr:1}{
-
 We want to consider the pathlength differences along the direct path \(d\), to that of \(b = 2 a + b_2\).  The lengths of these paths are
-
 \begin{subequations}
 \begin{equation}\label{eqn:modernOpticsMidtermReflection:20}
 d = \sqrt{ L^2 + x^2 }
@@ -162,13 +161,10 @@ Should we wish to reintroduce the angle \(\alpha\) from the figure, we have for 
 } % makeanswer: pr:1
 
 \makeproblem{Lloyd's mirror.  Non monochromatic source.}{modernOpticsMidtermReflection:pr:2}{
-
 Suppose we are told to assume that the source had a Gaussian frequency distribution.  How do things change?
-
 } % makeproblem
 
 \makeanswer{modernOpticsMidtermReflection:pr:2}{
-
 Let's play around with evolving things and suppose that we slightly generalize the spherical waves we'd interfered by allowing a superposition of the form
 
 \begin{dmath}\label{eqn:modernOpticsMidtermReflection:180}
@@ -400,20 +396,14 @@ While the mutual correlation has a dependence on the path length difference of t
 
 } % makeanswer pr:2
 
-\makeproblem{Wave functions for Lloyd's mirror configuration}{modernOpticsMidtermReflection:pr:3}{
-
+\makeproblem{Wave functions for Lloyd's mirror configuration.}{modernOpticsMidtermReflection:pr:3}{
 For a linearly spread source distribution illuminating a Lloyd's mirror configuration, find the wave functions at the observation point.
-
 } % makeproblem
 
 \makeanswer{modernOpticsMidtermReflection:pr:3}{
-
 Let's re-do the geometrical part of the task we did above, allowing for an additional offset from the point average position of a linear source as in \cref{fig:modernOpticsMidtermReflection:modernOpticsMidtermReflectionFig2}.
-
 \imageFigure{../figures/phy485-optics/modernOpticsMidtermReflectionFig2}{Lloyd's mirror configuration for a distributed source}{fig:modernOpticsMidtermReflection:modernOpticsMidtermReflectionFig2}{0.3}
-
 We see that the distance for the direct line of sight, and for the bounced rays are respectively
-
 \begin{subequations}
 \begin{equation}\label{eqn:modernOpticsMidtermReflection:600}
 d = \sqrt{ L^2 + (x - x')^2 }
@@ -530,14 +520,11 @@ Let's not try that for now.  Instead, a more reasonable approach is probably to 
 
 } % makeanswer pr:3
 
-\makeproblem{Wave functions for Lloyd's mirror configuration}{modernOpticsMidtermReflection:pr:4}{
-
+\makeproblem{Wave functions for Lloyd's mirror configuration.}{modernOpticsMidtermReflection:pr:4}{
 If the source is spatially spread, how far apart does it have to be for a one half reduction in the fringe visibility?
-
 } % makeproblem
 
 \makeanswer{modernOpticsMidtermReflection:pr:4}{
-
 This is the precise statement of the problem on the midterm.  Let's attempt it using the Fraunhofer diffraction approximation, with coordinates as in
 
 FIXME: F5
@@ -652,12 +639,11 @@ For \(\theta = \pi/2\), we see that a source spread as small as \(\lambda/4\) wi
 } % makeanswer pr:4
 
 
-\makeproblem{Attempt this again using the mutual coherence}{modernOpticsMidtermReflection:pr:6}{
+\makeproblem{Attempt this again using the mutual coherence.}{modernOpticsMidtermReflection:pr:6}{
 Published midterm solution uses the results from the notes for mutual coherence \(\gamma_{12}\) due to a distributed source.  This looks like how we should have attempted this.  Try that way (esp. now that the theorem in question is now understood.)
 }
 
 \makeanswer{modernOpticsMidtermReflection:pr:6}{
-
 It's not immediately clear to me how to apply the Van Cittert-Zernike theorem to the Lloyd's mirror configuration.  What two points are of interest?  We have intensity at any single point?  Do we look at a point on the maximum of a fringe and look at separation from that?  Some review finds the answer back in lecture 11, where it was pointed out that we can consider the Lloyd's mirror as the superposition of a real and a virtual observation point as in \cref{fig:modernOpticsMidtermReflection:modernOpticsMidtermReflectionFig6}.
 
 \imageFigure{../figures/phy485-optics/modernOpticsMidtermReflectionFig6}{Spatial interferometry with Lloyd's mirror}{fig:modernOpticsMidtermReflection:modernOpticsMidtermReflectionFig6}{0.3}

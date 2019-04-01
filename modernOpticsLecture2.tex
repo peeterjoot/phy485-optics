@@ -20,22 +20,21 @@
 
 Reading: \S 3.1.1 \citep{born1980principles}
 
-\section{Eikonal equation.  Where are the rays in Maxwell's equations?}
+\section{Eikonal equation.}
+We want to find the rays in Maxwell's equations.
 \index{Eikonal equation}
 \index{ray}
 \index{Maxwell's equations}
-
 \begin{equation}\label{eqn:modernOpticsLecture2:10}
 \begin{aligned}
 \spacegrad \cdot \BD &= 0 \\
 \spacegrad \cdot \BB &= 0 \\
 \spacegrad \cross \BE &= - \inv{c} \PD{t}{\BB} \\
-\spacegrad \cross \BB &= \inv{c} \PD{t}{\BD}
+\spacegrad \cross \BB &= \inv{c} \PD{t}{\BD}.
 \end{aligned}
 \end{equation}
 
 Assume
-
 \begin{enumerate}
 \item
 Material has no magnetic dependence (\(\mu = 1\)) so that we have \footnote{
@@ -52,18 +51,15 @@ however, with these units (and \(\mu = 1\)) the wave equation operator takes the
 
 From this we deduce the wave velocity is \(c/\sqrt{\epsilon}\), and then find \(n = c/v\) matches \eqnref{eqn:modernOpticsLecture2:5} above.
 }
-
 \begin{equation}\label{eqn:modernOpticsLecture2:5}
-n = \sqrt{\epsilon}
+n = \sqrt{\epsilon}.
 \end{equation}
-
 We'll neglect loss, with zero for the imaginary part of \(n\)
 \item
 Short wavelength limit \(\lambda \ll d\), any other length scale in problem.
 \end{enumerate}
 
 If \(n = \text{constant}\), we know that plane waves are solutions.  Try
-
 \begin{equation}\label{eqn:modernOpticsLecture2:30}
 \begin{bmatrix}
 \BE \\
