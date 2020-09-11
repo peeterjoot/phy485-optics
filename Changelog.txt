@@ -1,0 +1,16 @@
+phy485.V0.1.11-1.pdf Sept 11, 2020 (commit 6ae4624d5e0cdb0c0a9d211d423a47333138c7c3)
+<ul>
+   <li>Update email address.</li>
+   <li>Switch to classicthesis_mine/backmatter2.tex</li>
+   <li>Fix some repeated dup words.</li>
+   <li>Fix hyphens in listing.</li>
+   <li>Url fixes and updates.</li>
+   <li>gutter fixes.</li>
+   <li>spell check rules and quick spell check pass.</li>
+   <li>more dmath/itemize fixes, and a few overlapped eqn number fixes.</li>
+   <li>global figure shrink: 0.3 -> 0.2</li>
+   <li>Some figure shrinking</li>
+   <li>Remove dmath+aligned, and other dmaths in itemize.</li>
+   <li>prune blank lines from before boxedEquation</li>
+   <li>Do not use dmath in item lists (equation number in wrong place.).</li>
+</ul>
