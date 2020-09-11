@@ -408,11 +408,13 @@ Do we have any hope whatsoever to evaluate this sum in some sort of closed form?
 %
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet3Problem3Fig6}{Points of constant \(m - n\).}{fig:modernOpticsProblemSet3Problem3:modernOpticsProblemSet3Problem3Fig6}{0.2}
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:3:760}
-\sum_{m, n = 1}^N f(m - n, m + n - 1)
-=
+\begin{equation}\label{eqn:modernOptics:problemSet3:3:760}
+\begin{aligned}
+\sum_{m, n = 1}^N &f(m - n, m + n - 1) \\
+&=
 \sum_{s = -N + 1}^{N - 1} \sum_{t = 1}^{N - \Abs{s}} f( s, \Abs{s} + 2 t - 1 ).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 With the opposite diagonal orientation, as in \cref{fig:modernOpticsProblemSet3Problem3:modernOpticsProblemSet3Problem3Fig7}, we find
 %
@@ -584,5 +586,4 @@ l_{\mathrm{tc}} \Delta \theta_s
 \end{dmath}
 %
 Rather remarkably, considering the fudging that was done in \partref{modernOptics:problemSet3:3c}, this matches the wavelength resolution result from \eqnref{eqn:modernOptics:problemSet3:3:960}.
-
 } % makeanswer

@@ -385,9 +385,12 @@ k \rcap \cdot \Br'
 = \frac{ A }{\lambda i} \frac{ e^{i k (r_s + r)}}{r_s r} \iint_{A} da' e^{i k f(\Br')}.
 \end{dmath}
 %
-\begin{dmath}
-f(\Br') = - \left(\rcap + \rcap_s \right) \cdot \Br' + \inv{2r} \left( {\Br'}^2 - (\rcap \cdot \Br')^2 \right) + \inv{2 r_s} \left( (\Br')^2 - (\rcap_s \cdot \Br')^2 \right).
-\end{dmath}
+\begin{equation}
+\begin{aligned}
+f(\Br') &= - \left(\rcap + \rcap_s \right) \cdot \Br' \\
+&\qquad + \inv{2r} \left( {\Br'}^2 - (\rcap \cdot \Br')^2 \right) + \inv{2 r_s} \left( (\Br')^2 - (\rcap_s \cdot \Br')^2 \right).
+\end{aligned}
+\end{equation}
 %
 \begin{equation}
 \rcap \sim (\alpha, \beta, 1).
@@ -518,22 +521,24 @@ I(\omega)
 \tau = \frac{s_2 - s_1}{c}.
 \end{dmath}
 %
-\begin{dmath}
-I =
+\begin{equation}
+\begin{aligned}
+I &=
 \Abs{\gamma_{12}}
 \left(
 I_1 + I_2 + 2 \sqrt{I_1 I_2} \cos \left( \alpha_{12}(\tau) - \delta \right)
-\right)
-+
+\right) \\
+&\qquad +
 \left( 1 - \Abs{\gamma_{12}} \right)
-\left( I_1 + I_2 \right)
-=
+\left( I_1 + I_2 \right) \\
+&=
 \Abs{\gamma_{12}}
 I_{\mathrm{coh}}
 +
 (1 - \Abs{\gamma_{12}})
 I_{\mathrm{incoh}}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \begin{dmath}
 \tau_a - \tau_b = \frac{
