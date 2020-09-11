@@ -77,7 +77,7 @@ g(x, y) =
 \end{dmath}
 %
 This allows us to write our diffraction integral as
-\begin{dmath}\label{eqn:optics2010ExamFraunhofer:140}
+\begin{equation}\label{eqn:optics2010ExamFraunhofer:140}
 \begin{aligned}
 \Psi(\Br')
 &=
@@ -112,7 +112,8 @@ e^{-i k (u \alpha + v \beta) } \\
 e^{-i k \alpha b/ 2 } \cos( k \beta b/2 )
 +
 e^{i k \alpha b/ 2 } \cos( k \beta b/2 )
-\right)
+\right) \times \\
+&\qquad 
 \int du dv
 e^{-i k (u \alpha + v \beta) } \\
 &=
@@ -122,7 +123,7 @@ e^{-i k (u \alpha + v \beta) } \\
 \rho d\rho d\theta
 e^{-i k \rho (\cos\theta \alpha + \sin \theta \beta) }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 This last integral isn't something that we can evaluate in just Bessel functions unless one of \(\alpha\) or \(\beta\) is zero.  For example, if \(\beta = 0\), so that the observation axis lies in the one of the perpendicular planes, then we have
 \begin{dmath}\label{eqn:optics2010ExamFraunhofer:160}
@@ -178,7 +179,6 @@ The hypergeometric function itself looks fairly sinc like, but not with the \(R^
 %
 \imageFigure{../figures/phy485-optics/optics2010ExamFraunhoferFig4}{Plot of hypergeometric function.}{fig:optics2010ExamFraunhofer:optics2010ExamFraunhoferFig4}{0.3}
 } % makeanswer
-
 % this is to produce the sites.google url and version info and so forth (for blog posts)
 %\vcsinfo
 %\EndArticle

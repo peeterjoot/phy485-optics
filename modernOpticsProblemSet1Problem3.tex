@@ -29,24 +29,23 @@ Show that Snell's law can be derived from the {\em transverse} component of the 
 \makeanswer{modernOptics:problemSet1:3}{
 \begin{enumerate}
 \item[(a)]
-
 The index of refraction \(n(x)\) has no y-component, so we have
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P3:710}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P3:710}
 \ycap \cdot \spacegrad n = 0.
-\end{dmath}
+\end{equation}
 %
 The y-component of the Ray equation
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P3:910}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P3:910}
 \dds{} \left( n(x) \frac{dy}{ds} \right) = 0,
-\end{dmath}
+\end{equation}
 %
 can therefore be integrated directly
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P3:930}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P3:930}
 n(x) \frac{dy}{ds} = \text{constant}.
-\end{dmath}
+\end{equation}
 %
 With the chosen ray parameterization we have for \(x < 0\) the y-component of the ray ``velocity''
 %
@@ -59,9 +58,9 @@ With the chosen ray parameterization we have for \(x < 0\) the y-component of th
 %
 Similarly for the y-component in the \(x > 0\) region we have
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P3:690}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P3:690}
 \ycap \cdot \dds{\Br_2} = \sin\theta_2.
-\end{dmath}
+\end{equation}
 %
 We want to use this in the integrated Ray equation \eqnref{eqn:modernOpticsProblemSet1P3:930} which takes the form
 %
@@ -78,29 +77,29 @@ n_2 \sin\theta_2 = n_1 \sin\theta_1.
 \item[(b)]
 We can produce a contradictory result if we avoid the origin when treating the x-component of the Ray equation.  Repeating the argument above for \(\Abs{x} > 0\) where \(\spacegrad n = 0\) would give us
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P3:790}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P3:790}
 n \dds{x} = \text{constant}.
-\end{dmath}
+\end{equation}
 %
 With \(dx_1/ds = \cos\theta_1\) and \(dx_2/ds = \cos\theta_2\) we would have
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P3:810}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P3:810}
 n_2 \cos\theta_2 = n_1 \cos\theta_1,
-\end{dmath}
+\end{equation}
 %
 which contradicts Snell's law.
 
 This conclusion isn't valid because we have avoided the origin, where the index of refraction is not continuous.  What is missing is proper treatment of this step discontinuity.  To frame this properly, let's express the index of refraction a bit more precisely.  That is
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P3:830}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P3:830}
 n(x) = n_1 + \Delta n \theta(x).
-\end{dmath}
+\end{equation}
 %
 where \(\Delta n = n_2 - n_1\).  We now have a non-zero gradient
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P3:850}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P3:850}
 \spacegrad n = \xcap \Delta n \delta(x).
-\end{dmath}
+\end{equation}
 %
 The Ray equation, split by coordinates, now takes the form
 %
