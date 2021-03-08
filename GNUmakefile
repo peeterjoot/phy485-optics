@@ -12,7 +12,7 @@ include make.revision
 include ../latex/make.bookvars
 
 # uncomment-in for kdp version (no mathematica notebooks in appendix.)
-PRINT_VERSION := 1
+#PRINT_VERSION := 1
 
 ifdef PRINT_VERSION
 DISTEXTRA := kdp
@@ -45,9 +45,6 @@ spellcheck: $(patsubst %.tex,%.sp,$(filter-out $(DONT_SPELL_CHECK),$(DO_SPELL_CH
 	spellcheck $^
 	touch $@
  
-parameters.sty : ../latex/bin/mkparams
-	../latex/bin/mkparams $(PARAMS) > $@
-
 backmatter.tex: ../latex/classicthesis_mine/backmatter2.tex
 	rm -f $@
 	ln -s ../latex/classicthesis_mine/backmatter2.tex backmatter.tex
