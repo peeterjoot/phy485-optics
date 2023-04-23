@@ -8,10 +8,10 @@
 \makeanswer{modernOpticsLecture2:pr1}{
 In \cref{poyntingComplex:pr4} we have shown that
 %
-\begin{dmath}\label{eqn:poyntingComplex:90b}
+\begin{equation}\label{eqn:poyntingComplex:90b}
 \expectation{ \BS } =
 \expectation{ \BE \cross \BB } = \inv{2} \Real( \BE_0 \cross \BB_0^\conj ),
-\end{dmath}
+\end{equation}
 %
 where the fields were specified by the phasor relations
 
@@ -28,23 +28,15 @@ Given that, switching to cgs units, the exercise is reduced to showing that
 %
 From back to Maxwell's equation, in particular \eqnref{eqn:modernOpticsLecture2:190}, we have
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1270}
+\begin{equation}\label{eqn:modernOpticsLecture2:1270}
+\begin{aligned}
 \BE_0 \cross \BB_0^\conj
-=
-\BE_0 \cross
-\left( \inv{k_0} \spacegrad \phi \cross \BE_0  \right)^\conj
-=
-\inv{k_0} \BE_0 \cross
-\left( \spacegrad \phi \cross \BE_0^\conj \right)
-=
--\inv{k_0}
-\left(
-(\cancel{\BE_0 \cdot \spacegrad \phi}) \BE_0^\conj
-- \Abs{\BE_0}^2 \spacegrad \phi
-\right)
-=
-\inv{k_0} \Abs{\BE_0}^2 \spacegrad \phi,
-\end{dmath}
+&= \BE_0 \cross \lr{ \inv{k_0} \spacegrad \phi \cross \BE_0  }^\conj \\
+&= \inv{k_0} \BE_0 \cross \lr{ \spacegrad \phi \cross \BE_0^\conj } \\
+&= -\inv{k_0} \lr{ (\cancel{\BE_0 \cdot \spacegrad \phi}) \BE_0^\conj - \Abs{\BE_0}^2 \spacegrad \phi } \\
+&= \inv{k_0} \Abs{\BE_0}^2 \spacegrad \phi,
+\end{aligned}
+\end{equation}
 %
 as desired.
 } % makeanswer
@@ -54,37 +46,33 @@ as desired.
 Derive \eqnref{eqn:modernOpticsLecture2:390}. }
 \makeanswer{modernOpticsLecture2:pr2}{
 Let's expand out the gradients in Cartesian coordinates
-\begin{dmath}\label{eqn:modernOpticsLecture2:1370}
+\begin{equation}\label{eqn:modernOpticsLecture2:1370}
+\begin{aligned}
 \left(\spacegrad \phi \cdot \spacegrad \right) \spacegrad \phi
-=
-\left( \partial_k \phi \partial_k \right) \Be_m \partial_m \phi
-=
-\Be_m \partial_k \phi \partial_m \partial_k \phi
-=
-\inv{2} \Be_m \partial_m \left( \partial_k \phi \partial_k \phi \right)
-=
-\inv{2} \spacegrad \left( \spacegrad \phi \right)^2.
-\end{dmath}
+&= \lr{ \partial_k \phi \partial_k } \Be_m \partial_m \phi \\
+&= \Be_m \partial_k \phi \partial_m \partial_k \phi \\
+&= \inv{2} \Be_m \partial_m \lr{ \partial_k \phi \partial_k \phi } \\
+&= \inv{2} \spacegrad \lr{ \spacegrad \phi }^2.
+\end{aligned}
+\end{equation}
 %
 Now we use Eikonal \eqnref{eqn:modernOpticsLecture2:230}
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1390}
+\begin{equation}\label{eqn:modernOpticsLecture2:1390}
+\begin{aligned}
 \left(\spacegrad \phi \cdot \spacegrad \right) \spacegrad \phi
-=
-\inv{2} \spacegrad (k_0 n)^2
-=
-k_0^2 n \spacegrad n.
-\end{dmath}
+&= \inv{2} \spacegrad (k_0 n)^2 \\
+&= k_0^2 n \spacegrad n.
+\end{aligned}
+\end{equation}
 %
 } % makeanswer
 \shipoutAnswer
-
 \makeproblem{Solve the Ray trapping equation.}{modernOpticsLecture2:pr3}{ Can we easily solve \eqnref{eqn:modernOpticsLecture2:650}? }
 \makeanswer{modernOpticsLecture2:pr3}{
-
 We have \(n = n(r)\) so that
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1290}
+\begin{equation}\label{eqn:modernOpticsLecture2:1290}
 \spacegrad n = \left(
 \rcap \PD{r}{}
 +\frac{\thetacap}{r} \PD{\theta}{}
@@ -93,25 +81,25 @@ We have \(n = n(r)\) so that
 n(r)
 = \rcap \PD{r}{n}
 = - n \frac{\rcap}{R}.
-\end{dmath}
+\end{equation}
 %
 Cancelling \(\rcap\) factors, we find that this is separable
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1310}
+\begin{equation}\label{eqn:modernOpticsLecture2:1310}
 \int \frac{dn}{n} = - \int \frac{dr}{R},
-\end{dmath}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1330}
+\begin{equation}\label{eqn:modernOpticsLecture2:1330}
 \ln n = -r + \ln n(0).
-\end{dmath}
+\end{equation}
 %
 Exponentiating we have
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1350}
+\begin{equation}\label{eqn:modernOpticsLecture2:1350}
 n = n(0) e^{-r}.
-\end{dmath}
+\end{equation}
 } % makeanswer
 
 \shipoutAnswer
@@ -141,32 +129,32 @@ Observe that we have \([\spacegrad] = [(1/c) \PDi{t}{}] = 1/L\), so \(\BE\) and 
 
 Employing the usual notation for the 3D unit pseudoscalar \(I = \Be_1 \Be_2 \Be_3\) and the identity
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:870}
+\begin{equation}\label{eqn:modernOpticsLecture2:870}
 \Ba \Bb = \Ba \cdot \Bb + I (\Ba \cross \Bb),
-\end{dmath}
+\end{equation}
 %
 we can perform a first amalgamation of Maxwell's equations into two multivector equations
 %
 \begin{subequations}
 \label{eqn:modernOpticsLecture2:880}
-\begin{dmath}\label{eqn:modernOpticsLecture2:890}
+\begin{equation}\label{eqn:modernOpticsLecture2:890}
 \spacegrad \BE = -\frac{I}{c} \PD{t}{\BB}.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture2:910}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture2:910}
 \spacegrad \BB = \frac{I\mu \epsilon}{c} \PD{t}{\BE}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 With knowledge that the wave velocity in cgs units is \(v = c/\sqrt{\mu\epsilon}\) (which will be confirmed shortly) we can rescale
 %
 \begin{subequations}
 \label{eqn:modernOpticsLecture2:880b}
-\begin{dmath}\label{eqn:modernOpticsLecture2:890b}
+\begin{equation}\label{eqn:modernOpticsLecture2:890b}
 \spacegrad \BE = -\frac{\sqrt{\mu\epsilon}}{c} \PD{t}{} \frac{I \BB}{\sqrt{\mu\epsilon}}.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture2:910b}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture2:910b}
 \spacegrad \frac{I \BB}{\sqrt{\mu\epsilon}} = -\frac{\sqrt{\mu \epsilon}}{c} \PD{t}{\BE}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 and do a final amalgamation of Maxwell's equations into multivector form
@@ -202,76 +190,81 @@ F = F_0(\Br) e^{i \phi(\Br) - i\omega t}.
 %
 Application of Maxwell's equation \eqnref{eqn:modernOpticsLecture2:930} to this we find
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1010}
-\left( \spacegrad + \frac{\sqrt{\mu \epsilon}}{c} \PD{t}{} \right) F_0
-e^{i \phi - i\omega t}
-=
+\begin{equation}\label{eqn:modernOpticsLecture2:1010}
+\begin{aligned}
+&\left( \spacegrad + \frac{\sqrt{\mu \epsilon}}{c} \PD{t}{} \right) F_0
+e^{i \phi - i\omega t} \\
+&=
 e^{i \phi - i\omega t} \spacegrad F_0 +
 e^{- i\omega t} \Be_k F_0 \partial_k e^{i \phi}
 +
-e^{i \phi} F_0 (-i\omega) \frac{\sqrt{\mu\epsilon}}{c} e^{-i\omega t}
-=
+e^{i \phi} F_0 (-i\omega) \frac{\sqrt{\mu\epsilon}}{c} e^{-i\omega t} \\
+&=
 e^{i \phi - i\omega t}
 \left(
 \spacegrad + i (\spacegrad \phi)
 -i\omega \frac{\sqrt{\mu\epsilon}}{c}
 \right) F_0.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Neglecting the \(\spacegrad F_0\) term, writing \(\omega/c = k_0\) and requiring this to hold for any phase we have
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1030a}
+\begin{equation}\label{eqn:modernOpticsLecture2:1030a}
 (\spacegrad \phi) F_0 = k_0 n(\Br) F_0.
-\end{dmath}
+\end{equation}
 %
 Left multiplication by \(\spacegrad \phi\) gives us
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1090}
+\begin{equation}\label{eqn:modernOpticsLecture2:1090}
 (\spacegrad \phi)^2 F_0 = k_0 n (\spacegrad \phi) F_0 = k_0^2 n^2 F_0,
-\end{dmath}
+\end{equation}
 %
 yielding the Eikonal equation as desired
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1110}
+\begin{equation}\label{eqn:modernOpticsLecture2:1110}
 (\spacegrad \phi)^2 = k_0^2 n^2.
-\end{dmath}
+\end{equation}
 %
 From this we observe that \(\kcap\) propagation direction unit vector that we are used to is generalized to a spatially dependent form
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1130a}
+\begin{equation}\label{eqn:modernOpticsLecture2:1130a}
 \kcap(\Br) = \frac{\spacegrad \phi}{k_0 n}.
-\end{dmath}
+\end{equation}
 %
 Using that, the equation to solve takes the form
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1030b}
+\begin{equation}\label{eqn:modernOpticsLecture2:1030b}
 \kcap F_0 = F_0.
-\end{dmath}
+\end{equation}
 %
 Let's check that this matches our expectations by multiplying out this equation explicitly
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1170}
-\BE + \frac{I}{n} \BB = \kcap \left(\BE + \frac{I}{n} \BB\right)
-=
+\begin{equation}\label{eqn:modernOpticsLecture2:1170}
+\begin{aligned}
+\BE + \frac{I}{n} \BB
+&= \kcap \left(\BE + \frac{I}{n} \BB\right) \\
+&=
 \kcap \cdot \BE + \frac{I}{n} \kcap \cdot \BB
 \kcap \wedge \BE + \frac{I}{n} \kcap \wedge \BB.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Grouping by scalar, trivector, vector, and bivector terms we find
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOpticsLecture2:1190}
+\begin{equation}\label{eqn:modernOpticsLecture2:1190}
 \kcap \cdot \BE_0 = 0.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture2:1210}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture2:1210}
 \kcap \cdot \BB_0 = 0.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture2:1230}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture2:1230}
 \BE_0 = -\kcap \cross \frac{\BB_0}{n}.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture2:1250}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture2:1250}
 \frac{\BB_0}{n} = \kcap \cross \BE_0.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 Good, this matches with \eqnref{eqn:modernOpticsLecture2:140} as derived in class.
@@ -292,47 +285,49 @@ F = F_0(\Br) e^{i \phi(\Br) - i\omega t}.
 %
 Application of Maxwell's equation \eqnref{eqn:modernOpticsLecture2:930} to this we find
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1010b}
-\left( \spacegrad + \frac{\sqrt{\mu \epsilon}}{c} \PD{t}{} \right) F_0
-e^{i \phi - i\omega t}
-=
+\begin{equation}\label{eqn:modernOpticsLecture2:1010b}
+\begin{aligned}
+&\left( \spacegrad + \frac{\sqrt{\mu \epsilon}}{c} \PD{t}{} \right) F_0
+e^{i \phi - i\omega t} \\
+&=
 e^{i \phi - i\omega t} \spacegrad F_0 +
 e^{- i\omega t} \Be_k F_0 \partial_k e^{i \phi}
 +
-e^{i \phi} F_0 (-i\omega) \frac{\sqrt{\mu\epsilon}}{c} e^{-i\omega t}
-=
+e^{i \phi} F_0 (-i\omega) \frac{\sqrt{\mu\epsilon}}{c} e^{-i\omega t} \\
+&=
 e^{i \phi - i\omega t}
 \left(
 \spacegrad + i (\spacegrad \phi)
 -i\omega \frac{\sqrt{\mu\epsilon}}{c}
 \right) F_0.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Neglecting the \(\spacegrad F_0\) term, writing \(\omega/c = k_0\) and requiring this to hold for any phase we have
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1030c}
+\begin{equation}\label{eqn:modernOpticsLecture2:1030c}
 (\spacegrad \phi) F_0 = k_0 n(\Br) F_0.
-\end{dmath}
+\end{equation}
 %
 Left multiplication by \(\spacegrad \phi\) gives us
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1090b}
+\begin{equation}\label{eqn:modernOpticsLecture2:1090b}
 (\spacegrad \phi)^2 F_0 = k_0 n (\spacegrad \phi) F_0 = k_0^2 n^2 F_0,
-\end{dmath}
+\end{equation}
 %
 yielding the Eikonal equation as desired
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1110b}
+\begin{equation}\label{eqn:modernOpticsLecture2:1110b}
 (\spacegrad \phi)^2 = k_0^2 n^2.
-\end{dmath}
+\end{equation}
 %
 Note that it almost looks like \eqnref{eqn:modernOpticsLecture2:1110b} could be observed directly from \eqnref{eqn:modernOpticsLecture2:1130a}.  However, at that point we hadn't actually proved that \(\kcap\) was a unit vector, but had sneakily just used notation that implied it.
 
 Having shown now that \(\kcap\) is a unit vector, and because \eqnref{eqn:modernOpticsLecture2:1030b} is now no longer any different than the result for linear media with a phasor assumed to be of the form \(F_0 e^{i \Bk \cdot \Bx - i \omega t}\), we must also have as the general solution to Maxwell's equation given our approximation
 %
-\begin{dmath}\label{eqn:modernOpticsLecture2:1150a}
+\begin{equation}\label{eqn:modernOpticsLecture2:1150a}
 F_0 = (1 + \kcap) \BC.
-\end{dmath}
+\end{equation}
 %
 where \(\BC \cdot \kcap = 0\).  However, in this case, we have to allow \(\kcap\) and \(\BC\) to covary spatially.
 } % makeanswer

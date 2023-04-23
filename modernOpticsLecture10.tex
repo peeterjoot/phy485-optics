@@ -21,27 +21,27 @@
 
 For two source interference
 %
-\begin{dmath}\label{eqn:modernOpticsLecture10:10}
+\begin{equation}\label{eqn:modernOpticsLecture10:10}
 I = I_1 + I_2 + 2 \sqrt{I_1 I_2} \Real \gamma_{12}.
-\end{dmath}
+\end{equation}
 %
 We call \(I_1 + I_2\) the incoherent sum, and now know that \(\gamma_{12}\) is the Fourier transform of the spectral intensity
 %
-\begin{dmath}\label{eqn:modernOpticsLecture10:30}
+\begin{equation}\label{eqn:modernOpticsLecture10:30}
 \gamma_{12} = \calF \{ I(\omega) \}.
-\end{dmath}
+\end{equation}
 %
 when
 %
-\begin{dmath}\label{eqn:modernOpticsLecture10:50}
+\begin{equation}\label{eqn:modernOpticsLecture10:50}
 \gamma_{12} = \gamma(\tau).
-\end{dmath}
+\end{equation}
 %
 and
 %
-\begin{dmath}\label{eqn:modernOpticsLecture10:70}
+\begin{equation}\label{eqn:modernOpticsLecture10:70}
 \tau = \frac{s_2 - s_1}{c}.
-\end{dmath}
+\end{equation}
 %
 Example in \cref{fig:modernOpticsLecture10:modernOpticsLecture10Fig1}.
 %
@@ -49,9 +49,9 @@ Example in \cref{fig:modernOpticsLecture10:modernOpticsLecture10Fig1}.
 %
 Beyond the coherent time \(\tau_{\mathrm{COH}}\) we have only the incoherent intensity, what we'd expect from two flashlights for example.  We can write this down in a nice format
 %
-\begin{dmath}\label{eqn:modernOpticsLecture10:90}
+\begin{equation}\label{eqn:modernOpticsLecture10:90}
 I = I_1 + I_2 + 2 \sqrt{I_1 I_2} \Abs{ \gamma_{12} } \cos \left( \alpha_{12}(\tau) - \delta \right),
-\end{dmath}
+\end{equation}
 %
 where \(\delta \equiv \overbar{\omega} \tau\).  Plotting the absolute value \(\Abs{ \gamma_{12}}\) we have something like \cref{fig:modernOpticsLecture10:modernOpticsLecture10Fig2}.
 %
@@ -72,7 +72,7 @@ where the figure had been drawn with \(\alpha_{12} = 0\).
 
 Now suppose we rewrite things as:
 %
-\begin{dmath}\label{eqn:modernOpticsLecture10:110}
+\begin{equation}\label{eqn:modernOpticsLecture10:110}
 I =
 \Abs{\gamma_{12}}
 \mathLabelBox{
@@ -84,9 +84,9 @@ I_1 + I_2 + 2 \sqrt{I_1 I_2} \cos \left( \alpha_{12}(\tau) - \delta \right)
 \mathLabelBox{
 \left( I_1 + I_2 \right)
 }{\(I_{\mathrm{incoh}}\)}.
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:modernOpticsLecture10:130}
+\begin{equation}\label{eqn:modernOpticsLecture10:130}
 \left\{
 \begin{array}{l l}
 \Abs{\gamma_{12}} = 1 & \quad \mbox{complete coherence} \\
@@ -94,7 +94,7 @@ I_1 + I_2 + 2 \sqrt{I_1 I_2} \cos \left( \alpha_{12}(\tau) - \delta \right)
 0 < \Abs{\gamma} < 1 & \quad \mbox{partially coherent light} \\
 \end{array}
 \right.
-\end{dmath}
+\end{equation}
 %
 The first case \(\Abs{\gamma_{12}} = 1\) is the easiest case to deal with \cref{fig:modernOpticsLecture10:modernOpticsLecture10Fig6}.
 %
@@ -102,9 +102,9 @@ The first case \(\Abs{\gamma_{12}} = 1\) is the easiest case to deal with \cref{
 %
 We can speak of \underlineAndIndex{Quasi-monochromatic} as the case when
 %
-\begin{dmath}\label{eqn:modernOpticsLecture10:150}
+\begin{equation}\label{eqn:modernOpticsLecture10:150}
 \tau \ll \tau_{\mathrm{coh}},
-\end{dmath}
+\end{equation}
 %
 so that we are ignoring finite coherence time, \(\omega \rightarrow \overbar{\omega}\)
 
@@ -130,9 +130,9 @@ Consider two sources with no mutual coherence as in \cref{fig:modernOpticsLectur
 %
 Here what is \(\Gamma_{12}\)?  Recall that
 %
-\begin{dmath}\label{eqn:modernOpticsLecture10:170}
+\begin{equation}\label{eqn:modernOpticsLecture10:170}
 \Gamma_{12} = \expectation{ \Psi^\conj(\Br_1) \Psi(\Br_2) }.
-\end{dmath}
+\end{equation}
 %
 NOTE: switch of convention here!  In \eqnref{eqn:modernOpticsLecture8:30} we used opposite conjugation.
 
@@ -144,32 +144,33 @@ If are kilometres away from the light bulb, the spatial distribution of this sou
 
 We will find that
 %
-\begin{dmath}\label{eqn:modernOpticsLecture10:190}
+\begin{equation}\label{eqn:modernOpticsLecture10:190}
 \Gamma_{12} \rightarrow 0,
-\end{dmath}
+\end{equation}
 %
 over distance
 %
-\begin{dmath}\label{eqn:modernOpticsLecture10:210}
+\begin{equation}\label{eqn:modernOpticsLecture10:210}
 \inv{\Delta k} = l_{\mathrm{tc}},
-\end{dmath}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:modernOpticsLecture10:230}
+\begin{equation}\label{eqn:modernOpticsLecture10:230}
 \frac{\lambda}{\Delta \theta} = l_{\mathrm{tc}}.
-\end{dmath}
+\end{equation}
 %
 i.e. there's only spatial properties here being considered.  Writing things out
 %
-\begin{dmath}\label{eqn:modernOpticsLecture10:250}
+\begin{equation}\label{eqn:modernOpticsLecture10:250}
+\begin{aligned}
 \Gamma_{12}
-= \expectation{ \Psi^\conj(\Br_1) \Psi(\Br_2) }
-=
+&= \expectation{ \Psi^\conj(\Br_1) \Psi(\Br_2) } \\
+&=
 \expectation{
 \left( \Psi_{1a} +\Psi_{1b} \right)^\conj
 \left( \Psi_{2a} +\Psi_{2b} \right)
-}
-=
+} \\
+&=
 \mathLabelBox{
 \expectation{
 \Psi_{1a}^\conj
@@ -197,27 +198,28 @@ i.e. there's only spatial properties here being considered.  Writing things out
 \Psi_{2b}
 }
 }{\(\Gamma_{12}^b\)}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Here we kill the middle terms because \(a\) and \(b\) have no phase correlation.  Now let's think about what these things look like.  We had an example where we had
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOpticsLecture10:270}
+\begin{equation}\label{eqn:modernOpticsLecture10:270}
 \Gamma_{12}^a = \sqrt{I_1 I_2} \Abs{\gamma_{12}^a} e^{-i\omega \tau_a}.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture10:290}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture10:290}
 \Gamma_{12}^b = \sqrt{I_1 I_2} \Abs{\gamma_{12}^b} e^{-i\omega \tau_b}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 where
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOpticsLecture10:310}
+\begin{equation}\label{eqn:modernOpticsLecture10:310}
 \tau_a \equiv \frac{r_{1a} - r_{2a}}{c}.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture10:330}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture10:330}
 \tau_b \equiv \frac{r_{1b} - r_{2b}}{c}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 For Quasi-monochromatic sources we assume that we have approximately
@@ -229,12 +231,12 @@ For Quasi-monochromatic sources we assume that we have approximately
 so that
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOpticsLecture10:370}
+\begin{equation}\label{eqn:modernOpticsLecture10:370}
 \Gamma_{12}^a = \sqrt{I_1 I_2} e^{-i\omega \tau_a}.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture10:390}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture10:390}
 \Gamma_{12}^b = \sqrt{I_1 I_2} e^{-i\omega \tau_b}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 Suppose also that we have equal intensities (we are in the \underlineAndIndex{Far field})
@@ -245,28 +247,28 @@ I_1^a = I_2^a = I_1^b = I_2^b,
 %
 This will be valid when
 %
-\begin{dmath}\label{eqn:modernOpticsLecture10:430}
+\begin{equation}\label{eqn:modernOpticsLecture10:430}
 \Abs{r} \gg \Abs{r_1^a - r_2^a} \quad \mbox{etc.}.
-\end{dmath}
+\end{equation}
 %
 We are left with
 %
-\begin{dmath}\label{eqn:modernOpticsLecture10:450}
+\begin{equation}\label{eqn:modernOpticsLecture10:450}
 \gamma_{12} =
 \inv{2} \gamma_{12}^a
 +\inv{2} \gamma_{12}^b
 =
 \inv{2} e^{-i \omega \tau_a}
 +\inv{2} e^{-i \omega \tau_b}.
-\end{dmath}
+\end{equation}
 %
 Recall that \(\gamma_{12}\) was defined in \eqnref{eqn:modernOpticsLecture9:170}.  We have
 %
-\begin{dmath}\label{eqn:modernOpticsLecture10:470}
+\begin{equation}\label{eqn:modernOpticsLecture10:470}
 \gamma_{12} = \cos\left(
 \frac{\omega(\tau_a - \tau_b)}{2}
 \right).
-\end{dmath}
+\end{equation}
 %
 In absolute value, this is plotted in \cref{fig:modernOpticsLecture11:modernOpticsLecture11Fig2}.
 %

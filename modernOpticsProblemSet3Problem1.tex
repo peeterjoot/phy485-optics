@@ -44,63 +44,69 @@ where \(\tau_{\mathrm{rep}}\) is a time between pulses, and \(\overbar{\omega}\)
 
 First consider the average intensity due to the contributions of both path components, with respective pathlengths \(r_a\), and \(r_a + c \tau\)
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:160}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:160}
+\begin{aligned}
 I(\tau)
-=
-\expectation{ \Abs{ \Psi(r_a + c \tau) + \Psi(r_a, t) }^2 }
-=
+&= \expectation{ \Abs{ \Psi(r_a + c \tau) + \Psi(r_a, t) }^2 } \\
+&=
 \expectation{ \Abs{ \Psi(r_a + c \tau) }^2 }
 +\expectation{ \Abs{ \Psi(r_a ) }^2 }
 + 2 \Real
 \expectation{
 \Psi(r_a + c \tau) \Psi^\conj(r_a, t)
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 We can write this as
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:480}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:480}
 I(\tau) = 2 I_0 \left( 1 + \Real \frac{\Gamma(\tau)}{\Gamma(0)} \right),
-\end{dmath}
+\end{equation}
 %
 where the pathlength difference of \(c \tau\) introduces an autocorrelation for the two paths of
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:100}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:100}
 \Gamma(\tau) = \expectation{
 \Psi(r_a + c \tau, t) \Psi^\conj(r_a, t)
 }.
-\end{dmath}
+\end{equation}
 %
 To evaluate this for the Michelson setup, lets assume initially a spherical wave packet at the outputs of interferometer paths, where \(r\) is the total distance that the incident wavepacket travels after all transmission and reflection
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:80}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:80}
 \Psi(r, t) = \inv{\sqrt{2\pi}} \int \tilde{\Psi}(\omega) \frac{e^{-i \omega( t - r/c )}}{r} d\omega.
-\end{dmath}
+\end{equation}
 %
 Somewhat loosely, we can evaluate this average
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:120}
-\Gamma(\tau) =
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:120}
+\begin{aligned}
+&\Gamma(\tau) \\
+&=
 \lim_{T \rightarrow \infty} \inv{2 T} \int_{-T}^T dt
 \inv{2\pi}
 \int \tilde{\Psi}(\omega) \frac{e^{-i \omega( t - r_a/c -\tau )}}{r_a + c\tau} d\omega
-\int \tilde{\Psi}^\conj(\omega') \frac{e^{i \omega'( t - r_a/c )}}{r_a } d\omega'
-\sim
+\int \tilde{\Psi}^\conj(\omega') \frac{e^{i \omega'( t - r_a/c )}}{r_a } d\omega' \\
+&\sim
 \lim_{T \rightarrow \infty} \inv{4 \pi T r_a^2} \int_{-T}^T dt
 \int \tilde{\Psi}(\omega) e^{-i \omega( t - r_a/c - \tau)} d\omega
 \int \tilde{\Psi}^\conj(\omega') e^{i \omega'( t - r_a/c )} d\omega'.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Here we've assumed that \(c \tau \ll r_a\), so that we can pull out the spatial variation of the amplitude.  Now lets also assume that the time domain wave forms are bounded for some \(T = T_c\), so that
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:140}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:140}
 \lim_{T \rightarrow \infty} \inv{2T} \int_{-T}^T = \inv{2 T_c} \int_{-\infty}^\infty,
-\end{dmath}
+\end{equation}
 %
 allowing us to increase the bounds of the \(dt\) integral, and make a delta function identification
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:120b}
-\Gamma(\tau) \sim
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:120b}
+\begin{aligned}
+\Gamma(\tau) 
+&\sim
 \inv{2 T_c r_a^2}
 \int d\omega \tilde{\Psi}(\omega)
 \int d\omega' \tilde{\Psi}^\conj(\omega')
@@ -108,35 +114,36 @@ e^{i \omega \tau}
 \inv{2\pi}
 \int
 dt
-e^{i (\omega' - \omega)( t - r_a/c )}
-=
+e^{i (\omega' - \omega)( t - r_a/c )} \\
+&=
 \inv{2 T_c r_a^2}
 \int d\omega \tilde{\Psi}(\omega)
 \int d\omega' \tilde{\Psi}^\conj(\omega') \delta(\omega' - \omega)
-e^{i \omega \tau}
-=
+e^{i \omega \tau} \\
+&=
 \inv{2 T_c r_a^2}
 \int d\omega \tilde{\Psi}(\omega)
 \tilde{\Psi}^\conj(\omega)
-e^{i \omega \tau}
-\sim \calF^{-1} \left( \Abs{\Psi(\omega)}^2 \right),
-\end{dmath}
+e^{i \omega \tau} \\
+&\sim \calF^{-1} \left( \Abs{\Psi(\omega)}^2 \right),
+\end{aligned}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:180}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:180}
 \Gamma(\tau) \sim \calF^{-1} \left( I(\omega) \right).
-\end{dmath}
+\end{equation}
 %
 With
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:200}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:200}
 \gamma(\tau) = \frac{\Gamma(\tau)}{\Gamma(0)},
-\end{dmath}
+\end{equation}
 %
 our intensity \eqnref{eqn:modernOptics:problemSet3:1:160} as a function of the additional pathlength \(c \tau\), takes the form
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:220}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:220}
 I(\tau) = 2 I_0( 1 + \Real \gamma(\tau) ).
-\end{dmath}
+\end{equation}
 %
 Because there is this constant offset in the time domain intensity, we have to be slightly careful to find this given the frequency domain intensity, and \eqnref{eqn:modernOptics:problemSet3:1:220} shows us exactly how to do this.
 
@@ -144,7 +151,7 @@ Because there is this constant offset in the time domain intensity, we have to b
 
 We are now set to tackle this specific problem.  Our first task is the Fourier inversion of the frequency domain intensity.  Note that the form of the doublet as given in this problem is not directly invertible without the use of special functions.  In general the absolute value of the frequency introduces a discontinuity in the derivative at the origin that makes life ``fun''.  What we can do, however, is assume that \(\omega_{1,2} \gg \sigma\) so that we can make the approximation
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:240}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:240}
 \frac{\sigma^2}
 {
 \sigma^2 + (\Abs{\omega} - \omega_0)^2
@@ -159,7 +166,7 @@ We are now set to tackle this specific problem.  Our first task is the Fourier i
 {
 \sigma^2 + (\omega + \omega_0)^2
 }.
-\end{dmath}
+\end{equation}
 %
 A comparison of these for small \(\omega_0\) is shown in \cref{fig:frequencySinglets:frequencySingletsFig2}.
 %
@@ -171,48 +178,49 @@ For large enough \(\omega_0\) there is no visible difference in the two function
 %
 To Fourier invert one of these peaked intensity functions
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:260}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:260}
 f(\omega) =
 \frac{\sigma^2}
 {
 \sigma^2 + (\omega - \omega_0)^2
 }.
-\end{dmath}
+\end{equation}
 %
 We first note that
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:280}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:280}
 \int e^{i \omega \tau} f(\omega - \omega_0) d\omega
 =
 \int e^{i (\omega' + \omega_0) \tau} f(\omega') d\omega'.
-\end{dmath}
+\end{equation}
 %
 so
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:300}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:300}
 \calF^{-1}(f(\omega - \omega_0)) = e^{i\omega_0 \tau} \calF^{-1} (f(\omega)).
-\end{dmath}
+\end{equation}
 %
 We have only to consider the Fourier inversion of a function of the form
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:320}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:320}
 g(\omega) =
 \frac{\sigma^2}
 {
 \sigma^2 + \omega^2
 },
-\end{dmath}
+\end{equation}
 %
 but we recognize this from class, where we looked at the Fourier transform of a unit area symmetric damped exponential (\(\sigma > 0\))
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:340}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:340}
+\begin{aligned}
 \calF \frac{\sigma}{2} e^{-\sigma \Abs{\tau}}
-=
-\frac{\sigma}{2} \int_{-\infty}^\infty e^{-i\omega \tau - \sigma \Abs{\tau}} dt
-=
+&=
+\frac{\sigma}{2} \int_{-\infty}^\infty e^{-i\omega \tau - \sigma \Abs{\tau}} dt \\
+&=
 \frac{\sigma}{2} \int_0^\infty e^{-i\omega \tau - \sigma \tau} dt
-+\frac{\sigma}{2} \int_{-\infty}^0 e^{-i\omega \tau + \sigma \tau} dt
-=
++\frac{\sigma}{2} \int_{-\infty}^0 e^{-i\omega \tau + \sigma \tau} dt \\
+&=
 \frac{\sigma}{2} \evalrange{
 \frac{ e^{i\omega \tau - \sigma \tau} }{
 i \omega - \sigma
@@ -225,19 +233,20 @@ i \omega - \sigma
 i \omega + \sigma
 }
 }
-{ -\infty }{0}
-=
+{ -\infty }{0} \\
+&=
 \frac{\sigma}{2} \left(
 \inv{\sigma - i \omega}
 +\inv{\sigma + i \omega}
-\right)
-=
+\right) \\
+&=
 \frac{\sigma}{2} \frac{2 \sigma}{ \sigma^2 + \omega^2 },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so that (up to a potential constant multiplicative factor according to the Fourier transform convention in use)
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:360}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:360}
 \calF^{-1}
 \left(
 \frac{\sigma^2}
@@ -247,11 +256,11 @@ so that (up to a potential constant multiplicative factor according to the Fouri
 \right)
 =
 \frac{\sigma}{2} e^{-\sigma \Abs{\tau}} e^{i \omega_0 \tau}.
-\end{dmath}
+\end{equation}
 %
 We can now immediately write the Fourier transform pair, finding the mutual coherence from the frequency domain intensity
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:380}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:380}
 \Gamma(\omega) \sim \frac{I_0}{2} \sum_{\omega_k = \pm \omega_1, \pm \omega_2}
 \frac{\sigma^2}{\sigma^2 + (\omega - \omega_k)^2}
 \leftrightarrow
@@ -260,13 +269,14 @@ We can now immediately write the Fourier transform pair, finding the mutual cohe
 \cos(\omega_1 \tau)
 +\cos(\omega_2 \tau)
 \right).
-\end{dmath}
+\end{equation}
 %
 With \(\omega_{1,2} = \overbar{\omega} \mp \Delta/2\), we rewrite
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:400}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:400}
+\begin{aligned}
 \cos(\omega_1 \tau) +\cos(\omega_2 \tau)
-=
+&=
 \cos\left(
 \left(
 \overbar{\omega} - \Delta/2
@@ -277,28 +287,29 @@ With \(\omega_{1,2} = \overbar{\omega} \mp \Delta/2\), we rewrite
 \left(
 \overbar{\omega} - \Delta/2
 \right) \tau
-\right)
-= 2 \cos( \overbar{\omega} \tau ) \cos ( \Delta \tau/2 ).
-\end{dmath}
+\right) \\
+&= 2 \cos( \overbar{\omega} \tau ) \cos ( \Delta \tau/2 ).
+\end{aligned}
+\end{equation}
 %
 so that
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:420}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:420}
 \Gamma(\tau) \sim
 I_0
 \sigma e^{-\sigma \Abs{\tau}}
 \cos( \overbar{\omega} \tau ) \cos ( \Delta \tau /2 ).
-\end{dmath}
+\end{equation}
 %
 To find the intensity as a function of the additional path delay \(\tau\), we normalize the mutual correlation
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:440}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:440}
 \gamma(\tau)
 = \frac{\Gamma(\tau)}{\Gamma(0)}
 =
 e^{-\sigma \Abs{\tau}}
 \cos( \overbar{\omega} \tau ) \cos ( \Delta \tau /2 ),
-\end{dmath}
+\end{equation}
 %
 From \eqnref{eqn:modernOptics:problemSet3:1:480}, we have for the time domain intensity
 %
@@ -323,60 +334,62 @@ This is sketched in \cref{fig:problemSet3Sketch:problemSet3SketchFig1a}.
 \makeSubAnswer{Frequency comb}{modernOptics:problemSet3:1b}
 For a multiple frequency comb, we will again make a double peak approximation before inverse Fourier transforming
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:500}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:500}
+\begin{aligned}
 I(\omega)
-=
-\frac{I_0}{N} \sum_{n = 0}^{N-1} \frac{\sigma^2}{\sigma^2 + (\overbar{\omega} - \omega_n)^2}
-\sim
+&= \frac{I_0}{N} \sum_{n = 0}^{N-1} \frac{\sigma^2}{\sigma^2 + (\overbar{\omega} - \omega_n)^2} \\
+&\sim
 \frac{I_0}{N} \sum_{n = 0}^{N-1}
 \left(
 \frac{\sigma^2}{\sigma^2 + (\omega - \omega_n)^2}
 +\frac{\sigma^2}{\sigma^2 + (\omega + \omega_n)^2}
-\right)
-\leftrightarrow
+\right) \\
+&\leftrightarrow
 \frac{I_0}{N} \sum_{n = 0}^{N-1}
-\sigma e^{-\sigma \Abs{\tau} } \cos(\omega_n \tau).
-\sim \Gamma(\tau).
-\end{dmath}
+\sigma e^{-\sigma \Abs{\tau} } \cos(\omega_n \tau) \\
+&\sim \Gamma(\tau).
+\end{aligned}
+\end{equation}
 %
 Since
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:520}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:520}
 \sum_{n = 0}^{N-1} (1) = N.
-\end{dmath}
+\end{equation}
 %
 we can switch immediately to the normalized form
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:540}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:540}
+\begin{aligned}
 \gamma(\tau)
-= \frac{\Gamma(\tau)}{\Gamma(0)}
-=
+&= \frac{\Gamma(\tau)}{\Gamma(0)} \\
+&=
 \frac{1}{N} e^{-\sigma \Abs{\tau} }
 \sum_{n = 0}^{N-1}
-\cos(\omega_n \tau)
-=
+\cos(\omega_n \tau) \\
+&=
 \frac{1}{N} e^{-\sigma \Abs{\tau} }
 \Real
 \left(
 \sum_{n = 0}^{N-1}
 e^{i \omega_n \tau}
-\right)
-=
+\right) \\
+&=
 \frac{1}{N} e^{-\sigma \Abs{\tau} }
 \Real
 \left(
 \sum_{n = 0}^{N-1}
 e^{i (\omega_0 + n \delta) \tau}
-\right)
-=
+\right) \\
+&=
 \frac{1}{N} e^{-\sigma \Abs{\tau} }
 \Real
 \left(
 e^{i \omega_0 \tau}
 \sum_{n = 0}^{N-1}
 e^{i n \delta \tau}
-\right)
-=
+\right) \\
+&=
 \frac{1}{N} e^{-\sigma \Abs{\tau} }
 \Real
 \left(
@@ -387,8 +400,8 @@ e^{i N \delta \tau} - 1
 {
 e^{i \delta \tau} - 1
 }
-\right)
-=
+\right) \\
+&=
 \frac{1}{N} e^{-\sigma \Abs{\tau} }
 \Real
 \left(
@@ -405,10 +418,11 @@ e^{i \delta \tau/2}
 {
 \sin( \delta \tau /2 )
 },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:560}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:560}
 \gamma(\tau)
 =
 \frac{1}{N} e^{-\sigma \Abs{\tau} }
@@ -419,18 +433,19 @@ or
 {
 \sin( \delta \tau /2 )
 }.
-\end{dmath}
+\end{equation}
 %
 We observe that the average of the \(\omega_n\) frequencies is
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:580}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:580}
+\begin{aligned}
 \overbar{\omega}
-= \inv{N} \sum_{n= 0}^{N-1} (\omega_0 + n \delta)
-= \omega_0 + \frac{\delta }{N}
-\sum_{n= 0}^{N-1} n
-= \omega_0 + \frac{\delta }{N} (N)(N-1)/2
-= \omega_0 + \frac{(N-1)\delta }{2},
-\end{dmath}
+&= \inv{N} \sum_{n= 0}^{N-1} (\omega_0 + n \delta) \\
+&= \omega_0 + \frac{\delta }{N} \sum_{n= 0}^{N-1} n \\
+&= \omega_0 + \frac{\delta }{N} (N)(N-1)/2 \\
+&= \omega_0 + \frac{(N-1)\delta }{2},
+\end{aligned}
+\end{equation}
 %
 we have
 %
@@ -449,9 +464,9 @@ N \sin( \delta \tau /2 )
 
 With interesting stuff happening every \(\delta \tau_{\mathrm{rep}}/2 = \pi\), we have
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:620}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:620}
 \tau_{\mathrm{rep}} = \frac{2 \pi}{\delta},
-\end{dmath}
+\end{equation}
 %
 and recover the desired result \eqnref{eqn:modernOptics:problemSet3:1:60}.  We are asked to plot with
 %
@@ -469,7 +484,7 @@ and recover the desired result \eqnref{eqn:modernOptics:problemSet3:1:60}.  We a
 %
 Non-dimensionalising with \(u = \tau/\tau_{\mathrm{rep}}\) and \(N = 10\), we plot this in \cref{fig:problemSet3Problem1bPlot:problemSet3Problem1bPlotFig4} over \(u \in [0, 2]\)
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:1:700}
+\begin{equation}\label{eqn:modernOptics:problemSet3:1:700}
 \gamma(u)
 =
 e^{ -\frac{\pi}{10} \Abs{u} }
@@ -480,7 +495,7 @@ e^{ -\frac{\pi}{10} \Abs{u} }
 {
 10 \sin( \pi u )
 }.
-\end{dmath}
+\end{equation}
 %
 \imageFigure{../figures/phy485-optics/problemSet3Problem1bPlotFig4}{10 frequency input to Michelson interferometer.}{fig:problemSet3Problem1bPlot:problemSet3Problem1bPlotFig4}{0.2}
 }

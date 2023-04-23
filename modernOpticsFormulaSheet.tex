@@ -23,15 +23,15 @@ Rules: Handwritten.  No text or figures allowed.
 \section{Geometric optics.}
 \index{geometric optics}
 %
-\begin{dmath}
+\begin{equation}
 n \sin\alpha = n' \sin\alpha'.
-\end{dmath}
+\end{equation}
 %
 \begin{equation}
 \inv{f} = \inv{s} + \inv{s'}.
 \end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \begin{bmatrix}
 y_f \\
 \alpha_f
@@ -45,9 +45,9 @@ y_f \\
 y_i \\
 \alpha_i
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \begin{bmatrix}
 y_f \\
 \alpha_f
@@ -61,9 +61,9 @@ y_f \\
 y_i \\
 \alpha_i
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \begin{bmatrix}
 y_f \\
 \alpha_f
@@ -77,23 +77,23 @@ y_f \\
 y_i \\
 \alpha_i
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 M =
 \begin{bmatrix}
 1 & 0 \\
 2/R & 1
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 M =
 \begin{bmatrix}
 1 & 0 \\
 - 1/f & 1
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 %
 \begin{equation}
 \inv{f} = \frac{n' - n}{n} \left( \inv{R_1} - \inv{R_2} \right), \qquad R_1 > 0, R_2 < 0.
@@ -226,11 +226,11 @@ e^{i \phi(\Br)}
 \expectation{\BS} = \frac{c}{8 \pi k_0} \Abs{\BE_0}^2 \spacegrad \phi.
 \end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \Bt = \frac{d\Br(s)}{ds}
 = \frac{\spacegrad \phi}{\Abs{\spacegrad \phi}} \\
 = \frac{\spacegrad \phi}{ n(\Br) k_0}.
-\end{dmath}
+\end{equation}
 %
 \begin{equation}
 n(\Br) \frac{d\Br}{ds} = \inv{k_0} \spacegrad \phi.
@@ -277,18 +277,18 @@ k = n k_0.
 \BS = \frac{c}{4 \pi} \Real{\BE} \cross \Real{\BB}.
 \end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \LL_{\mathrm{EM}} = \inv{c} \rho \phi + \inv{c} \Bj \cdot \BA + \inv{8 \pi} \BE^2 - \inv{8 \pi} \BB^2.
-\end{dmath}
+\end{equation}
 %
 \begin{align}
 \BE &= \Real\left( \BE_0 e^{i \Bk \cdot \Bx - \omega t} \right) \\
 \BB &= \Real\left( \BB_0 e^{i \Bk \cdot \Bx - \omega t} \right)
 \end{align}
 %
-\begin{dmath}
+\begin{equation}
 \expectation{ \BE \cross \BB } = \inv{2} \Real( \BE_0 \cross \BB_0^\conj ).
-\end{dmath}
+\end{equation}
 %
 \begin{equation}
 I
@@ -298,23 +298,23 @@ I
 %
 \section{Misc calculus results.}
 %
-\begin{dmath}
+\begin{equation}
 \left(\spacegrad \phi \cdot \spacegrad \right) \spacegrad \phi
 =
 \inv{2} \spacegrad \left( \spacegrad \phi \right)^2.
-\end{dmath}
+\end{equation}
 %
 \begin{equation}
 \spacegrad e^{i\phi} = i (\spacegrad \phi) e^{i \phi}.
 \end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \spacegrad
 =
 \rcap \PD{r}{}
 +\frac{\thetacap}{r} \PD{\theta}{}
 +\zcap \PD{z}{}.
-\end{dmath}
+\end{equation}
 %
 \section{Diffraction.}
 \index{diffraction}
@@ -326,24 +326,24 @@ R &= \Abs{\BR} \\
 R_s &= \Abs{\BR_s}
 \end{align}
 %
-\begin{dmath}
+\begin{equation}
 \left( \spacegrad^2 + \Bk^2 \right) \Psi(\Br) = 0.
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \Psi(\Br) = \iint da' \left( \Psi(\Br') \spacegrad' G - G \spacegrad' \Psi(\Br') \right) \cdot \ncap.
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 G(\Br, \Br') = -\frac{e^{i k R}}{4 \pi R} = -\frac{e^{i k \Abs{\Br - \Br'}}}{4 \pi \Abs{\Br - \Br'}}.
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \spacegrad \left(
 \frac{ e^{i k r} }{r}
 \right) = \rcap \left( i k - \inv{r} \right)
 \frac{e^{i k r}}{r}.
-\end{dmath}
+\end{equation}
 %
 \begin{equation}
 \Psi(\Br) = -\inv{4 \pi} \iint \frac{e^{i k R}}{R}
@@ -353,15 +353,15 @@ G(\Br, \Br') = -\frac{e^{i k R}}{4 \pi R} = -\frac{e^{i k \Abs{\Br - \Br'}}}{4 \
 da'.
 \end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \Psi(\Br) = \frac{A}{\lambda i} \iint da' \frac{e^{i k ( r + r_s)}}{r r_s} k(\theta).
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 k(\theta) = \inv{2} \left( 1 + \cos \theta \right).
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 k R =
 %\mathLabelBox{
 k r
@@ -378,12 +378,12 @@ k \rcap \cdot \Br'
 %\mathLabelBox{
 \cdots
 %}{\(O(d^3/\lambda r^2)\)}
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \Psi(\Br)
 = \frac{ A }{\lambda i} \frac{ e^{i k (r_s + r)}}{r_s r} \iint_{A} da' e^{i k f(\Br')}.
-\end{dmath}
+\end{equation}
 %
 \begin{equation}
 \begin{aligned}
@@ -406,13 +406,13 @@ r_s^{-1}
 +r^{-1} \right) \left({x'}^2 + {y'}^2 \right) = \frac{\pi}{2} \left( u^2 + v^2 \right).
 \end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \Psi(\Br)
 =
 \frac{A}{2 i} e^{ik (r_s + r)}
 \frac{1}{r_s + r}
 \int_{A} e^{i \frac{\pi}{2} (u^2 + v^2)} du dv.
-\end{dmath}
+\end{equation}
 %
 \begin{equation}
 \int_{-\infty}^\infty dv e^{i \frac{\pi}{2} v^2 } = 1 + i = \sqrt{2} e^{i \pi/4}.
@@ -431,11 +431,11 @@ C(w) = \int_0^w \cos \left( \frac{\pi}{2} u^2 \right) du.
 1 = \left(\frac{dS}{dw}\right)^2 + \left(\frac{dC}{dw}\right)^2.
 \end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \tan
 \left( \frac{\pi}{2} w^2 \right)
 = \frac{dy}{dx}.
-\end{dmath}
+\end{equation}
 %
 \section{Coherence.}
 \index{coherence}
@@ -445,13 +445,13 @@ C(w) = \int_0^w \cos \left( \frac{\pi}{2} u^2 \right) du.
 \Psi_2 &= \sqrt{I_2(\Br)} e^{i \phi_2(\Br, t)}
 \end{align}
 %
-\begin{dmath}
+\begin{equation}
 I
 = \Abs{\Psi_1 + \Psi_2}^2
 = \Abs{\Psi_1}^2
 + \Abs{\Psi_2}^2
 + 2 \Real \Gamma_{12}.
-\end{dmath}
+\end{equation}
 %
 \begin{equation}
 \Gamma_{12} = \expectation{ \Psi_1 \Psi_2^\conj}.
@@ -470,9 +470,9 @@ I_{\mathrm{max}}
 = \frac{2 \sqrt{I_1 I_2}}{I_1 + I_2} \Abs{\gamma_{12}} = \Abs{\gamma_{12}}.
 \end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \gamma_{12} = \frac{\Gamma_{12}}{\sqrt{I_1} \sqrt{I_2}}.
-\end{dmath}
+\end{equation}
 %
 \subsection{Temporal coherence.}
 \index{coherence!temporal}
@@ -481,27 +481,27 @@ I_{\mathrm{max}}
 \expectation{ f(t) } = \lim_{T \rightarrow \infty } \inv{T} \int_0^T dt' f(t').
 \end{equation}
 %
-\begin{dmath}
+\begin{equation}
 I
 = \expectation{ \Abs{\Psi}^2 }
 =
 I(\Br_1) +
 I(\Br_2) +
 2 \Real \expectation{ \Psi(\Br_1, t) \Psi^\conj(\Br_2, t + \tau) }.
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \Gamma_{12} \equiv
 \expectation{ \Psi(\Br_1, t) \Psi^\conj(\Br_2, t + \tau) }.
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \tau_{\mathrm{coh}} = \inv{\Delta \omega}.
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 I = I_1 + I_2 + 2 \sqrt{I_1 I_2} \Real \gamma_{12}.
-\end{dmath}
+\end{equation}
 %
 \begin{equation}
 \gamma(\tau) = \gamma_{12} = \calF \{ I(\omega) \}.
@@ -517,9 +517,9 @@ I(\omega)
 \end{equation}
 \end{subequations}
 %
-\begin{dmath}
+\begin{equation}
 \tau = \frac{s_2 - s_1}{c}.
-\end{dmath}
+\end{equation}
 %
 \begin{equation}
 \begin{aligned}
@@ -540,7 +540,7 @@ I_{\mathrm{incoh}}.
 \end{aligned}
 \end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \tau_a - \tau_b = \frac{
 r_{1a}
 -r_{2a}
@@ -549,7 +549,7 @@ r_{1a}
 }{c}
 =
 \frac{l \theta_s}{c }.
-\end{dmath}
+\end{equation}
 %
 \subsection{Spatial coherence.}
 \index{coherence!spatial}
@@ -558,19 +558,14 @@ r_{1a}
 \sum_{\Bk} I_{\Bk} e^{i \Bk \cdot \Bl} = \Gamma_{12} = \calF( I_{\Bk} ).
 \end{equation}
 %
-\begin{dmath}
-I = \sum_{\Bk}
-\Abs{
-\Psi_k(\Br_1, t) + e^{i \Bk \cdot \Bl} \Psi_k(\Br_1, t)
-}^2
-=
-\sum \left(
-2 I_{\Bk} + 2 \Real \left( \Psi_k^\conj e^{i \Bk \cdot \Bl} \Psi_k \right)
-     \right)
-= 2 \sum I_\Bk + 2 \Real \left(
-\sum_{\Bk} I_{\Bk} e^{i \Bk \cdot \Bl}
-\right).
-\end{dmath}
+\begin{equation}
+\begin{aligned}
+I
+&= \sum_{\Bk} \Abs{ \Psi_k(\Br_1, t) + e^{i \Bk \cdot \Bl} \Psi_k(\Br_1, t) }^2 \\
+&= \sum \left( 2 I_{\Bk} + 2 \Real \left( \Psi_k^\conj e^{i \Bk \cdot \Bl} \Psi_k \right) \right) \\
+&= 2 \sum I_\Bk + 2 \Real \left( \sum_{\Bk} I_{\Bk} e^{i \Bk \cdot \Bl} \right).
+\end{aligned}
+\end{equation}
 %
 %\begin{equation}
 %\Gamma_{12}
@@ -581,7 +576,7 @@ I = \sum_{\Bk}
 %\end{equation}
 %
 \begin{subequations}
-\begin{dmath}
+\begin{equation}
 \Gamma_{12}
 =
 \inv{\lambda^2
@@ -592,16 +587,16 @@ e^{i k \Delta \Br \cdot \rcap_{\mathrm{av}}}
 \int d^2 r_s
 g(\Br_s) I(\Br_s)
 e^{-i k \Delta \Br \cdot \Br_s/r_{\mathrm{av}}}.
-\end{dmath}
+\end{equation}
 \begin{equation}
 \Delta \Br = \Br_1 - \Br_2.
 \end{equation}
 \begin{equation}
 \Br_{\mathrm{av}} = \Br_2 - \Delta \Br/2.
 \end{equation}
-\begin{dmath}
+\begin{equation}
 k \left( R_1 - R_2 \right) \approx k \left( \Br_{\mathrm{av}} - \Br_s \right) \cdot \frac{ \Delta \Br}{r_{\mathrm{av}}}.
-\end{dmath}
+\end{equation}
 \begin{equation}
 \gamma(\Br_1, \Br_2) = \frac{\Gamma_{12}}{\evalbar{\Gamma_{12}}{\Delta r = 0}}.
 \end{equation}
@@ -613,7 +608,7 @@ k \left( R_1 - R_2 \right) \approx k \left( \Br_{\mathrm{av}} - \Br_s \right) \c
 %\Bk_{\mathrm{av}} = k \rcap_{\mathrm{av}}
 %\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \calV
 %= \frac
 %{
@@ -627,11 +622,11 @@ k \left( R_1 - R_2 \right) \approx k \left( \Br_{\mathrm{av}} - \Br_s \right) \c
 = \Abs{\gamma_{12}}
 =
 2 \Abs{\frac{J_1(\pi \theta_s d/\lambda)}{\pi \theta_s d/\lambda}}.
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 l_c = \frac{\lambda}{\Delta \theta_s}.
-\end{dmath}
+\end{equation}
 %
 \section{Multiple interference.}
 \index{multiple interference}
@@ -643,37 +638,37 @@ l_c = \frac{\lambda}{\Delta \theta_s}.
 \begin{equation}
 \delta = 2 k L \cos\theta.
 \end{equation}
-\begin{dmath}
+\begin{equation}
 r = e^{i \delta_r} \sqrt{R}.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 t = e^{i \delta_t} \sqrt{T}.
-\end{dmath}
+\end{equation}
 \begin{equation}
 \Delta = 2 \delta_r + \delta = 2 \pi m.
 \end{equation}
-\begin{dmath}
+\begin{equation}
 \Psi_{\mathrm{transmission}}
 =
 \Psi_0 t^2 \inv{ 1 - R e^{i \Delta}}.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 I_{\mathrm{trans}}
 =
 \frac{I_{\mathrm{max}}}{1 + F \sin^2 (\Delta/2)}.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 I_{\mathrm{max}} = \frac{I_0 T^2}{(1 -R)^2}.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 F = \frac{4 R}{(1 - R)^2}.
-\end{dmath}
+\end{equation}
 \begin{equation}
 \calF = \pi \frac{\sqrt{R}}{1 - R} = \frac{\pi}{2} \sqrt{F} \sim \frac{\pi}{T}.
 \end{equation}
-\begin{dmath}
+\begin{equation}
 \frac{\omega_1 - \omega_2}{\overbar{\omega}} = \inv{\calF m}.
-\end{dmath}
+\end{equation}
 \begin{equation}
 \overbar{\omega} = \frac{\pi c}{L} (m + j)
 = \omega_0 + j \text{F S R}.
@@ -692,15 +687,15 @@ F = \frac{4 R}{(1 - R)^2}.
 \end{equation}
 \end{subequations}
 %
-\begin{dmath}
+\begin{equation}
 \gamma
 = \inv{2} a \frac{\omega}{c} \sin\theta
 = \pi \frac{\omega}{\omega_0} \sin\theta.
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 \omega_0 = \frac{2 \pi c}{a}.
-\end{dmath}
+\end{equation}
 %
 \subsection{Diffraction grating interferometry.}
 \index{diffraction grating}
@@ -730,15 +725,15 @@ I
 \begin{equation}
 \gamma = m \pi = \pi \frac{\omega}{\omega_0} \sin\theta.
 \end{equation}
-\begin{dmath}
+\begin{equation}
 l = N m + 1.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 \Delta \gamma = \frac{m \pi}{\omega_1} \Delta \omega = \frac{\pi}{N}.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 \frac{\Delta \omega}{\overbar{\omega}} = \inv{N m}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 \section{Lasers.}
@@ -748,45 +743,45 @@ l = N m + 1.
 \begin{equation}
 \frac{N_e}{N_g} = \frac{P_e}{P_g} = e^{-(E_e - E_g)/k T}.
 \end{equation}
-\begin{dmath}
+\begin{equation}
 u_\omega = \Hbar \omega \expectation{ n_\omega } \calD(\omega).
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 \expectation{ n_\omega } = \inv{ e^{\Hbar \omega / k T} - 1}.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 \calD(\omega) = \frac{\omega^2}{\pi^2 c^3}.
-\end{dmath}
+\end{equation}
 \begin{equation}
 \frac{d}{dt} N_e = -A N_e + B_{\mathrm{abs}} u N_g - B_{\mathrm{\mathrm{se}}} u N_e = 0.
 \end{equation}
-\begin{dmath}
+\begin{equation}
 \frac{d}{dt} N_g = - \frac{d}{dt} N_e.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 u_\omega
 =
 \frac{\Hbar \omega^3}{\pi^2 c^3} \inv{ e^{ \Hbar \omega/ k T } -1 }.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 \frac{A}{B_{\mathrm{se}}} =\frac{\Hbar \omega^3}{\pi^2 c^3}.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 B_{\mathrm{abs}}/B_{\mathrm{se}} = 1.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 \frac{ B u}{A}  = \expectation{ n_\omega }.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 \expectation{n}^2 - (C - 1) n_s \expectation{n} - C n_s = 0.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 C \equiv
 \frac{ N R \Gamma_{\mathrm{st}} }{\Gamma_{\mathrm{sp}} \Gamma_{\mathrm{cav}} }.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 n_s \equiv \frac{\Gamma_{\mathrm{sp}}}{ \Gamma_{\mathrm{st}}}.
-\end{dmath}
+\end{equation}
 \begin{equation}
 \expectation{n}
 \approx
@@ -826,48 +821,48 @@ k^2(\Br) = k_0^2 - k_0 k_2 r^2.
 \spacegrad_{\txtT}^2
  = \PDSq{r}{} + \inv{r} \PD{r}{} = \PDSq{x}{} + \PDSq{y}{}.
 \end{equation}
-\begin{dmath}
+\begin{equation}
 \cancel{\PDSq{z}{u}}
 + 2 i k_0 \PD{z}{u} + \spacegrad_{\txtT}^2 u - k_0 k_2 r^2 u = 0.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 \frac{\omega_{\mathrm{eff}}}{c} \equiv \sqrt{\frac{k_2}{k_0}}.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 m_{\mathrm{eff}} \equiv \frac{\Hbar k_0}{c}.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 t_{\mathrm{eff}} \equiv \frac{z}{c}.
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 -\frac{\Hbar^2}{2 m_{\mathrm{eff}}} \spacegrad_{\txtT}^2 u + \inv{2} m_{\mathrm{eff}} \left(\omega_{\mathrm{eff}} \right)^2 r^2 u = i \Hbar \PD{t_{\mathrm{eff}}}{u}.
-\end{dmath}
+\end{equation}
 \begin{equation}
 u(r, z) = \frac{z_0}{i q} \exp\left( i \frac{ k_0 r^2}{2 q(z)} \right).
 \end{equation}
-\begin{dmath}
+\begin{equation}
 q = z - i z_0.
-\end{dmath}
+\end{equation}
 \begin{equation}
 z_0 = \frac{\pi w_0^2}{\lambda} = \frac{\pi n w_0^2}{\lambda_0}.
 \end{equation}
-\begin{dmath}
+\begin{equation}
 u
 = \frac{w_0}{w(z)} \exp\left(
 -\frac{r^2}{w^2(z)}
 +i \frac{ k_0 r^2 }{2 R(z)}
 - i \phi(z)
 \right).
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 \phi(z) = \Atan \left( \frac{z}{z_0} \right).
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 w^2(z) = w_0^2 \left( 1  + \frac{z^2}{z_0^2} \right).
-\end{dmath}
-\begin{dmath}
+\end{equation}
+\begin{equation}
 \inv{R(z)} = \frac{z}{z^2 + z_0^2}.
-\end{dmath}
+\end{equation}
 \begin{equation}
 \inv{q(z)} = \inv{R(z)} + i \frac{\lambda_0}{n \pi w^2(z)}.
 \end{equation}
@@ -881,9 +876,9 @@ w^2(z) = w_0^2 \left( 1  + \frac{z^2}{z_0^2} \right).
 \end{subequations}
 %
 \begin{subequations}
-\begin{dmath}
+\begin{equation}
 -i \phi(z) + i k_0 z - i \omega t = i C.
-\end{dmath}
+\end{equation}
 \begin{equation}
 \ddt{z} = V_{\mathrm{ph}} = \frac{\omega}{k_{\mathrm{eff}}}.
 \end{equation}
@@ -936,12 +931,12 @@ g_{1,2} = 1 - \frac{L}{R_{1,2}}.
 \section{Fourier transforms.}
 \index{Fourier transform}
 %
-\begin{dmath}
+\begin{equation}
 f(x) = g * h = \int_{-\infty}^\infty dx' g(x') h(x - x').
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}
+\begin{equation}
 F(k) = G(k) H(k).
-\end{dmath}
+\end{equation}
 %
 %\EndNoBibArticle

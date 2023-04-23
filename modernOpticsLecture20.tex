@@ -25,45 +25,45 @@
 \section{Guoy phase shifts, higher order modes.}
 \paragraph{Review}
 We'd found for the first order Gaussian beam
-\begin{dmath}\label{eqn:modernOpticsLecture20:10}
+\begin{equation}\label{eqn:modernOpticsLecture20:10}
 u_{00} = \frac{w_0}{w(z)}
 \exp
 \left(
 -\frac{r^2}{w^2(z)} + \frac{i k_0 r^2}{R(z)} - i \phi(z)
 \right).
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:modernOpticsLecture20:30}
+\begin{equation}\label{eqn:modernOpticsLecture20:30}
 w^2(z) = w_0^2 \left(
 1 + \frac{z^2}{z_0^2}
 \right).
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:modernOpticsLecture20:50}
+\begin{equation}\label{eqn:modernOpticsLecture20:50}
 z_0 = \frac{\pi w_0^2}{\lambda}.
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:modernOpticsLecture20:70}
+\begin{equation}\label{eqn:modernOpticsLecture20:70}
 \inv{R(z)} = \frac{z}{z^2 + z_0^2}.
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:modernOpticsLecture20:90}
+\begin{equation}\label{eqn:modernOpticsLecture20:90}
 \phi(z) = \Atan\left(
 \frac{z}{z_0}
 \right).
-\end{dmath}
+\end{equation}
 %
 Our complete wave was
 %
-\begin{dmath}\label{eqn:modernOpticsLecture20:110}
+\begin{equation}\label{eqn:modernOpticsLecture20:110}
 \Psi(x, y, z) = \Psi_0 u(x, y, z) e^{i k_0 z - i \omega t}.
-\end{dmath}
+\end{equation}
 %
 In particular, along the z-axis, where \(\phi(0) = 0\) and \(r^2 = 0\), we have
 %
-\begin{dmath}\label{eqn:modernOpticsLecture20:130}
+\begin{equation}\label{eqn:modernOpticsLecture20:130}
 \Psi(0, 0, z) = \Psi_0 \frac{w_0}{w(z)} e^{i k_0 z - i \omega t}.
-\end{dmath}
+\end{equation}
 %
 \paragraph{Guoy phase shift}
 \index{Guoy!phase shift}
@@ -77,27 +77,27 @@ Let's consider the \underlineAndIndex{phase velocity} at \(z \ll z_0\).
 %
 We want to consider the constant curves
 %
-\begin{dmath}\label{eqn:modernOpticsLecture20:150}
+\begin{equation}\label{eqn:modernOpticsLecture20:150}
 -i \phi(z) + i k_0 z - i \omega t = i \text{constant}.
-\end{dmath}
+\end{equation}
 %
 See \citep{velocityOfaMechanicalWave} for a quick and nicely written reminder of why we are looking at constant phase fronts.
 
 Taking time derivatives of \(\phi\), using chain rule and \eqnref{eqn:modernOpticsLecture20AtanDerivativeProblem:790}, we have
 %
-\begin{dmath}\label{eqn:modernOpticsLecture20:210}
+\begin{equation}\label{eqn:modernOpticsLecture20:210}
 \ddt{\phi}
 = \ddt{z} \ddz{\phi}
 = \ddt{z} \frac{z_0}{z^2 + z_0^2}.
-\end{dmath}
+\end{equation}
 %
 The time derivative of \eqnref{eqn:modernOpticsLecture20:150} is then
 %
-\begin{dmath}\label{eqn:modernOpticsLecture20:230}
+\begin{equation}\label{eqn:modernOpticsLecture20:230}
 -i
 \ddt{z} \frac{z_0}{z^2 + z_0^2}
 + i k_0 \ddt{z} - i \omega = 0.
-\end{dmath}
+\end{equation}
 %
 Solve for the phase velocity \(V_{\mathrm{ph}} = dz/dt\), we find
 %
@@ -111,18 +111,18 @@ k_{\mathrm{eff}} &= k_0 - \frac{z_0}{z^2 + z_0^2}
 
 We can write this as
 %
-\begin{dmath}\label{eqn:modernOpticsLecture20:650}
+\begin{equation}\label{eqn:modernOpticsLecture20:650}
 \frac{k_{\mathrm{eff}}}{k_0}
 = 1 - \frac{2}{k_0^2 \omega_0^2} \inv{ 1 + (z/z_0)^2},
-\end{dmath}
+\end{equation}
 %
 We have \(k_{\mathrm{eff}} > 0\) provided \((z/z_0)^2 > 2/(k_0 \omega_0)^2 -1\).  We have \(k_{\mathrm{eff}}\) take its maximum of \(k_0\) as \(z \rightarrow \infty\), and takes its minimum value at \(z = 0\) of
 %
-\begin{dmath}\label{eqn:modernOpticsLecture20:290}
+\begin{equation}\label{eqn:modernOpticsLecture20:290}
 k_{\mathrm{eff}}
 %= k_0 - \frac{1}{z_0}
 = k_0 - \frac{2}{k_0 \omega_0^2}.
-\end{dmath}
+\end{equation}
 %
 We plot \(k_{\mathrm{eff}}/k_0\) as a function of \(z/z_0\) with \(2/(k_0 \omega_0^2) = 1/10\) in \cref{fig:modernOpticsLecture20:modernOpticsLecture20Fig5}.
 %
@@ -203,14 +203,14 @@ where \(\Real \inv{q(z)}\) gives curvature, and \(\Imag \inv{q(z)}\) gives beam 
 
 Now
 %
-\begin{dmath}\label{eqn:modernOpticsLecture20:390}
+\begin{equation}\label{eqn:modernOpticsLecture20:390}
 u_{lm}
 = \frac{c_{lm}}{w(z)} H_l H_m e^{\frac{i k_0 r^2}{2 q}} e^{-i (l + m + 1) \phi}.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture20:410}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture20:410}
 u_{00}
 = \frac{w_0}{w(z)} e^{\frac{i k_0 r^2}{2 q}} e^{-i \phi}.
-\end{dmath}
+\end{equation}
 %
 Found in uniform medium
 %
@@ -288,7 +288,7 @@ u = e^{\frac{i k_0 r^2}{2 q}} \rightarrow u e^{-\frac{i k_0 r^2}{2 f}}.
 
 The Van Driel notes make a nice observation about the relation between the M\"obius transformation and the matrix transformation.  For
 %
-\begin{dmath}\label{eqn:modernOpticsLecture20:670}
+\begin{equation}\label{eqn:modernOpticsLecture20:670}
 \begin{bmatrix}
 y' \\
 \alpha'
@@ -302,24 +302,24 @@ C & D
 y \\
 \alpha
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 %
 We can relate \(y'/\alpha'\) and \(y/\alpha\) as follows
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOpticsLecture20:690}
+\begin{equation}\label{eqn:modernOpticsLecture20:690}
 y' = A y + B \alpha.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture20:710}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture20:710}
 \alpha' = C y + D \alpha.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 So that
 %
-\begin{dmath}\label{eqn:modernOpticsLecture20:730}
+\begin{equation}\label{eqn:modernOpticsLecture20:730}
 \frac{y'}{\alpha'} = \frac{A y + B \alpha}{ C y + D \alpha}.
-\end{dmath}
+\end{equation}
 %
 This takes some of the mystery about the equivalence out of the picture since we see the structure of the M\"obius transformation in this ratio, even for plain old rays.  It would still be nice to see a proof of exactly how that applies to the Gaussian beams.
 

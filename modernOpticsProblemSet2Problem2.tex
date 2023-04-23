@@ -40,28 +40,29 @@ If this is an x-ray Fresnel lens, where \(\lambda=10\)\,nm and \(f=10\)\,cm, how
 
 \makeanswer{modernOptics:problemSet2:2}{
 \paragraph{Part \ref{modernOptics:problemSet2:1a}.}
-
 Performing the \(y\) (\(v\)) integration we find for our wavefunction
 %
-\begin{dmath}\label{eqn:modernOptics:ProblemSet2:P2:20}
+\begin{equation}\label{eqn:modernOptics:ProblemSet2:P2:20}
+\begin{aligned}
 \Psi
-=
+&=
 \frac{\Psi_\infty}{2 i}
 \int du e^{i \pi u^2/2} du
-\int_{-\infty}^\infty du e^{i \pi u^2/2} du
-=
+\int_{-\infty}^\infty du e^{i \pi u^2/2} du \\
+&=
 \frac{\Psi_\infty}{2 i}
 \int du e^{i \pi u^2/2} du
 \left(
-2 \int_{0}^\infty du e^{i \pi u^2/2} du  \right)
-=
+2 \int_{0}^\infty du e^{i \pi u^2/2} du  \right) \\
+&=
 \frac{\Psi_\infty}{2 i}
 \int du e^{i \pi u^2/2} du
-2 \left( \inv{2} + \frac{i}{2} \right)
-=
+2 \left( \inv{2} + \frac{i}{2} \right) \\
+&=
 \frac{\Psi_\infty}{2} (1 - i)
 \int du e^{i \pi u^2/2} du,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so for an interval \([a, b]\) we have for the wavefunction observed at \(\Br = (0, 0, f)\)
 %
@@ -96,23 +97,24 @@ Numerically, we find that the peak of the first lobe falls at \(u_0 \sim 1.21\).
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem2Fig2b}{Cornu spiral segment up to the point of the max intensity ratio.}{fig:modernOpticsProblemSet2Problem2:modernOpticsProblemSet2Problem2Fig2b}{0.2}
 %
 \paragraph{Parts \ref{modernOptics:problemSet2:2c}, \ref{modernOptics:problemSet2:2d}.}
-
 For an aperture open in the interval \([-u_2, -u_1]\) and \([u_1, u_2]\) we have
 %
-\begin{dmath}\label{eqn:modernOptics:ProblemSet2:P2:100}
+\begin{equation}\label{eqn:modernOptics:ProblemSet2:P2:100}
+\begin{aligned}
 \Psi_f
-=
+&=
 \frac{\Psi_\infty}{2} (1 - i)
-\left(
-C(u_2) + iS(u_2) -C(u_1) - iS(u_1)
-+ C(-u_1) + iS(-u_1) -C(-u_2) - iS(-u_2)
-\right)
-=
+\Biglr{
+C(u_2) + iS(u_2) -C(u_1) - iS(u_1) \\
+&\qquad+ C(-u_1) + iS(-u_1) -C(-u_2) - iS(-u_2)
+} \\
+&=
 \Psi_\infty (1 - i)
 \left(
 C(u_2) + iS(u_2) -C(u_1) - iS(u_1)
 \right).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Should we with to add this non-destructively to our wavefunction for the \([-u_0, u_0]\) range, we need to match the phases of these functions, or
 %
@@ -124,12 +126,12 @@ Should we with to add this non-destructively to our wavefunction for the \([-u_0
 %
 For Part \ref{modernOptics:problemSet2:2d} we are asked to show that the zone edges are found at \(u_m = \sqrt{3/2 + 2m}\), given that the tangential angles at those points are \(\pi u_m^2/2\).  That is
 %
-\begin{dmath}\label{eqn:modernOptics:ProblemSet2:P2:140}
+\begin{equation}\label{eqn:modernOptics:ProblemSet2:P2:140}
 \theta(u_m)
 = \frac{\pi}{2} u_m^2
 = \frac{\pi}{2} \left( \frac{3}{2} + 2m \right)
 = \frac{3 \pi}{4} + m \pi.
-\end{dmath}
+\end{equation}
 %
 This gives us
 %
@@ -150,7 +152,6 @@ so that the difference between the tangential angle at \(u_m\) and \(u_{m-1}\) i
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem2CornuSpiralMaskedFig4a}{Cornu Spiral with regions blocked for equal phase differences.}{fig:modernOpticsProblemSet2Problem2CornuSpiralMasked:modernOpticsProblemSet2Problem2CornuSpiralMaskedFig4}{0.2}
 %
 \paragraph{Part \ref{modernOptics:problemSet2:2e}.  }
-
 The respective wave functions for each of the non-blocked intervals chosen are
 \begin{itemize}
 \item \( [-u_0, u_0]\):
@@ -158,13 +159,27 @@ The respective wave functions for each of the non-blocked intervals chosen are
 \Psi_{f0} = \Psi_\infty (1 - i) \left( C\left(\sqrt{3/2}\right) + i S\left(\sqrt{3/2}\right) \right) .
 \end{equation}
 \item \( [-u_2, -u_1] \cup [u_1, u_2] \):
-\begin{dmath}\label{eqn:modernOpticsProblemSet2Problem2:400}
-\Psi_{f2} = \Psi_\infty (1 - i) \left( C\left(\sqrt{11/2}\right) - C\left(\sqrt{7/2}\right) + i S\left(\sqrt{11/2}\right) - iS\left(\sqrt{7/2}\right) \right) .
-\end{dmath}
+\begin{equation}\label{eqn:modernOpticsProblemSet2Problem2:400}
+\begin{aligned}
+\Psi_{f2} 
+= \Psi_\infty (1 - i) 
+\Biglr{
+&C\left(\sqrt{11/2}\right) - C\left(\sqrt{7/2}\right) \\
+&+ i S\left(\sqrt{11/2}\right) - iS\left(\sqrt{7/2}\right)
+}
+.
+\end{aligned}
+\end{equation}
 \item \( [-u_4, -u_3] \cup [u_3, u_4] \):
-\begin{dmath}\label{eqn:modernOpticsProblemSet2Problem2:420}
-\Psi_{f4} = \Psi_\infty (1 - i) \left( C\left(\sqrt{19/2}\right) - C\left(\sqrt{15/2}\right) + i S\left(\sqrt{19/2}\right) - iS\left(\sqrt{15/2}\right) \right) .
-\end{dmath}
+\begin{equation}\label{eqn:modernOpticsProblemSet2Problem2:420}
+\begin{aligned}
+\Psi_{f4} = \Psi_\infty (1 - i) 
+\Biglr{ 
+&C\left(\sqrt{19/2}\right) - C\left(\sqrt{15/2}\right) \\
+&\quad+ i S\left(\sqrt{19/2}\right) - iS\left(\sqrt{15/2}\right) 
+}.
+\end{aligned}
+\end{equation}
 \end{itemize}
 %\begin{equation}\label{eqn:modernOptics:ProblemSet2:P2:180}
 %[-u_6, -u_5] \cup [u_5, u_6] &\quad \Psi_{f4} = \Psi_\infty (1 - i) \left( C\left(\sqrt{27/2}\right) - C\left(\sqrt{23/2}\right) + i S\left(\sqrt{27/2}\right) - iS\left(\sqrt{23/2}\right) \right)
@@ -172,9 +187,9 @@ The respective wave functions for each of the non-blocked intervals chosen are
 %[-u_8, -u_7] \cup [u_7, u_8] &\quad \Psi_{f6} = \Psi_\infty (1 - i) \left( C\left(\sqrt{35/2}\right) - C\left(\sqrt{31/2}\right) + i S\left(\sqrt{35/2}\right) - iS\left(\sqrt{31/2}\right) \right) \\
 %\end{equation}
 Numerically, we find the values
-\begin{dmath}\label{eqn:modernOpticsProblemSet2Problem2:n}
+\begin{equation}\label{eqn:modernOpticsProblemSet2Problem2:n}
 0.742832, 0.713766, 0.747819,
-\end{dmath}
+\end{equation}
 which.  As expected, these \(\arg(\Delta C + i \Delta S)\) values are not perfect matches, as we expected by looking at the graph of the Cornu spiral.  They are however good approximations, and the destructive interference with summation should be minimal.
 
 We want to compare the intensities of the sums of these (one, three, and five open zones respectively)
@@ -205,14 +220,14 @@ So, the first pair of additional openings results in a \(1.7\) times increase in
 
 To relate this back to pathlength we note that we have for \(r_s \rightarrow \infty\)
 %
-\begin{dmath}\label{eqn:modernOptics:ProblemSet2:P2:240}
+\begin{equation}\label{eqn:modernOptics:ProblemSet2:P2:240}
 u_m
 = x_m \sqrt{ \frac{2}{\lambda} \left( \inv{r_s} + \inv{r_m} \right) }
 \sim
 x_m \sqrt{ \frac{2}{\lambda r_m} }
 \sim
 x_m \sqrt{ \frac{2}{\lambda f} },
-\end{dmath}
+\end{equation}
 %
 or
 \begin{equation}\label{eqn:modernOptics:ProblemSet2:P2:260}
@@ -223,39 +238,44 @@ Looking to \cref{fig:modernOpticsProblemSet2Problem2:modernOpticsProblemSet2Prob
 %
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet2Problem2Fig3}{Geometry for path length interpretation.}{fig:modernOpticsProblemSet2Problem2:modernOpticsProblemSet2Problem2Fig3}{0.2}
 %
-\begin{dmath}\label{eqn:modernOptics:ProblemSet2:P2:280}
+\begin{equation}\label{eqn:modernOptics:ProblemSet2:P2:280}
+\begin{aligned}
 r_m
-= \sqrt{f^2 + x_m^2}
-= f \sqrt{ 1 + \frac{x_m^2}{f^2} }
-\sim f \left( 1 + \inv{2} \frac{x_m^2}{f^2} \right)
-= f + \inv{2} \frac{x_m^2}{f}.
-\end{dmath}
+&= \sqrt{f^2 + x_m^2} \\
+&= f \sqrt{ 1 + \frac{x_m^2}{f^2} } \\
+&\sim f \left( 1 + \inv{2} \frac{x_m^2}{f^2} \right) \\
+&= f + \inv{2} \frac{x_m^2}{f}.
+\end{aligned}
+\end{equation}
 %
 Illustrating first with the representative \([x_1, x_2]\) interval, observe that the ray distance from the midpoint is
 %
-\begin{dmath}\label{eqn:modernOptics:ProblemSet2:P2:300}
-\inv{2} (r_2 + r_1) \sim
-\inv{2} \left(
+\begin{equation}\label{eqn:modernOptics:ProblemSet2:P2:300}
+\begin{aligned}
+\inv{2} (r_2 + r_1) 
+&\sim
+\inv{2} 
+\lr{
 f + \inv{2} \frac{x_2^2}{f}
 +f + \inv{2} \frac{x_1^2}{f}
-\right)
-=
-f + \inv{2 f} \left( x_1^2 + x^2 \right)
-=
-f + \frac{\lambda f}{8 f} ( u_1^2 + u_2^2 )
-=
-f + \frac{\lambda}{8} ( u_1^2 + u_2^2 ).
-\end{dmath}
+} \\
+&= f + \inv{2 f} \left( x_1^2 + x^2 \right) \\
+&= f + \frac{\lambda f}{8 f} ( u_1^2 + u_2^2 ) \\
+&= f + \frac{\lambda}{8} ( u_1^2 + u_2^2 ).
+\end{aligned}
+\end{equation}
 %
 A bit more generally we see that the average additional pathlength at the midpoint of the aperture is
 %
-\begin{dmath}\label{eqn:modernOptics:ProblemSet2:P2:320}
+\begin{equation}\label{eqn:modernOptics:ProblemSet2:P2:320}
+\begin{aligned}
 \frac{r_{2m} + r_{2m-1}}{2} - f
-= \frac{\lambda}{8} \left( u_{2m}^2 + u_{2m-1}^2 \right)
-= \frac{\lambda}{8} \left( \frac{3}{2} + 4 m + \frac{3}{2} + 2 (2m -1) \right)
-= \frac{\lambda}{8} \left( 3 + 8 m - 1 \right)
-= \lambda \left( m + \inv{8} \right).
-\end{dmath}
+&= \frac{\lambda}{8} \left( u_{2m}^2 + u_{2m-1}^2 \right) \\
+&= \frac{\lambda}{8} \left( \frac{3}{2} + 4 m + \frac{3}{2} + 2 (2m -1) \right) \\
+&= \frac{\lambda}{8} \left( 3 + 8 m - 1 \right) \\
+&= \lambda \left( m + \inv{8} \right).
+\end{aligned}
+\end{equation}
 %
 We are adding about an additional \(\lambda\) of pathlength from each aperture, resulting in constructive instead of destructive interference.
 
@@ -263,35 +283,37 @@ We are adding about an additional \(\lambda\) of pathlength from each aperture, 
 
 The central opening for these values is
 %
-\begin{dmath}\label{eqn:modernOptics:ProblemSet2:P2:340}
+\begin{equation}\label{eqn:modernOptics:ProblemSet2:P2:340}
+\begin{aligned}
 2 x_0
-\sim 2 u_0 \sqrt{ \lambda f/2 }
-= 2 \sqrt{ \frac{3}{2} \frac{\lambda f}{2} }
-= \sqrt{ 3 \lambda f }
-= \sqrt{ 3 (10 \times 10^{-9})(10^{-1}) } \text{m}
-\sim 55 \mu \text{m}.
-\end{dmath}
+&\sim 2 u_0 \sqrt{ \lambda f/2 } \\
+&= 2 \sqrt{ \frac{3}{2} \frac{\lambda f}{2} } \\
+&= \sqrt{ 3 \lambda f } \\
+&= \sqrt{ 3 (10 \times 10^{-9})(10^{-1}) } \text{m} \\
+&\sim 55 \mu \text{m}.
+\end{aligned}
+\end{equation}
 %
 To determine how many zones we can make, we note that the size of one of the openings in each pair of additional zones is
 %
-\begin{dmath}\label{eqn:modernOptics:ProblemSet2:P2:360}
+\begin{equation}\label{eqn:modernOptics:ProblemSet2:P2:360}
+\begin{aligned}
 x_{2k} - x_{2k-1}
-\sim
-(u_{2k} - u_{2k-1} )
-\sqrt{ \frac{\lambda f}{2} }
-=
+&\sim (u_{2k} - u_{2k-1} ) \sqrt{ \frac{\lambda f}{2} } \\
+&=
 \sqrt{ \frac{\lambda f}{2} }
 \left(
 \sqrt{ \frac{3}{2} + 4 k }
 -\sqrt{ \frac{3}{2} + 4 k - 2 }
 \right) > 10^{-6},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 which after substitution of our numbers is the numerical problem of finding the biggest integer \(k\) for which
 %
-\begin{dmath}\label{eqn:modernOptics:ProblemSet2:P2:340b}
+\begin{equation}\label{eqn:modernOptics:ProblemSet2:P2:340b}
 \sqrt{ 8 k + 3 } - \sqrt{ 8 k - 1 } > \inv{5 \sqrt{10}}.
-\end{dmath}
+\end{equation}
 %
 %NSolve[ Sqrt[8 k + 3] - Sqrt[ 8 k - 1 ] > 1/(5 Sqrt[10]) && k > 0, k, Integers]
 We find the largest value is \(k = 124\) (can make 124 additional pairs of openings after the central opening), or 249 zones in total.

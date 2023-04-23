@@ -23,28 +23,31 @@ M_2 = \left( \begin{array}{cc} A_2 & B_2 \\ C_2 & D_2  \end{array} \right) .
 
 Proceeding directly with the double application of the M\"obius transform, we have
 %
-\begin{dmath}\label{eqn:problemSet4Problem4:10}
+\begin{equation}\label{eqn:problemSet4Problem4:10}
+\begin{aligned}
 q''
-= \frac{A_2 q' + B_2}{C_2 q' + D_2}
-= \frac{A_2 \left( \frac{A_1 q + B_1}{C_1 q + D_1} \right) + B_2}{C_2 \left( \frac{A_1 q + B_1}{C_1 q + D_1} \right) + D_2}
-=
+&= \frac{A_2 q' + B_2}{C_2 q' + D_2} \\
+&= \frac{A_2 \left( \frac{A_1 q + B_1}{C_1 q + D_1} \right) + B_2}{C_2 \left( \frac{A_1 q + B_1}{C_1 q + D_1} \right) + D_2} \\
+&=
 \frac{A_2 (A_1 q + B_1 ) + B_2 (C_1 q + D_1)
 }{C_2 (A_1 q + B_1) + D_2 (C_1 q + D_1)
-}
-=
+} \\
+&=
 \frac{
 (A_2 A_1 + B_2 C_1) q + A_2 B_1 + B_2 D_1
 }{
 (C_2 A_1 + D_2 C_1) q + C_2 B_1 + D_2 D_1
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Now compare to the double matrix product transformation
 %
-\begin{dmath}\label{eqn:problemSet4Problem4:30}
+\begin{equation}\label{eqn:problemSet4Problem4:30}
+\begin{aligned}
 M
-= M_2 M_1
-=
+&= M_2 M_1 \\
+&=
 \begin{bmatrix}
 A_2 & B_2 \\
 C_2 & D_2 \\
@@ -52,23 +55,23 @@ C_2 & D_2 \\
 \begin{bmatrix}
 A_1 & B_1 \\
 C_1 & D_1 \\
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 A_2 A_1 + B_2 C_1 & A_2 B_1 + B_2 D_1 \\
 C_2 A_1 + D_2 C_1 & C_2 B_1 + D_2 D_1
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Writing out the transformation this way we find
 %
-\begin{dmath}\label{eqn:problemSet4Problem4:50}
+\begin{equation}\label{eqn:problemSet4Problem4:50}
 q \rightarrow
 \frac{(A_2 A_1 + B_2 C_1) q + A_2 B_1 + B_2 D_1}{
 (C_2 A_1 + D_2 C_1) q +  C_2 B_1 + D_2 D_1
 },
-\end{dmath}
+\end{equation}
 %
 exactly as we found with double application of the M\"obius transformation.
-
 }

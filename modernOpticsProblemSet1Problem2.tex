@@ -20,12 +20,12 @@ What is the shape of a ray moving into a linear index gradient \cref{fig:modernO
 \begin{enumerate}
 \item[(a)] Our ray equation, after computation of the gradient of the index of refraction for the material becomes
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P2:10}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P2:10}
 \dds{} \left( n(\Br) \dds{\Br} \right)
 = \spacegrad n(\Br)
 = \spacegrad \left( n_0 - \beta y \right)
 = -\beta \ycap.
-\end{dmath}
+\end{equation}
 %
 In components this is
 %
@@ -146,13 +146,15 @@ or
 %
 Integrating we have
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P2:330}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P2:330}
+\begin{aligned}
 x
-= L \int_0^s \frac{ds'}{\sqrt{{s'}^2 + L^2}}
-= L \int_0^s \frac{ds'}{\sqrt{{s'}^2 + L^2}}
-= L \int_0^{s/L} \frac{dt}{\sqrt{t^2 + 1}}
-= L \evalrange{ \ln\left( t + \sqrt{ t^2 + 1} \right) }{0}{s/L}.
-\end{dmath}
+&= L \int_0^s \frac{ds'}{\sqrt{{s'}^2 + L^2}} \\
+&= L \int_0^s \frac{ds'}{\sqrt{{s'}^2 + L^2}} \\
+&= L \int_0^{s/L} \frac{dt}{\sqrt{t^2 + 1}} \\
+&= L \evalrange{ \ln\left( t + \sqrt{ t^2 + 1} \right) }{0}{s/L}.
+\end{aligned}
+\end{equation}
 %
 This is
 \boxedEquation{eqn:modernOpticsProblemSet1P2:350}{
@@ -170,7 +172,7 @@ x(s)
 
 In the small limit \(s \ll L\)
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P2:390}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P2:390}
 x(s) \sim L \ln\left( \frac{s}{L} + 1 \right)
 = L \left(
 \frac{s}{L}
@@ -184,7 +186,7 @@ x(s) \sim L \ln\left( \frac{s}{L} + 1 \right)
 \right)^3
 - \cdots
 \right),
-\end{dmath}
+\end{equation}
 %
 or
 \boxedEquation{eqn:modernOpticsProblemSet1P2:1910}{

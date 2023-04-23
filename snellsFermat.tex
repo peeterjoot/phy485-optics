@@ -30,37 +30,41 @@ We refer to \cref{fig:snellsFermat:snellsFermatFig1}, and seek to express the op
 %
 Since \(n(s) = c/v(s)\), the time spent along any portion of the path is proportional to \(n(s) ds\).  For the two leg linear route that is
 %
-\begin{dmath}\label{eqn:snellsFermat:10}
+\begin{equation}\label{eqn:snellsFermat:10}
 OPL = n r + n' r'.
-\end{dmath}
+\end{equation}
 %
 Since
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:snellsFermat:30}
+\begin{equation}\label{eqn:snellsFermat:30}
 r = \sqrt{ h^2 + (L - x)^2 }.
-\end{dmath}
-\begin{dmath}\label{eqn:snellsFermat:50}
+\end{equation}
+\begin{equation}\label{eqn:snellsFermat:50}
 r' = \sqrt{ {h'}^2 + x^2 }.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 We want to find \(x\) such that
 %
-\begin{dmath}\label{eqn:snellsFermat:70}
+\begin{equation}\label{eqn:snellsFermat:70}
+\begin{aligned}
 0
-= \frac{d(OPL)}{dx}
-=
-\ddx{} \left(
+&= \frac{d(OPL)}{dx} \\
+&=
+\ddx{} 
+\lr{
 n \sqrt{ h^2 + (L - x)^2 }
 + n' \sqrt{ {h'}^2 + x^2 }
-\right)
-=
+}
+\\
+&=
 n \inv{2 r} 2 (L - x)(-1)
-+ n' \inv{2 r'} 2 x
-=
++ n' \inv{2 r'} 2 x \\
+&=
 - n \sin\theta + n' \sin\theta'.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This gives us
 %

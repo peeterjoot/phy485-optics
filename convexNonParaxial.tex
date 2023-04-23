@@ -26,18 +26,18 @@ Our geometry is illustrated in \cref{fig:convexNonParaxial:convexNonParaxialFig1
 \imageFigure{../figures/phy485-optics/convexNonParaxialFig1}{Convex lens refraction.}{fig:convexNonParaxial:convexNonParaxialFig1}{0.2}
 %
 We have using the law of sines
-\begin{dmath}\label{eqn:convexNonParaxial:20}
+\begin{equation}\label{eqn:convexNonParaxial:20}
 \frac{\sin\theta_1}{R}
 =
 \frac{\sin(\pi - \theta)}{s + R}
 =
 \frac{\sin\theta}{s + R},
-\end{dmath}
+\end{equation}
 %
 and also have
-\begin{dmath}\label{eqn:convexNonParaxial:40}
+\begin{equation}\label{eqn:convexNonParaxial:40}
 \frac{\sin\theta_2}{R} = \frac{\sin\phi}{s' - R}.
-\end{dmath}
+\end{equation}
 %
 Dividing these we have a Snell's law ratio
 %
@@ -75,12 +75,12 @@ This is the exact result.  Let's verify that this matches our paraxial ABCD matr
 
 Introducing signed angles
 \begin{subequations}
-\begin{dmath}\label{eqn:convexNonParaxial:120}
+\begin{equation}\label{eqn:convexNonParaxial:120}
 \alpha = \theta_1.
-\end{dmath}
-\begin{dmath}\label{eqn:convexNonParaxial:140}
+\end{equation}
+\begin{equation}\label{eqn:convexNonParaxial:140}
 \alpha' = -\theta_2.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 The paraxial approximation gives
@@ -96,7 +96,7 @@ s = \frac{y}{\sin\theta_1} \sim \frac{y}{\alpha}
 \end{equation}
 \end{subequations}
 %
-\begin{dmath}\label{eqn:convexNonParaxial:200}
+\begin{equation}\label{eqn:convexNonParaxial:200}
 \frac{n'}{n}
 =
 -\frac{
@@ -131,15 +131,15 @@ s = \frac{y}{\sin\theta_1} \sim \frac{y}{\alpha}
 {
 \left( y + R \alpha' \right)
 }.
-\end{dmath}
+\end{equation}
 %
 We want to solve for \(\alpha'\), and find
 %
-\begin{dmath}\label{eqn:convexNonParaxial:220}
+\begin{equation}\label{eqn:convexNonParaxial:220}
 \alpha'
 = -\frac{y}{R} + \frac{n}{n'} \left( \alpha + \frac{y}{R} \right)
 = \frac{y}{R} \left( \frac{n}{n'} - 1 \right) + \frac{n}{n'} \alpha.
-\end{dmath}
+\end{equation}
 %
 With \(y = y'\) we have in matrix form
 %

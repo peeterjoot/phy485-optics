@@ -35,38 +35,38 @@ We are working with distances illustrated in \cref{fig:optics2010ExamFraunhofer:
 \imageFigure{../figures/phy485-optics/optics2010ExamFraunhoferFig1}{Four apertures with observation point and distances.}{fig:optics2010ExamFraunhofer:optics2010ExamFraunhoferFig1}{0.2}
 As usual we write
 \begin{subequations}
-\begin{dmath}\label{eqn:optics2010ExamFraunhofer:20}
+\begin{equation}\label{eqn:optics2010ExamFraunhofer:20}
 \BR = \Br' - \Br_s.
-\end{dmath}
-\begin{dmath}\label{eqn:optics2010ExamFraunhofer:40}
+\end{equation}
+\begin{equation}\label{eqn:optics2010ExamFraunhofer:40}
 R
 =
 r' \left( 1 + \frac{r_s^2}{{r'}^2} - 2 \frac{\Br_s \cdot \Br'}{{r'}^2} \right)^{1/2}
 \approx
 r' + \frac{r_s^2}{2 {r'}} - \Br_s \cdot \rcap'.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 so that
 %
-\begin{dmath}\label{eqn:optics2010ExamFraunhofer:60}
+\begin{equation}\label{eqn:optics2010ExamFraunhofer:60}
 \Psi(\Br') = \frac{\Psi_0}{e^{i k r'}}{i \lambda r'} \int_A e^{-i k \Br_s \cdot \rcap'}.
-\end{dmath}
+\end{equation}
 %
 Let's write
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:optics2010ExamFraunhofer:80}
+\begin{equation}\label{eqn:optics2010ExamFraunhofer:80}
 \rcap \cdot \xcap = \alpha.
-\end{dmath}
-\begin{dmath}\label{eqn:optics2010ExamFraunhofer:100}
+\end{equation}
+\begin{equation}\label{eqn:optics2010ExamFraunhofer:100}
 \rcap \cdot \ycap = \beta,
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 and introduce an aperture function
 %
-\begin{dmath}\label{eqn:optics2010ExamFraunhofer:120}
+\begin{equation}\label{eqn:optics2010ExamFraunhofer:120}
 g(x, y) =
 \left\{
 \begin{array}{l l}
@@ -74,7 +74,7 @@ g(x, y) =
 0 & \quad \mbox{otherwise}
 \end{array}
 \right.
-\end{dmath}
+\end{equation}
 %
 This allows us to write our diffraction integral as
 \begin{equation}\label{eqn:optics2010ExamFraunhofer:140}
@@ -126,22 +126,25 @@ e^{-i k \rho (\cos\theta \alpha + \sin \theta \beta) }.
 \end{equation}
 %
 This last integral isn't something that we can evaluate in just Bessel functions unless one of \(\alpha\) or \(\beta\) is zero.  For example, if \(\beta = 0\), so that the observation axis lies in the one of the perpendicular planes, then we have
-\begin{dmath}\label{eqn:optics2010ExamFraunhofer:160}
-\Psi \sim
+\begin{equation}\label{eqn:optics2010ExamFraunhofer:160}
+\begin{aligned}
+\Psi 
+&\sim
 \frac{e^{i k r'}}{r'}
 \cos( k \alpha b/ 2 )
 \int_{\rho=0}^R \int_{\theta = 0}^{2 \pi}
 \rho d\rho d\theta
-e^{-i k \rho \cos\theta \alpha }
-=
+e^{-i k \rho \cos\theta \alpha } \\
+&=
 \frac{e^{i k r'}}{r'}
 \cos( k \alpha b/ 2 )
-2 \pi R \frac{J_1( -k \alpha R)}{ -k \alpha }
-=
+2 \pi R \frac{J_1( -k \alpha R)}{ -k \alpha } \\
+&=
 \frac{e^{i k r'}}{r'}
 \cos( k \alpha b/ 2 )
 2 \pi R \frac{J_1( k \alpha R)}{ k \alpha }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This looks fairly \(\sinc\) like \cref{fig:optics2010ExamFraunhofer:optics2010ExamFraunhoferFig3}.
 %
@@ -149,31 +152,34 @@ This looks fairly \(\sinc\) like \cref{fig:optics2010ExamFraunhofer:optics2010Ex
 %
 We can also solve for the case when \(\alpha = \beta\), because we can write
 %
-\begin{dmath}\label{eqn:optics2010ExamFraunhofer:180}
+\begin{equation}\label{eqn:optics2010ExamFraunhofer:180}
 \cos\theta \pm \sin\theta = \sqrt{2} \cos(\theta \mp \pi/4).
-\end{dmath}
+\end{equation}
 %
 The phase shift doesn't make a difference when we are integrating over \([0, 2 \pi]\), so we are left with
 %
-\begin{dmath}\label{eqn:optics2010ExamFraunhofer:170}
-\Psi \sim
+\begin{equation}\label{eqn:optics2010ExamFraunhofer:170}
+\begin{aligned}
+\Psi 
+&\sim
 \frac{e^{i k r'}}{r'}
 \cos( k \alpha b/ 2 )
-\int_{\rho=0}^R \int_{\theta = 0}^{2 \pi}
-=
+\int_{\rho=0}^R \int_{\theta = 0}^{2 \pi} \\
+&=
 \frac{e^{i k r'}}{r'}
 \cos( k \alpha b/ 2 )
 2 \pi R \frac{J_1( \sqrt{2} k \alpha R)}{ \sqrt{2} k \alpha }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 For arbitrary \(\alpha\) and \(\beta\) there's no such obvious change of variables.  Mathematica calls the result a regularized hypergeometric function
 %
-\begin{dmath}\label{eqn:optics2010ExamFraunhofer:200}
+\begin{equation}\label{eqn:optics2010ExamFraunhofer:200}
 \Psi \sim
 \frac{e^{i k r'}}{r'}
 \cos( k \alpha b/ 2 )
 \pi R^2 \, _0\tilde{F}_1\left(;2;-\frac{1}{4} k^2 R^2 \left(\alpha^2+\beta^2\right)\right),
-\end{dmath}
+\end{equation}
 %
 The hypergeometric function itself looks fairly sinc like, but not with the \(R^2\) multiplicative factor (plotted as a function of \(R\)).  This is plotted in \cref{fig:optics2010ExamFraunhofer:optics2010ExamFraunhoferFig4}, but curiously, this appears to be a divergent function?  On the exam, I expect that the expectation was just to look on axis, but it would probably also be useful to plug in some actually representative numbers.
 %

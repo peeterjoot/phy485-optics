@@ -19,45 +19,26 @@
 %\label{chap:\basename}
 %\section{Motivation}
 \section{Curl of curl.}
-
 \index{curl}
 \index{vector identities}
 Expanding the \(c\) component of \(\spacegrad \cross (\spacegrad \cross \BA)\) we have
 %
-\begin{dmath}\label{eqn:crossCrossA:10}
+\begin{equation}\label{eqn:crossCrossA:10}
+\begin{aligned}
 {\left(\spacegrad \cross (\spacegrad \cross \BA)\right)}_c
-=
-\partial_{a}
-{\left( \spacegrad \cross \BA \right)}_b \epsilon_{a b c}
-=
-\partial_{a}
-\left( \partial_{m} A_n
-\epsilon_{m n b} \right)
-\epsilon_{a b c}
-=
-\partial_{a}
-\partial_{m} A_n
-\delta_{c a}^{[m n]}
-=
-\partial_{a}
-\left(
-\partial_{c} A_a
--\partial_{a} A_c
-\right)
-=
-\partial_c (\spacegrad \cdot \BA)
-- \spacegrad^2 A_c.
-\end{dmath}
+&= \partial_{a} {\left( \spacegrad \cross \BA \right)}_b \epsilon_{a b c} \\
+&= \partial_{a} \left( \partial_{m} A_n \epsilon_{m n b} \right) \epsilon_{a b c} \\
+&= \partial_{a} \partial_{m} A_n \delta_{c a}^{[m n]} \\
+&= \partial_{a} \left( \partial_{c} A_a -\partial_{a} A_c \right) \\
+&= \partial_c (\spacegrad \cdot \BA) - \spacegrad^2 A_c.
+\end{aligned}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:crossCrossA:30}
+\begin{equation}\label{eqn:crossCrossA:30}
 \spacegrad \cross (\spacegrad \cross \BA)
 =
 \spacegrad (\spacegrad \cdot \BA)
 - \spacegrad^2 \BA.
-\end{dmath}
-%
-% this is to produce the sites.google url and version info and so forth (for blog posts)
-%\vcsinfo
-%\EndArticle
+\end{equation}
 %\EndNoBibArticle

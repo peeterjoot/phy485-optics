@@ -39,9 +39,9 @@ We have two approximations to the full problem
 
 Why a scalar theory?  If we have a plane wave polarization
 %
-\begin{dmath}\label{eqn:modernOpticsLecture4:10}
+\begin{equation}\label{eqn:modernOpticsLecture4:10}
 \BE(\Br, t) = \left( E_1 \xcap + E_2 \ycap \right) e^{ i \Bk \cdot \Br - i \omega t}.
-\end{dmath}
+\end{equation}
 %
 With the principle of superposition
 
@@ -57,15 +57,15 @@ Reading: \S 8.3.1 \citep{born1980principles}, \S 9.8 \citep{jackson1975cew}.  Th
 
 We'd like to solve the wave equation with these approximations.
 %
-\begin{dmath}\label{eqn:modernOpticsLecture4:30}
+\begin{equation}\label{eqn:modernOpticsLecture4:30}
 \spacegrad^2 E = \inv{c^2} \PDSq{t}{E}.
-\end{dmath}
+\end{equation}
 %
 We will use a monochromatic wave so that we can write the electric field magnitude as a vector function times a time phase term
 %
-\begin{dmath}\label{eqn:modernOpticsLecture4:50}
+\begin{equation}\label{eqn:modernOpticsLecture4:50}
 E = \Psi(\Br) e^{-i \omega t}.
-\end{dmath}
+\end{equation}
 %
 We find
 %
@@ -78,15 +78,15 @@ This is called the Helmholtz equation.
 It turns out that the solution to this equation is generally written out as the surface integral
 
 % latex: \oiint gives not found.  What package was that from?
-\begin{dmath}\label{eqn:modernOpticsLecture4:90}
+\begin{equation}\label{eqn:modernOpticsLecture4:90}
 \Psi(\Br) = \iint da' \left( \Psi(\Br') \spacegrad' G - G \spacegrad' \Psi(\Br') \right) \cdot \ncap.
-\end{dmath}
+\end{equation}
 %
 Here \(\ncap\) is the unit normal perpendicular to the surface, and the Green function of the Helmholtz equation is
 %
-\begin{dmath}\label{eqn:modernOpticsLecture4:110}
+\begin{equation}\label{eqn:modernOpticsLecture4:110}
 G(\Br, \Br') = -\frac{e^{i k R}}{4 \pi R} = -\frac{e^{i k \Abs{\Br - \Br'}}}{4 \pi \Abs{\Br - \Br'}},
-\end{dmath}
+\end{equation}
 %
 %where \(R = \Abs{\Br - \Br'}\).
 It is somewhat messy, but relatively straightforward to demonstrate \citep{phy456:helmoltzGreens} that this Green's function works to solve the forced Helmoltz equation
@@ -109,18 +109,18 @@ Is this Green's function reasonable seeming?  As illustrated in \cref{fig:modern
 %
 Also note that the primed gradient is taken with respect to the coordinates of \(\Br'\)
 %
-\begin{dmath}\label{eqn:modernOpticsLecture4:130}
+\begin{equation}\label{eqn:modernOpticsLecture4:130}
 \spacegrad' = \Be_m \PD{{x'}_m}{}.
-\end{dmath}
+\end{equation}
 %
 If we take the gradient of the Green's function we find
 %
-\begin{dmath}\label{eqn:modernOpticsLecture4:150}
+\begin{equation}\label{eqn:modernOpticsLecture4:150}
 \spacegrad \left(
 \frac{ e^{i k r} }{r}
 \right) = \rcap \left( i k - \inv{r} \right)
 \frac{e^{i k r}}{r}.
-\end{dmath}
+\end{equation}
 %
 Applying this to our problem we find
 %
@@ -147,24 +147,24 @@ With placement of our origin at the pinhole, so that \(\Br' = 0\), \(\BR = \Br\)
 %
 Our spherical wave function at the aperture is
 %
-\begin{dmath}\label{eqn:modernOpticsLecture4:190}
+\begin{equation}\label{eqn:modernOpticsLecture4:190}
 \Psi(\Br') = A \frac{e^{i k R_s}}{R_s}.
-\end{dmath}
+\end{equation}
 %
 so that
 %
-\begin{dmath}\label{eqn:modernOpticsLecture4:210}
+\begin{equation}\label{eqn:modernOpticsLecture4:210}
+\begin{aligned}
 \spacegrad' \Psi
-= - A \frac{\Br_s - \Br'}{\Abs{\Br_s - \Br'}}
-\left( i k - \inv{R_s} \right) \frac{e^{i k R_s}}{R_s}
-= - A \frac{\Br_s}{\Abs{\Br_s}}
-\left( i k - \inv{R_s} \right) \frac{e^{i k R_s}}{R_s}
-= A \ncap \left( i k - \inv{R_s} \right) \frac{e^{i k R_s}}{R_s}.
-\end{dmath}
+&= - A \frac{\Br_s - \Br'}{\Abs{\Br_s - \Br'}} \left( i k - \inv{R_s} \right) \frac{e^{i k R_s}}{R_s} \\
+&= - A \frac{\Br_s}{\Abs{\Br_s}} \left( i k - \inv{R_s} \right) \frac{e^{i k R_s}}{R_s} \\
+&= A \ncap \left( i k - \inv{R_s} \right) \frac{e^{i k R_s}}{R_s}.
+\end{aligned}
+\end{equation}
 %
 Our resulting wave function is then
 %
-\begin{dmath}\label{eqn:modernOpticsLecture4:230}
+\begin{equation}\label{eqn:modernOpticsLecture4:230}
 \Psi(\Br) = - \frac{A}{4 \pi} \iint da' \frac{e^{i k ( R + r_s)}}{R r_s}
 \left(
 \ncap \cdot \ncap
@@ -173,37 +173,37 @@ Our resulting wave function is then
 \left( i k - \inv{r}
 \right)
 \right).
-\end{dmath}
+\end{equation}
 %
 Now, in all these \(ik - 1/r_s\) we have \(k\) of order \(1/\lambda\) and \(1/r_s\) is of order \(1/r\) or \(1/r_s\).
 
 Recall from geometric optics that we used
 %
-\begin{dmath}\label{eqn:modernOpticsLecture4:250}
+\begin{equation}\label{eqn:modernOpticsLecture4:250}
 \spacegrad \left( \BE_0 e^{i\phi(\Br)} \right) \approx i (\BE_0 \cdot \spacegrad \phi ) e^{i \phi(\Br)},
-\end{dmath}
+\end{equation}
 %
 With an assumption
 %
-\begin{dmath}\label{eqn:modernOpticsLecture4:270}
+\begin{equation}\label{eqn:modernOpticsLecture4:270}
 \lambda \ll r, r_s,
-\end{dmath}
+\end{equation}
 %
 and
 %
-\begin{dmath}\label{eqn:modernOpticsLecture4:290}
+\begin{equation}\label{eqn:modernOpticsLecture4:290}
 \lambda \ll d \ll r, r_s,
-\end{dmath}
+\end{equation}
 %
 where \(d\) is the ``typical object size'', so that we have
 %
-\begin{dmath}\label{eqn:modernOpticsLecture4:310}
+\begin{equation}\label{eqn:modernOpticsLecture4:310}
 \Psi(\Br) = - \frac{A}{4 \pi} \iint da' \frac{e^{i k ( R + r_s)}}{R r_s} \left(
 \ncap \cdot \ncap \left( i k - \cancel{\inv{r_s}} \right) + \ncap \cdot \rcap
 \left( i k - \cancel{\inv{r}}
 \right)
 \right).
-\end{dmath}
+\end{equation}
 %
 or with \(\theta\) as illustrated,
 %
@@ -213,9 +213,9 @@ or with \(\theta\) as illustrated,
 
 where
 %
-\begin{dmath}\label{eqn:modernOpticsLecture4:350}
+\begin{equation}\label{eqn:modernOpticsLecture4:350}
 k(\theta) = \inv{2} \left( 1 + \cos \theta \right),
-\end{dmath}
+\end{equation}
 %
 is the ``obliquity factor''.
 
@@ -226,9 +226,9 @@ This is called the \underlineAndIndex{Huygens-Fresnel} principle.
 %
 %Should we open up the pinhole, we have to adjust things accordingly, and find
 %
-%\begin{dmath}\label{eqn:modernOpticsLecture4:370}
+%\begin{equation}\label{eqn:modernOpticsLecture4:370}
 %\Psi(\Br) = \frac{k A}{2 \pi i} \iint \frac{e^{i k (R + R_s)}}{ r r_s } k(\theta) d^2 \Br'
-%\end{dmath}
+%\end{equation}
 %
 %This is called the \underlineAndIndex{diffraction integral}.
 

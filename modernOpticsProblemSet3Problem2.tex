@@ -17,9 +17,9 @@ What does the energy density \(u(x) \equiv \langle | \Psi(x,t) |^2 \rangle\) loo
 {\bf Show that}
 \(u(x)\) in the cavity can be expressed in the form
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:20}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:20}
 u = u_0 A \, \left(1 + R + 2 \sqrt{R} \cos [\phi(x)] \right),
-\end{dmath}
+\end{equation}
 %
 and {\bf give} \(A\) and
 \(\phi(x)\) in terms of
@@ -77,44 +77,46 @@ Our electric field at point
 \end{equation}
 %
 Factoring out the geometric series we have
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:60}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:60}
+\begin{aligned}
 \Psi(x)
-=
+&=
 (\Psi_0 t)
 \left(
 1 + r^2 e^{2 i k L} + r^4 e^{4 i k L} + \cdots
 \right)
 \left(
 e^{i k x} + r e^{i k (2 L - x)}
-\right)
-=
+\right) \\
+&=
 (\Psi_0 t) \inv{1 - r^2 e^{ 2 i k L} }
 \left(
 e^{i k x} + r e^{i k (2 L - x)}
-\right)
-=
+\right) \\
+&=
 \frac{\Psi_0 \sqrt{T} e^{i \delta_t} }{1 - R e^{ 2 i k L + 2 i \delta_r } }
 \left(
 e^{i k x} + \sqrt{R} e^{i k (2 L - x) + \delta_r}
 \right).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Introducing a round trip phase
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:80}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:80}
 \Delta \equiv 2 k L + 2 \delta_r,
-\end{dmath}
+\end{equation}
 %
 we have
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:100}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:100}
 \Psi(x)
 =
 \frac{\Psi_0 \sqrt{T} e^{i \delta_t} }{1 - R e^{ i \Delta} }
 \left(
 e^{i k x} + \sqrt{R} e^{-i k x + i \Delta - i \delta_r}
 \right).
-\end{dmath}
+\end{equation}
 %
 This has squared magnitude
 \boxedEquation{eqn:modernOptics:problemSet3:2:120}{
@@ -133,12 +135,12 @@ This has squared magnitude
 
 This has the desired structure of \eqnref{eqn:modernOptics:problemSet3:2:20} with
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:140}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:140}
 A = \frac{T}{1 + R^2 - 2 \cos(\Delta) }.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:160}
+\end{equation}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:160}
 \phi(x) = 2 k x - \Delta + \delta_r.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 \makeSubAnswer{Peak energy density}{modernOptics:problemSet3:2b}
@@ -146,45 +148,45 @@ A = \frac{T}{1 + R^2 - 2 \cos(\Delta) }.
 From \eqnref{eqn:modernOptics:problemSet3:2:120} we see that maximums and minimums occur respectively whenever
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:180}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:180}
 2 k x - \Delta + \Delta_r = \pi (2 m).
-\end{dmath}
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:200}
+\end{equation}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:200}
 2 k x - \Delta + \Delta_r = \pi (2 m  + 1).
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 At these points \(1 + R + 2 \sqrt{R} \cos\left( 2 k x - \Delta + \delta_r \right)\) takes the values
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:220}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:220}
 1 + R + 2 \sqrt{R} = (1 + \sqrt{R})^2.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:240}
+\end{equation}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:240}
 1 + R - 2 \sqrt{R} = (1 - \sqrt{R})^2.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 The maximum and minimum energy densities are therefore
 %
 \begin{subequations}
 \label{eqn:modernOptics:problemSet3:2:250}
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:260}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:260}
 u_{\mathrm{max}}
 =
 \frac{u_0 (1 - R) }{1 + R^2 - 2 \cos(\Delta) }
 \left(
 1 + \sqrt{R}
 \right)^2.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:280}
+\end{equation}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:280}
 u_{\mathrm{min}}
 =
 \frac{u_0 (1 - R) }{1 + R^2 - 2 \cos(\Delta) }
 \left(
 1 - \sqrt{R}
 \right)^2.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 This maximum is plotted in \cref{fig:modernOpticsProblemSet3Problem2:modernOpticsProblemSet3Problem2Fig2}.
@@ -197,22 +199,22 @@ Marked ``??''.  Check against posted solution.
 We see the resonance peaks when
 \(1 + R^2 - 2 \cos\Delta = 0\).  Those points are
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:320}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:320}
 \Delta_{\mathrm{res}} = \pm \cos^{-1} \left( \frac{1 + R^2}{2} \right).
 = 4 \pi \frac{L}{\lambda_{\mathrm{res}}} + 2 \delta_r.
-\end{dmath}
+\end{equation}
 %
 For a given interface phase shift
 \(\delta_r\), and reflectivity
 \(R\), and cavity width
 \(L\) we see that we have a critical wavelength
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:340}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:340}
 \lambda_{\mathrm{res}}
 =\frac{4 \pi L}{
 \pm \cos^{-1} \left( \frac{1 + R^2}{2} \right) - 2 \delta_r
 }.
-\end{dmath}
+\end{equation}
 %
 If large amounts of energy are supplied to the field due to this resonance, I think it would have to come from interactions with the interfaces, thermally cooling the atoms in the mirrors.  These thermal effects likely change
 \(r\) as a side effect,
@@ -226,16 +228,16 @@ Check against posted solution.
 
 From \eqnref{eqn:modernOptics:problemSet3:2:120} we see that our energy density has the form
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:440}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:440}
 u(x)
 = \alpha + \beta \cos\left( \frac{4 \pi}{\lambda} (x - L) + \delta_r \right).
-\end{dmath}
+\end{equation}
 %
 We'll have \textunderline{standing waves (possibly phase shifted) only for those input wavelengths that satisfy}
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:460}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:460}
 \frac{4 \pi L}{\lambda} = m \pi,
-\end{dmath}
+\end{equation}
 %
 for integer \(m > 0\).
 
@@ -244,7 +246,7 @@ Underline portion with question ``why?''.
 
 From \eqnref{eqn:modernOptics:problemSet3:2:250} we see that our visibility is
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:300}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:300}
 \calV = \frac
 {
 1 + R + 2 \sqrt{R} - (1 + R - 2 \sqrt{R})
@@ -254,7 +256,7 @@ From \eqnref{eqn:modernOptics:problemSet3:2:250} we see that our visibility is
 }
 =
 \frac{2 \sqrt{R}}{1 + R}.
-\end{dmath}
+\end{equation}
 %
 \makeSubAnswer{Compare to previously calculated transmitted intensity}{modernOptics:problemSet3:2d}
 
@@ -262,38 +264,42 @@ If we split our wave function into forward \(\Psi_{+}(x)\) and reverse
 \(\Psi_{-}(x)\) components we have from \eqnref{eqn:modernOptics:problemSet3:2:100}
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:360}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:360}
 \Psi_{+}(x)
 =
 \frac{\Psi_0 \sqrt{T} e^{i \delta_t} }{1 - R e^{ i \Delta} }
 e^{i k x}.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:380}
+\end{equation}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:380}
 \Psi_{-}(x)
 =
 \frac{\Psi_0 \sqrt{T} e^{i \delta_t} }{1 - R e^{ i \Delta} }
 \sqrt{R} e^{-i k x + i \Delta - i \delta_r}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 The externally transmitted portion of this wave is
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:400}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:400}
+\begin{aligned}
 \Psi_T
-=
-t \Psi_{+}(L)
-=
+&=
+t \Psi_{+}(L) \\
+&=
 \frac{\Psi_0 T e^{2 i \delta_t} }{1 - R e^{ i \Delta} }
 e^{i k L},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 which has squared magnitude
 %
-\begin{dmath}\label{eqn:modernOptics:problemSet3:2:420}
+\begin{equation}\label{eqn:modernOptics:problemSet3:2:420}
+\begin{aligned}
 I_T
-= \Abs{\Psi_T}^2
-= \frac{u_0 T^2}{\Abs{1 - R e^{i \Delta}}^2}.
-\end{dmath}
+&= \Abs{\Psi_T}^2 \\
+&= \frac{u_0 T^2}{\Abs{1 - R e^{i \Delta}}^2}.
+\end{aligned}
+\end{equation}
 %
 Except for the notation change \(u_0 \leftrightarrow I_0\), this, as expected, reproduces the result from class.
 } % makeanswer

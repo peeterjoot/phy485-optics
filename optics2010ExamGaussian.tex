@@ -45,7 +45,7 @@ Our optical system and beam has the following configuration \cref{fig:optics2010
 %
 Going from the glass to the air we have \(n \sin\theta_i = \sin\theta_t\), or in the paraxial approximation
 %
-\begin{dmath}\label{eqn:optics2010ExamGaussian:20}
+\begin{equation}\label{eqn:optics2010ExamGaussian:20}
 \begin{bmatrix}
 y_t \\
 \theta_t
@@ -59,11 +59,11 @@ y_t \\
 y_i \\
 \theta_i
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 %
 The geometric optics for the round trip is
 %
-\begin{dmath}\label{eqn:optics2010ExamGaussian:40}
+\begin{equation}\label{eqn:optics2010ExamGaussian:40}
 M =
 \begin{bmatrix}
 1 & L/2 \\
@@ -112,57 +112,60 @@ M =
 1 & L + 2 D n \\
 0 & 1
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 Our M\"obius transformation, in meters is
 %
-\begin{dmath}\label{eqn:optics2010ExamGaussian:60}
+\begin{equation}\label{eqn:optics2010ExamGaussian:60}
+\begin{aligned}
 q'
-= q + 2 D n
-= q + 2 (0.1) 1.5
-= q + 0.3.
-\end{dmath}
+&= q + 2 D n \\
+&= q + 2 (0.1) 1.5 \\
+&= q + 0.3.
+\end{aligned}
+\end{equation}
 %
 In the inverse, this has the form
 %
-\begin{dmath}\label{eqn:optics2010ExamGaussian:80}
+\begin{equation}\label{eqn:optics2010ExamGaussian:80}
+\begin{aligned}
 \inv{q + a}
-= \inv{z - i z_0 + a}
-= \frac{z + i z_0 + a}
-{(z + a)^2 + z_0^2 }
-=
+&= \inv{z - i z_0 + a} \\
+&= \frac{z + i z_0 + a} {(z + a)^2 + z_0^2 } \\
+&=
 \frac{z + a}
 {(z + a)^2 + z_0^2 }
 + i \frac{z_0}
 {(z + a)^2 + z_0^2 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Our waist \(z = 0\) was originally
 %
-\begin{dmath}\label{eqn:optics2010ExamGaussian:100}
+\begin{equation}\label{eqn:optics2010ExamGaussian:100}
 \frac{\lambda_0}{\pi n w_0^2} = \frac{z_0}{z_0^2 } = \inv{z_0},
-\end{dmath}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:optics2010ExamGaussian:120}
+\begin{equation}\label{eqn:optics2010ExamGaussian:120}
 z_0 = \frac{ \pi n w_0^2}{\lambda_0}.
-\end{dmath}
+\end{equation}
 %
 Assuming that we are given the wavelength within the glass \(\lambda = \lambda_0/n = 0.8 \mu \mbox{m}\) (and not the free propagation wavelength outside of the glass), then we have in meters
 %
-\begin{dmath}\label{eqn:optics2010ExamGaussian:140}
+\begin{equation}\label{eqn:optics2010ExamGaussian:140}
 z_0 = \frac{ \pi (0.0005)^2}{0.8 \times 10^{-6} }
 \approx 0.98.
-\end{dmath}
+\end{equation}
 %
 Our new waist is
 %
-\begin{dmath}\label{eqn:optics2010ExamGaussian:160}
+\begin{equation}\label{eqn:optics2010ExamGaussian:160}
 {w_0'}^2
 = \frac{\pi}{\lambda} \frac{(0 - 0.3)^2 + z_0^2}{z_0}
 \approx 0.52 \mbox{mm}.
-\end{dmath}
+\end{equation}
 %
 Our waist widens slightly from the original after the round trip.
 
@@ -170,8 +173,10 @@ Our waist widens slightly from the original after the round trip.
 
 To examine the beam characteristics after it continues through and out of the glass again, we have to apply another geometric transformation
 %
-\begin{dmath}\label{eqn:optics2010ExamGaussian:180}
-M' =
+\begin{equation}\label{eqn:optics2010ExamGaussian:180}
+\begin{aligned}
+M'
+&=
 \begin{bmatrix}
 1 & 0 \\
 0 & n
@@ -179,81 +184,85 @@ M' =
 \begin{bmatrix}
 1 & L/2 \\
 0 & 1
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 1 & L/2 \\
 0 & n
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Our M\"obius transform is
 %
-\begin{dmath}\label{eqn:optics2010ExamGaussian:240}
+\begin{equation}\label{eqn:optics2010ExamGaussian:240}
+\begin{aligned}
 q''
-= \frac{ q' + L/2 }{n}
-= \frac{ q + 2 D n + L/2 }{n},
-\end{dmath}
+&= \frac{ q' + L/2 }{n} \\
+&= \frac{ q + 2 D n + L/2 }{n},
+\end{aligned}
+\end{equation}
 %
 We are looking at how our initial waist, found at \(z = 0\) transformed, so we have
 %
-\begin{dmath}\label{eqn:optics2010ExamGaussian:260}
+\begin{equation}\label{eqn:optics2010ExamGaussian:260}
+\begin{aligned}
 \inv{ q''(0) }
-= \frac{n}{ -i z_0 + 2 D n + L/2 }
-= \frac{n( i z_0 + 2 D n + L/2)}{ z_0^2 + (2 D n + L/2)^2 }.
-\end{dmath}
+&= \frac{n}{ -i z_0 + 2 D n + L/2 } \\
+&= \frac{n( i z_0 + 2 D n + L/2)}{ z_0^2 + (2 D n + L/2)^2 }.
+\end{aligned}
+\end{equation}
 %
 Our new waist is found outside the glass where \(n = 1\)
 %
-\begin{dmath}\label{eqn:optics2010ExamGaussian:280}
+\begin{equation}\label{eqn:optics2010ExamGaussian:280}
+\begin{aligned}
 \Imag\left( \inv{ q''(0) } \right)
-=
-\frac{\lambda_0}{n_{\mathrm{air}}\pi {w'}^2(0)}
-=
-\frac{\lambda_0}{\pi {w'}^2(0)}
-=
-\frac{n_{\mathrm{glass}} \lambda}{\pi {w'}^2(0)}.
-\end{dmath}
+&= \frac{\lambda_0}{n_{\mathrm{air}}\pi {w'}^2(0)} \\
+&= \frac{\lambda_0}{\pi {w'}^2(0)} \\
+&= \frac{n_{\mathrm{glass}} \lambda}{\pi {w'}^2(0)}.
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:optics2010ExamGaussian:200}
+\begin{equation}\label{eqn:optics2010ExamGaussian:200}
 {w'}^2(0)
 =
 \frac{n_{\mathrm{glass}} \lambda}{\pi}
 \frac{ z_0^2 + (2 D n_{\mathrm{glass}} + L/2)^2 } {n_{\mathrm{glass}} z_0 }.
-\end{dmath}
+\end{equation}
 %
 With the divergence angle having the value
 %
-\begin{dmath}\label{eqn:optics2010ExamGaussian:220}
+\begin{equation}\label{eqn:optics2010ExamGaussian:220}
+\begin{aligned}
 \Theta
-\sim \frac{\sqrt{2} w_0'}{z_0'}
-= \sqrt{2} \sqrt{
+&\sim \frac{\sqrt{2} w_0'}{z_0'} \\
+&= \sqrt{2} \sqrt{
 \frac{\lambda}{\pi} \frac{ z_0^2 + ( 2 D n_{\mathrm{glass}} + L/2 )^2}{z_0}
 }
-\frac{n_{\mathrm{glass}} z_0}{ z_0^2 + (2 D n_{\mathrm{glass}} + L/2)^2}
-= \sqrt{
+\frac{n_{\mathrm{glass}} z_0}{ z_0^2 + (2 D n_{\mathrm{glass}} + L/2)^2} \\
+&= \sqrt{
 \frac{2 \lambda z_0}{\pi }
 \frac{n_{\mathrm{glass}}^2}
 { z_0^2 + ( 2 D n_{\mathrm{glass}} + L/2 )^2}
-}
-= \sqrt{
+} \\
+&= \sqrt{
 \frac{2 \lambda \frac{\pi n_{\mathrm{glass}} w_0^2}{\lambda}}{\pi }
 \frac{n_{\mathrm{glass}}^2}
 { \left( \frac{\pi n_{\mathrm{glass}} w_0^2}{\lambda} \right)^2 + ( 2 D n_{\mathrm{glass}} + L/2 )^2}
-}
-= \sqrt{
+} \\
+&= \sqrt{
 \frac{2 n_{\mathrm{glass}}^3 w_0^2}
 { \left( \frac{\pi n_{\mathrm{glass}} w_0^2}{\lambda} \right)^2 + ( 2 D n_{\mathrm{glass}} + L/2 )^2}
-}
-= \sqrt{
+} \\
+&= \sqrt{
 \frac{2 n_{\mathrm{glass}} w_0^2}
 { \frac{\pi^2 w_0^4}{\lambda^2} + \left( 2 D +
 \frac{L}{2 n_{\mathrm{glass}}^2 } \right)^2}
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Plugging in the numbers, this is \(8.6 \times 10^{-4}\) radians or \(0.05\) seconds. That's a small seeming number, but still results in a \(1\) cm spread after only 5.8 meters.
-
 } % makeanswer
-
 %\EndNoBibArticle

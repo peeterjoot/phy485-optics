@@ -26,9 +26,9 @@
 %\fxwarning{review lecture 17}{work through this lecture in detail.}
 Referring to the figure ``Three-level model of a laser'' from the class slides, we want
 %
-\begin{dmath}\label{eqn:modernOpticsLecture17:20}
+\begin{equation}\label{eqn:modernOpticsLecture17:20}
 A \gg R, \Gamma_{\mathrm{sp}}, \Gamma_{\mathrm{st}} n.
-\end{dmath}
+\end{equation}
 %
 \begin{equation}\label{eqn:modernOpticsLecture17:40}
 N_1 \ll N_2 \ll N_0 \approx N.
@@ -39,41 +39,41 @@ Its the \(N_1, N_2\) difference that leads to the population inversion on the \(
 We've got something like \cref{fig:modernOpticsLecture17:modernOpticsLecture17Fig1}.
 \imageFigure{../figures/phy485-optics/modernOpticsLecture17Fig1}{Cavity.}{fig:modernOpticsLecture17:modernOpticsLecture17Fig1}{0.2}
 %
-\begin{dmath}\label{eqn:modernOpticsLecture17:60}
+\begin{equation}\label{eqn:modernOpticsLecture17:60}
 \Gamma_{\mathrm{cav}} = T \frac{c}{2L}.
-\end{dmath}
+\end{equation}
 %
 where \(T\) is the transmission coefficient.
 
 We typically have
 %
-\begin{dmath}\label{eqn:modernOpticsLecture17:80}
+\begin{equation}\label{eqn:modernOpticsLecture17:80}
 \Gamma_{\mathrm{sp}} = 10^{7} \txts^{-1}.
-\end{dmath}
+\end{equation}
 %
 The spontaneous em rate out of cavity, and
 %
-\begin{dmath}\label{eqn:modernOpticsLecture17:100}
+\begin{equation}\label{eqn:modernOpticsLecture17:100}
 \Gamma_{\mathrm{st}} = 1 \txts^{-1}.
-\end{dmath}
+\end{equation}
 %
 (the spontaneous emission into cavity mode of interest).
 
 Recall
 %
-\begin{dmath}\label{eqn:modernOpticsLecture17:120}
+\begin{equation}\label{eqn:modernOpticsLecture17:120}
 \frac{\text{stimulated}}{\text{spontaneous}} = \frac{ B u_w }{a} = \frac{\Gamma \expectation{n_w}}{\Gamma}.
-\end{dmath}
+\end{equation}
 %
 Ignoring the \(\Gamma_{\mathrm{st}} n N_1\) transitions, the atomic population is
 %
-\begin{dmath}\label{eqn:modernOpticsLecture17:140}
+\begin{equation}\label{eqn:modernOpticsLecture17:140}
 \ddt{N_2} = N R - N_2 \Gamma_{\mathrm{sp}} - N_2 \Gamma_{\mathrm{st}} \expectation{ n }.
-\end{dmath}
+\end{equation}
 %
 and the photon population is
 %
-\begin{dmath}\label{eqn:modernOpticsLecture17:160}
+\begin{equation}\label{eqn:modernOpticsLecture17:160}
 \ddt{\expectation{n}} =
 \Gamma_{\mathrm{st}} N_2
 (
@@ -99,7 +99,7 @@ and the photon population is
 {\Gamma_{\mathrm{cav}}
 \expectation{n}
 }{out coupling}.
-\end{dmath}
+\end{equation}
 %
 %\Gamma_{\mathrm{st}} N_2 -> spontaneous emmission into cavity
 %\Gamma_{\mathrm{st}} N_2 \expectation{n} -> stimulated emmission
@@ -110,43 +110,44 @@ For an exact treatment we really have a distribution like \cref{fig:modernOptics
 \imageFigure{../figures/phy485-optics/modernOpticsLecture17Fig2}{Probability distribution.}{fig:modernOpticsLecture17:modernOpticsLecture17Fig2}{0.2}
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOpticsLecture17:300}
+\begin{equation}\label{eqn:modernOpticsLecture17:300}
 \expectation{n} = \sum_n n P_n.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture17:320}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture17:320}
 \ddt{\expectation{n}} = \sum_n n \ddt{P_n}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 We aren't equipped to do this (covered in PHY2204), however, for the steady state solution, setting \(dN_2/dt = 0\) we have for the atomic population
 %
-\begin{dmath}\label{eqn:modernOpticsLecture17:180}
+\begin{equation}\label{eqn:modernOpticsLecture17:180}
 N_2 = \frac{N R}{ \Gamma_{\mathrm{sp}} + \Gamma_{\mathrm{st}} \expectation{n} }.
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:modernOpticsLecture17:200}
+\begin{equation}\label{eqn:modernOpticsLecture17:200}
 \frac{N R}{ \Gamma_{\mathrm{sp}} + \Gamma_{\mathrm{st}} \expectation{n} }
 \Gamma_{\mathrm{st}} ( 1 + \expectation{n} ) - \Gamma_{\mathrm{cav}} \expectation{n} = 0.
-\end{dmath}
+\end{equation}
 %
 Plugging into the steady state (\(d\expectation{n}/dt = 0\)) photon population equation of \eqnref{eqn:modernOpticsLecture17:160} we have
 %
-\begin{dmath}\label{eqn:modernOpticsLecture17:380}
+\begin{equation}\label{eqn:modernOpticsLecture17:380}
 0
 = \Gamma_{\mathrm{st}}
 \frac{N R}{ \Gamma_{\mathrm{sp}} + \Gamma_{\mathrm{st}} \expectation{n} }
 ( 1 + \expectation{n} ) - \Gamma_{\mathrm{cav}} \expectation{n},
-\end{dmath}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:modernOpticsLecture17:400}
+\begin{equation}\label{eqn:modernOpticsLecture17:400}
+\begin{aligned}
 0
-=
+&=
 \Gamma_{\mathrm{st}} N R ( 1 + \expectation{n} )
 - \Gamma_{\mathrm{cav}} \expectation{n}
-( \Gamma_{\mathrm{sp}} + \Gamma_{\mathrm{st}} ) \expectation{n}
-=
+( \Gamma_{\mathrm{sp}} + \Gamma_{\mathrm{st}} ) \expectation{n} \\
+&=
 -\expectation{n}^2
 \Gamma_{\mathrm{st}}
 \Gamma_{\mathrm{cav}}
@@ -160,57 +161,60 @@ or
 \right)
 + N R
 \Gamma_{\mathrm{st}},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %\Gamma_{\mathrm{st}}
 %\Gamma_{\mathrm{cav}}
 %\Gamma_{\mathrm{sp}}
 
 which after normalization is
 %
-\begin{dmath}\label{eqn:modernOpticsLecture17:220}
+\begin{equation}\label{eqn:modernOpticsLecture17:220}
 \expectation{n}^2 - \left( \frac{ N R \Gamma_{\mathrm{st}} }{\Gamma_{\mathrm{sp}} \Gamma_{\mathrm{cav}} } - 1 \right) \frac{ \Gamma_{\mathrm{sp}} }{\Gamma_{\mathrm{st}} } \expectation{n} - \frac{N R}{\Gamma_{\mathrm{cav}}} = 0.
-\end{dmath}
+\end{equation}
 %
 This can be written in a nicer way
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOpticsLecture17:240}
+\begin{equation}\label{eqn:modernOpticsLecture17:240}
 \expectation{n}^2 - (C - 1) n_s \expectation{n} - C n_s = 0.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture17:260}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture17:260}
 C \equiv
 \frac{ N R \Gamma_{\mathrm{st}} }{\Gamma_{\mathrm{sp}} \Gamma_{\mathrm{cav}} }.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture17:280}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture17:280}
 n_s \equiv \frac{\Gamma_{\mathrm{sp}}}{ \Gamma_{\mathrm{st}}} \sim 10^7.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 Here \(n_s\) is called the \underlineAndIndex{saturation photon number}, and \(C\) is called the \underlineAndIndex{cooperation parameter}, a non-dimensional pump rate.  \(R\) was the controllable quantity, the voltage of some such knob that we can vary.  The rest are fixed.
 
 Our quadratic equation (taking the positive root to avoid nonphysical negative photon numbers)
 %
-\begin{dmath}\label{eqn:modernOpticsLecture17:340}
+\begin{equation}\label{eqn:modernOpticsLecture17:340}
+\begin{aligned}
 \expectation{n}
-= \inv{2} ( C - 1 ) n_s + \inv{2} \sqrt{ (C-1)^2 n_s^2 + 4 C n_s}
-\approx
+&= \inv{2} ( C - 1 ) n_s + \inv{2} \sqrt{ (C-1)^2 n_s^2 + 4 C n_s} \\
+&\approx
 \inv{2} ( C - 1 ) n_s + \inv{2} \Abs{C-1} n_s \left(
 1 + \frac{2 C }{(C-1)^2 n_s} + \cdots
-\right)
-=
+\right) \\
+&=
 \left\{
 \begin{array}{l l}
 ( C - 1 ) n_s & \quad \mbox{if \(C > 1\)} \\
 \frac{C}{1 - C} & \quad \mbox{if \(C < 1\)} \\
 \end{array}
 \right.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Our steady state solution is then
 %
-\begin{dmath}\label{eqn:modernOpticsLecture17:360}
+\begin{equation}\label{eqn:modernOpticsLecture17:360}
 N_2 = \frac{N R}{ \Gamma_{\mathrm{sp}} + \Gamma_{\mathrm{st}} \expectation{n} } = \frac{C}{1 + \expectation{n}/n_s}.
-\end{dmath}
+\end{equation}
 %
 That's how a laser works, at least from a population point of view.
 

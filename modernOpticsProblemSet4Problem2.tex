@@ -67,41 +67,41 @@ M^n = E D^n E^{-1}.
 %
 We'll need the eigenvalues first.  Our characteristic equation is
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:100}
+\begin{equation}\label{eqn:problemSet4Problem2:100}
+\begin{aligned}
 0
-= \Abs{ M - \lambda I }
-=
+&= \Abs{ M - \lambda I } \\
+&=
 \begin{vmatrix}
 1 - \lambda & d \\
 -1/f & 1 - d/f - \lambda
-\end{vmatrix}
-=
-1 - \cancel{d/f} - \lambda - \lambda( 1 - d/f - \lambda ) + \cancel{d/f}
-=
-\lambda^2 - 2 \lambda \left( 1 - \frac{d}{2 f} \right) + 1.
-\end{dmath}
+\end{vmatrix} \\
+&= 1 - \cancel{d/f} - \lambda - \lambda( 1 - d/f - \lambda ) + \cancel{d/f} \\
+&= \lambda^2 - 2 \lambda \left( 1 - \frac{d}{2 f} \right) + 1.
+\end{aligned}
+\end{equation}
 %
 Following Fowles, we write
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:120}
+\begin{equation}\label{eqn:problemSet4Problem2:120}
 \alpha = 1 - \frac{d}{2 f},
-\end{dmath}
+\end{equation}
 %
 So that the characteristic equation is
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:140}
+\begin{equation}\label{eqn:problemSet4Problem2:140}
+\begin{aligned}
 0
-=
-\lambda^2 - 2 \lambda \alpha + 1
-=
-\left( \lambda - \alpha \right)^2 + 1 - \alpha^2.
-\end{dmath}
+&= \lambda^2 - 2 \lambda \alpha + 1 \\
+&= \left( \lambda - \alpha \right)^2 + 1 - \alpha^2.
+\end{aligned}
+\end{equation}
 %
 Note that this corrects a sign error in the text.  Solving for \(\lambda\) we have
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:160}
+\begin{equation}\label{eqn:problemSet4Problem2:160}
 \lambda_{\pm} = \alpha \pm \sqrt{\alpha^2 - 1}.
-\end{dmath}
+\end{equation}
 %
 Observe that these satisfy our expectation that \(\lambda_{+} \lambda_{-} = 1\), so we can write these as
 
@@ -112,40 +112,42 @@ Observe that these satisfy our expectation that \(\lambda_{+} \lambda_{-} = 1\),
 
 for some value \(\lambda\).  Our ABCD matrix for \(n\) sets of propagate-and-reflect is
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:260}
+\begin{equation}\label{eqn:problemSet4Problem2:260}
 M^n = E
 \begin{bmatrix}
 \lambda^n & 0 \\
 0 & \inv{\lambda^n}
 \end{bmatrix}
 E^{-1}.
-\end{dmath}
+\end{equation}
 %
 If \(E = [ e_{i j} ]\) and \(E^{-1} = [ f_{i j} ]\), then the product takes the value
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:280}
+\begin{equation}\label{eqn:problemSet4Problem2:280}
+\begin{aligned}
 E D^n E^{-1}
-= [ e_{i k} \lambda_k^n \delta_{k m } f_{m j} ]
-= [ e_{i m} \lambda_m^n f_{m j} ]
-= [
+&= [ e_{i k} \lambda_k^n \delta_{k m } f_{m j} ] \\
+&= [ e_{i m} \lambda_m^n f_{m j} ] \\
+&= [
 e_{i 1} \lambda^n f_{1 j}
 +
 e_{i 2} \inv{\lambda^n} f_{2 j}
 ],
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:problemSet4Problem2:320}
+\begin{equation}\label{eqn:problemSet4Problem2:320}
 M^n
 =
 \lambda^n [ e_{i 1} f_{1 j} ] + \inv{\lambda^n} [ e_{i 2} f_{2 j} ].
-\end{dmath}
+\end{equation}
 %
 So, if \(\lambda\) is real and greater than 1, the ABCD matrix will start to grow without bound.
 
 To consider the bounding behavior of \(\lambda^n\), lets follow Fowles, and separate the eigenvalues into real and complex as follows
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:180}
+\begin{equation}\label{eqn:problemSet4Problem2:180}
 \lambda = \alpha \pm
 \left\{
 \begin{array}{l l}
@@ -153,47 +155,45 @@ To consider the bounding behavior of \(\lambda^n\), lets follow Fowles, and sepa
 i \sqrt{1 - \alpha^2} & \quad \mbox{if \(\Abs{\alpha} < 1\)}
 \end{array}
 \right.
-\end{dmath}
+\end{equation}
 %
 When \(\Abs{\alpha} = 1\), we have a double eigenvalue with value \(\alpha\) and may not be able to find a spanning set of eigenvectors.  For the \(\Abs{\alpha} < 1\) case, we can introduce \(\phi\) such that \(\cos\phi = \alpha\), allowing us to write
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:1100}
+\begin{equation}\label{eqn:problemSet4Problem2:1100}
 \lambda_{\pm} = e^{\pm i \phi}.
-\end{dmath}
+\end{equation}
 %
 What can we say about the real valued eigenvalue case?  We know that from \(\Det M = 1\) both real valued eigenvalues must have matching signs.  We can also see from
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:240}
+\begin{equation}\label{eqn:problemSet4Problem2:240}
 \lambda_{\pm} = \Abs{\alpha} \left( \sgn(\alpha) \pm \sqrt{1 - \inv{\alpha^2}} \right),
-\end{dmath}
+\end{equation}
 %
 that if these are positive, then one of the eigenvalues is greater than 1, and if negative, at least one is less than \(-1\).  If we pick \(\lambda\) as the eigenvalue for which \(\Abs{\lambda} > 1\), then \(\lambda^n\) will clearly diverge as \(n\) grows, and we the ABCD matrix of \eqnref{eqn:problemSet4Problem2:320} becomes unstable.
 
 This can also be expressed in terms of rays.  Given a ray with an eigenvector decomposition
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:340}
+\begin{equation}\label{eqn:problemSet4Problem2:340}
 \Bx = a \Be_1 + b \Be_2,
-\end{dmath}
+\end{equation}
 %
 where
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:360}
+\begin{equation}\label{eqn:problemSet4Problem2:360}
 E = [ \Be_1 \Be_2 ],
-\end{dmath}
+\end{equation}
 %
 then it follows from \eqnref{eqn:problemSet4Problem2:320} that
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:380}
+\begin{equation}\label{eqn:problemSet4Problem2:380}
 M^n \Bx = a \lambda^n \Be_1 + b \inv{\lambda^n} \Be_2.
-\end{dmath}
+\end{equation}
 %
 Both the position and the angle increase without bound, leading the ray out of the cavity if \(\Abs{\alpha} > 1\).
 
 I'd avoided the ``suppose that the ray is an eigenvector'' argument from Fowles initially above because the eigenvectors in the complex case are also complex, and that didn't seem physically realistic.  It also wasn't clear to me what \(\lambda^n \Bx\) was if \(\Bx\) was a ray and \(\lambda\) was complex (i.e.  Eq.~(10.32) in the text).  However, what resolves this conundrum is the realization that the projection constants \(a\) and \(b\) above are also complex in this case.  So while, for complex eigenvectors we won't ever have a ray that is given exactly by an eigenvector, we can still form a superposition of the two.  The result, and the transformation of \eqnref{eqn:problemSet4Problem2:380}, is still necessarily real valued.
-
 \paragraph{The stability criteria}
 \index{stability criteria}
-
 Our last task is to express the stability condition \(\Abs{\alpha} < 1\) in terms of \(d\), \(f\) and \(r\) (the last for the optical resonator with equal curvature mirrors).
 
 This stability criterion is
@@ -268,20 +268,17 @@ This shows that \(d \in (2 f, 4 f)\) also results in a stable system.
 
 With both sets of ranges for \(d\) mutually exclusive, and the point \(d = 2f\) also stable (doubled eigenvalue with value \(1\)), we can form the union of the two, and have a stable system provided
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:1120}
+\begin{equation}\label{eqn:problemSet4Problem2:1120}
 d \in (0, 4 f).
-\end{dmath}
+\end{equation}
 %
 This was for a set of lenses set distance \(d\) apart.  Noting from the text that ``a curved mirror of radius \(r\) is optically equivalent to a lens of focal length \(f = r/2\)'', we have for the optical resonator
 %
 \boxedEquation{eqn:problemSet4Problem2:1140}{
 d \in (0, 2 r),
 }
-
 the desired result.
-
 \makeSubAnswer{Stability criterion}{modernOptics:problemSet4:2b}
-
 A system with plane mirrors is characterized by \(f = \infty\) or \(1/f = 0\).  Our ABCD matrix is then just
 %
 \begin{equation}\label{eqn:problemSet4Problem2:1160}
@@ -303,34 +300,34 @@ M =
 %
 This is a system that has only a single eigenvalue of \(1\) and is already in Jordan canonical form, so it cannot be diagonalized any further.  Our eigenvector can be found by inspection
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:640}
+\begin{equation}\label{eqn:problemSet4Problem2:640}
 \Be =
 \begin{bmatrix}
 1 \\
 0
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 since this clearly satisfies \(M \Be = \Be\).  Any vector that is a multiple of this is also an eigenvector for this system
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:660}
+\begin{equation}\label{eqn:problemSet4Problem2:660}
 \Bx =
 \begin{bmatrix}
 y \\
 0
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 These are the only stable rays, which makes intuitive sense.  Only rays that are parallel to the pair of mirrors will not diverge.
-
 \paragraph{Grading remark: -1} parallel was circled, with ``How's that possible?''.  Look at the posted solutions for how to interpret this.
-
 \makeSubAnswer{Unequal mirror radii}{modernOptics:problemSet4:2c}
-
 We now wish to look at the characteristic equation for a round trip through the two sets of geometric elements.  That is
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:680}
-M = M_2 M_1 =
+\begin{equation}\label{eqn:problemSet4Problem2:680}
+\begin{aligned}
+M
+&= M_2 M_1 \\
+&=
 \begin{bmatrix}
 1 & d \\
 -1/f_2 &  -d/f_2 + 1
@@ -338,8 +335,8 @@ M = M_2 M_1 =
 \begin{bmatrix}
 1 & d \\
 -1/f_1 &  -d/f_1 + 1
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 1 & d \\
 2(1 - \alpha_2) & 2 \alpha_2 - 1
@@ -347,8 +344,8 @@ M = M_2 M_1 =
 \begin{bmatrix}
 1 & d \\
 2(1 - \alpha_1) & 2 \alpha_1 - 1
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 1 - \frac{d}{f_1} & d \left( 2 - \frac{d}{f_1} \right) \\
 - \frac{d}{f_2}
@@ -359,7 +356,8 @@ M = M_2 M_1 =
 + \left( 1 - \frac{d}{f_2} \right)
 \left( 1 - \frac{d}{f_1} \right)
 \end{bmatrix},
-\end{dmath}
+\end{aligned}
+\end{equation}
 or
 \begin{dmath*}\label{eqn:modernOpticsProblemSet4Problem2:n}
 \begin{bmatrix}
@@ -390,26 +388,28 @@ C & D
 %
 our characteristic equation, again the \(\Det M = 1\) constraint for this problem where all the propagation is free
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:940}
+\begin{equation}\label{eqn:problemSet4Problem2:940}
+\begin{aligned}
 0
-= (A - \lambda)(D - \lambda) - B C
-= \lambda^2 - \lambda( A + D ) + A D - BC
-= \lambda^2 - \lambda \tr M + 1
-= \left(\lambda - \frac{\tr M}{2}\right)^2 + 1 - \left(\frac{\tr M}{2}\right)^2.
-\end{dmath}
+&= (A - \lambda)(D - \lambda) - B C \\
+&= \lambda^2 - \lambda( A + D ) + A D - BC \\
+&= \lambda^2 - \lambda \tr M + 1 \\
+&= \left(\lambda - \frac{\tr M}{2}\right)^2 + 1 - \left(\frac{\tr M}{2}\right)^2.
+\end{aligned}
+\end{equation}
 %
 This gives us
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:960}
+\begin{equation}\label{eqn:problemSet4Problem2:960}
 \lambda =
 \frac{\tr M}{2} \pm \sqrt{ \left(\frac{\tr M}{2}\right)^2 - 1 }.
-\end{dmath}
+\end{equation}
 %
 Our stability criteria is
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:980}
+\begin{equation}\label{eqn:problemSet4Problem2:980}
 \Abs{ \frac{\tr M}{2} } < 1,
-\end{dmath}
+\end{equation}
 %
 or
 \begin{equation}\label{eqn:problemSet4Problem2:1000}
@@ -425,9 +425,10 @@ This inequality can be first shifted by 1 to put it in the \([0,2]\) range, then
 %
 Now lets apply this to our ABCD matrix
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:1040}
+\begin{equation}\label{eqn:problemSet4Problem2:1040}
+\begin{aligned}
 \frac{\tr M + 2 }{4}
-=
+&=
 \inv{4}
 \left(
 2 \alpha_1 - 1
@@ -440,8 +441,8 @@ Now lets apply this to our ABCD matrix
 2 \alpha_2 - 1
 \right)
 + 2
-\right)
-=
+\right) \\
+&=
 \inv{4}
 \left(
 2 \alpha_1 - 1
@@ -449,10 +450,11 @@ Now lets apply this to our ABCD matrix
 2 \alpha_2 - 2 +
 4 \alpha_1 \alpha_2 + 1 - 2 \alpha_1 - 2 \alpha_2
 + 2
-\right)
-=
+\right) \\
+&=
 \alpha_1 \alpha_2.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This gives us the desired stability constraint
 %
@@ -466,54 +468,58 @@ This gives us the desired stability constraint
 
 This question was posed in terms of Gaussian beams, which transform according to the M\"obius transformation, whereas we've considered only ray transformations.  We can relate the two considering the transformation of the waist at the \(z = 0\) point in the center of the cavity.  Recall that we have
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:1180}
+\begin{equation}\label{eqn:problemSet4Problem2:1180}
+\begin{aligned}
 \Imag\left( \inv{q} \right)
-= \Imag \left( \inv{z - i z_0} \right)
-= \frac{z_0}{z^2 + z_0^2}.
-\end{dmath}
+&= \Imag \left( \inv{z - i z_0} \right) \\
+&= \frac{z_0}{z^2 + z_0^2}.
+\end{aligned}
+\end{equation}
 %
 In particular at \(z = 0\), this is
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:1200}
+\begin{equation}\label{eqn:problemSet4Problem2:1200}
 \inv{z_0} = \frac{\lambda}{\pi w^2(0)}.
-\end{dmath}
+\end{equation}
 %
 Now let's look at the M\"obius transformation at the pinch of the waist (\(z = 0\))
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:1220}
+\begin{equation}\label{eqn:problemSet4Problem2:1220}
+\begin{aligned}
 \inv{q'(0)}
-= \frac{C q(0) + D}{A q(0) + B}
-= \frac{-i C z_0 + D}{-i A z_0 + B}
-= \frac{(-i C z_0 + D)( i A z_0 + B)}{
-A^2 z_0^2 + B^2
-}
-=
+&= \frac{C q(0) + D}{A q(0) + B} \\
+&= \frac{-i C z_0 + D}{-i A z_0 + B} \\
+&= \frac{(-i C z_0 + D)( i A z_0 + B)}{ A^2 z_0^2 + B^2 } \\
+&=
 \frac{(-i C z_0 + D)( i A z_0 + B)}{
 A^2 z_0^2 + B^2
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 From this we have
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:1240}
+\begin{equation}\label{eqn:problemSet4Problem2:1240}
+\begin{aligned}
 \Imag\left(
 \inv{q'(0)}
 \right)
-=
+&=
 \frac{ z_0 (A D - B C)}
 {
 A^2 z_0^2 + B^2
-}
-=
+} \\
+&=
 \frac{ z_0 }
 {
 A^2 z_0^2 + B^2
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Comparing this to \eqnref{eqn:problemSet4Problem2:1200} we see that our waist at \(z = 0\) transforms as
 %
-\begin{dmath}\label{eqn:problemSet4Problem2:1260}
+\begin{equation}\label{eqn:problemSet4Problem2:1260}
 \frac
 {\pi (w'(0))^2}
 {\lambda}
@@ -523,34 +529,34 @@ Comparing this to \eqnref{eqn:problemSet4Problem2:1200} we see that our waist at
 A^2 z_0^2 + B^2
 }
 { z_0 }.
-\end{dmath}
+\end{equation}
 %
 Both \(A\) and \(B\) will be linear functions of the eigenvalues, so we see that in the real eigenvalue case, where the repeated powers of one of these eigenvalues will necessarily diverge, so will the Gaussian beam waist.
 
 %
 %Let's suppose that it's of the form
 %
-%\begin{dmath}\label{eqn:problemSet4Problem2:700}
+%\begin{equation}\label{eqn:problemSet4Problem2:700}
 %0 = \lambda^2 - 2 \lambda a + b^2
-%\end{dmath}
+%\end{equation}
 %
 %If that were the case, then we have
 %
-%\begin{dmath}\label{eqn:problemSet4Problem2:720}
+%\begin{equation}\label{eqn:problemSet4Problem2:720}
 %0 = (\lambda - a)^2 + b^2 - a^2,
-%\end{dmath}
+%\end{equation}
 %
 %or
 %
-%\begin{dmath}\label{eqn:problemSet4Problem2:740}
+%\begin{equation}\label{eqn:problemSet4Problem2:740}
 %\lambda = a \pm \sqrt{a^2 - b^2}.
-%\end{dmath}
+%\end{equation}
 %
 %We have our stability criteria when these are complex, or
 %
-%\begin{dmath}\label{eqn:problemSet4Problem2:760}
+%\begin{equation}\label{eqn:problemSet4Problem2:760}
 %\Abs{a} < \Abs{b}.
-%\end{dmath}
+%\end{equation}
 %
 %Observe that we don't have to actually solve for the eigenvalues, just find these values \(a\) and \(b\) from \eqnref{eqn:problemSet4Problem2:680}.  That's still a pain in the butt and I resorted to using Mathematica for that part \cref{fig:modernOpticsProblemSet4:modernOpticsProblemSet4Fig1}.
 %
@@ -562,26 +568,26 @@ Both \(A\) and \(B\) will be linear functions of the eigenvalues, so we see that
 %\begin{equation}\label{eqn:problemSet4Problem2:780}
 %a = -1 - 2 d + \alpha_1 \left(1 + d -2 \alpha_2 \right) + (1 + d) \alpha_2
 %\end{equation}
-%\begin{dmath}\label{eqn:problemSet4Problem2:800}
+%\begin{equation}\label{eqn:problemSet4Problem2:800}
 %b^2 = \left(1 - 2 d - 2 \alpha_1 +2 d \alpha_1 \right) \left(1 - 2 d - 2 \alpha_2 + 2 d \alpha_2 \right)
-%\end{dmath}
+%\end{equation}
 %\end{subequations}
 %
 %Observe that we can further simplify \(b^2\) (which isn't actually a complete square as I'd figured).  That first factor is
 %
-%\begin{dmath}\label{eqn:problemSet4Problem2:820}
+%\begin{equation}\label{eqn:problemSet4Problem2:820}
 %1 - 2 d - 2 \alpha_1 +2 d \alpha_1
 %=
 %1 - 2 d - 2 \alpha_1 ( 1 - 2 d)
 %=
 %(1 - 2 d)( 1 - 2 \alpha_1).
-%\end{dmath}
+%\end{equation}
 %
 %This gives us
 %
-%\begin{dmath}\label{eqn:problemSet4Problem2:840}
+%\begin{equation}\label{eqn:problemSet4Problem2:840}
 %b^2 = \left(1 - 2 d\right)^2 ( 1 - 2 \alpha_1) ( 1 - 2 \alpha_2).
-%\end{dmath}
+%\end{equation}
 %
 %We can group terms in \(a\) a bit.  I get
 %

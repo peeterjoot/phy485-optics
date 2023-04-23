@@ -20,86 +20,66 @@
 
 \makeproblem{Paraxial wave equation, Fresnel form.}{pr:paraxialWaveApproximateSolution:1}{
 In some supplementary class notes, it is stated that
-\begin{dmath}\label{eqn:paraxialWaveApproximateSolution:1}
+\begin{equation}\label{eqn:paraxialWaveApproximateSolution:1}
 h(x, y, z) = \inv{z} e^{i k z} e^{i k (x^2 + y^2)/2z }.
-\end{dmath}
+\end{equation}
 is an exact solution to the \underlineAndIndex{paraxial wave equation}
-\begin{dmath}\label{eqn:paraxialWaveApproximateSolution:10}
+\begin{equation}\label{eqn:paraxialWaveApproximateSolution:10}
 \spacegrad_{\txtT}^2 u + 2 i k \PD{z}{u} = 0.
-\end{dmath}
+\end{equation}
 From our lectures, this doesn't seem possible, since we found that this Fresnel like function was an approximation to the \(u_{00}\) function for large \(z\).  Calculate this directly and verify this suspicion.
 } % makeproblem
 
 \makeanswer{pr:paraxialWaveApproximateSolution:1}{
 Let's first apply the \(\partial_{xx}\) portion of the transverse Laplacian.  We find
-\begin{dmath}\label{eqn:paraxialWaveApproximateSolution:30}
+\begin{equation}\label{eqn:paraxialWaveApproximateSolution:30}
+\begin{aligned}
 \PDSq{x}{h}
-=
-\PD{x}{} \PD{x}{} \left(
-\inv{z} e^{i k z} e^{ i k (x^2 + y^2)/2z }
-\right)
-=
-\inv{z} e^{i k z}
-e^{ i k y^2 /2z }
-\PD{x}{} \PD{x}{} \left(
-e^{ i k x^2 /2z }
-\right)
-=
-\inv{z} e^{i k z}
-e^{ i k y^2 /2z }
-\PD{x}{} \left(
-\frac{i k x}{z} e^{ i k x^2 /2z }
-\right)
-=
-\inv{z} e^{i k z}
-e^{ i k y^2 /2z }
-\left(
-\frac{i k }{z}
--\frac{k^2 x^2}{z^2}
-\right)
-e^{ i k x^2 /2z }
-=
-\left(
-\frac{i k }{z}
--\frac{k^2 x^2}{z^2}
-\right)
-h.
-\end{dmath}
+&= \PD{x}{} \PD{x}{} \left( \inv{z} e^{i k z} e^{ i k (x^2 + y^2)/2z } \right) \\
+&= \inv{z} e^{i k z} e^{ i k y^2 /2z } \PD{x}{} \PD{x}{} \left( e^{ i k x^2 /2z } \right) \\
+&= \inv{z} e^{i k z} e^{ i k y^2 /2z } \PD{x}{} \left( \frac{i k x}{z} e^{ i k x^2 /2z } \right) \\
+&= \inv{z} e^{i k z} e^{ i k y^2 /2z } \left( \frac{i k }{z} -\frac{k^2 x^2}{z^2} \right) e^{ i k x^2 /2z } \\
+&= \left( \frac{i k }{z} -\frac{k^2 x^2}{z^2} \right) h.
+\end{aligned}
+\end{equation}
 %
 This gives us, for \(r^2 = x^2 + y^2\)
 %
-\begin{dmath}\label{eqn:paraxialWaveApproximateSolution:50}
+\begin{equation}\label{eqn:paraxialWaveApproximateSolution:50}
 \spacegrad_{\txtT}^2 h =
 \left(
 \frac{2 i k }{z}
 -\frac{k^2 r^2}{z^2}
 \right)
 h.
-\end{dmath}
+\end{equation}
 %
 For the first partial with respect to \(z\) we find
 %
-\begin{dmath}\label{eqn:paraxialWaveApproximateSolution:70}
-\PD{z}{h} =
+\begin{equation}\label{eqn:paraxialWaveApproximateSolution:70}
+\begin{aligned}
+\PD{z}{h} &=
 -\inv{z^2} e^{i k z} e^{ i k r^2 /2z }
 +
 \inv{z}
 \left(
 i k - \frac{i k r^2}{2 z^2}
 \right)
-e^{i k z} e^{ i k r^2 /2z }
-=
+e^{i k z} e^{ i k r^2 /2z } \\
+&=
 \left(
 - \inv{z} +
 i k - \frac{i k r^2}{2 z^2}
 \right) h.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Putting things together we have
 %
-\begin{dmath}\label{eqn:paraxialWaveApproximateSolution:90}
+\begin{equation}\label{eqn:paraxialWaveApproximateSolution:90}
+\begin{aligned}
 \left( \spacegrad_{\txtT}^2 + 2 i k \PD{z}{} \right) h
-=
+&=
 \left(
 \cancel{
 \frac{2 i k }{z}
@@ -117,13 +97,13 @@ i k -
 }
 \right)
 \right)
-h
-=
+h \\
+&=
 - 2 k^2 h \ne 0.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 However, since \(h \rightarrow 0\) as \(z \rightarrow \infty\), this does at least give zero in the far \(z\) limit.
 } % makeanswer
-
 %\EndArticle
 %\EndNoBibArticle

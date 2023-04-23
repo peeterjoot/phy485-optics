@@ -59,7 +59,7 @@ r_s^{-1}
 %
 where we have made a change of variables
 %
-\begin{dmath}\label{eqn:modernOpticsLecture6:110}
+\begin{equation}\label{eqn:modernOpticsLecture6:110}
 \begin{bmatrix}
 x' \\
 y'
@@ -76,7 +76,7 @@ v
 u \\
 v
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 %
 Our area element is then
 %
@@ -87,17 +87,19 @@ dx' dy'  =
 %
 Our integral is now
 %
-\begin{dmath}\label{eqn:modernOpticsLecture6:150}
+\begin{equation}\label{eqn:modernOpticsLecture6:150}
+\begin{aligned}
 \Psi(\Br)
-= \frac{A}{i\lambda} \frac{e^{ik (r_s + r)}}{r_s r} \int_{\text{aperture}} e^{i k f(\Br')} da'
-= \frac{A}{i\lambda} \frac{e^{ik (r_s + r)}}{r_s r}
+&= \frac{A}{i\lambda} \frac{e^{ik (r_s + r)}}{r_s r} \int_{\text{aperture}} e^{i k f(\Br')} da' \\
+&= \frac{A}{i\lambda} \frac{e^{ik (r_s + r)}}{r_s r}
 \frac{\lambda/2}{r_s^{-1} + r^{-1}}
-\int_{\text{aperture}} e^{i \frac{\pi}{2} (u^2 + v^2)} du dv
-=
+\int_{\text{aperture}} e^{i \frac{\pi}{2} (u^2 + v^2)} du dv \\
+&=
 \frac{A}{i\lambda} e^{ik (r_s + r)}
 \frac{\lambda/2}{r_s + r}
 \int_{\text{aperture}} e^{i \frac{\pi}{2} (u^2 + v^2)} du dv.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Referring to \cref{fig:modernOpticsLecture6:modernOpticsLecture6Fig3}, let's do this integral.  Putting in our limits we have
 %
@@ -160,19 +162,21 @@ There are some interesting features of this curve.
 \item
 The length along the curve is
 %
-\begin{dmath}\label{eqn:modernOpticsLecture6:290}
+\begin{equation}\label{eqn:modernOpticsLecture6:290}
+\begin{aligned}
 dl^2
-= dS^2 + dC^2
-=
+&= dS^2 + dC^2 \\
+&=
 \left( \frac{dS}{dw} \right)^2
-+\left( \frac{dC}{dw} \right)^2
-=
++\left( \frac{dC}{dw} \right)^2 \\
+&=
 \left(
 \sin^2\left( \frac{\pi}{2} w^2 \right)
 +\cos^2\left( \frac{\pi}{2} w^2 \right)
-\right) dw^2
-= dw^2.
-\end{dmath}
+\right) dw^2 \\
+&= dw^2.
+\end{aligned}
+\end{equation}
 %
 so that
 %
@@ -232,7 +236,7 @@ We do see that we end up with half the amplitude, so that as claimed our intensi
 
 In general, for a barrier offset by \(d\), and a value of \(w\) that corresponds to that, our \underlineAndIndex{Intensity} is
 %
-\begin{dmath}\label{eqn:modernOpticsLecture6:430}
+\begin{equation}\label{eqn:modernOpticsLecture6:430}
 I
 = \Abs{\Psi}^2
 = \Abs{\Psi_\infty}^2 \inv{2} \left(
@@ -244,13 +248,13 @@ I
 \inv{2} + S(w)
 \right)^2
 \right).
-\end{dmath}
+\end{equation}
 %
 \paragraph{Check, again with \(w = 0\)}, we have
 %
-\begin{dmath}\label{eqn:modernOpticsLecture6:450}
+\begin{equation}\label{eqn:modernOpticsLecture6:450}
 I_\infty \inv{2} \left( \inv{4} + \inv{4} \right) = \frac{I_\infty}{4}.
-\end{dmath}
+\end{equation}
 %
 Other examples.
 

@@ -60,13 +60,14 @@ This time averaging method makes sense for optics where we may have response tim
 
 Forming the magnitude of the field square we have
 %
-\begin{dmath}\label{eqn:modernOpticsLecture7:110}
+\begin{equation}\label{eqn:modernOpticsLecture7:110}
+\begin{aligned}
 \expectation{ \Abs{\BE}^2 }
-=
+&=
 \expectation{
 ( \BE_1 + \BE_2 ) \cdot ( \BE_1 + \BE_2 )^\conj
-}
-=
+} \\
+&=
 \expectation{
 \Abs{\BE_1 }^2
 }
@@ -78,10 +79,11 @@ Forming the magnitude of the field square we have
 \expectation{
 \BE_1 \cdot \BE_2^\conj
 + \BE_2 \cdot \BE_1^\conj
-}
-=
+} \\
+&=
 I_1 + I_2 + 2 \Real\left(  \expectation{ \BE_1 \cdot \BE_2^\conj} \right).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Consider the cross term.  We have
 %
@@ -137,27 +139,28 @@ Here \(\sqrt{I_2(\Br)}\) are the amplitudes (real).
 \paragraph{Interference (scalar or identical polarizations)}
 \index{interference!identical polarizations}
 %
-\begin{dmath}\label{eqn:modernOpticsLecture7:230}
+\begin{equation}\label{eqn:modernOpticsLecture7:230}
+\begin{aligned}
 I
-= \Abs{\Psi_1 + \Psi_2}^2
-= \Abs{\Psi_1}^2
+&= \Abs{\Psi_1 + \Psi_2}^2 \\
+&= \Abs{\Psi_1}^2
 + \Abs{\Psi_2}^2
-+ 2 \Real \expectation{ \Psi_1 \Psi_2^\conj}
-= I_1 + I_2
-+ 2 \sqrt{I_1 I_2} \Real \expectation{ e^{i \phi_1 - i \phi_2 } }
-= I_1 + I_2
++ 2 \Real \expectation{ \Psi_1 \Psi_2^\conj} \\
+&= I_1 + I_2
++ 2 \sqrt{I_1 I_2} \Real \expectation{ e^{i \phi_1 - i \phi_2 } } \\
+&= I_1 + I_2
 + 2 \sqrt{I_1 I_2} \expectation{ \cos(\phi_1 - \phi_2) }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Here we've made use of the fact that \(\Real(.)\) and \(\expectation{.}\) are both linear operators so we can reverse their order of operation.
 \paragraph{Question: Isn't the average of cosine just zero?}  Answer: we are considering phases that can vary with time.  We don't necessarily have a constant phase difference here that would be wiped out in an average over one period.
-
 \paragraph{Example: Diffraction}
 \index{diffraction}
 %
-\begin{dmath}\label{eqn:modernOpticsLecture7:250}
+\begin{equation}\label{eqn:modernOpticsLecture7:250}
 \Psi = \sum_{\text{paths}} \Psi_i \rightarrow \int \sqrt{I_i} e^{i \phi_i} = (\text{prefactor}) \iint_{\text{aperture}} e^{i k f} da'.
-\end{dmath}
+\end{equation}
 %
 Did we have interference in the diffraction example as illustrated in \cref{fig:modernOpticsLecture7:modernOpticsLecture7Fig2}.
 \imageFigure{../figures/phy485-optics/modernOpticsLecture7Fig2}{A diffraction geometry to consider.}{fig:modernOpticsLecture7:modernOpticsLecture7Fig2}{0.2}

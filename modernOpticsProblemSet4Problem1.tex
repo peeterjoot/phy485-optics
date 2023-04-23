@@ -35,9 +35,9 @@ The geometry of the waist is determined from the imaginary portion of the expone
 %
 %FIXME: fix description.
 %
-%\begin{dmath}\label{eqn:problemSet4Problem1:320}
+%\begin{equation}\label{eqn:problemSet4Problem1:320}
 %\Imag\left( \frac{i k_0 r^2}{q(z)} \right) = \frac{r^2 }{2 R}.
-%\end{dmath}
+%\end{equation}
 %
 We need to find break down \(q''\) into real (the transformed radius of curvature) and imaginary parts, as in
 %
@@ -49,38 +49,40 @@ We need to find break down \(q''\) into real (the transformed radius of curvatur
 %
 We saw in \partref{modernOptics:problemSet4:1b} (done in opposite order) that we had
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:360}
+\begin{equation}\label{eqn:problemSet4Problem1:360}
 q' = \frac{q f}{f - q}.
-\end{dmath}
+\end{equation}
 %
 Picking a fixed value of \(z\) (say \(z = 0\)), that is
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:380}
+\begin{equation}\label{eqn:problemSet4Problem1:380}
 q' = \frac{- i z_0 f}{ f - (-i z_0)} = \frac{-i z_0 f}{f + i z_0},
-\end{dmath}
+\end{equation}
 %
 so that our (inverse) post propagation transformation of \(q\) is
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:400}
-\inv{q''} =
+\begin{equation}\label{eqn:problemSet4Problem1:400}
+\begin{aligned}
+\inv{q''}
+&=
 \frac{1}{
 \frac{-i z_0 f}{f + i z_0}
 + l
 }
 \frac{f + i z_0}{
 -i z_0 f + l (f + i z_0)
-}
-=
+} \\
+&=
 \frac{f + i z_0}{
 i z_0 ( l - f ) + l f
-}
-=
+} \\
+&=
 \frac{(f + i z_0)(
 -i z_0 ( l - f ) + l f
 )}{
 z_0^2 ( l - f )^2 + l^2 f^2
-}
-=
+} \\
+&=
 \frac{
 l f^2 + z_0^2 ( l - f)
 }{
@@ -93,20 +95,21 @@ l f - l + f
 }{
 z_0^2 ( l - f )^2 + l^2 f^2
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 If we consider this far enough away that the beam is planar, with an infinite radius of curvature, then we require the numerator of the \(1/R''\) expression above to be zero.  That is
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:420}
+\begin{equation}\label{eqn:problemSet4Problem1:420}
 l ( f^2 + z_0^2 ) = z_0^2 f,
-\end{dmath}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:440}
+\begin{equation}\label{eqn:problemSet4Problem1:440}
 l
 = \frac{f}{1 + \frac{f^2}{z_0^2} }.
-\end{dmath}
+\end{equation}
 %
 with \(z_0 = \pi w_0^2/\lambda\) this is
 %
@@ -123,129 +126,132 @@ We have \(l \approx f\) when
 
 Observe that when this condition is met, our radius of curvature is no longer infinite, and we can't consider the beam to be plane wave like.  That radius of curvature is instead, exactly the focal length
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:500}
+\begin{equation}\label{eqn:problemSet4Problem1:500}
 \inv{R''} = \frac{l f^2}{ l^2 f^2} = \inv{f}.
-\end{dmath}
+\end{equation}
 %
 \paragraph{Grading remarks: -2}.  Two remarks here, what was ``so?'' after ``the focal length'' above, and the other was ``the ray optics result is valid for plane waves and therefore for large R!!''
-
 \makeSubAnswer{The waist}{modernOptics:problemSet4:1b}
-
 Observe that the we can write the waist function as a function of \(q\)
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:20}
+\begin{equation}\label{eqn:problemSet4Problem1:20}
+\begin{aligned}
 w^2(z)
-= w_0^2 \left( 1 + \frac{z^2}{z_0^2} \right)
-= \frac{w_0^2}{z_0^2} ( z_0^2 + z^2 )
-= \frac{w_0^2}{z_0^2} \Abs{ q(z) }^2.
-\end{dmath}
+&= w_0^2 \left( 1 + \frac{z^2}{z_0^2} \right) \\
+&= \frac{w_0^2}{z_0^2} ( z_0^2 + z^2 ) \\
+&= \frac{w_0^2}{z_0^2} \Abs{ q(z) }^2.
+\end{aligned}
+\end{equation}
 %
 Also observe that \(w(0) = w(0)\), so if we are looking for the beam waist after a geometric (M\"obius) transformation on \(q\), we can find the new beam waist, looking at the \(z = 0\) value.
-
 \paragraph{After just the lens}
-
 After transmission through the lens, with ABCD matrix
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:40}
+\begin{equation}\label{eqn:problemSet4Problem1:40}
 M =
 \begin{bmatrix}
 1 & 0 \\
 -1/f & 1
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:60}
+\begin{equation}\label{eqn:problemSet4Problem1:60}
 q' =
 \frac{q + 0}{-q/f + 1},
-\end{dmath}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:80}
+\begin{equation}\label{eqn:problemSet4Problem1:80}
+\begin{aligned}
 \inv{q'}
-=
-\frac
-{-q/f + 1}
-{q}
-=
-\inv{q} -\inv{f}.
-\end{dmath}
+&= \frac {-q/f + 1} {q} \\
+&= \inv{q} -\inv{f}.
+\end{aligned}
+\end{equation}
 %
 At \(z = 0\) we have
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:100}
+\begin{equation}\label{eqn:problemSet4Problem1:100}
+\begin{aligned}
 \Abs{\inv{q'}}^2
-= \Abs{ \inv{-i z_0} - \inv{f} }
-= \inv{z_0^2} + \inv{f^2}.
-\end{dmath}
+&= \Abs{ \inv{-i z_0} - \inv{f} } \\
+&= \inv{z_0^2} + \inv{f^2}.
+\end{aligned}
+\end{equation}
 %
 So that
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:120}
+\begin{equation}\label{eqn:problemSet4Problem1:120}
+\begin{aligned}
 w^2(0)
-\rightarrow
+&\rightarrow
 \frac{w_{01}^2}{z_0^2}
-\left( \inv{z_0^2} + \inv{f^2}  \right)^{-1}
-=
+\left( \inv{z_0^2} + \inv{f^2}  \right)^{-1} \\
+&=
 \frac{w_{01}^2}{z_0^2}
 \frac{ f^2 z_0^2}{
 f^2 + z_0^2
-}
-=
-\frac{w_{01}^2}{ 1 + z_0^2/f^2}.
-\end{dmath}
+} \\
+&= \frac{w_{01}^2}{ 1 + z_0^2/f^2}.
+\end{aligned}
+\end{equation}
 %
 We see that the beam waist after transmission through the lens is reduced by a factor of
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:140}
+\begin{equation}\label{eqn:problemSet4Problem1:140}
 \frac
 {w_{02}}
 {w_{01}}
 =
 \frac{1}{ \sqrt{1 + z_0^2/f^2} }.
-\end{dmath}
+\end{equation}
 %
 \paragraph{After the lens and the free propagation}
 
 With both transmission through the air and the lens, where our free propagation matrix is
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:160}
+\begin{equation}\label{eqn:problemSet4Problem1:160}
 M_2 =
 \begin{bmatrix}
 1 & l \\
 0 & 1
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:180}
+\begin{equation}\label{eqn:problemSet4Problem1:180}
+\begin{aligned}
 q
-\rightarrow \frac{q' + l}{0 q' + 1}
-= q' + l
-= \frac{q}{-q/f + 1} + l,
-\end{dmath}
+&\rightarrow \frac{q' + l}{0 q' + 1} \\
+&= q' + l \\
+&= \frac{q}{-q/f + 1} + l,
+\end{aligned}
+\end{equation}
 %
 so that the waist function is transformed as
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:200}
+\begin{equation}\label{eqn:problemSet4Problem1:200}
 w^2(z) \rightarrow \frac{w_{01}^2}{z_0^2} \Abs{
 \frac{q}{-q/f + 1} + l
 }^2,
-\end{dmath}
+\end{equation}
 %
 and our waist goes as
-\begin{dmath}\label{eqn:problemSet4Problem1:220}
+\begin{equation}\label{eqn:problemSet4Problem1:220}
+\begin{aligned}
 w_{01}^2
-\rightarrow \frac{w_{01}^2}{z_0^2} \Abs{
+&\rightarrow \frac{w_{01}^2}{z_0^2} \Abs{
 \frac{-i z_0 f }{i z_0 + f} + l
-}^2
-= \frac{w_{01}^2}{z_0^2} \Abs{
+}^2 \\
+&= \frac{w_{01}^2}{z_0^2} \Abs{
 \frac{-i z_0 f \left(-i z_0 + f\right)}{z_0^2 + f^2} + l
-}^2
-= \frac{w_{01}^2}{z_0^2} \Abs{
+}^2 \\
+&= \frac{w_{01}^2}{z_0^2} \Abs{
 -\frac{z_0^2 f}{z_0^2 + f^2} + l
 -\frac{i z_0 f^2 }{z_0^2 + f^2}
 }^2.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This gives us
 %
@@ -256,32 +262,29 @@ This gives us
 + \left( f^2 z_0  \right)^2
 }{z_0^2 \left(z_0^2 + f^2\right)^2 }.
 }
-
 \paragraph{Grading note: -2} ``I'm confused how can transmission through air change the waist?''  See in the posted solution that the waist is calculated as the point where \(\Real(1/q) = 0\).  That choice isn't obvious to me.  I think some more thought about the geometry of these solutions is required to really get this.
 
 When \(l = f\) the square root simplifies nicely, leaving
 %
-\begin{dmath}\label{eqn:problemSet4Problem1:260}
+\begin{equation}\label{eqn:problemSet4Problem1:260}
 \frac{w_{03}^2}{w_{01}^2}
 = \frac{
 f^6 + f^4 z_0^2
 }{z_0^2 \left(z_0^2 + f^2\right)^2 }
 =
 \frac{f^4}{z_0^2\left(z_0^2 + f^2\right) },
-\end{dmath}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:problemSet4Problem1:280}
+\begin{equation}\label{eqn:problemSet4Problem1:280}
+\begin{aligned}
 w_{03}
-=
-\frac{w_{01} f^2}{z_0 \sqrt{z_0^2 + f^2} }
-=
-\frac{w_{01} f}{z_0 \sqrt{z_0^2/f^2 + 1} }
-=
-\frac{w_{01} f \lambda}{\pi w_{01}^2 \sqrt{z_0^2/f^2 + 1} }
-=
-\frac{f \lambda}{\pi w_{01}} \inv{\sqrt{z_0^2/f^2 + 1} }.
-\end{dmath}
+&= \frac{w_{01} f^2}{z_0 \sqrt{z_0^2 + f^2} } \\
+&= \frac{w_{01} f}{z_0 \sqrt{z_0^2/f^2 + 1} } \\
+&= \frac{w_{01} f \lambda}{\pi w_{01}^2 \sqrt{z_0^2/f^2 + 1} } \\
+&= \frac{f \lambda}{\pi w_{01}} \inv{\sqrt{z_0^2/f^2 + 1} }.
+\end{aligned}
+\end{equation}
 %
 When \(f \gg z_0\) we have the desired result
 %
@@ -290,7 +293,5 @@ w_{03}
 \approx
 \frac{f \lambda}{\pi w_{01}}
 }
-
 \paragraph{Grading note:} The \(f \gg z_0\) was underlined with the question ``where did you get this from?''  The solution points out that this is the Fraunhofer condition and gives some interpretation.
-
 }

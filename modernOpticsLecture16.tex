@@ -55,15 +55,15 @@ We expect more in the ground state \cref{fig:modernOpticsLecture16:modernOpticsL
 Thermal distribution of radiation: \S 7 \citep{fowles1989introduction}.  In summary, that energy density as a function of frequency is
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOpticsLecture16:30}
+\begin{equation}\label{eqn:modernOpticsLecture16:30}
 u_\omega = \Hbar \omega \expectation{ n_\omega } \calD(\omega).
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture16:50}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture16:50}
 \expectation{ n_\omega } = \inv{ e^{\Hbar \omega / k T} - 1}.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture16:70}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture16:70}
 \calD(\omega) = \frac{\omega^2}{\pi^2 c^3}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 How do the number of excited states change, given absorption probability \(B_{\mathrm{abs}} u(\omega)\) and stimulated emission probability \(B_{\mathrm{se}} u(\omega)\), and spontaneous emission probability \(A\) (see figure in the slides)
@@ -72,50 +72,51 @@ How do the number of excited states change, given absorption probability \(B_{\m
 \begin{equation}\label{eqn:modernOpticsLecture16:90}
 \frac{d}{dt} N_e = -A N_e + B_{\mathrm{abs}} u N_g - B_{\mathrm{\mathrm{se}}} u N_e = 0.
 \end{equation}
-\begin{dmath}\label{eqn:modernOpticsLecture16:110}
+\begin{equation}\label{eqn:modernOpticsLecture16:110}
 \frac{d}{dt} N_g = - \frac{d}{dt} N_e.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 Solving for \(u\), with \(\dot{N}_e = \dot{N}_g = 0\)
 %
-\begin{dmath}\label{eqn:modernOpticsLecture16:130}
+\begin{equation}\label{eqn:modernOpticsLecture16:130}
+\begin{aligned}
 u_\omega
-=
+&=
 \frac{A N_e}
 {
 B_{\mathrm{abs}} N_g - B_{\mathrm{se}} N_e
-}
-=
-= \frac{A }
+} \\
+&= \frac{A } 
 {
 B_{\mathrm{abs}} N_g/N_e - B_{\mathrm{se}}
-}
-=
+} \\
+&=
 \frac{A}{B_{\mathrm{se}}}
 \frac{1}{
 B_{\mathrm{abs}}/B_{\mathrm{se}} e^{\Hbar \omega/k T} - 1
-}
-=
+} \\
+&=
 \frac{\Hbar \omega^3}{\pi^2 c^3} \inv{ e^{ \Hbar \omega/ k T } -1 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 We conclude that we must have
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOpticsLecture16:150}
+\begin{equation}\label{eqn:modernOpticsLecture16:150}
 \frac{A}{B_{\mathrm{se}}} =\frac{\Hbar \omega^3}{\pi^2 c^3}.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture16:170}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture16:170}
 B_{\mathrm{abs}}/B_{\mathrm{se}} = 1.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 With \(B_{\mathrm{abs}} = B_{\mathrm{se}}\) we don't see stimulated radiation around you because
 %
-\begin{dmath}\label{eqn:modernOpticsLecture16:190}
+\begin{equation}\label{eqn:modernOpticsLecture16:190}
 \frac{N_e}{N_g} = e^{- \Hbar \omega / k T}.
-\end{dmath}
+\end{equation}
 %
 Our typical chemical energies are
 
@@ -123,9 +124,9 @@ Our typical chemical energies are
 
 so that
 %
-\begin{dmath}\label{eqn:modernOpticsLecture16:210}
+\begin{equation}\label{eqn:modernOpticsLecture16:210}
 e^{- \Hbar \omega / k T} \sim e^{-40}.
-\end{dmath}
+\end{equation}
 %
 This is very small, and in order to get there we need a population inversion with more atoms in the excited state than in the ground state as in \cref{fig:modernOpticsLecture16:modernOpticsLecture16Fig4}.
 %
@@ -133,18 +134,20 @@ This is very small, and in order to get there we need a population inversion wit
 %
 With
 %
-\begin{dmath}\label{eqn:modernOpticsLecture16:230}
+\begin{equation}\label{eqn:modernOpticsLecture16:230}
+\begin{aligned}
 \frac{A}{B}
-= \frac{\Hbar \omega^3}{\pi^2 c^3}
-= \Hbar \omega \calD(\omega)
-= \frac{u_\omega}{\expectation{n_\omega}}.
-\end{dmath}
+&= \frac{\Hbar \omega^3}{\pi^2 c^3} \\
+&= \Hbar \omega \calD(\omega) \\
+&= \frac{u_\omega}{\expectation{n_\omega}}.
+\end{aligned}
+\end{equation}
 %
 so
 %
-\begin{dmath}\label{eqn:modernOpticsLecture16:250}
+\begin{equation}\label{eqn:modernOpticsLecture16:250}
 \frac{ B u}{A}  = \expectation{ n_\omega } = \text{mode occupation}.
-\end{dmath}
+\end{equation}
 %
 (stimulated/spontaneous radiation)
 

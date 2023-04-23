@@ -22,7 +22,7 @@
 
 Here's a silly exercise.  I'm so used to seeing imaginaries in \(e^{\cdots \omega \cdots}\) expressions, when I looked at the famous blackbody summation for an exponentially decreasing probability distribution
 %
-\begin{dmath}\label{eqn:planckBlackbody:10}
+\begin{equation}\label{eqn:planckBlackbody:10}
 \expectation{n_\omega}
 = \sum_{n = 0}^\infty n P(n)
 =
@@ -33,7 +33,7 @@ Here's a silly exercise.  I'm so used to seeing imaginaries in \(e^{\cdots \omeg
 {
 \sum_{n = 0}^\infty e^{-\Hbar \omega n/ k T}
 },
-\end{dmath}
+\end{equation}
 %
 I imagined (sic) an imaginary in the exponential and thought ``how can that converge?''.  I thought things must somehow magically work out if the limits are taken carefully, so I derived the finite summation expressions using the old tricks.
 
@@ -59,13 +59,13 @@ S_N(x) = \frac{1 - x^N}{1 - x}.
 
 Observe that the derivative of \(S_N\) is
 %
-\begin{dmath}\label{eqn:planckBlackbody:90}
+\begin{equation}\label{eqn:planckBlackbody:90}
 \frac{dS_N}{dx} = \sum_{n=1}^{N-1} n x^{n-1} = \inv{x} \sum_{n=1}^{N-1} n x^n,
-\end{dmath}
+\end{equation}
 %
 but we also have
 %
-\begin{dmath}\label{eqn:planckBlackbody:110}
+\begin{equation}\label{eqn:planckBlackbody:110}
 \frac{dS_N}{dx}
 =
 S_N(x)
@@ -85,7 +85,7 @@ S_N(x)
 -N x^{N-1}
 +(N -1) x^{N}
 \right).
-\end{dmath}
+\end{equation}
 %
 We expect this and \eqnref{eqn:planckBlackbody:90} to differ only by a constant.  For \eqnref{eqn:planckBlackbody:90}, or \(dS_N/dx = 1 + 2 x + 3 x^2 + \cdots\), we have \(1\) at the origin, the same as \eqnref{eqn:planckBlackbody:110}.  Our conclusion is
 %
@@ -124,7 +124,7 @@ I got this far and noticed there's still an issue with \(N \rightarrow \infty\).
 %
 It doesn't really matter what the value of \(\Hbar /k T\) is (if considering the function one of \(\omega\)), it will be greater than zero, so that we have for our sum
 %
-\begin{dmath}\label{eqn:modernOpticsLecture18:170}
+\begin{equation}\label{eqn:modernOpticsLecture18:170}
 \frac
 {
 \sum_{n = 0}^{\infty} n e^{-\Hbar \omega n/ k T}
@@ -136,7 +136,7 @@ It doesn't really matter what the value of \(\Hbar /k T\) is (if considering the
 \frac{e^{-\Hbar \omega/k T}}{1-e^{-\Hbar \omega/k T}}
 =
 \frac{1}{e^{\Hbar \omega/k T} - 1},
-\end{dmath}
+\end{equation}
 %
 which is the Planck result.
 

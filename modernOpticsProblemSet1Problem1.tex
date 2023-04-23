@@ -26,10 +26,11 @@ Our system and the associated transfer matrices labels are illustrated in \cref{
 %
 We form the system transfer matrix by applying first a free propagation matrix, then a thin lens paraxial matrix, and one more free propagation matrix
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P1:1790}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P1:1790}
+\begin{aligned}
 M
-= M_3 M_2 M_1
-=
+&= M_3 M_2 M_1 \\
+&=
 \begin{bmatrix}
 1 & s' \\
 0 1
@@ -41,8 +42,8 @@ M
 \begin{bmatrix}
 1 & s \\
 0 1
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 1 - s'/f & s' \\
 -1/f & 1
@@ -50,17 +51,18 @@ M
 \begin{bmatrix}
 1 & s \\
 0 1
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 1 - s'/f & s + s' - s s'/f \\
 -1/f & -s/f + 1
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Consider ray \((B)\) from the figure, where we have
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P1:1810}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P1:1810}
 \begin{bmatrix}
 0 \\
 \alpha
@@ -76,7 +78,7 @@ s + s' - s s'/f \\
 0 \\
 \alpha'
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 With
 %
@@ -106,10 +108,11 @@ Let's consider the system as the compound action of three transfer matrices as i
 %
 Compounding the transfer matrices we have
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P1:1510}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P1:1510}
+\begin{aligned}
 M
-= M_3 M_2 M_1
-=
+&= M_3 M_2 M_1 \\
+&=
 \begin{bmatrix}
 1 & x' + f \\
 0 & 1
@@ -121,8 +124,8 @@ M
 \begin{bmatrix}
 1 & x + f \\
 0 & 1
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 -x'/f & x' + f \\
 -1/f & 1
@@ -130,14 +133,15 @@ M
 \begin{bmatrix}
 1 & x + f \\
 0 & 1
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 -\inv{f}
 \begin{bmatrix}
 x' & x x' - f^2 \\
 1 & x
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Consider the ray \(A\) where the effect is
 %
@@ -192,10 +196,11 @@ as desired.
 Here we refer to \cref{fig:modernOpticsProblemSet1:modernOpticsProblemSet1Fig1c}, this time considering no ray that passes the focus past the lens.  Our system transfer matrix, given the reduced free propagation distance past the lens is
 \imageFigure{../figures/phy485-optics/modernOpticsProblemSet1Fig1c}{Position distribution at the focus of a lens.}{fig:modernOpticsProblemSet1:modernOpticsProblemSet1Fig1c}{0.2}
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P1:1610}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P1:1610}
+\begin{aligned}
 M
-= M_3 M_2 M_1
-=
+&= M_3 M_2 M_1 \\
+&=
 \begin{bmatrix}
 1 & f \\
 0 & 1
@@ -207,8 +212,8 @@ M
 \begin{bmatrix}
 1 & x + f \\
 0 & 1
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 0 & f \\
 -1/f & 1
@@ -216,16 +221,17 @@ M
 \begin{bmatrix}
 1 & x + f \\
 0 & 1
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 0 & f \\
 -1/f & -x/f
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 A ray is transformed according to
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P1:1630}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P1:1630}
 \begin{bmatrix}
 y \\
 \theta
@@ -244,7 +250,7 @@ y \\
 f \theta \\
 -\inv{f} ( y - x \theta )
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 In particular
 \boxedEquation{eqn:modernOpticsProblemSet1P1:1650}{
@@ -261,10 +267,11 @@ Consider \cref{fig:modernOpticsProblemSet1:modernOpticsProblemSet1Fig1d}.
 %
 The transfer matrix \(M = M_5 M_4 M_3 M_2 M_1\) for the system is
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P1:1670}
+\begin{equation}\label{eqn:modernOpticsProblemSet1P1:1670}
+\begin{aligned}
 M
-= M_5 M_4 M_3 M_2 M_1
-=
+&= M_5 M_4 M_3 M_2 M_1 \\
+&=
 \begin{bmatrix}
 1 & x + f \\
 0 & 1
@@ -284,8 +291,8 @@ M
 \begin{bmatrix}
 1 & x + f \\
 0 & 1
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 -x/f & x + f \\
 -1/f & 1
@@ -297,8 +304,8 @@ M
 \begin{bmatrix}
 1 & x + f \\
 -1/f & -x/f
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 -x/f & -x + f \\
 -1/f & -1
@@ -306,13 +313,14 @@ M
 \begin{bmatrix}
 1 & x + f \\
 -1/f & -x/f
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 -1 & -2 x \\
 0 & -1
 \end{bmatrix}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Consider any ray from the source going towards the lens along the horizontal.  We have
 %
@@ -346,16 +354,18 @@ Here we consider \cref{fig:modernOpticsProblemSet1:modernOpticsProblemSet1Fig1f}
 %
 Our system transfer matrix is
 %
-\begin{dmath}\label{eqn:modernOpticsProblemSet1P1:1730}
-M =
+\begin{equation}\label{eqn:modernOpticsProblemSet1P1:1730}
+\begin{aligned}
+M 
+&=
 M_7
 M_6
 M_5
 M_4
 M_3
 M_2
-M_1
-=
+M_1 \\
+&=
 \begin{bmatrix}
 1 & s' \\
 0 & 1
@@ -383,8 +393,8 @@ M_1
 \begin{bmatrix}
 1 & s \\
 0 & 1
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 1 - s'/f & s' \\
 -1/f & 1
@@ -396,8 +406,8 @@ M_1
 \begin{bmatrix}
 1 & s \\
 -1/f & -s/f + 1
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 1 - s'/f & 2f - s' \\
 -1/f & -1
@@ -405,13 +415,14 @@ M_1
 \begin{bmatrix}
 1 & s \\
 -1/f & -s/f + 1
-\end{bmatrix}
-=
+\end{bmatrix} \\
+&=
 \begin{bmatrix}
 -1 & 2 f - s' -s \\
 0 & -1
 \end{bmatrix}
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 We see that the angle of the output light is unchanged except for sign, so we have no scattering in the paraxial limit.  Observe that if the emitter is positioned at \(s = f\) we have
 %
@@ -433,4 +444,3 @@ The image is magnified (negatively) for any position \(\Abs{s'} > f\) without an
 
 \end{enumerate}
 } % makeanswer
-

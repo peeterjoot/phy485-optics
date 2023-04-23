@@ -15,49 +15,52 @@
 
 What if
 %
-\begin{dmath}\label{eqn:modernOpticsLecture12:10}
+\begin{equation}\label{eqn:modernOpticsLecture12:10}
 \Psi = \Psi_1 + \Psi_2 + \Psi_3 + \Psi_4 + \cdots.
-\end{dmath}
+\end{equation}
 %
 then
 %
-\begin{dmath}\label{eqn:modernOpticsLecture12:30}
+\begin{equation}\label{eqn:modernOpticsLecture12:30}
+\begin{aligned}
 I
-= \expectation{\Abs{\Psi}^2}
-=
+&= \expectation{\Abs{\Psi}^2} \\
+&=
 \expectation{
 \left( \sum_i \Psi_i^\conj \right)
 \left( \sum_j \Psi_j \right)
-}
-=
-\sum_{i,j} \expectation{ \Psi_i^\conj \Psi_j }
-=
+} \\
+&= \sum_{i,j} \expectation{ \Psi_i^\conj \Psi_j } \\
+&=
 \sum_{i} \expectation{ \Psi_i^\conj \Psi_i }
 +\sum_{i> j} \expectation{
 \Psi_i^\conj \Psi_j
 +\Psi_j^\conj \Psi_i
-}
-=
+} \\
+&=
 \text{incoherent sum} + \text{ interference term}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOpticsLecture12:50}
+\begin{equation}\label{eqn:modernOpticsLecture12:50}
 \text{incoherent sum}
 =
 \sum_i I_i.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture12:70}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture12:70}
+\begin{aligned}
 \text{interference sum}
-=
+&=
 2 \Real
 \left(  \sum_{i > j} \expectation{ \Psi_i^\conj \Psi_j }
-\right)
-=
+\right) \\
+&=
 2 \Real
 \left(  \sum_{i > j} \Gamma_{ij}
 \right).
-\end{dmath}
+\end{aligned}
+\end{equation}
 \end{subequations}
 %
 We recognize our mutual coherence in the interference term.
@@ -74,9 +77,9 @@ We'll want to remember the phase.  What is the phase delay between each interfer
 
 We'll find that we get an extra path length of
 %
-\begin{dmath}\label{eqn:modernOpticsLecture12:90}
+\begin{equation}\label{eqn:modernOpticsLecture12:90}
 2 k L \cos\theta.
-\end{dmath}
+\end{equation}
 %
 The geometry to consider is \cref{fig:modernOpticsLecture12:modernOpticsLecture12Fig3}.
 %
@@ -85,36 +88,31 @@ The geometry to consider is \cref{fig:modernOpticsLecture12:modernOpticsLecture1
 We see that we have
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOpticsLecture12:110}
+\begin{equation}\label{eqn:modernOpticsLecture12:110}
 s_1 \cos\theta = L.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture12:130}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture12:130}
 \frac{\Delta y}{2} = s_1 \sin\theta.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture12:150}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture12:150}
 \Bk = k (\cos\theta, \sin\theta, 0),
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 So that our phase change to the point \(A\) where we have the second internal reflection
 %
-\begin{dmath}\label{eqn:modernOpticsLecture12:170}
+\begin{equation}\label{eqn:modernOpticsLecture12:170}
+\begin{aligned}
 \Bk \cdot \Bx - \omega t
-=
-k (\cos\theta, \sin\theta, 0) \cdot (0, \Delta y, 0) - \omega \frac{2 s_1}{c}
-=
-k \sin\theta \Delta y - \cancel{c} k \frac{2 s_1}{\cancel{c}}
-=
-k (\sin\theta \Delta y - 2 s_1)
-=
-k (2 s_1 \sin^2\theta - 2 s_1)
-=
-2 k s_1 (\sin^2\theta - 1)
-=
--2 k s_1 \cos^2\theta
-=
--2 k L \cos\theta.
-\end{dmath}
+&= k (\cos\theta, \sin\theta, 0) \cdot (0, \Delta y, 0) - \omega \frac{2 s_1}{c} \\
+&= k \sin\theta \Delta y - \cancel{c} k \frac{2 s_1}{\cancel{c}} \\
+&= k (\sin\theta \Delta y - 2 s_1) \\
+&= k (2 s_1 \sin^2\theta - 2 s_1) \\
+&= 2 k s_1 (\sin^2\theta - 1) \\
+&= -2 k s_1 \cos^2\theta \\
+&= -2 k L \cos\theta.
+\end{aligned}
+\end{equation}
 %
 Observe that \(\Bk \cdot \Delta \Bx - \omega \Delta t\) must be negative for any non-straight line path (in which case it will be zero) between endpoints, provided the media through which the rays travel is of constant index of refraction.  In class (and the class notes) there was no such negative sign, and we just considered the absolute difference in phase.  This can also be calculated by considering just the contributing portions of the path that lead to interference.  Fowles' fig 4.2 marks those as \(AB\), \(BC\), or \(s_1 \cos(2\theta) + s_1\) in the figure above.  The idea is that we consider the second reflection as a generator of plane waves, and those will only start interfering with plane waves at the first transmission (in steady state), after those first transmission waves have traversed that little leg of the path \(s_1 - s_1 \cos(2 \theta)\).  This was illustrated in office hours as in \cref{fig:modernOpticsLecture12:modernOpticsLecture12Fig4}.
 %
@@ -124,101 +122,106 @@ Of this Prof Thywissen also says:  We normally discuss paths as a ``time delay''
 
 Anyways, moving on, we get to the point where the wavefunction for transmission is
 %
-\begin{dmath}\label{eqn:modernOpticsLecture12:190}
+\begin{equation}\label{eqn:modernOpticsLecture12:190}
 \Psi_{\mathrm{transmission}} =
 \Psi_0 t^2
 +
 \Psi_0 t^2 \left( r^2 e^{i \delta} \right)
 +
 \Psi_0 t^2 \left( r^2 e^{i \delta} \right)^2.
-\end{dmath}
+\end{equation}
 %
 We lookup (in a spec sheet) the transmission and reflection coefficients and the (associated phase shifts after reflection)
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOpticsLecture12:210}
+\begin{equation}\label{eqn:modernOpticsLecture12:210}
 r = e^{i \delta_r} \sqrt{R}.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture12:230}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture12:230}
 t = e^{i \delta_t} \sqrt{T}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 and get
 %
-\begin{dmath}\label{eqn:modernOpticsLecture12:250}
-\Psi_{\mathrm{transmission}} =
+\begin{equation}\label{eqn:modernOpticsLecture12:250}
+\begin{aligned}
+\Psi_{\mathrm{transmission}}
+&=
 \Psi_0 T e^{2 i \delta_t}
 +
 \Psi_0 T e^{2 i \delta_t} R e^{2 i \delta_r + i \delta}
 +
 \Psi_0 T e^{2 i \delta_t} \left( R e^{2 i \delta_r + i \delta} \right)^2
-+ \cdots
-=
-\Psi_0 t^2 \sum_{n = 0}^\infty \left( R e^{ 2 i \delta_r + i \delta} \right)^n
-=
++ \cdots \\
+&=
+\Psi_0 t^2 \sum_{n = 0}^\infty \left( R e^{ 2 i \delta_r + i \delta} \right)^n \\
+&=
 \Psi_0 t^2 \inv{ 1 - R e^{i \Delta}}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 where we've used (for \(\Abs{a} < 1\))
 %
-\begin{dmath}\label{eqn:modernOpticsLecture12:270}
+\begin{equation}\label{eqn:modernOpticsLecture12:270}
 \sum_{n = 0}^\infty a^n = \inv{1 - a}.
-\end{dmath}
+\end{equation}
 %
 and written
 %
-\begin{dmath}\label{eqn:modernOpticsLecture12:290}
+\begin{equation}\label{eqn:modernOpticsLecture12:290}
 \Delta = 2 \delta_r + \delta.
-\end{dmath}
+\end{equation}
 %
 Our measured intensity is
 %
-\begin{dmath}\label{eqn:modernOpticsLecture12:350}
+\begin{equation}\label{eqn:modernOpticsLecture12:350}
+\begin{aligned}
 I_{\mathrm{trans}}
-=
+&=
 \expectation{
 \Abs{ \psi_{\mathrm{trans}} }^2
-}
-=
-I_0 \frac{T^2}{\Abs{ 1 - R e^{i \Delta} }^2}
-=
+} \\
+&=
+I_0 \frac{T^2}{\Abs{ 1 - R e^{i \Delta} }^2} \\
+&=
 I_0 \frac{T^2}{
 (1 - R e^{i \Delta})
 (1 - R e^{-i \Delta})
-}
-=
+} \\
+&=
 I_0 \frac{T^2}{
 1 + R^2 - 2 R \cos \Delta
-}
-=
+} \\
+&=
 I_0 \frac{T^2}{
 1 + R^2 - 2 R (1 - 2 \sin^2(\Delta/2))
-}
-=
+} \\
+&=
 I_0 \frac{T^2}{
 (1 - R)^2 + 4 R \sin^2(\Delta/2)
-}
-=
+} \\
+&=
 I_0 \frac{T^2/(1 - R)^2}{
 1 + (4 R/(1 - R)^2) \sin^2(\Delta/2)
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:modernOpticsLecture12:370}
+\begin{equation}\label{eqn:modernOpticsLecture12:370}
 I_{\mathrm{trans}}
 =
 \frac{I_{\mathrm{max}}}{1 + F \sin^2 (\Delta/2)}.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture12:310}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture12:310}
 I_{\mathrm{max}} = \frac{I_0 T^2}{(1 -R)^2}.
-\end{dmath}
-\begin{dmath}\label{eqn:modernOpticsLecture12:330}
+\end{equation}
+\begin{equation}\label{eqn:modernOpticsLecture12:330}
 F = \frac{4 R}{(1 - R)^2}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 This is called \underlineAndIndex{Etalon transmission}.  Plots of \(I/I_{\mathrm{max}}\) vs. phase shifts for \(R \in \{0.1, 0.3, 0.6, 0.97\}\) can be found in \cref{fig:etalon:etalonFig1}.
