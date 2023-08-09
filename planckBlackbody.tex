@@ -66,25 +66,27 @@ Observe that the derivative of \(S_N\) is
 but we also have
 %
 \begin{equation}\label{eqn:planckBlackbody:110}
+\begin{aligned}
 \frac{dS_N}{dx}
-=
-S_N(x)
-= \frac{- N x^{N-1}}{1 - x} +
-\frac{1 - x^N}{(1 - x)^2}
-=
-\inv{(1-x)^2} \left( -N x^{N-1} (1-x) + 1 - x^N \right)
-=
+&=
+S_N(x) \\
+&= \frac{- N x^{N-1}}{1 - x} +
+\frac{1 - x^N}{(1 - x)^2} \\
+&=
+\inv{(1-x)^2} \left( -N x^{N-1} (1-x) + 1 - x^N \right) \\
+&=
 \inv{(1-x)^2} \left(
 -N x^{N-1}
 +N x^{N}
 + 1 - x^N
-\right)
-=
+\right) \\
+&=
 \inv{(1-x)^2} \left(
  1
 -N x^{N-1}
 +(N -1) x^{N}
 \right).
+\end{aligned}
 \end{equation}
 %
 We expect this and \eqnref{eqn:planckBlackbody:90} to differ only by a constant.  For \eqnref{eqn:planckBlackbody:90}, or \(dS_N/dx = 1 + 2 x + 3 x^2 + \cdots\), we have \(1\) at the origin, the same as \eqnref{eqn:planckBlackbody:110}.  Our conclusion is
