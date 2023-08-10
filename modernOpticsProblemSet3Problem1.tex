@@ -261,14 +261,19 @@ so that (up to a potential constant multiplicative factor according to the Fouri
 We can now immediately write the Fourier transform pair, finding the mutual coherence from the frequency domain intensity
 %
 \begin{equation}\label{eqn:modernOptics:problemSet3:1:380}
-\Gamma(\omega) \sim \frac{I_0}{2} \sum_{\omega_k = \pm \omega_1, \pm \omega_2}
-\frac{\sigma^2}{\sigma^2 + (\omega - \omega_k)^2}
-\leftrightarrow
+\begin{aligned}
+\Gamma(\omega) \sim \frac{I_0}{2} \sum_{\omega_k 
+&= \pm \omega_1, \pm \omega_2}
+\frac{\sigma^2}{\sigma^2 + (\omega - \omega_k)^2} \\
+&\leftrightarrow
 \frac{I_0}{2}
-\sigma e^{-\sigma \Abs{\tau}} \left(
+\sigma e^{-\sigma \Abs{\tau}} 
+\lr{
 \cos(\omega_1 \tau)
 +\cos(\omega_2 \tau)
-\right).
+}
+.
+\end{aligned}
 \end{equation}
 %
 With \(\omega_{1,2} = \overbar{\omega} \mp \Delta/2\), we rewrite

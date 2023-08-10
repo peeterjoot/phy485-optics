@@ -344,7 +344,7 @@ M
 &=
 \begin{bmatrix}
 1 & 0 \\
-\inv{R_2}\left( n -1 \right) & n
+\frac{ n - 1 }{R_2} & n
 \end{bmatrix}
 \begin{bmatrix}
 1 & t \\
@@ -352,38 +352,39 @@ M
 \end{bmatrix}
 \begin{bmatrix}
 1 & 0 \\
-\inv{R_1}\left( \inv{n} -1 \right) & \inv{n}
+\frac{ \inv{n} -1 }{R_1} & \inv{n}
 \end{bmatrix} \\
 &=
 \begin{bmatrix}
 1 & t \\
-\inv{R_2}\left( n -1 \right) &
-\frac{t}{R_2}\left( n -1 \right) + n
+\frac{ n -1 }{R_2} &
+\frac{t \lr{ n -1 }}{R_2} + n
 \end{bmatrix}
 \begin{bmatrix}
 1 & 0 \\
-\inv{R_1}\left( \inv{n} -1 \right) & \inv{n}
+\frac{ \inv{n} -1 }{R_1} & \inv{n}
 \end{bmatrix} \\
 &=
 \begin{bmatrix}
-1 + \frac{t}{R_1}\left( \inv{n} -1 \right) & \frac{t}{n} \\
-\inv{R_2}\left( n -1 \right)
-- \inv{R_1}\left( n -1 \right)
+1 + \frac{t \lr{ \inv{n} -1 }}{R_1} & \frac{t}{n} \\
+\frac{ n -1  }{R_2}
+- \frac{ n -1  }{R_1}
 +
-\frac{t}{R_1 R_2}\left( n -1 \right) \left( \inv{n} -1 \right) &
-\frac{t}{R_2}\left( -\inv{n} + 1 \right) + 1
+\frac{t \lr{ n -1 }}{R_1 R_2}
+\lr{ \inv{n} -1  } &
+\frac{t \lr{ -\inv{n} + 1 }}{R_2} + 1
 \end{bmatrix} \\
 &=
 \begin{bmatrix}
-1 + \frac{t}{R_1}\left( \inv{n} -1 \right) & t \inv{n} \\
--\left( n - 1 \right)
-\left(
+1 + \frac{t \lr{ \inv{n} -1 }}{R_1} & t \inv{n} \\
+-\lr{ n - 1  }
+\lr{
 \inv{R_1} -\inv{R_2}
 +
-\frac{t}{n R_1 R_2}\left( n - 1 \right)
-\right)
+\frac{t}{n R_1 R_2}\lr{ n - 1  }
+}
 &
-1 - \frac{t}{R_2}\left( \inv{n} - 1 \right)
+1 - \frac{t \lr{ \inv{n} - 1 }}{R_2}
 \end{bmatrix}
 \end{aligned}
 \end{equation}
