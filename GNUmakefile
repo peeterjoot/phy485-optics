@@ -12,8 +12,7 @@ include make.revision
 include ../latex/make.bookvars
 
 # uncomment-in for kdp version (no mathematica notebooks in appendix.)
-PRINT_VERSION := 1
-
+#PRINT_VERSION := 1
 ifdef PRINT_VERSION
 DISTEXTRA := kdp
 else
