@@ -11,24 +11,40 @@ BOOKTEMPLATE := ../latex/classicthesis_mine/ClassicThesis2.tex
 include make.revision
 include ../latex/make.bookvars
 
-# uncomment-in for kdp version (no mathematica notebooks in appendix.)
+# comment this out for online pdf version (uncomment for KDP)
 #PRINT_VERSION := 1
+#ifdef KINDLE_VERSION
+#PARAMS += --kindle
+#endif
+
 ifdef PRINT_VERSION
-DISTEXTRA := kdp
+SUBFIGDIR := bw
 else
-PARAMS += --no-print
+SUBFIGDIR := color
 endif
 
-FIGURES := ../figures/phy485-optics
+ifndef PRINT_VERSION
+PARAMS += --no-print
+endif
+PARAMS += -subfig $(SUBFIGDIR)
+DISTEXTRA := $(SUBFIGDIR)
+ifdef PRINT_VERSION
+DISTEXTRA := $(DISTEXTRA).kdp
+endif
+
+FIGURES += ../figures/$(THISBOOK)/$(SUBFIGDIR)
+FIGURES += ../figures/$(THISBOOK)
+SOURCE_DIRS += $(FIGURES)
 
 #ONCEFLAGS := -justonce
 
 SOURCE_DIRS += appendix
-SOURCE_DIRS += $(FIGURES)
 
-#EPS_FILES := $(wildcard $(FIGURES)/*.eps)
-#PDFS_FROM_EPS := $(subst eps,pdf,$(EPS_FILES))
-#THISBOOK_DEPS += $(PDFS_FROM_EPS)
+EPS_FILES := $(foreach dir,$(FIGURES),$(wildcard $(dir)/*.eps))
+PDFS_FROM_EPS := $(subst eps,pdf,$(EPS_FILES))
+#$(error PDFS_FROM_EPS $(PDFS_FROM_EPS))
+
+THISBOOK_DEPS += $(PDFS_FROM_EPS)
 
 GENERATED_SOURCES += mathematica.tex
 GENERATED_SOURCES += backmatter.tex
